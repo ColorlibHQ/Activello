@@ -434,7 +434,7 @@ if (!function_exists('get_activello_theme_setting'))  {
           .woocommerce a.button:hover, .woocommerce button.button:hover,
           .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover,
           .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover,
-          .woocommerce input.button.alt:hover, .input-group-btn:last-child>.btn,
+          .woocommerce input.button.alt:hover, .input-group-btn:last-child>.btn:hover,
           button, html input[type=button]:hover, input[type=reset]:hover,
           input[type=submit]:hover, .comment-form #submit:hover, .tagcloud a:hover{background-color:' . get_theme_mod('accent_color') . '; }';
     }

@@ -828,7 +828,8 @@ object {
 .woocommerce input.button,
 .woocommerce #respond input#submit.alt,
 .woocommerce a.button.alt, .woocommerce button.button.alt,
-.woocommerce input.button.alt, .btn.btn-default, button{
+.woocommerce input.button.alt, .btn.btn-default, button,
+.input-group-btn:last-child>.btn {
     background: #f2f2f2;
     border-color: transparent;
     color: #696969;
@@ -853,23 +854,36 @@ object {
 .woocommerce input.button:hover,
 .woocommerce #respond input#submit.alt:hover,
 .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover,
-.woocommerce input.button.alt:hover, button:hover {
+.woocommerce input.button.alt:hover, button:hover,
+.input-group-btn:last-child>.btn:hover {
   background-color: #a161bf;
   border-color: transparent;
   color: #fff;
 }
 .input-group-btn:last-child>.btn {
-  background-color: #a161bf;
-  border-color: transparent;
-  color: #fff;  
-  font-size: 14px;
+  font-size: 12px;
   opacity: 1;
-}
-.input-group-btn:last-child>.btn:hover {
-  opacity: 0.8;
+  padding: 8px 20px;
+  line-height: 16px;
 }
 #subscription-toggle {
     float: right;
+}
+.woocommerce a.button,
+.woocommerce input.button,
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce input.button.alt {
+  width: 100%;
+  text-align: center;
+  line-height: 20px;
+}
+.woocommerce #respond input#submit,
+.woocommerce button.button.alt,
+.woocommerce button.button {
+  padding: 0 80px;
+  text-align: center;
+  line-height: 35px;
 }
 /* =Infinite Scroll
 ----------------------------------------------- */
@@ -1643,42 +1657,6 @@ p.logged-in-as {
   }
 }
 
-/* =Call For Action
------------------------------------------------ */
-.cfa {
-  padding: 30px 0px;
-  background: #FFF;
-  border-bottom: 1px solid #DADADA;
-  text-align: center;
-}
-.cfa-text{
-  font-size: 22px;
-  color: #a161bf;
-  display: block;
-  padding-top: 10px;
-}
-.cfa-button {
-  background-color: transparent;
-  color: #a161bf;
-  padding: 15px 30px;
-  border-color: #a161bf;
-}
-.cfa-button a {
-  color: #a161bf;
-}
-.cfa-button:hover {
-  background-color: #a161bf;
-  color: #fff;
-}
-@media (max-width: 767px) {
-  .cfa {
-    padding: 0 0 20px;
-  }
-  .cfa-button {
-    padding: 10px 16px;
-    margin-top: 10px;
-  }
-}
 
 /* =Elements when no javaScript is present
 ----------------------------------------------- */
