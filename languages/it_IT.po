@@ -1,0 +1,915 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sparkling Theme\n"
+"POT-Creation-Date: 2015-07-08 17:07+0300\n"
+"PO-Revision-Date: 2015-07-08 17:07+0300\n"
+"Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
+"Language-Team: colorlib <info@colorlib.com>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
+"esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! La pagina non può essere trovata."
+
+#: ../404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Sembra che non è stato trovato in questa posizione. Magari prova uno dei "
+"link seguenti o una ricerca?"
+
+#: ../404.php:25
+#, fuzzy
+msgid "Recent Posts"
+msgstr "Navigazione post"
+
+#: ../404.php:31
+msgid "Most Used Categories"
+msgstr "Categorie più popolari"
+
+#: ../404.php:52
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Prova a guardare negli archivi mensili. %1$s"
+
+#: ../404.php:53 ../archive.php:66 ../sidebar.php:19
+msgid "Archives"
+msgstr "Archivi"
+
+#: ../404.php:58
+#, fuzzy
+msgid "Tags"
+msgstr "Usado en los tags P"
+
+#: ../archive.php:27
+#, php-format
+msgid "Author: %s"
+msgstr "Autore: %s"
+
+#: ../archive.php:30
+#, php-format
+msgid "Day: %s"
+msgstr "Giorno: %s"
+
+#: ../archive.php:33
+#, php-format
+msgid "Month: %s"
+msgstr "Mese: %s"
+
+#: ../archive.php:36
+#, php-format
+msgid "Year: %s"
+msgstr "Anno: %s"
+
+#: ../archive.php:39
+msgid "Asides"
+msgstr "Digressioni"
+
+#: ../archive.php:42
+msgid "Galleries"
+msgstr "Gallerie"
+
+#: ../archive.php:45
+msgid "Images"
+msgstr "Immagini"
+
+#: ../archive.php:48
+msgid "Videos"
+msgstr "Vídeo"
+
+#: ../archive.php:51
+msgid "Quotes"
+msgstr "Citazioni"
+
+#: ../archive.php:54
+msgid "Links"
+msgstr "Link"
+
+#: ../archive.php:57
+msgid "Statuses"
+msgstr "Stati"
+
+#: ../archive.php:60
+msgid "Audios"
+msgstr "Audio"
+
+#: ../archive.php:63
+msgid "Chats"
+msgstr "Chat"
+
+#: ../comments.php:28
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:35 ../comments.php:53
+msgid "Comment navigation"
+msgstr "Navigazione commento"
+
+#: ../comments.php:36 ../comments.php:54
+msgid "&larr; Older Comments"
+msgstr "&larr; Commenti più vecchi"
+
+#: ../comments.php:37 ../comments.php:55
+msgid "Newer Comments &rarr;"
+msgstr "Commenti più recenti &rarr;"
+
+#: ../comments.php:65
+msgid "Comments are closed."
+msgstr "I commenti sono stati chiusi."
+
+#: ../content-none.php:13
+msgid "Nothing Found"
+msgstr "Nessun risultato"
+
+#: ../content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Pronto a pubblicare il tuo primo post? <a href=\"%1$s\">Parti da qui</a>."
+
+#: ../content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Ci dispiace, ma nessun risultato corrisponde ai termini della tua ricerca. "
+"Riprova con parole chiave diverse."
+
+#: ../content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Sembra che non riusciamo a trovare quello che stai cercando. Forse la "
+"ricerca può aiutare."
+
+#: ../content-page.php:21 ../content-single.php:35 ../content.php:49
+#: ../image.php:79
+msgid "Pages:"
+msgstr "Pagine:"
+
+#: ../content-page.php:32 ../content-single.php:26 ../content.php:23
+msgid "Edit"
+msgstr "Modifica"
+
+#: ../content-single.php:19
+msgid ", "
+msgstr ","
+
+#: ../content-single.php:23
+#, php-format
+msgid " %1$s"
+msgstr " %1$s"
+
+#: ../content.php:20
+msgid "Leave a comment"
+msgstr "Lascia un commento"
+
+#: ../content.php:20
+msgid "1 Comment"
+msgstr "1 commento"
+
+#: ../content.php:20
+msgid "% Comments"
+msgstr "% commenti"
+
+#: ../content.php:32 ../content.php:45
+msgid "Read More"
+msgstr "Approfondisci"
+
+#: ../functions.php:69
+msgid "Primary Menu"
+msgstr "Menu principale"
+
+#: ../functions.php:70 ../inc/extras.php:212
+msgid "Footer Links"
+msgstr "Link nel footer"
+
+#: ../functions.php:108
+msgid "Sidebar"
+msgstr "Barra laterale"
+
+#: ../functions.php:118
+msgid "Homepage Widget 1"
+msgstr "Widget Prima Pagina 1"
+
+#: ../functions.php:119 ../functions.php:129 ../functions.php:139
+msgid "Displays on the Home Page"
+msgstr "Mostra sulla prima pagina"
+
+#: ../functions.php:128
+msgid "Homepage Widget 2"
+msgstr "Widget Prima Pagina 2"
+
+#: ../functions.php:138
+msgid "Homepage Widget 3"
+msgstr "Widget Prima Pagina 3"
+
+#: ../functions.php:148
+msgid "Footer Widget 1"
+msgstr "Widget Piè di Pagina 1"
+
+#: ../functions.php:149 ../functions.php:159 ../functions.php:169
+msgid "Used for footer widget area"
+msgstr "Usato per l'area widget nel footer"
+
+#: ../functions.php:158
+msgid "Footer Widget 2"
+msgstr "Widget Piè di Pagina 2"
+
+#: ../functions.php:168
+msgid "Footer Widget 3"
+msgstr "Widget Piè di Pagina 3"
+
+#: ../image.php:22
+msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Precedente"
+
+#: ../image.php:23
+msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Successivo <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:91
+#: ../inc/admin/includes/class-options-framework-admin.php:92
+msgid "Theme Options"
+msgstr "Opzioni del tema"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:204
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+"Fare clic su OK per ripristinare. Tutte le impostazioni del tema andranno "
+"perse!"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:235
+msgid "Default options restored."
+msgstr "Le impostazioni predefinite sono state ripristinate."
+
+#: ../inc/admin/includes/class-options-framework-admin.php:289
+msgid "Options saved."
+msgstr "Opzioni salvate."
+
+#: ../inc/admin/includes/class-options-media-uploader.php:62
+msgid "No file chosen"
+msgstr "Nessun file selezionato."
+
+#: ../inc/admin/includes/class-options-media-uploader.php:65
+#: ../inc/admin/includes/class-options-media-uploader.php:118
+msgid "Upload"
+msgstr "Carica"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:67
+#: ../inc/admin/includes/class-options-media-uploader.php:119
+msgid "Remove"
+msgstr "Rimuovi"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:70
+msgid "Upgrade your version of WordPress for full media support."
+msgstr "Aggiorna la tua versione di WordPress per il pieno supporto dei media."
+
+#: ../inc/admin/includes/class-options-media-uploader.php:94
+msgid "View File"
+msgstr "Visualizza file"
+
+#: ../inc/admin/includes/class-options-sanitization.php:316
+msgid "No Repeat"
+msgstr "Non ripetere"
+
+#: ../inc/admin/includes/class-options-sanitization.php:317
+msgid "Repeat Horizontally"
+msgstr "Ripeti orizzontalmente"
+
+#: ../inc/admin/includes/class-options-sanitization.php:318
+msgid "Repeat Vertically"
+msgstr "Ripeti verticalmente"
+
+#: ../inc/admin/includes/class-options-sanitization.php:319
+msgid "Repeat All"
+msgstr "Ripeti"
+
+#: ../inc/admin/includes/class-options-sanitization.php:331
+msgid "Top Left"
+msgstr "In Alto a Sinistra"
+
+#: ../inc/admin/includes/class-options-sanitization.php:332
+msgid "Top Center"
+msgstr "In Alto al Centro"
+
+#: ../inc/admin/includes/class-options-sanitization.php:333
+msgid "Top Right"
+msgstr "In Alto a Destra"
+
+#: ../inc/admin/includes/class-options-sanitization.php:334
+msgid "Middle Left"
+msgstr "Nel Mezzo a Sinistra"
+
+#: ../inc/admin/includes/class-options-sanitization.php:335
+msgid "Middle Center"
+msgstr "Nel Mezzo al Centro"
+
+#: ../inc/admin/includes/class-options-sanitization.php:336
+msgid "Middle Right"
+msgstr "Nel Mezzo a Destra"
+
+#: ../inc/admin/includes/class-options-sanitization.php:337
+msgid "Bottom Left"
+msgstr "In Basso a Sinistra"
+
+#: ../inc/admin/includes/class-options-sanitization.php:338
+msgid "Bottom Center"
+msgstr "In Basso al Centro"
+
+#: ../inc/admin/includes/class-options-sanitization.php:339
+msgid "Bottom Right"
+msgstr "In Basso a Destra"
+
+#: ../inc/admin/includes/class-options-sanitization.php:351
+msgid "Scroll Normally"
+msgstr "Scorri normalmente"
+
+#: ../inc/admin/includes/class-options-sanitization.php:352
+msgid "Fixed in Place"
+msgstr "Fisso sul posto"
+
+#: ../inc/admin/includes/class-options-sanitization.php:424
+msgid "Normal"
+msgstr "Normale"
+
+#: ../inc/admin/includes/class-options-sanitization.php:425
+msgid "Italic"
+msgstr "Corsivo"
+
+#: ../inc/admin/includes/class-options-sanitization.php:426
+msgid "Bold"
+msgstr "Grassetto"
+
+#: ../inc/admin/includes/class-options-sanitization.php:427
+msgid "Bold Italic"
+msgstr "Grassetto Corsivo"
+
+#: ../inc/customizer.php:27
+#, fuzzy
+msgid "Content Options"
+msgstr "Opzioni del tema"
+
+#: ../inc/customizer.php:39
+msgid "Show post excerpts?"
+msgstr ""
+
+#: ../inc/customizer.php:51
+#, fuzzy
+msgid "Display Comments on Static Pages?"
+msgstr "Mostra sulla prima pagina"
+
+#: ../inc/extras.php:61
+#, php-format
+msgid "Page %s"
+msgstr "Pagina %s"
+
+#: ../inc/extras.php:125
+msgid ""
+"<p>This post is password protected. To view it please enter your password "
+"below:</p>"
+msgstr ""
+"<p>Questo post è protetto da password. Per leggerlo inserire la password di "
+"seguito:</p>"
+
+#: ../inc/extras.php:126
+msgid "Password:"
+msgstr "Password:"
+
+#: ../inc/extras.php:129
+msgid "Submit"
+msgstr "Invia"
+
+#: ../inc/extras.php:175
+msgid "Follow us on "
+msgstr "Seguici su"
+
+#: ../inc/extras.php:287
+#, php-format
+msgid "Theme by %1$s Powered by %2$s"
+msgstr "Tema per %1$s Disegnato da %2$s"
+
+#: ../inc/extras.php:394
+msgid "Support and Documentation"
+msgstr "Supporto e Documentazione"
+
+#: ../inc/extras.php:400
+msgid "Sparkling Documentation"
+msgstr "Documentazione Sparkling"
+
+#: ../inc/extras.php:401
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr ""
+"Il modo migliore per contattarci per <b>domande di supporto</b> e "
+"<b>segnalazioni</b> è via"
+
+#: ../inc/extras.php:401
+msgid "Colorlib support forum"
+msgstr "Forum di supporto Colorlib"
+
+#: ../inc/extras.php:402
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr "Se ti piace questo tema, apprezzerei una delle seguenti:"
+
+#: ../inc/extras.php:404
+msgid "Rate this Theme"
+msgstr "Vota questo tema"
+
+#: ../inc/extras.php:405
+msgid "Like on Facebook"
+msgstr "Mi Piace su Facebook"
+
+#: ../inc/extras.php:406
+msgid "Follow on Twitter"
+msgstr "Seguici su Twitter"
+
+#: ../inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Navigazione post"
+
+#: ../inc/template-tags.php:27
+msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Post più vecchi"
+
+#: ../inc/template-tags.php:31
+msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Post più recenti <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "Navigazione post"
+
+#: ../inc/widgets/widget-categories.php:11
+#: ../inc/widgets/widget-categories.php:12
+msgid "Sparkling Categories"
+msgstr "Categorie Sparkling"
+
+#: ../inc/widgets/widget-categories.php:17
+#: ../inc/widgets/widget-categories.php:76
+msgid "Categories"
+msgstr "Categorie"
+
+#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
+msgid "Title "
+msgstr "Titolo"
+
+#: ../inc/widgets/widget-categories.php:91
+msgid "Limit Categories "
+msgstr "Limite categorie"
+
+#: ../inc/widgets/widget-categories.php:104
+msgid "Enable Posts Count"
+msgstr "Abilita il conteggio dei post"
+
+#: ../inc/widgets/widget-popular-posts.php:11
+#: ../inc/widgets/widget-popular-posts.php:12
+msgid "Sparkling Popular Posts Widget"
+msgstr "Widget Sparkling Post più popolari"
+
+#: ../inc/widgets/widget-popular-posts.php:17
+#: ../inc/widgets/widget-popular-posts.php:94
+msgid "Popular Posts"
+msgstr "Post popolari"
+
+#: ../inc/widgets/widget-popular-posts.php:99
+msgid "Title"
+msgstr "Titolo"
+
+#: ../inc/widgets/widget-popular-posts.php:107
+msgid "Limit Posts Number"
+msgstr "Limita il numero di post"
+
+#: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
+msgid "Sparkling Social Widget"
+msgstr "Widget Sparkling Social"
+
+#: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
+msgid "Follow us"
+msgstr "Seguici"
+
+#: ../options.php:23
+msgid "Right Sidebar"
+msgstr "Colonna laterale destra"
+
+#: ../options.php:23
+msgid "Left Sidebar"
+msgstr "Colonna laterale sinistra"
+
+#: ../options.php:27
+msgid "One"
+msgstr "Uno"
+
+#: ../options.php:28
+msgid "Two"
+msgstr "Due"
+
+#: ../options.php:29
+msgid "Three"
+msgstr "Tre"
+
+#: ../options.php:30
+msgid "Four"
+msgstr "Quattro"
+
+#: ../options.php:31
+msgid "Five"
+msgstr "Cinque"
+
+#: ../options.php:36
+msgid "French Toast"
+msgstr "French Toast"
+
+#: ../options.php:37
+msgid "Pancake"
+msgstr "Pancake"
+
+#: ../options.php:38
+msgid "Omelette"
+msgstr "Omelette"
+
+#: ../options.php:39
+msgid "Crepe"
+msgstr "Crepe"
+
+#: ../options.php:40
+msgid "Waffle"
+msgstr "Waffle"
+
+#: ../options.php:110
+msgid "Main"
+msgstr "Principale"
+
+#: ../options.php:115
+msgid "Do You want to display image slider on the Home Page?"
+msgstr "Vuoi visualizzare uno slider di immagini sulla prima pagina?"
+
+#: ../options.php:116
+msgid "Check if you want to enable slider"
+msgstr "Seleziona se vuoi abilitare lo slider"
+
+#: ../options.php:123
+msgid "Slider Category"
+msgstr "Categoria slider"
+
+#: ../options.php:124
+msgid "Select a category for the featured post slider"
+msgstr "Seleziona una categoria di post in evidenza per lo slider"
+
+#: ../options.php:132
+msgid "Number of slide items"
+msgstr "Numero di slide"
+
+#: ../options.php:133
+msgid "Enter the number of slide items"
+msgstr "Inserisci il numero di slide"
+
+#: ../options.php:141
+msgid "Website Layout Options"
+msgstr "Opzioni layout sito web"
+
+#: ../options.php:142
+msgid "Choose between Left and Right sidebar options to be used as default"
+msgstr ""
+"Scegli tra colonna laterale sinistra e destra da utilizzare come "
+"impostazione predefinita"
+
+#: ../options.php:151
+msgid "Element color"
+msgstr "Colore elemento"
+
+#: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
+#: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
+#: ../options.php:280 ../options.php:390 ../options.php:398
+msgid "Default used if no color is selected"
+msgstr "Valore predefinito usato se nessun colore è selezionato"
+
+#: ../options.php:159
+msgid "Element color on hover"
+msgstr "Colore elemento all'hover"
+
+#: ../options.php:167
+msgid "Custom Favicon"
+msgstr "Favicon personalizzata"
+
+#: ../options.php:168
+msgid ""
+"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
+msgstr "Carica una immagine PNG/GIF 32x32px che rappresenterà la tua favicon"
+
+#: ../options.php:175
+msgid "Action Button"
+msgstr "Action Button"
+
+#: ../options.php:180
+msgid "Call For Action Text"
+msgstr "Testo Call For Action"
+
+#: ../options.php:181
+msgid "Enter the text for call for action section"
+msgstr "Inserisci il testo per la sezione Call For Action"
+
+#: ../options.php:188
+msgid "Call For Action Button Title"
+msgstr "Titolo pulsante Call For Action"
+
+#: ../options.php:189
+msgid "Enter the title for Call For Action button"
+msgstr "Inserisci il titolo per il pulsante Call For Action"
+
+#: ../options.php:196
+msgid "CFA button link"
+msgstr "CFA link pulsante"
+
+#: ../options.php:197
+msgid "Enter the link for Call For Action button"
+msgstr "Inserisci il link per il pulsante Call For Action"
+
+#: ../options.php:204
+msgid "Call For Action Text Color"
+msgstr "Colore del testo Call For Action"
+
+#: ../options.php:212
+msgid "Call For Action Background Color"
+msgstr "Colore di sfondo Call For Action"
+
+#: ../options.php:220
+msgid "Call For Action Button Border Color"
+msgstr "Colore del bordo del pulsante Call For Action"
+
+#: ../options.php:228
+msgid "Call For Action Button Text Color"
+msgstr "Colore del testo del pulsante Call For Action"
+
+#: ../options.php:236
+msgid "Typography"
+msgstr "Tipografia"
+
+#: ../options.php:241
+msgid "Main Body Text"
+msgstr "Testo del corpo principale"
+
+#: ../options.php:242
+msgid "Used in P tags"
+msgstr "Usato nei tag P"
+
+#: ../options.php:250
+msgid "Heading Color"
+msgstr "Colore intestazioni"
+
+#: ../options.php:251
+msgid "Color for all headings (h1-h6)"
+msgstr "Colore per tutte le intestazioni (h1-h6)"
+
+#: ../options.php:258
+msgid "Link Color"
+msgstr "Colore del link"
+
+#: ../options.php:266
+msgid "Link:hover Color"
+msgstr "Colore del link:hover"
+
+#: ../options.php:274
+msgid "Header"
+msgstr "Testata"
+
+#: ../options.php:279
+msgid "Top nav background color"
+msgstr "Colore di sfondo navigazione principale"
+
+#: ../options.php:287
+msgid "Top nav item color"
+msgstr "Colore singola voce della navigazione principale"
+
+#: ../options.php:288
+msgid "Link color"
+msgstr "Colore del link"
+
+#: ../options.php:295
+msgid "Top nav item hover color"
+msgstr "Colore hover singola voce della navigazione principale"
+
+#: ../options.php:296
+msgid "Link:hover color"
+msgstr "Colore del link:hover"
+
+#: ../options.php:303
+msgid "Top nav dropdown background color"
+msgstr "Colore di sfondo del menu a tendina"
+
+#: ../options.php:304 ../options.php:328
+msgid "Background of dropdown item hover color"
+msgstr "Sfondo della voce in hover del menu a tendina"
+
+#: ../options.php:311
+msgid "Top nav dropdown item color"
+msgstr "Colore voce del menu a tendina della navigazione principale"
+
+#: ../options.php:312
+msgid "Dropdown item color"
+msgstr "Colore voce del menu a tendina"
+
+#: ../options.php:319
+#, fuzzy
+msgid "Top nav dropdown item hover color"
+msgstr "Color del ítem hover del Top nav"
+
+#: ../options.php:320
+#, fuzzy
+msgid "Dropdown item hover color"
+msgstr "Color del fondo del ítem hover del menú desplegable"
+
+#: ../options.php:327
+#, fuzzy
+msgid "Top nav dropdown item background hover color"
+msgstr "Color del fondo del ítem hover del menú desplegable"
+
+#: ../options.php:335
+msgid "Footer"
+msgstr "Piè di pagina"
+
+#: ../options.php:340
+msgid "Footer widget area background color"
+msgstr "Colore di sfondo del widget a piè di pagina"
+
+#: ../options.php:347
+msgid "Footer background color"
+msgstr "Colore di sfondo del piè di pagina"
+
+#: ../options.php:354
+msgid "Footer text color"
+msgstr "Colore del testo nel piè di pagina"
+
+#: ../options.php:361
+msgid "Footer link color"
+msgstr "Colore dei link del piè di pagina"
+
+#: ../options.php:368
+msgid "Footer information"
+msgstr "Informazioni piè di pagina"
+
+#: ../options.php:369
+msgid "Copyright text in footer"
+msgstr "Testo dei copyright nel piè di pagina"
+
+#: ../options.php:376
+#, fuzzy
+msgid "Footer Social Icons"
+msgstr "Colore icone social nel piè di pagina"
+
+#: ../options.php:377
+#, fuzzy
+msgid "Show/Hide social icons in footer"
+msgstr "Colore icone social nel piè di pagina"
+
+#: ../options.php:384
+msgid "Social"
+msgstr "Social"
+
+#: ../options.php:389
+msgid "Social icon color"
+msgstr "Colore icone social"
+
+#: ../options.php:397
+msgid "Footer social icon color"
+msgstr "Colore icone social nel piè di pagina"
+
+#: ../options.php:405
+msgid "Add full URL for your social network profiles"
+msgstr "Aggiungi l'URL completo per i tuoi profili sui social network"
+
+#: ../options.php:406
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../options.php:415
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../options.php:423
+msgid "Google+"
+msgstr "Google+"
+
+#: ../options.php:431
+msgid "Youtube"
+msgstr "Youtube"
+
+#: ../options.php:439
+msgid "Vimeo"
+msgstr ""
+
+#: ../options.php:447
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: ../options.php:455
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: ../options.php:463
+msgid "RSS Feed"
+msgstr "RSS Feed"
+
+#: ../options.php:471
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: ../options.php:479
+msgid "Flickr"
+msgstr "Flickr"
+
+#: ../options.php:487
+msgid "Instagram"
+msgstr "Instagram"
+
+#: ../options.php:495
+msgid "Dribbble"
+msgstr "Dribbble"
+
+#: ../options.php:503
+msgid "Skype"
+msgstr "Skype"
+
+#: ../options.php:511
+msgid "Foursquare"
+msgstr ""
+
+#: ../options.php:519
+msgid "SoundCloud"
+msgstr ""
+
+#: ../options.php:527
+msgid "GitHub"
+msgstr ""
+
+#: ../options.php:535
+msgid "Spotify"
+msgstr ""
+
+#: ../options.php:542
+msgid "Other"
+msgstr "Altro"
+
+#: ../options.php:547
+msgid "Custom CSS"
+msgstr "CSS personalizzato"
+
+#: ../options.php:548
+msgid "Additional CSS"
+msgstr "CSS aggiuntivo"
+
+#: ../search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Risultato della ricerca per: %s"
+
+#: ../searchform.php:11
+#, fuzzy
+msgid "Search for:"
+msgstr "Cerca..."
+
+#: ../searchform.php:12
+#, fuzzy
+msgctxt "placeholder"
+msgid "Search&hellip;"
+msgstr "Busca"
+
+#: ../searchform.php:12
+#, fuzzy
+msgctxt "label"
+msgid "Search for:"
+msgstr "Cerca..."
+
+#: ../searchform.php:14
+#, fuzzy
+msgctxt "submit button"
+msgid "Search"
+msgstr "Busca"
+
+#: ../sidebar.php:26
+msgid "Meta"
+msgstr "Meta"
+
+#~ msgid "Search..."
+#~ msgstr "Cerca..."
+
+#~ msgid "Default used if no color is selected."
+#~ msgstr "Valore predefinito usato se nessun colore è selezionato"

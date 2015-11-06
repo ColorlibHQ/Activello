@@ -1,0 +1,909 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sparkling Theme\n"
+"POT-Creation-Date: 2015-07-08 17:07+0300\n"
+"PO-Revision-Date: 2015-07-08 17:07+0300\n"
+"Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
+"Language-Team: heysister721 <tk197709141545@gmail.com>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
+"esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "ページが見つかりません。"
+
+#: ../404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"何も見つかりませんでした。以下のリンクを使用してみてください。または検索を"
+"行ってください。"
+
+#: ../404.php:25
+msgid "Recent Posts"
+msgstr "人気の投稿、最近の投稿＆コメントの表示ボックスの一覧"
+
+#: ../404.php:31
+msgid "Most Used Categories"
+msgstr "使用されるその他のカテゴリー"
+
+#: ../404.php:52
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "毎月のアーカイブを見てみてください。 %1$s"
+
+#: ../404.php:53 ../archive.php:66 ../sidebar.php:19
+msgid "Archives"
+msgstr "アーカイブ"
+
+#: ../404.php:58
+msgid "Tags"
+msgstr "P（段落）タグで使用"
+
+#: ../archive.php:27
+#, php-format
+msgid "Author: %s"
+msgstr "投稿者: %s"
+
+#: ../archive.php:30
+#, php-format
+msgid "Day: %s"
+msgstr "日付別: %s"
+
+#: ../archive.php:33
+#, php-format
+msgid "Month: %s"
+msgstr "月別: %s"
+
+#: ../archive.php:36
+#, php-format
+msgid "Year: %s"
+msgstr "年別: %s"
+
+#: ../archive.php:39
+msgid "Asides"
+msgstr "標準"
+
+#: ../archive.php:42
+msgid "Galleries"
+msgstr "ギャラリー"
+
+#: ../archive.php:45
+msgid "Images"
+msgstr "画像"
+
+#: ../archive.php:48
+msgid "Videos"
+msgstr "動画"
+
+#: ../archive.php:51
+msgid "Quotes"
+msgstr "引用"
+
+#: ../archive.php:54
+msgid "Links"
+msgstr "リンク"
+
+#: ../archive.php:57
+msgid "Statuses"
+msgstr "ステータス"
+
+#: ../archive.php:60
+msgid "Audios"
+msgstr "オーディオ"
+
+#: ../archive.php:63
+msgid "Chats"
+msgstr "チャット"
+
+#: ../comments.php:28
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "コメント &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s 注釈 &ldquo;%2$s&rdquo;"
+
+#: ../comments.php:35 ../comments.php:53
+msgid "Comment navigation"
+msgstr "レビュー"
+
+#: ../comments.php:36 ../comments.php:54
+msgid "&larr; Older Comments"
+msgstr "&larr; 古いコメント"
+
+#: ../comments.php:37 ../comments.php:55
+msgid "Newer Comments &rarr;"
+msgstr "新しいコメント &rarr;"
+
+#: ../comments.php:65
+msgid "Comments are closed."
+msgstr "コメントを閉じる"
+
+#: ../content-none.php:13
+msgid "Nothing Found"
+msgstr "何も見つかりません"
+
+#: ../content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"あなたの最初の投稿を公開する準備はできましたか？ <a href=\"%1$s\">ここから始"
+"めましょう</a>."
+
+#: ../content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"申し訳ありませんが、何も検索条件に一致しない。他の言葉で、もう一度やり直して"
+"ください。"
+
+#: ../content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"私たちは、あなたが探しているものを見つけることができませんでした。おそらく、"
+"検索が役立ちます。"
+
+#: ../content-page.php:21 ../content-single.php:35 ../content.php:49
+#: ../image.php:79
+msgid "Pages:"
+msgstr "ページ別:"
+
+#: ../content-page.php:32 ../content-single.php:26 ../content.php:23
+msgid "Edit"
+msgstr "編集する"
+
+#: ../content-single.php:19
+msgid ", "
+msgstr ", "
+
+#: ../content-single.php:23
+#, php-format
+msgid " %1$s"
+msgstr " %1$s"
+
+#: ../content.php:20
+msgid "Leave a comment"
+msgstr "コメントを残す"
+
+#: ../content.php:20
+msgid "1 Comment"
+msgstr "1 コメント"
+
+#: ../content.php:20
+msgid "% Comments"
+msgstr "% コメント"
+
+#: ../content.php:32 ../content.php:45
+msgid "Read More"
+msgstr "続きを読む"
+
+#: ../functions.php:69
+msgid "Primary Menu"
+msgstr "メインメニュー"
+
+#: ../functions.php:70 ../inc/extras.php:212
+msgid "Footer Links"
+msgstr "フッターリンク"
+
+#: ../functions.php:108
+msgid "Sidebar"
+msgstr "サイドバー"
+
+#: ../functions.php:118
+msgid "Homepage Widget 1"
+msgstr "本文ウィジェット（左）"
+
+#: ../functions.php:119 ../functions.php:129 ../functions.php:139
+msgid "Displays on the Home Page"
+msgstr "ホームページ上に表示します"
+
+#: ../functions.php:128
+msgid "Homepage Widget 2"
+msgstr "本文ウィジェット（中央）"
+
+#: ../functions.php:138
+msgid "Homepage Widget 3"
+msgstr "本文ウィジェット（左）"
+
+#: ../functions.php:148
+msgid "Footer Widget 1"
+msgstr "フッター部ウィジェット（左）"
+
+#: ../functions.php:149 ../functions.php:159 ../functions.php:169
+msgid "Used for footer widget area"
+msgstr "フッターウィジェットエリアに使用します"
+
+#: ../functions.php:158
+msgid "Footer Widget 2"
+msgstr "フッター部ウィジェット（中央）"
+
+#: ../functions.php:168
+msgid "Footer Widget 3"
+msgstr "フッター部ウィジェット（左）"
+
+#: ../image.php:22
+msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+msgstr "<i class=\"fa fa-chevron-left\"></i> 前"
+
+#: ../image.php:23
+msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+msgstr "次 <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:91
+#: ../inc/admin/includes/class-options-framework-admin.php:92
+msgid "Theme Options"
+msgstr "テーマオプション"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:204
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr "再起動して[OK]をクリックします。任意のテーマの設定は失われます！"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:235
+msgid "Default options restored."
+msgstr "デフォルトのオプションが復元されました。"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:289
+msgid "Options saved."
+msgstr "設定を保存"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:62
+msgid "No file chosen"
+msgstr "ファイルが選択されていません"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:65
+#: ../inc/admin/includes/class-options-media-uploader.php:118
+msgid "Upload"
+msgstr "アップロード"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:67
+#: ../inc/admin/includes/class-options-media-uploader.php:119
+msgid "Remove"
+msgstr "削除する"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:70
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+"フルメディアサポートのためのワードプレスのバージョンをアップグレードします。"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:94
+msgid "View File"
+msgstr "ファイルの表示"
+
+#: ../inc/admin/includes/class-options-sanitization.php:316
+msgid "No Repeat"
+msgstr "繰り返ししないでください"
+
+#: ../inc/admin/includes/class-options-sanitization.php:317
+msgid "Repeat Horizontally"
+msgstr "水平繰り返し"
+
+#: ../inc/admin/includes/class-options-sanitization.php:318
+msgid "Repeat Vertically"
+msgstr "縦に繰り返し"
+
+#: ../inc/admin/includes/class-options-sanitization.php:319
+msgid "Repeat All"
+msgstr "すべてを繰り返します"
+
+#: ../inc/admin/includes/class-options-sanitization.php:331
+msgid "Top Left"
+msgstr "上 左寄せ"
+
+#: ../inc/admin/includes/class-options-sanitization.php:332
+msgid "Top Center"
+msgstr "上 中央寄せ"
+
+#: ../inc/admin/includes/class-options-sanitization.php:333
+msgid "Top Right"
+msgstr "上 右寄せ"
+
+#: ../inc/admin/includes/class-options-sanitization.php:334
+msgid "Middle Left"
+msgstr "中央 左寄せ"
+
+#: ../inc/admin/includes/class-options-sanitization.php:335
+msgid "Middle Center"
+msgstr "中央 中央寄せ"
+
+#: ../inc/admin/includes/class-options-sanitization.php:336
+msgid "Middle Right"
+msgstr "中央 右寄せ"
+
+#: ../inc/admin/includes/class-options-sanitization.php:337
+msgid "Bottom Left"
+msgstr "下 左寄せ"
+
+#: ../inc/admin/includes/class-options-sanitization.php:338
+msgid "Bottom Center"
+msgstr "下 中央寄せ"
+
+#: ../inc/admin/includes/class-options-sanitization.php:339
+msgid "Bottom Right"
+msgstr "下 右寄せ"
+
+#: ../inc/admin/includes/class-options-sanitization.php:351
+msgid "Scroll Normally"
+msgstr "通常スクロール"
+
+#: ../inc/admin/includes/class-options-sanitization.php:352
+msgid "Fixed in Place"
+msgstr "所定の位置に固定"
+
+#: ../inc/admin/includes/class-options-sanitization.php:424
+msgid "Normal"
+msgstr "通常"
+
+#: ../inc/admin/includes/class-options-sanitization.php:425
+msgid "Italic"
+msgstr "斜体"
+
+#: ../inc/admin/includes/class-options-sanitization.php:426
+msgid "Bold"
+msgstr "太字"
+
+#: ../inc/admin/includes/class-options-sanitization.php:427
+msgid "Bold Italic"
+msgstr "太字+斜体"
+
+#: ../inc/customizer.php:27
+#, fuzzy
+msgid "Content Options"
+msgstr "テーマオプション"
+
+#: ../inc/customizer.php:39
+msgid "Show post excerpts?"
+msgstr ""
+
+#: ../inc/customizer.php:51
+#, fuzzy
+msgid "Display Comments on Static Pages?"
+msgstr "ホームページ上に表示します"
+
+#: ../inc/extras.php:61
+#, php-format
+msgid "Page %s"
+msgstr "ページ %s"
+
+#: ../inc/extras.php:125
+msgid ""
+"<p>This post is password protected. To view it please enter your password "
+"below:</p>"
+msgstr ""
+"<p>この投稿はパスワードで保護されています。下のパスワードを入力して表示するに"
+"は：</p>"
+
+#: ../inc/extras.php:126
+msgid "Password:"
+msgstr "パスワード:"
+
+#: ../inc/extras.php:129
+msgid "Submit"
+msgstr "送信"
+
+#: ../inc/extras.php:175
+msgid "Follow us on "
+msgstr "フォローしてください"
+
+#: ../inc/extras.php:287
+#, php-format
+msgid "Theme by %1$s Powered by %2$s"
+msgstr "Theme by %1$s Powered by %2$s"
+
+#: ../inc/extras.php:394
+msgid "Support and Documentation"
+msgstr "サポートとドキュメント"
+
+#: ../inc/extras.php:400
+msgid "Sparkling Documentation"
+msgstr "ドキュメント [Sparkling]"
+
+#: ../inc/extras.php:401
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr ""
+"最良の方法は、サポートページの質問で紹介している<b>バグレポート</b>と<b>私達"
+"に連絡すること</b>です"
+
+#: ../inc/extras.php:401
+msgid "Colorlib support forum"
+msgstr "テーマ開発者　サポートフォーラム"
+
+#: ../inc/extras.php:402
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr ""
+"あなたはこのテーマが好きなら、私は次のいずれかをいただければと思います："
+
+#: ../inc/extras.php:404
+msgid "Rate this Theme"
+msgstr "このテーマを評価"
+
+#: ../inc/extras.php:405
+msgid "Like on Facebook"
+msgstr "Facebookで「いいね」する"
+
+#: ../inc/extras.php:406
+msgid "Follow on Twitter"
+msgstr "Twitterをフォローする"
+
+#: ../inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "投稿ナビゲーション"
+
+#: ../inc/template-tags.php:27
+msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+msgstr "<i class=\"fa fa-chevron-left\"></i> 古い投稿"
+
+#: ../inc/template-tags.php:31
+msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+msgstr "新しい投稿 <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "投稿ナビゲーション"
+
+#: ../inc/widgets/widget-categories.php:11
+#: ../inc/widgets/widget-categories.php:12
+msgid "Sparkling Categories"
+msgstr "[Sparkling] カテゴリー"
+
+#: ../inc/widgets/widget-categories.php:17
+#: ../inc/widgets/widget-categories.php:76
+msgid "Categories"
+msgstr "カテゴリー"
+
+#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
+msgid "Title "
+msgstr "タイトル"
+
+#: ../inc/widgets/widget-categories.php:91
+msgid "Limit Categories "
+msgstr "表示カテゴリー数上限"
+
+#: ../inc/widgets/widget-categories.php:104
+msgid "Enable Posts Count"
+msgstr "投稿数を有効にする"
+
+#: ../inc/widgets/widget-popular-posts.php:11
+#: ../inc/widgets/widget-popular-posts.php:12
+msgid "Sparkling Popular Posts Widget"
+msgstr "Sparkling 人気記事 ウィジェット"
+
+#: ../inc/widgets/widget-popular-posts.php:17
+#: ../inc/widgets/widget-popular-posts.php:94
+msgid "Popular Posts"
+msgstr "人気記事"
+
+#: ../inc/widgets/widget-popular-posts.php:99
+msgid "Title"
+msgstr "タイトル"
+
+#: ../inc/widgets/widget-popular-posts.php:107
+msgid "Limit Posts Number"
+msgstr "表示数上限"
+
+#: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
+msgid "Sparkling Social Widget"
+msgstr "Sparkling SNS ウィジェット"
+
+#: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
+msgid "Follow us"
+msgstr "フォローする"
+
+#: ../options.php:23
+msgid "Right Sidebar"
+msgstr "右サイドバー"
+
+#: ../options.php:23
+msgid "Left Sidebar"
+msgstr "左サイドバー"
+
+#: ../options.php:27
+msgid "One"
+msgstr "1"
+
+#: ../options.php:28
+msgid "Two"
+msgstr "2"
+
+#: ../options.php:29
+msgid "Three"
+msgstr "3"
+
+#: ../options.php:30
+msgid "Four"
+msgstr "4"
+
+#: ../options.php:31
+msgid "Five"
+msgstr "5"
+
+#: ../options.php:36
+msgid "French Toast"
+msgstr "フレンチトースト"
+
+#: ../options.php:37
+msgid "Pancake"
+msgstr "パンケーキ"
+
+#: ../options.php:38
+msgid "Omelette"
+msgstr "チョコレート"
+
+#: ../options.php:39
+msgid "Crepe"
+msgstr "クレープ"
+
+#: ../options.php:40
+msgid "Waffle"
+msgstr "ワッフル"
+
+#: ../options.php:110
+msgid "Main"
+msgstr "メイン"
+
+#: ../options.php:115
+msgid "Do You want to display image slider on the Home Page?"
+msgstr "あなたは、ホームページ上の画像スライダーを表示しますか？"
+
+#: ../options.php:116
+msgid "Check if you want to enable slider"
+msgstr "あなたはスライダーを有効にするかどうかを確認してください"
+
+#: ../options.php:123
+msgid "Slider Category"
+msgstr "スライダーに表示するカテゴリー"
+
+#: ../options.php:124
+msgid "Select a category for the featured post slider"
+msgstr "スライダーで表示する特集記事のカテゴリを選択"
+
+#: ../options.php:132
+msgid "Number of slide items"
+msgstr "スライドショーのアイテム数"
+
+#: ../options.php:133
+msgid "Enter the number of slide items"
+msgstr "スライド項目の数を入力してください"
+
+#: ../options.php:141
+msgid "Website Layout Options"
+msgstr "レイアウトオプション"
+
+#: ../options.php:142
+msgid "Choose between Left and Right sidebar options to be used as default"
+msgstr "左と右サイドバーのオプションから選択デフォルトとして使用する"
+
+#: ../options.php:151
+msgid "Element color"
+msgstr "要素色（通常）"
+
+#: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
+#: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
+#: ../options.php:280 ../options.php:390 ../options.php:398
+msgid "Default used if no color is selected"
+msgstr "選択されていない場合、デフォルトを使用"
+
+#: ../options.php:159
+msgid "Element color on hover"
+msgstr "要素色（マウスオーバー時）"
+
+#: ../options.php:167
+msgid "Custom Favicon"
+msgstr "カスタムファビコン"
+
+#: ../options.php:168
+msgid ""
+"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
+msgstr ""
+"あなたのウェブサイトのファビコンを表します32  X 32 (px) PNG / GIF画像をアップ"
+"ロード"
+
+#: ../options.php:175
+msgid "Action Button"
+msgstr "アクションボタン"
+
+#: ../options.php:180
+msgid "Call For Action Text"
+msgstr "アクションボタンの呼び出しテキスト"
+
+#: ../options.php:181
+msgid "Enter the text for call for action section"
+msgstr "アクションボタンの説明テキストを入力します"
+
+#: ../options.php:188
+msgid "Call For Action Button Title"
+msgstr "アクションボタンのタイトル"
+
+#: ../options.php:189
+msgid "Enter the title for Call For Action button"
+msgstr "アクションボタンのタイトルを入力します"
+
+#: ../options.php:196
+msgid "CFA button link"
+msgstr "アクションボタンのリンク先URL"
+
+#: ../options.php:197
+msgid "Enter the link for Call For Action button"
+msgstr "アクションボタンにのリンクURLを入力してください"
+
+#: ../options.php:204
+msgid "Call For Action Text Color"
+msgstr "アクションボタンの文字色"
+
+#: ../options.php:212
+msgid "Call For Action Background Color"
+msgstr "アクションボタンの背景色"
+
+#: ../options.php:220
+msgid "Call For Action Button Border Color"
+msgstr "アクションボタンの境界線色"
+
+#: ../options.php:228
+msgid "Call For Action Button Text Color"
+msgstr "アクションボタン実行時のテキスト色"
+
+#: ../options.php:236
+msgid "Typography"
+msgstr "文字装飾"
+
+#: ../options.php:241
+msgid "Main Body Text"
+msgstr "メインページの本文"
+
+#: ../options.php:242
+msgid "Used in P tags"
+msgstr "P（段落）タグで使用"
+
+#: ../options.php:250
+msgid "Heading Color"
+msgstr "見出し色"
+
+#: ../options.php:251
+msgid "Color for all headings (h1-h6)"
+msgstr "すべてのタイトルの色 (h1-h6)"
+
+#: ../options.php:258
+msgid "Link Color"
+msgstr "リンク色（通常）"
+
+#: ../options.php:266
+msgid "Link:hover Color"
+msgstr "リンク色（マウスオーバー時）"
+
+#: ../options.php:274
+msgid "Header"
+msgstr "ヘッダー"
+
+#: ../options.php:279
+msgid "Top nav background color"
+msgstr "ヘッダーナビゲーションの背景色"
+
+#: ../options.php:287
+msgid "Top nav item color"
+msgstr "ヘッダーナビゲーションのリンク色（通常）"
+
+#: ../options.php:288
+msgid "Link color"
+msgstr "リンク色（通常）"
+
+#: ../options.php:295
+msgid "Top nav item hover color"
+msgstr "ヘッダーナビゲーションのリンク色（選択・マウスオーバー時）"
+
+#: ../options.php:296
+msgid "Link:hover color"
+msgstr "リンク色（マウスオーバー時）"
+
+#: ../options.php:303
+msgid "Top nav dropdown background color"
+msgstr "ヘッダーナビゲーション：ドロップダウンメニューの背景色（通常）"
+
+#: ../options.php:304 ../options.php:328
+msgid "Background of dropdown item hover color"
+msgstr "ドロップダウンメニューの背景色（マウスオーバー時）"
+
+#: ../options.php:311
+msgid "Top nav dropdown item color"
+msgstr "ヘッダーナビゲーション：ドロップダウンメニューの選択・マウスオーバー色"
+
+#: ../options.php:312
+msgid "Dropdown item color"
+msgstr "ドロップダウン選択色"
+
+#: ../options.php:319
+msgid "Top nav dropdown item hover color"
+msgstr "ヘッダーナビゲーション：ドロップダウンメニューの選択色"
+
+#: ../options.php:320
+msgid "Dropdown item hover color"
+msgstr "ドロップダウン項目の背景色：ホバー"
+
+#: ../options.php:327
+msgid "Top nav dropdown item background hover color"
+msgstr "トップドロップダウンメニューの項目色"
+
+#: ../options.php:335
+msgid "Footer"
+msgstr "フッター"
+
+#: ../options.php:340
+msgid "Footer widget area background color"
+msgstr "フッターウィジェット背景色"
+
+#: ../options.php:347
+msgid "Footer background color"
+msgstr "フッター背景色"
+
+#: ../options.php:354
+msgid "Footer text color"
+msgstr "フッター文字色"
+
+#: ../options.php:361
+msgid "Footer link color"
+msgstr "フッターリンク色"
+
+#: ../options.php:368
+msgid "Footer information"
+msgstr "フッター情報"
+
+#: ../options.php:369
+msgid "Copyright text in footer"
+msgstr "フッターに著作権表記のテキストを追加する"
+
+#: ../options.php:376
+#, fuzzy
+msgid "Footer Social Icons"
+msgstr "フッターSNSアイコン色"
+
+#: ../options.php:377
+#, fuzzy
+msgid "Show/Hide social icons in footer"
+msgstr "フッターSNSアイコン色"
+
+#: ../options.php:384
+msgid "Social"
+msgstr "SNS設定"
+
+#: ../options.php:389
+msgid "Social icon color"
+msgstr "ウィジェットSNSアイコン"
+
+#: ../options.php:397
+msgid "Footer social icon color"
+msgstr "フッターSNSアイコン色"
+
+#: ../options.php:405
+msgid "Add full URL for your social network profiles"
+msgstr "あなたのSNSの完全なURLを追加します。"
+
+#: ../options.php:406
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../options.php:415
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../options.php:423
+msgid "Google+"
+msgstr "Google+"
+
+#: ../options.php:431
+msgid "Youtube"
+msgstr "Youtube"
+
+#: ../options.php:439
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: ../options.php:447
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: ../options.php:455
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: ../options.php:463
+msgid "RSS Feed"
+msgstr "RSS Feed"
+
+#: ../options.php:471
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: ../options.php:479
+msgid "Flickr"
+msgstr "Flickr"
+
+#: ../options.php:487
+msgid "Instagram"
+msgstr "Instagram"
+
+#: ../options.php:495
+msgid "Dribbble"
+msgstr "Dribbble"
+
+#: ../options.php:503
+msgid "Skype"
+msgstr "Skype"
+
+#: ../options.php:511
+msgid "Foursquare"
+msgstr "Foursquare"
+
+#: ../options.php:519
+msgid "SoundCloud"
+msgstr "SoundCloud"
+
+#: ../options.php:527
+msgid "GitHub"
+msgstr ""
+
+#: ../options.php:535
+msgid "Spotify"
+msgstr ""
+
+#: ../options.php:542
+msgid "Other"
+msgstr "その他"
+
+#: ../options.php:547
+msgid "Custom CSS"
+msgstr "カスタムCSS"
+
+#: ../options.php:548
+msgid "Additional CSS"
+msgstr "オリジナルのCSSパラメータを追加します"
+
+#: ../search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "検索結果: %s"
+
+#: ../searchform.php:11
+#, fuzzy
+msgid "Search for:"
+msgstr "検索キーワード..."
+
+#: ../searchform.php:12
+#, fuzzy
+msgctxt "placeholder"
+msgid "Search&hellip;"
+msgstr "検索キーワード..."
+
+#: ../searchform.php:12
+#, fuzzy
+msgctxt "label"
+msgid "Search for:"
+msgstr "検索キーワード..."
+
+#: ../searchform.php:14
+#, fuzzy
+msgctxt "submit button"
+msgid "Search"
+msgstr "検索キーワード..."
+
+#: ../sidebar.php:26
+msgid "Meta"
+msgstr "メタタグ"
+
+#~ msgid "Search..."
+#~ msgstr "検索キーワード..."
