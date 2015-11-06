@@ -421,7 +421,7 @@ if (!function_exists('get_activello_theme_setting'))  {
           .navbar-default .navbar-nav > .active > a:focus,
           .navbar-default .navbar-nav > li > a:hover,
           .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a,
-          .navbar-default .navbar-nav > .open > a:hover,
+          .navbar-default .navbar-nav > .open > a:hover, blockquote:before,
           .navbar-default .navbar-nav > .open > a:focus, .cat-title a {color:' . get_theme_mod('accent_color') . '}';
       
       echo 'article.post .post-categories:after, .post-inner-content .cat-item:after, #secondary .widget-title:after {background:' . get_theme_mod('accent_color') . '}';
@@ -434,8 +434,8 @@ if (!function_exists('get_activello_theme_setting'))  {
           .woocommerce a.button:hover, .woocommerce button.button:hover,
           .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover,
           .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover,
-          .woocommerce input.button.alt:hover, .input-group-btn:last-child>.btn:hover,
-          button, html input[type=button]:hover, input[type=reset]:hover,
+          .woocommerce input.button.alt:hover, .input-group-btn:last-child>.btn:hover, .scroll-to-top:hover,
+          button, html input[type=button]:hover, input[type=reset]:hover, .comment-list li .comment-body:after, .page-links a:hover span, .page-links span,
           input[type=submit]:hover, .comment-form #submit:hover, .tagcloud a:hover{background-color:' . get_theme_mod('accent_color') . '; }';
     }
     if ( get_theme_mod('social_color')) {

@@ -573,9 +573,9 @@ article.grid iframe {
   margin-left: 2px;
 }
 .page-links a span {
-  background-color: inherit;
-  border: 1px solid #E8E8E8;
-  color: #a161bf;
+  background-color: #f2f2f2;
+  border: none;
+  color: #696962;
   -webkit-transition: all 0.5s;
      -moz-transition: all 0.5s;
        -o-transition: all 0.5s;
@@ -583,7 +583,7 @@ article.grid iframe {
 }
 .page-links a:hover span {
   background-color: #a161bf;
-  border: 1px solid #a161bf;
+  border: none;
   color: #fff;
 }
 .pagination .fa-chevron-left,
@@ -647,9 +647,12 @@ article.grid iframe {
   opacity: 0.8;
 }
 .wp-caption {
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   margin-bottom: 1.5em;
   max-width: 100%;
+}
+.thumbnail .caption {
+  color: #696969;
 }
 .wp-caption img[class*="wp-image-"] {
   display: block;
@@ -1660,20 +1663,14 @@ p.logged-in-as {
 
 /* =Elements when no javaScript is present
 ----------------------------------------------- */
-#submit,
-.tagcloud,
 .comment-reply-link,
 .widget_rss ul,
-button[type=submit],
 .postform,
 table#wp-calendar {
   display: none;
 }
-.no-js #submit,
-.no-js .tagcloud,
 .no-js .comment-reply-link,
 .no-js .widget_rss ul,
-button[type=submit],
 .no-js .postform,
 .no-js table#wp-calendar {
   display: block;
