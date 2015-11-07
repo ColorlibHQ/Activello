@@ -447,6 +447,7 @@ if (!function_exists('get_activello_theme_setting'))  {
 
     if ( get_theme_mod('custom_css')) {
       echo html_entity_decode( get_theme_mod( 'custom_css', 'no entry' ) );
+    }
 
     echo '</style>';
   }
