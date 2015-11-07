@@ -374,7 +374,7 @@ hr.section-divider {
 }
 .single-view,
 .blog-item-wrap {
-  
+
 }
 .post-inner-content {
 	/*border-bottom: 1px solid #dedede;*/
@@ -544,7 +544,6 @@ article.grid iframe {
     padding-left: 25px;
 }
 }
-
 .site-main {
 	max-width: 100%;
 }
@@ -978,7 +977,6 @@ article.post .post-categories a:hover,
 .entry-meta a:hover,
 .entry-footer a:hover,
 .read-more a:hover,
-#footer-area .social-icons a:hover,
 .flex-caption .post-categories a:hover,
 .flex-caption .read-more a:hover,
 .flex-caption h2:hover,
@@ -1630,19 +1628,29 @@ p.logged-in-as {
 #secondary .widget .social-icons {
   text-align: left;
 }
-#social a {    
+#social a {
   color: #696969;
   display: inline-block;
   font-size: 18px;
   list-style: none;
   text-align: center;
-  -webkit-transition: all 0.3s;
-     -moz-transition: all 0.3s;
-       -o-transition: all 0.3s;
-          transition: all 0.3s;
 }
-#social a:hover{
-    color: #a161bf;
+.header-search-icon {
+  -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+     -o-transition: all 0.3s;
+        transition: all 0.3s;
+}
+#social a:hover {
+  color: #a161bf;
+}
+.header-search-icon {
+  background: transparent;
+  color: #696969;
+}
+.header-search-icon:hover {
+  background: transparent;
+  color: #a161bf;
 }
 #social li a span {
   display: none;
@@ -1663,13 +1671,11 @@ p.logged-in-as {
 
 /* =Elements when no javaScript is present
 ----------------------------------------------- */
-.comment-reply-link,
 .widget_rss ul,
 .postform,
 table#wp-calendar {
   display: none;
 }
-.no-js .comment-reply-link,
 .no-js .widget_rss ul,
 .no-js .postform,
 .no-js table#wp-calendar {

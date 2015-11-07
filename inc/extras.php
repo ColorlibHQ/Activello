@@ -423,9 +423,9 @@ if (!function_exists('get_activello_theme_setting'))  {
           .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a,
           .navbar-default .navbar-nav > .open > a:hover, blockquote:before,
           .navbar-default .navbar-nav > .open > a:focus, .cat-title a {color:' . get_theme_mod('accent_color') . '}';
-      
+
       echo 'article.post .post-categories:after, .post-inner-content .cat-item:after, #secondary .widget-title:after {background:' . get_theme_mod('accent_color') . '}';
-    
+
       echo '.btn-default:hover, .label-default[href]:hover,
           .label-default[href]:focus, .btn-default:hover,
           .btn-default:focus, .btn-default:active,
@@ -439,16 +439,15 @@ if (!function_exists('get_activello_theme_setting'))  {
           input[type=submit]:hover, .comment-form #submit:hover, .tagcloud a:hover{background-color:' . get_theme_mod('accent_color') . '; }';
     }
     if ( get_theme_mod('social_color')) {
-      echo '#social a { color:' . get_theme_mod('social_color') .'}';
+      echo '#social a, .header-search-icon { color:' . get_theme_mod('social_color') .'}';
     }
     if ( get_theme_mod('social_hover_color')) {
-      echo '#social a:hover { color:' . get_theme_mod('social_hover_color') .'}';
+      echo '#social a:hover, .header-search-icon:hover { color:' . get_theme_mod('social_hover_color') .'}';
     }
-    
+
     if ( get_theme_mod('custom_css')) {
       echo html_entity_decode( get_theme_mod( 'custom_css', 'no entry' ) );
-    }
-    
+
     echo '</style>';
   }
 }

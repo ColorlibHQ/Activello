@@ -45,11 +45,11 @@
 							</button>
 						</div>
 						<?php activello_header_menu(); // main navigation ?>
-						
+
 						<div class="nav-search">
 							<form method="get">
-								<input type="text" name="s" placeholder="Search and hit enter...">
-								<i class="fa fa-search"></i>
+								<input type="text" name="s" placeholder="<?php echo esc_attr_x( 'Search and hit enter...', 'search placeholder', 'activello' ); ?>">
+								<button type="submit" class="header-search-icon" name="submit" id="searchsubmit" value="<?php echo esc_attr_x( 'Search', 'submit button', 'activello' ); ?>"><i class="fa fa-search"></i></button>
 							</form>
 						</div>
 					</div>
@@ -66,9 +66,9 @@
 		<?php endif; // header image was removed ?>
 
 		<?php if( !get_header_image() ) : ?>
-		
+
 		<div class="container">
-			<div id="logo">		
+			<div id="logo">
 				<span class="site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<?php if( activello_logo() != "" ) : ?>
 						<img src="<?php echo activello_logo(); ?>" alt="logo">
