@@ -70,6 +70,14 @@ a:focus {
   outline-offset: -2px;
 }
 
+.single .entry-content a{
+    color: #a161bf;
+}
+.single .entry-content a:hover{
+    background: #a161bf;
+    color: #fff;
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #696969;
   font-weight: 400;

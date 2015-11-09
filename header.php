@@ -103,6 +103,18 @@
 				<?php echo get_the_category_list(); ?>
 			</div>		
 			<?php endif; ?>
+                        <?php
+                            global $post;
+                            
+                            if( is_home() && is_sticky( $post->ID ) ){
+                                    $layout_class = get_theme_mod( 'activello_sidebar_position' );
+                            } 
+                            elseif( get_post_meta($post->ID, 'site_layout', true) ){
+                                    $layout_class = get_post_meta($post->ID, 'site_layout', true);
+                            }
+                            else{
+                                    $layout_class = get_theme_mod( 'activello_sidebar_position' );
+                            }?>
 		
 			<div class="row">
-				<div class="main-content-inner <?php echo activello_main_content_bootstrap_classes(); ?> <?php echo get_theme_mod( 'activello_sidebar_position' ); ?>">
+				<div class="main-content-inner <?php echo activello_main_content_bootstrap_classes(); ?> <?php echo $layout_class; ?>">

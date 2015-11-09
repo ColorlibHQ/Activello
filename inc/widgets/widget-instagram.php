@@ -6,22 +6,23 @@
  */
 class activello_instagram_widget extends WP_Widget
 {
-	 function activello_instagram_widget(){
+    function activello_instagram_widget(){
 
         $widget_ops = array('classname' => 'activello-instagram','description' => esc_html__( "activello instagram Widget" ,'activello') );
-		    parent::__construct('activello-instagram', esc_html__('activello instagram Widget','activello'), $widget_ops);
+        parent::__construct('activello-instagram', esc_html__('activello instagram Widget','activello'), $widget_ops);
     }
 
     function widget($args , $instance) {
     	extract($args);
         $title = isset($instance['title']) ? $instance['title'] : esc_html__('Follow us' , 'activello');
-				$instagram_id = isset($instance['instagram_id']) ? $instance['instagram_id'] : esc_html__('' , 'activello');
-				$tag_name = isset($instance['tag_name']) ? $instance['tag_name'] : esc_html__('awesome' , 'activello');
-				$limit = isset($instance['limit']) ? $instance['limit'] : 6;
-      echo $before_widget;
-      echo $before_title;
-      echo $title;
-      echo $after_title;
+        $instagram_id = isset($instance['instagram_id']) ? $instance['instagram_id'] : esc_html__('' , 'activello');
+        $tag_name = isset($instance['tag_name']) ? $instance['tag_name'] : esc_html__('awesome' , 'activello');
+        $limit = isset($instance['limit']) ? $instance['limit'] : 6;
+     
+        echo $before_widget;
+        echo $before_title;
+        echo $title;
+        echo $after_title;
 
 		/**
 		 * Widget Content
@@ -47,10 +48,10 @@ class activello_instagram_widget extends WP_Widget
 
 
     function form($instance) {
-      if(!isset($instance['title'])) $instance['title'];
-			if(!isset($instance['instagram_id'])) $instance['instagram_id'];
-			if(!isset($instance['tag_name'])) $instance['tag_name'];
-			if(!isset($instance['limit'])) $instance['limit'];
+        if(!isset($instance['title']) ) $instance['title']='';
+        if(!isset($instance['instagram_id'])) $instance['instagram_id']='';
+        if(!isset($instance['tag_name'])) $instance['tag_name']='';
+        if(!isset($instance['limit'])) $instance['limit']='';
     ?>
 
       <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title ','activello') ?></label>

@@ -123,7 +123,7 @@ function activello_customizer( $wp_customize ) {
             // Layout options
             global $site_layout;
             $wp_customize->add_setting('activello_sidebar_position', array(
-                 'default' => '',
+                 'default' => 'side-right',
                  'sanitize_callback' => 'activello_sanitize_layout'
             ));
             $wp_customize->add_control('activello_sidebar_position', array(
