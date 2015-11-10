@@ -1,4 +1,4 @@
-<?php error_reporting(E_ALL);
+<?php
 /**
  * activello functions and definitions
  *
@@ -155,12 +155,12 @@ function activello_scripts() {
   wp_enqueue_style( 'activello-icons', get_template_directory_uri().'/inc/css/font-awesome.min.css' );
 
   // Add Google Fonts
-  wp_register_style( 'activello-fonts', '//fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic|Montserrat:400,700|Maven+Pro:400,700');
+  wp_enqueue_style( 'activello-fonts', '//fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic|Montserrat:400,700|Maven+Pro:400,700');
 
-  wp_enqueue_style( 'activello-fonts' );
-	
   // Add slider CSS only if is front page ans slider is enabled
-	wp_register_style( 'flexslider-css', get_template_directory_uri().'/inc/css/flexslider.css' );
+  if( ( is_home() || is_front_page() ) && get_theme_mod('activello_featured_hide') == 1 ) {
+    wp_enqueue_style( 'flexslider-css', get_template_directory_uri().'/inc/css/flexslider.css' );
+  }
 
   // Add main theme stylesheet
   wp_enqueue_style( 'activello-style', get_stylesheet_uri() );
@@ -171,12 +171,11 @@ function activello_scripts() {
   // Add Bootstrap default JS
   wp_enqueue_script('activello-bootstrapjs', get_template_directory_uri().'/inc/js/bootstrap.min.js', array('jquery') );
 
-
-    // Add slider JS only if is front page ans slider is enabled
-  wp_register_script( 'flexslider-js', get_template_directory_uri() . '/inc/js/flexslider.min.js', array('jquery'), '20140222', true );
-    // // Flexslider customization
-    // wp_register_script( 'flexslider-customization', get_template_directory_uri() . '/inc/js/flexslider-custom.js', array('jquery', 'flexslider-js'), '20140716', true );
-
+  // Add slider JS only if is front page ans slider is enabled
+  if( ( is_home() || is_front_page() ) && get_theme_mod('activello_featured_hide') == 1 ) {
+    wp_register_script( 'flexslider-js', get_template_directory_uri() . '/inc/js/flexslider.min.js', array('jquery'), '20140222', true );
+  }
+  
   // Main theme related functions
   wp_enqueue_script( 'activello-functions', get_template_directory_uri() . '/inc/js/functions.min.js', array('jquery', 'flexslider-js') );
 
@@ -184,9 +183,11 @@ function activello_scripts() {
   wp_enqueue_script( 'activello-skip-link-focus-fix', get_template_directory_uri() . '/inc/js/skip-link-focus-fix.js', array(), '20140222', true );
 
   // Add instafeed/instagram
-  wp_enqueue_script('activello-instafeedjs', get_template_directory_uri().'/inc/js/instafeed.min.js', array('jquery') );	
+  if( is_active_widget( false, false, 'activello-instagram', true ) ){
+    wp_enqueue_script('activello-instafeedjs', get_template_directory_uri().'/inc/js/instafeed.min.js', array('jquery') );	
+  }
 	
-  // Treaded comments
+  // Threaded comments
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );
   }
@@ -224,12 +225,11 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 require get_template_directory() . '/inc/navwalker.php';
 
-if ( class_exists( 'woocommerce' ) ) {
 /**
- * WooCommerce related functions
+ * Load custom metabox
  */
-//require get_template_directory() . '/inc/woo-setup.php';
-}
+require get_template_directory() . '/inc/metaboxes.php';
+
 /**
  * Social Nav Menu
  */
@@ -237,7 +237,7 @@ require get_template_directory() . '/inc/socialnav.php';
 
 /* Globals */
 global $site_layout;
-$site_layout = array('pull-right' =>  esc_html__('Left Sidebar','activello'), '' => esc_html__('Right Sidebar','activello'), 'no-sidebar' => esc_html__('No Sidebar','activello'),'full-width' => esc_html__('Full Width', 'activello'));
+$site_layout = array('pull-right' =>  esc_html__('Left Sidebar','activello'), 'side-right' => esc_html__('Right Sidebar','activello'), 'no-sidebar' => esc_html__('No Sidebar','activello'),'full-width' => esc_html__('Full Width', 'activello'));
 
 /* Get Single Post Category */
 function get_single_category($post_id){

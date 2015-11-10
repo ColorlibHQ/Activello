@@ -21,9 +21,9 @@ class activello_social_widget extends WP_Widget
       echo $title;
       echo $after_title;
 
-		/**
-		 * Widget Content
-		 */
+    /**
+     * Widget Content
+     */
     ?>
 
     <!-- social icons -->

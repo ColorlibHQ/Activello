@@ -44,26 +44,26 @@
 					'echo'              => 1
 						) );
 				?>
-
-				<div class="entry-footer">
-					<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-					<span class="comments-link"><?php comments_popup_link( esc_html__( 'Leave a comment', 'activello' ), esc_html__( 'Comment (1)', 'activello' ), esc_html__( 'Comments (%)', 'activello' ) ); ?></span>
-					<?php endif; ?>	
-                                        <?php if(has_tag()) : ?>
-                                        <!-- tags -->
-                                        <div class="tagcloud">
-
-                                            <?php
-                                                $tags = get_the_tags(get_the_ID());
-                                                foreach($tags as $tag){
-                                                    echo '<a href="'.get_tag_link($tag->term_id).'">'.$tag->name.'</a> ';
-                                                } ?>
-
-                                        </div>
-                                        <!-- end tags -->
-                                        <?php endif; ?>
-				</div><!-- .entry-footer -->
+				
 			</div><!-- .entry-content -->
+                        <div class="entry-footer">
+                            <?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
+                            <span class="comments-link"><?php comments_popup_link( esc_html__( 'Leave a comment', 'activello' ), esc_html__( 'Comment (1)', 'activello' ), esc_html__( 'Comments (%)', 'activello' ) ); ?></span>
+                            <?php endif; ?>	
+                            <?php if(has_tag()) : ?>
+                            <!-- tags -->
+                            <div class="tagcloud">
+
+                                <?php
+                                    $tags = get_the_tags(get_the_ID());
+                                    foreach($tags as $tag){
+                                        echo '<a href="'.get_tag_link($tag->term_id).'">'.$tag->name.'</a> ';
+                                    } ?>
+
+                            </div>
+                            <!-- end tags -->
+                            <?php endif; ?>
+                        </div><!-- .entry-footer -->
 			<?php endif; ?>
 		</div>
 	</div>
