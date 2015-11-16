@@ -28,7 +28,7 @@ if ( ! function_exists( 'activello_main_content_bootstrap_classes' ) ) :
  * Add Bootstrap classes to the main-content-area wrapper.
  */
 function activello_main_content_bootstrap_classes() {
-	if ( is_page_template( 'page-fullwidth.php' ) || get_theme_mod( 'activello_sidebar_position' ) == "full-width" ) {
+	if ( is_page_template( 'page-fullwidth.php' ) ) {
 		return 'col-sm-12 col-md-12';
 	}
 	return 'col-sm-12 col-md-8';
