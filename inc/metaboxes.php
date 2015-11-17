@@ -12,17 +12,26 @@ add_action('add_meta_boxes', 'activello_add_custom_box');
  */
 function activello_add_custom_box()
 {
-    add_meta_box('siderbar-layout', //Unique ID
+    add_meta_box('post-siderbar-layout', //Unique ID
         __('Select layout for this specific Page only ( Note: This setting only reflects if page Template is set as Default Template and Blog Type Templates.)', 'activello'), //Title
         'activello_sidebar_layout', //Callback function
         'page' //show metabox in pages
         );
-    add_meta_box('siderbar-layout', //Unique ID
+    add_meta_box('page-siderbar-layout', //Unique ID
         __('Select layout for this specific Post only', 'activello'), //Title
         'activello_sidebar_layout', //Callback function
         'post', //show metabox in posts
         'side'
         );
+    if ( class_exists( 'WooCommerce' ) ) {
+        add_meta_box('product-siderbar-layout', //Unique ID
+            __('Select layout for this specific Product only', 'activello'), //Title
+            'activello_sidebar_layout', //Callback function
+            'product', //show metabox in posts
+            'side'
+            );
+    }
+    
 }
 
 /****************************************************************************************/
