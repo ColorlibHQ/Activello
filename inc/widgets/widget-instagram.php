@@ -34,8 +34,8 @@ class activello_instagram_widget extends WP_Widget
 						get: 'tagged',
 						tagName: '<?php echo $tag_name; ?>',
 						clientId: '<?php echo $instagram_id; ?>',
-						limit: <?php echo $limit; ?>
-				});
+						limit: '<?php echo $limit; ?>',
+                                            });
 				feed.run();
 		</script>		
 		<div id="instafeed"></div>
