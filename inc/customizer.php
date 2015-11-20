@@ -15,7 +15,7 @@ function activello_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
         
-        //$wp_customize->remove_section('header_image');
+    $wp_customize->remove_section('header_image');
 }
 add_action( 'customize_register', 'activello_customize_register' );
 
@@ -25,20 +25,31 @@ add_action( 'customize_register', 'activello_customize_register' );
 function activello_customizer( $wp_customize ) {
 
 	// logo
-	$wp_customize->add_setting( 'header_image', array(
+	$wp_customize->add_setting( 'header_logo', array(
 		'default' => '',
 		'transport'   => 'refresh',
-                'sanitize_callback' => 'esc_url_raw'
+        'sanitize_callback' => 'esc_url_raw'
 	) );
-
-	$wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'header_image', array(
-		'label' => __( 'Logo', 'activello' ),
-		'section' => 'title_tagline',
-		'mime_type' => 'image',
-		'priority'  => 10,
-	) ) );
-
-
+        $wp_customize->add_control(new WP_Customize_Image_Control( $wp_customize, 'header_logo', array(
+    		'label' => __( 'Logo', 'activello' ),
+    		'section' => 'title_tagline',
+    		'mime_type' => 'image',
+    		'priority'  => 10,
+    	) ) );
+    	
+    	
+    global $header_show;
+    $wp_customize->add_setting('header_show', array(
+            'default' => $header_show['logo-text'],
+            'sanitize_callback' => 'activello_sanitize_radio_header'
+        ));    
+        $wp_customize->add_control('header_show', array(
+            'type' => 'radio',
+            'label' => __('Show', 'travelify'),
+            'section' => 'title_tagline',
+            'choices' => $header_show
+        ));
+        
         /* Main option Settings Panel */
     $wp_customize->add_panel('activello_main_options', array(
         'capability' => 'edit_theme_options',
@@ -275,10 +286,23 @@ function activello_sanitize_slidecat( $input ) {
 }
 
 /**
+ * Adds sanitization callback function: Radio Header
+ * @package Activello
+ */
+function activello_sanitize_radio_header( $input ) {
+   global $header_show;
+    if ( array_key_exists( $input, $header_show ) ) {
+        return $input;
+    } else {
+        return '';
+    }
+}
+
+/**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function activello_customize_preview_js() {
-	//wp_enqueue_script( 'activello_customizer', get_template_directory_uri() . '/inc/js/customizer.js', array( 'customize-preview' ), '20140317', true );
+	wp_enqueue_script( 'activello_customizer', get_template_directory_uri() . '/inc/js/customizer.js', array( 'customize-preview' ), '20140317', true );
 }
 add_action( 'customize_preview_init', 'activello_customize_preview_js' );
 

@@ -47,7 +47,7 @@
 						<?php activello_header_menu(); // main navigation ?>
 
 						<div class="nav-search">
-							<form method="get">
+							<form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
 								<input type="text" name="s" placeholder="<?php echo esc_attr_x( 'Search and hit enter...', 'search placeholder', 'activello' ); ?>">
 								<button type="submit" class="header-search-icon" name="submit" id="searchsubmit" value="<?php echo esc_attr_x( 'Search', 'submit button', 'activello' ); ?>"><i class="fa fa-search"></i></button>
 							</form>
@@ -57,35 +57,42 @@
 			</div>
 		</nav><!-- .site-navigation -->
 
-		<?php if( get_header_image() != '' ) : ?>
-
-		<div id="logo">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
-		<?php if( get_bloginfo( 'description' ) != "" ) : ?>
-		<div class="tagline"><?php bloginfo( 'description' ); ?></div>
-		<?php endif; ?>
-		</div><!-- end of #logo -->
-
-
-
-		<?php endif; // header image was removed ?>
-
-		<?php if( !get_header_image() ) : ?>
-
-
+		<?php
+		$show_logo = true;
+		$show_title = false;
+		$show_tagline = true;
+		$logo = get_theme_mod('header_logo', '');
+		$tagline = ( get_bloginfo( 'description' ) ) ? get_bloginfo( 'description' ) : '';
+		$header_show = get_theme_mod('header_show', '');
+		
+		if( $header_show == 'logo-only' ){
+			$show_tagline = false;
+		}
+		elseif( $header_show == 'title-only' ){
+			$show_tagline = $show_logo = false;
+		}
+		elseif( $header_show == 'title-text' ){
+			$show_logo = false;
+			$show_title = true;
+		}?>
 
 		<div class="container">
 			<div id="logo">
-				<span class="site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<?php if( activello_logo() != "" ) : ?>
-						<img src="<?php echo activello_logo(); ?>" alt="logo">
-					<?php else : ?>
-						<?php bloginfo( 'name' ); ?>
-					<?php endif; ?>
-				</a></span><!-- end of .site-name -->
+				<span class="site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php 
+					if( $show_logo && $logo ) { ?>
+						<img src="<?php echo $logo; ?>"  height="76" width="300" alt="<?php bloginfo( 'name' ); ?>"><?php
+					}
+					elseif( $show_title ) { 
+						bloginfo( 'name' );
+					}
+					else{
+						bloginfo( 'name' );
+					} ?>
+					</a>
+				</span><!-- end of .site-name -->
 				
-				<?php if( get_bloginfo( 'description' ) != "" ) : ?>
-				<div class="tagline"><?php bloginfo( 'description' ); ?></div>
+				<?php if( $show_tagline && get_bloginfo( 'description' ) != "" ) : ?>
+					<div class="tagline"><?php bloginfo( 'description' ); ?></div>
 				<?php endif; ?>
 			</div><!-- end of #logo -->
 			
@@ -93,7 +100,7 @@
 			<div id="line"></div>
 			<?php endif; ?>
 		</div>
-		<?php endif; // header image was removed (again) ?>	
+		
 	</header><!-- #masthead -->
 
 	

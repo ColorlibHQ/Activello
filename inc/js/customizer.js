@@ -35,11 +35,4 @@
 		} );
 	} );
 	
-	// Logo
-	wp.customize( 'sparkling_logo', function( value ) {
-		value.bind( function( to ) {
-			console.log(to);
-			$( '.navbar-brand' ).html( to );
-		} );
-	} );	
 } )( jQuery );

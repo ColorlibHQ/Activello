@@ -334,14 +334,6 @@ jQuery(document).ready(function() {
 }
 
 /*
- * This display logo from wp customizer setting.
- */
-function activello_logo() {
-	$logo = wp_get_attachment_image_src( get_theme_mod( 'activello_logo' ), 'medium' );
-	return $logo[0];
-}
-
-/*
  * This display blog description from wp customizer setting.
  */
 function activello_cats() {
@@ -438,7 +430,9 @@ if (!function_exists('get_activello_theme_setting'))  {
           .woocommerce input.button.alt:hover, .input-group-btn:last-child>.btn:hover, .scroll-to-top:hover,
           button, html input[type=button]:hover, input[type=reset]:hover, .comment-list li .comment-body:after, .page-links a:hover span, .page-links span,
           input[type=submit]:hover, .comment-form #submit:hover, .tagcloud a:hover,
-          .single .entry-content a:hover{background-color:' . get_theme_mod('accent_color') . '; }';
+          .single .entry-content a:hover, .dropdown-menu > li > a:hover, 
+          .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+          .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus{background-color:' . get_theme_mod('accent_color') . '; }';
     }
     if ( get_theme_mod('social_color')) {
       echo '#social a, .header-search-icon { color:' . get_theme_mod('social_color') .'}';
