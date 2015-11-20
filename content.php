@@ -15,16 +15,25 @@
 				<div class="entry-meta">
 					<?php activello_posted_on(); ?>
 
-					<?php edit_post_link( esc_html__( 'Edit', 'activello' ), '<span class="edit-link">', '</span>' ); ?>
+					<?php
+						edit_post_link(
+							sprintf(
+								/* translators: %s: Name of current post */
+								esc_html__( 'Edit %s', 'activello' ),
+								the_title( '<span class="screen-reader-text">"', '"</span>', false )
+							),
+							'<span class="edit-link">',
+							'</span>'
+						);
+					?>
 
 				</div><!-- .entry-meta -->
 				<?php endif; ?>
 			</header><!-- .entry-header -->
 
-			
-                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
-                                <?php the_post_thumbnail( 'activello-featured', array( 'class' => 'single-featured' )); ?>
-                        </a>
+            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+                    <?php the_post_thumbnail( 'activello-featured', array( 'class' => 'single-featured' )); ?>
+            </a>
 
 			<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 			<div class="entry-summary">
@@ -61,7 +70,7 @@
 
                                 <?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
                                     <div class="entry-footer">
-					<span class="comments-link"><?php comments_popup_link( esc_html__( 'Leave a comment', 'dazzling' ), esc_html__( '1 Comment', 'dazzling' ), esc_html__( '% Comments', 'dazzling' ) ); ?></span>
+					<span class="comments-link"><?php comments_popup_link( esc_html__( 'Leave a comment', 'activello' ), esc_html__( '1 Comment', 'activello' ), esc_html__( '% Comments', 'activello' ) ); ?></span>
                                     </div><!-- .entry-footer -->
                                 <?php endif; ?>
 			</div><!-- .entry-content -->

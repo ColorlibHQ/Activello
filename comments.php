@@ -93,7 +93,7 @@ if ( post_password_required() ) {
 			'fields' => $fields,
 			'label_submit' => __( 'Post Reply', 'activello' ),
 			'comment_notes_before' => '',
-			'comment_field' => '<textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" placeholder="'. _x( 'Comment', 'activello' ) .'"></textarea>',
+			'comment_field' => '<textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" placeholder="'. _x( 'Comment', 'comment form placeholder', 'activello' ) .'"></textarea>',
 		)
 	); ?>
 
