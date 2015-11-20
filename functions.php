@@ -68,8 +68,7 @@ function activello_setup() {
 
   // This theme uses wp_nav_menu() in one location.
   register_nav_menus( array(
-    'primary'      => esc_html__( 'Primary Menu', 'activello' ),
-    //'footer-links' => esc_html__( 'Footer Links', 'activello' ) // secondary nav in footer
+    'primary'      => esc_html__( 'Primary Menu', 'activello' )
   ) );
 
   // Enable support for Post Formats.
@@ -121,7 +120,7 @@ function activello_widgets_init() {
   register_widget( 'activello_social_widget' );
   register_widget( 'activello_recent_posts' );
   register_widget( 'activello_categories' );
-	register_widget( 'activello_instagram_widget' );
+  register_widget( 'activello_instagram_widget' );
 }
 add_action( 'widgets_init', 'activello_widgets_init' );
 
