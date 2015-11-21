@@ -63,7 +63,7 @@
 		$show_tagline = true;
 		$logo = get_theme_mod('header_logo', '');
 		$tagline = ( get_bloginfo( 'description' ) ) ? get_bloginfo( 'description' ) : '';
-		$header_show = get_theme_mod('header_show', '');
+		$header_show = get_theme_mod('header_show', 'logo-text');
 		
 		if( $header_show == 'logo-only' ){
 			$show_tagline = false;
@@ -79,8 +79,8 @@
 		<div class="container">
 			<div id="logo">
 				<span class="site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php 
-					if( $show_logo && $logo ) { ?>
-						<img src="<?php echo $logo; ?>"  height="76" width="300" alt="<?php bloginfo( 'name' ); ?>"><?php
+					if( $show_logo && $logo ) { 
+                                            echo wp_get_attachment_image($logo, 'full');
 					}
 					elseif( $show_title ) { 
 						bloginfo( 'name' );
@@ -123,7 +123,7 @@
                                 $layout_class = get_post_meta($post->ID, 'site_layout', true);
                             }
                             else{
-                                    $layout_class = get_theme_mod( 'activello_sidebar_position' );
+                                $layout_class = get_theme_mod( 'activello_sidebar_position' );
                             }?>
                     
 			<div class="row">

@@ -11,11 +11,7 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function activello_customize_register( $wp_customize ) {
-	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
-        
-    $wp_customize->remove_section('header_image');
 }
 add_action( 'customize_register', 'activello_customize_register' );
 
@@ -28,9 +24,9 @@ function activello_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'header_logo', array(
 		'default' => '',
 		'transport'   => 'refresh',
-        'sanitize_callback' => 'esc_url_raw'
+                'sanitize_callback' => 'activello_sanitize_number'
 	) );
-        $wp_customize->add_control(new WP_Customize_Image_Control( $wp_customize, 'header_logo', array(
+        $wp_customize->add_control(new WP_Customize_Media_Control( $wp_customize, 'header_logo', array(
     		'label' => __( 'Logo', 'activello' ),
     		'section' => 'title_tagline',
     		'mime_type' => 'image',
@@ -40,12 +36,12 @@ function activello_customizer( $wp_customize ) {
     	
     global $header_show;
     $wp_customize->add_setting('header_show', array(
-            'default' => $header_show['logo-text'],
+            'default' => 'logo-text',
             'sanitize_callback' => 'activello_sanitize_radio_header'
         ));    
         $wp_customize->add_control('header_show', array(
             'type' => 'radio',
-            'label' => __('Show', 'travelify'),
+            'label' => __('Show', 'activello'),
             'section' => 'title_tagline',
             'choices' => $header_show
         ));
@@ -295,6 +291,16 @@ function activello_sanitize_radio_header( $input ) {
         return $input;
     } else {
         return '';
+    }
+}
+
+/**
+ * Adds sanitization callback function: Number
+ * @package Activello
+ */
+function activello_sanitize_number($input) {
+    if ( isset( $input ) && is_numeric( $input ) ) {
+        return $input;
     }
 }
 
