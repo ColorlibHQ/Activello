@@ -134,11 +134,10 @@ if ( ! function_exists( 'activello_featured_slider' ) ) :
  * Featured image slider, displayed on front page for static page and blog
  */
 function activello_featured_slider() {
-  if ( is_front_page() && get_theme_mod( 'activello_featured_hide' ) == 1 ) {
+  if ( ( is_home() || is_front_page() ) && get_theme_mod( 'activello_featured_hide' ) == 1 ) {
 		
 		wp_enqueue_style( 'flexslider-css' );
 		wp_enqueue_script( 'flexslider-js' );
-		wp_enqueue_script( 'flexslider-customization' );
 		
     echo '<div class="flexslider">';
       echo '<ul class="slides">';

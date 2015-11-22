@@ -45,7 +45,7 @@ jQuery(document).ready(function(){
 // Can also be used with $(document).ready()
 jQuery(document).ready(function ($) {
     $(window).load(function() {
-        if (typeof flexslider == 'function') { 
+        if( $('.flexslider').length != 0 ){
             $('.flexslider').flexslider({
               animation: "fade",
               slideshowSpeed: 7000,
