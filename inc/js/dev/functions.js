@@ -55,13 +55,3 @@ jQuery(document).ready(function ($) {
         }
     });  
 });
-
-jQuery(document).ready(function ($) {
-    if (typeof nested == 'function') {
-        $(".site-main").nested({
-            selector: '.post',
-            minWidth: 100,
-            gutter: 10
-        });
-    }
-});
