@@ -44,20 +44,24 @@ jQuery(document).ready(function(){
 // Slider functions
 // Can also be used with $(document).ready()
 jQuery(document).ready(function ($) {
-  $(window).load(function() {
-    $('.flexslider').flexslider({
-      animation: "fade",
-      slideshowSpeed: 7000,
-      smoothHeight: true,
-      touch: true
-    });
-  });
+    $(window).load(function() {
+        if (typeof flexslider == 'function') { 
+            $('.flexslider').flexslider({
+              animation: "fade",
+              slideshowSpeed: 7000,
+              smoothHeight: true,
+              touch: true
+            });
+        }
+    });  
 });
 
 jQuery(document).ready(function ($) {
-	$(".site-main").nested({
-		selector: '.post',
-		minWidth: 100,
-		gutter: 10
-	});
+    if (typeof nested == 'function') {
+        $(".site-main").nested({
+            selector: '.post',
+            minWidth: 100,
+            gutter: 10
+        });
+    }
 });
