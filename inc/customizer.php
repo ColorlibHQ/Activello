@@ -11,32 +11,41 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function activello_customize_register( $wp_customize ) {
-	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 }
 add_action( 'customize_register', 'activello_customize_register' );
 
 /**
- * Ootions for WordPress Theme Customizer.
+ * Options for WordPress Theme Customizer.
  */
 function activello_customizer( $wp_customize ) {
 
 	// logo
-	$wp_customize->add_setting( 'activello_logo', array(
+	$wp_customize->add_setting( 'header_logo', array(
 		'default' => '',
 		'transport'   => 'refresh',
-                'sanitize_callback' => 'esc_url_raw'
+                'sanitize_callback' => 'activello_sanitize_number'
 	) );
-
-	$wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'activello_logo', array(
-		'label' => __( 'Logo', 'activello' ),
-		'section' => 'title_tagline',
-		'mime_type' => 'image',
-		'priority'  => 10,
-	) ) );
-
-
+        $wp_customize->add_control(new WP_Customize_Media_Control( $wp_customize, 'header_logo', array(
+    		'label' => __( 'Logo', 'activello' ),
+    		'section' => 'title_tagline',
+    		'mime_type' => 'image',
+    		'priority'  => 10,
+    	) ) );
+    	
+    	
+    global $header_show;
+    $wp_customize->add_setting('header_show', array(
+            'default' => 'logo-text',
+            'sanitize_callback' => 'activello_sanitize_radio_header'
+        ));    
+        $wp_customize->add_control('header_show', array(
+            'type' => 'radio',
+            'label' => __('Show', 'activello'),
+            'section' => 'title_tagline',
+            'choices' => $header_show
+        ));
+        
         /* Main option Settings Panel */
     $wp_customize->add_panel('activello_main_options', array(
         'capability' => 'edit_theme_options',
@@ -198,6 +207,23 @@ function activello_customizer( $wp_customize ) {
                 'section' => 'activello_other_options',
                 'type' => 'textarea'
             ));
+            
+        /* Support & Documentation */
+        $wp_customize->add_section('activello_important_links', array(
+        'priority' => 5,
+        'title' => __('Support and Documentation', 'activello')
+        ));
+            $wp_customize->add_setting('activello[imp_links]', array(
+              'sanitize_callback' => 'esc_url_raw'
+            ));
+            $wp_customize->add_control(
+            new Activello_Important_Links(
+            $wp_customize,
+                'activello[imp_links]', array(
+                'section' => 'activello_important_links',
+                'type' => 'activello-important-links'
+            )));
+
 }
 add_action( 'customize_register', 'activello_customizer' );
 
@@ -256,9 +282,101 @@ function activello_sanitize_slidecat( $input ) {
 }
 
 /**
+ * Adds sanitization callback function: Radio Header
+ * @package Activello
+ */
+function activello_sanitize_radio_header( $input ) {
+   global $header_show;
+    if ( array_key_exists( $input, $header_show ) ) {
+        return $input;
+    } else {
+        return '';
+    }
+}
+
+/**
+ * Adds sanitization callback function: Number
+ * @package Activello
+ */
+function activello_sanitize_number($input) {
+    if ( isset( $input ) && is_numeric( $input ) ) {
+        return $input;
+    }
+}
+
+/**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function activello_customize_preview_js() {
 	wp_enqueue_script( 'activello_customizer', get_template_directory_uri() . '/inc/js/customizer.js', array( 'customize-preview' ), '20140317', true );
 }
 add_action( 'customize_preview_init', 'activello_customize_preview_js' );
+
+/**
+ * Add CSS for custom controls
+ */
+function activello_customizer_custom_control_css() {
+	?>
+    <style>
+        #customize-control-activello-main_body_typography-size select, #customize-control-activello-main_body_typography-face select,#customize-control-activello-main_body_typography-style select { width: 60%; }
+    </style><?php
+}
+add_action( 'customize_controls_print_styles', 'activello_customizer_custom_control_css' );
+
+if ( ! class_exists( 'WP_Customize_Control' ) )
+    return NULL;
+/**
+ * Class to create a Activello important links
+ */
+class Activello_Important_Links extends WP_Customize_Control {
+
+   public $type = "activello-important-links";
+
+   public function render_content() {?>
+        <!-- Twitter -->
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+        <!-- Facebook -->
+        <div id="fb-root"></div>
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=328285627269392";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <div class="inside">
+            <div id="social-share">
+              <div class="fb-like" data-href="https://www.facebook.com/colorlib" data-send="false" data-layout="button_count" data-width="90" data-show-faces="true"></div>
+              <div class="tw-follow" ><a href="https://twitter.com/colorlib" class="twitter-follow-button" data-show-count="false">Follow @colorlib</a></div>
+            </div>
+            <p><b><a href="http://colorlib.com/wp/support/activello"><?php _e('Activello Documentation','activello'); ?></a></b></p>
+            <p><?php _e('The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via','activello') ?> <a href="http://colorlib.com/wp/forums"><?php _e('Colorlib support forum','activello') ?></a>.</p>
+            <p><?php _e('If you like this theme, I\'d appreciate any of the following:','activello') ?></p>
+            <ul>
+                <li><a class="button" href="http://wordpress.org/support/view/theme-reviews/activello?filter=5" title="<?php esc_attr_e('Rate this Theme', 'activello'); ?>" target="_blank"><?php printf(__('Rate this Theme','activello')); ?></a></li>
+                <li><a class="button" href="http://www.facebook.com/colorlib" title="Like Colorlib on Facebook" target="_blank"><?php printf(__('Like on Facebook','activello')); ?></a></li>
+                <li><a class="button" href="http://twitter.com/colorlib/" title="Follow Colrolib on Twitter" target="_blank"><?php printf(__('Follow on Twitter','activello')); ?></a></li>
+            </ul>
+        </div><?php
+   }
+
+}
+
+/*
+ * Custom Scripts
+ */
+add_action( 'customize_controls_print_footer_scripts', 'customizer_custom_scripts' );
+
+function customizer_custom_scripts() { ?>
+<style>
+    li#accordion-section-activello_important_links h3.accordion-section-title, li#accordion-section-activello_important_links h3.accordion-section-title:focus { background-color: #00cc00 !important; color: #fff !important; }
+    li#accordion-section-activello_important_links h3.accordion-section-title:hover { background-color: #00b200 !important; color: #fff !important; }
+    li#accordion-section-activello_important_links h3.accordion-section-title:after { color: #fff !important; }
+</style>
+<?php
+}

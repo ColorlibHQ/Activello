@@ -1,8 +1,8 @@
 /*
 Theme Name: Activello
-Theme URI: https://colorlib.com/wp/themes/activello/
-Author: Colorlib
-Author URI: http://colorlib.com
+Theme URI: http://Activello.com
+Author: Activello
+Author URI: http://Activello.com
 Description: Activello description
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -1086,7 +1086,7 @@ letter-spacing: 1px;
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #9B5EB8;
+  color: #a161bf;
   background-color: transparent;
 }
 .dropdown-menu > li > a:hover,
@@ -1094,7 +1094,7 @@ letter-spacing: 1px;
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
   color: #fff;
-  background-color: #9B5EB8;
+  background-color: #a161bf;
 }
 .navbar-collapse {
   float: left;
@@ -1134,7 +1134,7 @@ letter-spacing: 1px;
   font-size: 13px;
 }
 .navbar-default .navbar-nav .current-menu-ancestor a.dropdown-toggle {
-  color: #9B5EB8;
+  color: #a161bf;
   background-color: transparent;
 }
 .navbar-default .navbar-nav .open .dropdown-menu > li.active > a {
@@ -1165,7 +1165,7 @@ letter-spacing: 1px;
 .dropdown-menu>.active>a,
 .dropdown-menu>.active>a:hover,
 .dropdown-menu>.active>a:focus {
-  background-color: #9B5EB8;
+  background-color: #a161bf;
   color: #fff;
 }
 .dropdown-menu .divider {
@@ -1575,7 +1575,7 @@ p.logged-in-as {
   color: #777;
 }
 .site-info a:hover {
-  color: #999;
+  color: #a161bf;
 }
 .site-info {
   color: #999;

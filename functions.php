@@ -68,8 +68,7 @@ function activello_setup() {
 
   // This theme uses wp_nav_menu() in one location.
   register_nav_menus( array(
-    'primary'      => esc_html__( 'Primary Menu', 'activello' ),
-    //'footer-links' => esc_html__( 'Footer Links', 'activello' ) // secondary nav in footer
+    'primary'      => esc_html__( 'Primary Menu', 'activello' )
   ) );
 
   // Enable support for Post Formats.
@@ -121,7 +120,7 @@ function activello_widgets_init() {
   register_widget( 'activello_social_widget' );
   register_widget( 'activello_recent_posts' );
   register_widget( 'activello_categories' );
-	register_widget( 'activello_instagram_widget' );
+  register_widget( 'activello_instagram_widget' );
 }
 add_action( 'widgets_init', 'activello_widgets_init' );
 
@@ -177,7 +176,7 @@ function activello_scripts() {
   }
   
   // Main theme related functions
-  wp_enqueue_script( 'activello-functions', get_template_directory_uri() . '/inc/js/functions.min.js', array('jquery', 'flexslider-js') );
+  wp_enqueue_script( 'activello-functions', get_template_directory_uri() . '/inc/js/functions.min.js', array('jquery') );
 
   // This one is for accessibility
   wp_enqueue_script( 'activello-skip-link-focus-fix', get_template_directory_uri() . '/inc/js/skip-link-focus-fix.js', array(), '20140222', true );
@@ -198,7 +197,7 @@ add_action( 'wp_enqueue_scripts', 'activello_scripts' );
 /**
  * Implement the Custom Header feature.
  */
-require get_template_directory() . '/inc/custom-header.php';
+//require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
@@ -236,8 +235,14 @@ require get_template_directory() . '/inc/metaboxes.php';
 require get_template_directory() . '/inc/socialnav.php';
 
 /* Globals */
-global $site_layout;
+global $site_layout, $header_show;
 $site_layout = array('pull-right' =>  esc_html__('Left Sidebar','activello'), 'side-right' => esc_html__('Right Sidebar','activello'), 'no-sidebar' => esc_html__('No Sidebar','activello'),'full-width' => esc_html__('Full Width', 'activello'));
+$header_show = array(
+                        'logo-only' => __('Logo Only', 'travelify'),
+                        'logo-text' => __('Logo + Tagline', 'travelify'),
+                        'title-only' => __('Title Only', 'travelify'),
+                        'title-text' => __('Title + Tagline', 'travelify')
+                      );
 
 /* Get Single Post Category */
 function get_single_category($post_id){
