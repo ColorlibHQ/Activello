@@ -47,7 +47,7 @@
 
 						<div class="nav-search">
 							<form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
-								<input type="text" name="s" placeholder="<?php echo esc_attr_x( 'Search and hit enter...', 'search placeholder', 'activello' ); ?>">
+								<input type="text" name="s" placeholder="<?php echo esc_attr_x( __('Search'), 'search placeholder', 'activello' ); ?>">
 								<button type="submit" class="header-search-icon" name="submit" id="searchsubmit" value="<?php echo esc_attr_x( 'Search', 'submit button', 'activello' ); ?>"><i class="fa fa-search"></i></button>
 							</form>
 						</div>
