@@ -3,13 +3,13 @@ Theme Name: Activello
 Theme URI: https://colorlib.com/wp/themes/activello/
 Author: Colorlib
 Author URI: http://colorlib.com
-Description: Activello description
-Version: 1.0.0
+Description: Activello is a clean and minimal WordPress blog theme with premium look and feel well suited for food, fashion, travel, lifestyle, sports and any other awesome blogs. This theme features WooCommerce integration that allows you to create fully functional eCommerce website side by side with your blog. This theme has several customization options that are available WordPress Theme Customizer. Activello is the only WordPress blog theme you will ever need.
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: activello
 Domain Path: /languages/
-Tags: green, light, white, gray, black, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, photoblogging, left-sidebar, translation-ready, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, theme-options, threaded-comments
+Tags: light, white, gray, black, purple, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, photoblogging, left-sidebar, translation-ready, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, theme-options, threaded-comments
 
 
 This theme, like WordPress, is licensed under the GPL.
@@ -473,7 +473,7 @@ article.post .post-categories, .post-inner-content .cat-item {
   padding: 0 0 8px 0;
   list-style: none;
 }
-article.post .post-categories:after, 
+article.post .post-categories:after,
 .post-inner-content .cat-item:after {
   content: "";
   position: absolute;
@@ -539,7 +539,7 @@ article.grid iframe {
     }
     .blog.home .page-1 article.post:nth-child(2) .post-inner-content{
         padding: 50px 0;
-        margin-bottom: 30px; 
+        margin-bottom: 30px;
     }
     .blog.home .page-1 article.post:first-child .read-more, .blog.home .page-1 article.post:nth-child(2) .read-more,
     .blog.home .page-1 article.post:first-child .entry-footer, .blog.home .page-1 article.post:nth-child(2) .entry-footer{
@@ -825,7 +825,7 @@ ul#menu-social-items,
 /* =Buttons
 ----------------------------------------------- */
 .btn-default, .label-default,
-.woocommerce #respond input#submit, 
+.woocommerce #respond input#submit,
 .woocommerce a.button, .woocommerce button.button,
 .woocommerce input.button,
 .woocommerce #respond input#submit.alt,
@@ -852,7 +852,7 @@ input[type=submit] {
 .btn-default:active,
 #image-navigation .nav-previous a:hover,
 #image-navigation .nav-next a:hover,
-.woocommerce #respond input#submit:hover, 
+.woocommerce #respond input#submit:hover,
 .woocommerce a.button:hover, .woocommerce button.button:hover,
 .woocommerce input.button:hover,
 .woocommerce #respond input#submit.alt:hover,
@@ -983,7 +983,7 @@ article.post .post-categories a:hover,
 .flex-caption .post-categories a:hover,
 .flex-caption .read-more a:hover,
 .flex-caption h2:hover,
-.comment-meta.commentmetadata a:hover, 
+.comment-meta.commentmetadata a:hover,
 .post-inner-content .cat-item a:hover  {
   color: #a161bf;
 }
@@ -1667,7 +1667,7 @@ p.logged-in-as {
     text-align: center;
   }
   .main-content-inner{
-      margin-bottom: 30px; 
+      margin-bottom: 30px;
   }
 }
 
