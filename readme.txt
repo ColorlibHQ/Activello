@@ -63,7 +63,6 @@ Theme documentation is available on http://colorlib.com/wp/support/activello
 
 = 1.0.1 - 11.02.2016 =
 
-* Maade some code cleanup
 * Removed Instagram widget which where no longer in use.
 * Improved theme translation
 
