@@ -32,20 +32,20 @@ function activello_customizer( $wp_customize ) {
     		'mime_type' => 'image',
     		'priority'  => 10,
     	) ) );
-    	
-    	
+
+
     global $header_show;
     $wp_customize->add_setting('header_show', array(
             'default' => 'logo-text',
             'sanitize_callback' => 'activello_sanitize_radio_header'
-        ));    
+        ));
         $wp_customize->add_control('header_show', array(
             'type' => 'radio',
             'label' => __('Show', 'activello'),
             'section' => 'title_tagline',
             'choices' => $header_show
         ));
-        
+
         /* Main option Settings Panel */
     $wp_customize->add_panel('activello_main_options', array(
         'capability' => 'edit_theme_options',
@@ -87,45 +87,44 @@ function activello_customizer( $wp_customize ) {
 		'priority'	=> 20,
 		'type'      => 'checkbox',
 	) );
-	
-	
+
+
 	// add "Featured Posts" section
 	$wp_customize->add_section( 'activello_featured_section' , array(
 		'title'      => esc_html__( 'Slider Option', 'activello' ),
 		'priority'   => 60,
                 'panel' => 'activello_main_options'
-	) );	
-	
+	) );
+
 	$wp_customize->add_setting( 'activello_featured_cat', array(
 		'default' => 0,
 		'transport'   => 'refresh',
                 'sanitize_callback' => 'activello_sanitize_slidecat'
-	) );	
-	
+	) );
+
 	$wp_customize->add_control( 'activello_featured_cat', array(
 		'type' => 'select',
 		'label' => 'Choose a category',
 		'choices' => activello_cats(),
 		'section' => 'activello_featured_section',
 	) );
-	
+
 	$wp_customize->add_setting( 'activello_featured_hide', array(
 		'default' => 0,
 		'transport'   => 'refresh',
                 'sanitize_callback' => 'activello_sanitize_checkbox'
-	) );	
-	
+	) );
+
 	$wp_customize->add_control( 'activello_featured_hide', array(
 		'type' => 'checkbox',
 		'label' => 'Show Slider',
 		'section' => 'activello_featured_section',
-	) );	
-	
-	
+	) );
+
+
 	// add "Sidebar" section
         $wp_customize->add_section('activello_layout_section', array(
             'title' => __('Layout options', 'activello'),
-            'description' => sprintf(__('', 'activello')),
             'priority' => 31,
             'panel' => 'activello_main_options'
         ));
@@ -141,8 +140,8 @@ function activello_customizer( $wp_customize ) {
                  'type'    => 'select',
                  'description' => __('Choose between different layout options to be used as default', 'activello'),
                  'choices'    => $site_layout
-            ));	
-	
+            ));
+
             $wp_customize->add_setting('accent_color', array(
                     'default' => '',
                     'sanitize_callback' => 'activello_sanitize_hexcolor'
@@ -152,7 +151,7 @@ function activello_customizer( $wp_customize ) {
                 'description'   => __('Default used if no color is selected','activello'),
                 'section' => 'activello_layout_section',
             )));
-            
+
             $wp_customize->add_setting('social_color', array(
                 'default' => '',
                 'sanitize_callback' => 'activello_sanitize_hexcolor'
@@ -172,13 +171,13 @@ function activello_customizer( $wp_customize ) {
                 'description' => sprintf(__('Default used if no color is selected', 'activello')),
                 'section' => 'activello_layout_section',
             )));
-	
+
 	// add "Footer" section
 	$wp_customize->add_section( 'activello_footer_section' , array(
 		'title'      => esc_html__( 'Footer', 'activello' ),
 		'priority'   => 90,
-	) );	
-	
+	) );
+
 	$wp_customize->add_setting( 'activello_footer_copyright', array(
 		'default' => '',
 		'transport'   => 'refresh',
@@ -190,7 +189,7 @@ function activello_customizer( $wp_customize ) {
 		'label' => 'Copyright Text',
 		'section' => 'activello_footer_section',
 	) );
-        
+
         /* Activello Other Options */
         $wp_customize->add_section('activello_other_options', array(
             'title' => __('Other', 'activello'),
@@ -207,7 +206,7 @@ function activello_customizer( $wp_customize ) {
                 'section' => 'activello_other_options',
                 'type' => 'textarea'
             ));
-            
+
         /* Support & Documentation */
         $wp_customize->add_section('activello_important_links', array(
         'priority' => 5,
@@ -273,7 +272,7 @@ function activello_sanitize_hexcolor($color) {
  * @package Activello
  */
 function activello_sanitize_slidecat( $input ) {
-    
+
     if ( array_key_exists( $input, activello_cats()) ) {
         return $input;
     } else {

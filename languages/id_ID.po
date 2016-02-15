@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Sparkling\n"
-"POT-Creation-Date: 2015-07-08 17:07+0300\n"
-"PO-Revision-Date: 2015-07-08 17:07+0300\n"
+"Project-Id-Version: Activello\n"
+"POT-Creation-Date: 2016-02-11 16:20+0200\n"
+"PO-Revision-Date: 2016-02-11 16:20+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: Rhiski Aprilianto <mail@rhiskiapril.com>\n"
 "Language: id_ID\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.2\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -45,7 +45,7 @@ msgstr "Kategori Terbanyak Digunakan"
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Coba cari di arsip bulanan. %1$s"
 
-#: 404.php:53 archive.php:66 sidebar.php:19
+#: 404.php:53 archive.php:66 sidebar.php:31
 msgid "Archives"
 msgstr "Arsip"
 
@@ -122,26 +122,60 @@ msgstr "Chat"
 #: comments.php:28
 #, php-format
 msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Satu komentar pada &quot;%2$s&quot;"
-msgstr[1] "%1$s komentar pada &quot;%2$s&quot;"
+msgid "1 Comment"
+msgid_plural "%1$s Comment"
+msgstr[0] ""
+msgstr[1] ""
 
-#: comments.php:35 comments.php:53
+#: comments.php:35 comments.php:54
 msgid "Comment navigation"
 msgstr "Navigasi komentar"
 
-#: comments.php:36 comments.php:54
+#: comments.php:36 comments.php:55
 msgid "&larr; Older Comments"
 msgstr "&larr; Komentar Lama"
 
-#: comments.php:37 comments.php:55
+#: comments.php:37 comments.php:56
 msgid "Newer Comments &rarr;"
 msgstr "Komentar baru &rarr;"
 
-#: comments.php:65
+#: comments.php:66
 msgid "Comments are closed."
 msgstr "Komentar ditutup."
+
+#: comments.php:77
+msgid "Name"
+msgstr ""
+
+#: comments.php:81
+msgid "Email"
+msgstr ""
+
+#: comments.php:85
+msgid "Website"
+msgstr ""
+
+#: comments.php:94
+msgid "Post Reply"
+msgstr ""
+
+#: comments.php:96
+msgctxt "comment form placeholder"
+msgid "Comment"
+msgstr ""
+
+#: content-grid.php:16 content-page.php:32 inc/extras.php:282
+msgid "Edit"
+msgstr "Edit"
+
+#: content-grid.php:28 content.php:41 content.php:67 inc/extras.php:160
+msgid "Read More"
+msgstr "Baca Selengkapnya"
+
+#: content-grid.php:37 content-page.php:21 content-single.php:43 content.php:56
+#: image.php:79
+msgid "Pages:"
+msgstr "Halaman:"
 
 #: content-none.php:13
 msgid "Nothing Found"
@@ -171,82 +205,79 @@ msgstr ""
 "Tampaknya kita tidak dapat menemukan apa yang Anda cari. Mungkin pencarian "
 "bisa membantu."
 
-#: content-page.php:21 content-single.php:35 content.php:49 image.php:79
-msgid "Pages:"
-msgstr "Halaman:"
-
-#: content-page.php:32 content-single.php:26 content.php:23
-msgid "Edit"
-msgstr "Edit"
-
-#: content-single.php:19
-msgid ", "
-msgstr ","
-
-#: content-single.php:23
+#: content-single.php:21 content.php:22
 #, php-format
-msgid " %1$s"
-msgstr " %1$s"
+msgid "Edit %s"
+msgstr ""
 
-#: content.php:20
+#: content-single.php:55 content.php:73
 msgid "Leave a comment"
 msgstr "Tinggalkan komentar"
 
-#: content.php:20
+#: content-single.php:55
+msgid "Comment (1)"
+msgstr ""
+
+#: content-single.php:55
+msgid "Comments (%)"
+msgstr ""
+
+#: content.php:73
 msgid "1 Comment"
 msgstr "1 komentar"
 
-#: content.php:20
+#: content.php:73
 msgid "% Comments"
 msgstr "% Komentar"
 
-#: content.php:32 content.php:45
-msgid "Read More"
-msgstr "Baca Selengkapnya"
-
-#: functions.php:69
+#: functions.php:71
 msgid "Primary Menu"
 msgstr "Menu Utama"
 
-#: functions.php:70 inc/extras.php:212
-msgid "Footer Links"
-msgstr "Link footer"
-
-#: functions.php:108
+#: functions.php:112
 msgid "Sidebar"
 msgstr "Sidebar"
 
-#: functions.php:118
-msgid "Homepage Widget 1"
-msgstr "Homepage Widget 1"
+#: functions.php:231
+msgid "Left Sidebar"
+msgstr "Sidebar Kiri"
 
-#: functions.php:119 functions.php:129 functions.php:139
-msgid "Displays on the Home Page"
-msgstr "Tampilkan pada Home Page"
+#: functions.php:231
+msgid "Right Sidebar"
+msgstr "Sidebar Kanan"
 
-#: functions.php:128
-msgid "Homepage Widget 2"
-msgstr "Homepage Widget 2"
+#: functions.php:231
+msgid "No Sidebar"
+msgstr ""
 
-#: functions.php:138
-msgid "Homepage Widget 3"
-msgstr "Homepage Widget 3"
+#: functions.php:231
+msgid "Full Width"
+msgstr ""
 
-#: functions.php:148
-msgid "Footer Widget 1"
-msgstr "Footer Widget 1"
+#: functions.php:233
+msgid "Logo Only"
+msgstr ""
 
-#: functions.php:149 functions.php:159 functions.php:169
-msgid "Used for footer widget area"
-msgstr "Digunakan untuk footer widget area"
+#: functions.php:234
+msgid "Logo + Tagline"
+msgstr ""
 
-#: functions.php:158
-msgid "Footer Widget 2"
-msgstr "Footer Widget 2"
+#: functions.php:235
+msgid "Title Only"
+msgstr ""
 
-#: functions.php:168
-msgid "Footer Widget 3"
-msgstr "Footer Widget 3"
+#: functions.php:236
+msgid "Title + Tagline"
+msgstr ""
+
+#: header.php:50
+msgid "Search"
+msgstr ""
+
+#: header.php:51 searchform.php:14
+msgctxt "submit button"
+msgid "Search"
+msgstr "Cari"
 
 #: image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
@@ -256,180 +287,91 @@ msgstr "<i class=\"fa fa-chevron-left\"></i>Sebelumnya"
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
 msgstr "Selanjutnya <i class=\"fa fa-chevron-right\"></i>"
 
-#: inc/admin/includes/class-options-framework-admin.php:91
-#: inc/admin/includes/class-options-framework-admin.php:92
-msgid "Theme Options"
-msgstr "Pengaturan Tema"
+#: inc/customizer.php:30
+msgid "Logo"
+msgstr ""
 
-#: inc/admin/includes/class-options-framework-admin.php:203
-msgid "Save Options"
-msgstr "Simpan Pilihan"
+#: inc/customizer.php:44
+msgid "Show"
+msgstr ""
 
-#: inc/admin/includes/class-options-framework-admin.php:204
-msgid "Restore Defaults"
-msgstr "Kembalikan Default"
+#: inc/customizer.php:53
+msgid "Activello Options"
+msgstr ""
 
-#: inc/admin/includes/class-options-framework-admin.php:204
-msgid "Click OK to reset. Any theme settings will be lost!"
-msgstr "Klik OK untuk me-reset. Pengaturan tema akan hilang!"
+#: inc/customizer.php:54
+msgid "Panel to update activello theme options"
+msgstr ""
 
-#: inc/admin/includes/class-options-framework-admin.php:235
-msgid "Default options restored."
-msgstr "Pilihan default dipulihkan."
-
-#: inc/admin/includes/class-options-framework-admin.php:289
-msgid "Options saved."
-msgstr "Pengaturan disimpan."
-
-#: inc/admin/includes/class-options-media-uploader.php:62
-msgid "No file chosen"
-msgstr "Tak ada file yang dipilih"
-
-#: inc/admin/includes/class-options-media-uploader.php:65
-#: inc/admin/includes/class-options-media-uploader.php:118
-msgid "Upload"
-msgstr "Unggah"
-
-#: inc/admin/includes/class-options-media-uploader.php:67
-#: inc/admin/includes/class-options-media-uploader.php:119
-msgid "Remove"
-msgstr "Hapus"
-
-#: inc/admin/includes/class-options-media-uploader.php:70
-msgid "Upgrade your version of WordPress for full media support."
-msgstr "Meng-upgrade versi WordPress untuk dukungan media penuh."
-
-#: inc/admin/includes/class-options-media-uploader.php:94
-msgid "View File"
-msgstr "Tampilkan File"
-
-#: inc/admin/includes/class-options-sanitization.php:316
-msgid "No Repeat"
-msgstr "No Repeat"
-
-#: inc/admin/includes/class-options-sanitization.php:317
-msgid "Repeat Horizontally"
-msgstr "Repeat Horizontally"
-
-#: inc/admin/includes/class-options-sanitization.php:318
-msgid "Repeat Vertically"
-msgstr "Repeat Horizontally"
-
-#: inc/admin/includes/class-options-sanitization.php:319
-msgid "Repeat All"
-msgstr "Repeat All"
-
-#: inc/admin/includes/class-options-sanitization.php:331
-msgid "Top Left"
-msgstr "Kiri Atas"
-
-#: inc/admin/includes/class-options-sanitization.php:332
-msgid "Top Center"
-msgstr "Tengah Atas"
-
-#: inc/admin/includes/class-options-sanitization.php:333
-msgid "Top Right"
-msgstr "Kanan Atas"
-
-#: inc/admin/includes/class-options-sanitization.php:334
-msgid "Middle Left"
-msgstr "Kiri Tengah"
-
-#: inc/admin/includes/class-options-sanitization.php:335
-msgid "Middle Center"
-msgstr "Tengah Tengah"
-
-#: inc/admin/includes/class-options-sanitization.php:336
-msgid "Middle Right"
-msgstr "Kanan Tengah"
-
-#: inc/admin/includes/class-options-sanitization.php:337
-msgid "Bottom Left"
-msgstr "Kiri Bawah"
-
-#: inc/admin/includes/class-options-sanitization.php:338
-msgid "Bottom Center"
-msgstr "Tengah Bawah"
-
-#: inc/admin/includes/class-options-sanitization.php:339
-msgid "Bottom Right"
-msgstr "Kanan Bawah"
-
-#: inc/admin/includes/class-options-sanitization.php:351
-msgid "Scroll Normally"
-msgstr "Gulir biasa"
-
-#: inc/admin/includes/class-options-sanitization.php:352
-msgid "Fixed in Place"
-msgstr "Tetap di tempat"
-
-#: inc/admin/includes/class-options-sanitization.php:424
-msgid "Normal"
-msgstr "Normal"
-
-#: inc/admin/includes/class-options-sanitization.php:425
-msgid "Italic"
-msgstr "Italic"
-
-#: inc/admin/includes/class-options-sanitization.php:426
-msgid "Bold"
-msgstr "Bold"
-
-#: inc/admin/includes/class-options-sanitization.php:427
-msgid "Bold Italic"
-msgstr "Bold Italic"
-
-#: inc/customizer.php:27
+#: inc/customizer.php:60
 msgid "Content Options"
 msgstr "Pengaturan Konten"
 
-#: inc/customizer.php:39
+#: inc/customizer.php:73
 msgid "Show post excerpts?"
 msgstr "Tampilkan kutipan posting?"
 
-#: inc/customizer.php:51
+#: inc/customizer.php:85
 msgid "Display Comments on Static Pages?"
 msgstr "Tampilan Komentar Halaman Statik?"
 
-#: inc/extras.php:61
-#, php-format
-msgid "Page %s"
-msgstr "Halaman %s"
-
-#: inc/extras.php:125
-msgid ""
-"<p>This post is password protected. To view it please enter your password "
-"below:</p>"
+#: inc/customizer.php:94
+msgid "Slider Option"
 msgstr ""
-"<p>Posting ini dilindungi sandi. Untuk melihat Mohon masukkan sandi Anda di "
-"bawah ini:</p>"
 
-#: inc/extras.php:126
-msgid "Password:"
-msgstr "Kata sandi:"
+#: inc/customizer.php:127
+msgid "Layout options"
+msgstr ""
 
-#: inc/extras.php:129
-msgid "Submit"
-msgstr "Kirim"
+#: inc/customizer.php:138
+msgid "Website Layout Options"
+msgstr "Pilihan Layout Website"
 
-#: inc/extras.php:175
-msgid "Follow us on "
-msgstr "Ikuti kami di"
+#: inc/customizer.php:141
+msgid "Choose between different layout options to be used as default"
+msgstr ""
 
-#: inc/extras.php:287
-#, php-format
-msgid "Theme by %1$s Powered by %2$s"
-msgstr "Tema oleh %1$s diberdayakan oleh %2$s"
+#: inc/customizer.php:150
+msgid "Accent Color"
+msgstr ""
 
-#: inc/extras.php:394
+#: inc/customizer.php:151 inc/customizer.php:161 inc/customizer.php:171
+msgid "Default used if no color is selected"
+msgstr "Pengaturan standar digunakan jika tidak ada warna yang dipilih"
+
+#: inc/customizer.php:160
+msgid "Social icon color"
+msgstr "Warna ikon sosial"
+
+#: inc/customizer.php:170
+msgid "Social Icon:hover Color"
+msgstr ""
+
+#: inc/customizer.php:177
+msgid "Footer"
+msgstr "Footer"
+
+#: inc/customizer.php:195
+msgid "Other"
+msgstr "Lainnya"
+
+#: inc/customizer.php:204
+msgid "Custom CSS"
+msgstr "Kustom CSS"
+
+#: inc/customizer.php:205
+msgid "Additional CSS"
+msgstr "CSS Tambahan"
+
+#: inc/customizer.php:213
 msgid "Support and Documentation"
 msgstr "Dukungan dan Dokumentasi"
 
-#: inc/extras.php:400
-msgid "Sparkling Documentation"
-msgstr "Dokumentasi Sparkling"
+#: inc/customizer.php:356
+msgid "Activello Documentation"
+msgstr ""
 
-#: inc/extras.php:401
+#: inc/customizer.php:357
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -437,37 +379,95 @@ msgstr ""
 "Cara terbaik untuk menghubungi kami dengan <b>pertanyaan dukungan</b> dan "
 "<b>laporan bug</b> melalui"
 
-#: inc/extras.php:401
+#: inc/customizer.php:357
 msgid "Colorlib support forum"
 msgstr "Colorlib support forum"
 
-#: inc/extras.php:402
+#: inc/customizer.php:358
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "Jika Anda menyukai tema ini, saya akan menghargai hal-hal berikut:"
 
-#: inc/extras.php:404
+#: inc/customizer.php:360
 msgid "Rate this Theme"
 msgstr "Merating Tema ini"
 
-#: inc/extras.php:405
+#: inc/customizer.php:361
 msgid "Like on Facebook"
 msgstr "Sukai kami di Facebook"
 
-#: inc/extras.php:406
+#: inc/customizer.php:362
 msgid "Follow on Twitter"
 msgstr "Ikuti Kami di Twitter"
+
+#: inc/extras.php:71
+msgid ""
+"<p>This post is password protected. To view it please enter your password "
+"below:</p>"
+msgstr ""
+"<p>Posting ini dilindungi sandi. Untuk melihat Mohon masukkan sandi Anda di "
+"bawah ini:</p>"
+
+#: inc/extras.php:72
+msgid "Password:"
+msgstr "Kata sandi:"
+
+#: inc/extras.php:75
+msgid "Submit"
+msgstr "Kirim"
+
+#: inc/extras.php:118
+msgid "Footer Links"
+msgstr "Link footer"
+
+#: inc/extras.php:178
+#, php-format
+msgid "Theme by %1$s Powered by %2$s"
+msgstr "Tema oleh %1$s diberdayakan oleh %2$s"
+
+#: inc/extras.php:276
+#, php-format
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
+msgstr ""
+
+#: inc/extras.php:282
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/extras.php:289
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/metaboxes.php:16
+msgid ""
+"Select layout for this specific Page only ( Note: This setting only reflects "
+"if page Template is set as Default Template and Blog Type Templates.)"
+msgstr ""
+
+#: inc/metaboxes.php:21
+msgid "Select layout for this specific Post only"
+msgstr ""
+
+#: inc/metaboxes.php:28
+msgid "Select layout for this specific Product only"
+msgstr ""
+
+#: inc/socialnav.php:13
+msgctxt "nav menu location"
+msgid "Social Menu"
+msgstr ""
 
 #: inc/template-tags.php:23
 msgid "Posts navigation"
 msgstr "Navigasi tulisan"
 
 #: inc/template-tags.php:27
-msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
-msgstr "<i class=\"fa fa-chevron-left\"></i>Entri Lama "
+msgid "Older posts"
+msgstr ""
 
 #: inc/template-tags.php:31
-msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
-msgstr "Entri Baru <i class=\"fa fa-chevron-right\"></i>"
+msgid "Newer posts"
+msgstr ""
 
 #: inc/template-tags.php:56
 msgid "Post navigation"
@@ -483,9 +483,13 @@ msgctxt "Next post link"
 msgid "%title <i class=\"fa fa-chevron-right\"></i>"
 msgstr "%title <i class=\"fa fa-chevron-right\"></i>"
 
+#: inc/template-tags.php:86
+msgid "Posted on"
+msgstr ""
+
 #: inc/widgets/widget-categories.php:11 inc/widgets/widget-categories.php:12
-msgid "Sparkling Categories"
-msgstr "Sparkling Kategori"
+msgid "activello Categories"
+msgstr ""
 
 #: inc/widgets/widget-categories.php:17 inc/widgets/widget-categories.php:76
 msgid "Categories"
@@ -503,399 +507,46 @@ msgstr "Batasi Kategori"
 msgid "Enable Posts Count"
 msgstr "Mengaktifkan hitungan posting"
 
-#: inc/widgets/widget-popular-posts.php:11
-#: inc/widgets/widget-popular-posts.php:12
-msgid "Sparkling Popular Posts Widget"
-msgstr "Widget Sparkling Tulisan Populer"
+#: inc/widgets/widget-recent-posts.php:11
+#: inc/widgets/widget-recent-posts.php:12
+msgid "activello recent Posts Widget"
+msgstr ""
 
-#: inc/widgets/widget-popular-posts.php:17
-#: inc/widgets/widget-popular-posts.php:94
-msgid "Popular Posts"
-msgstr "Tulisan Populer"
+#: inc/widgets/widget-recent-posts.php:17
+#: inc/widgets/widget-recent-posts.php:91
+msgid "recent Posts"
+msgstr ""
 
-#: inc/widgets/widget-popular-posts.php:99
+#: inc/widgets/widget-recent-posts.php:96
 msgid "Title"
 msgstr "Judul"
 
-#: inc/widgets/widget-popular-posts.php:107
+#: inc/widgets/widget-recent-posts.php:104
 msgid "Limit Posts Number"
 msgstr "Batasi Jumlah Tulisan"
 
 #: inc/widgets/widget-social.php:11 inc/widgets/widget-social.php:12
-msgid "Sparkling Social Widget"
-msgstr "Sparkling Social Widget"
+msgid "activello Social Widget"
+msgstr ""
 
 #: inc/widgets/widget-social.php:17 inc/widgets/widget-social.php:46
 msgid "Follow us"
 msgstr "Ikuti kami"
 
-#: options.php:23
-msgid "Right Sidebar"
-msgstr "Sidebar Kanan"
-
-#: options.php:23
-msgid "Left Sidebar"
-msgstr "Sidebar Kiri"
-
-#: options.php:27
-msgid "One"
-msgstr "Satu"
-
-#: options.php:28
-msgid "Two"
-msgstr "Dua"
-
-#: options.php:29
-msgid "Three"
-msgstr "Tiga"
-
-#: options.php:30
-msgid "Four"
-msgstr "Empat"
-
-#: options.php:31
-msgid "Five"
-msgstr "Lima"
-
-#: options.php:36
-msgid "French Toast"
-msgstr "French Toast"
-
-#: options.php:37
-msgid "Pancake"
-msgstr "Pancake"
-
-#: options.php:38
-msgid "Omelette"
-msgstr "Omelette"
-
-#: options.php:39
-msgid "Crepe"
-msgstr "Crepe"
-
-#: options.php:40
-msgid "Waffle"
-msgstr "Waffle"
-
-#: options.php:110
-msgid "Main"
-msgstr "Utama"
-
-#: options.php:115
-msgid "Do You want to display image slider on the Home Page?"
-msgstr "Apakah Anda ingin menampilkan gambar slider pada Home Page?"
-
-#: options.php:116
-msgid "Check if you want to enable slider"
-msgstr "Centang jika Anda ingin mengaktifkan slider"
-
-#: options.php:123
-msgid "Slider Category"
-msgstr "Slider Kategori"
-
-#: options.php:124
-msgid "Select a category for the featured post slider"
-msgstr "Pilih sebuah kategori untuk tampilan slider pos"
-
-#: options.php:132
-msgid "Number of slide items"
-msgstr "Jumlah item slide"
-
-#: options.php:133
-msgid "Enter the number of slide items"
-msgstr "Masukkan jumlah slide item"
-
-#: options.php:141
-msgid "Website Layout Options"
-msgstr "Pilihan Layout Website"
-
-#: options.php:142
-msgid "Choose between Left and Right sidebar options to be used as default"
-msgstr ""
-"Pilih antara pilihan sidebar kiri dan kanan untuk digunakan sebagai default"
-
-#: options.php:151
-msgid "Element color"
-msgstr "Warna Elemen"
-
-#: options.php:152 options.php:160 options.php:205 options.php:213
-#: options.php:221 options.php:229 options.php:259 options.php:267
-#: options.php:280 options.php:390 options.php:398
-msgid "Default used if no color is selected"
-msgstr "Pengaturan standar digunakan jika tidak ada warna yang dipilih"
-
-#: options.php:159
-msgid "Element color on hover"
-msgstr "Warna Elemen ketika disorot"
-
-#: options.php:167
-msgid "Custom Favicon"
-msgstr "Kustom Favicon"
-
-#: options.php:168
-msgid ""
-"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
-msgstr ""
-"Meng-upload gambar PNG GIF x 32px 32px yang akan mewakili favicon website "
-"Anda"
-
-#: options.php:175
-msgid "Action Button"
-msgstr "Action Button"
-
-#: options.php:180
-msgid "Call For Action Text"
-msgstr "Teks Call For Action"
-
-#: options.php:181
-msgid "Enter the text for call for action section"
-msgstr "Masukkan teks untuk bagian call for action"
-
-#: options.php:188
-msgid "Call For Action Button Title"
-msgstr "Judul Tombol Call For Action"
-
-#: options.php:189
-msgid "Enter the title for Call For Action button"
-msgstr "Masukkan judul untuk tombol Call For Action"
-
-#: options.php:196
-msgid "CFA button link"
-msgstr "CFA tombol link"
-
-#: options.php:197
-msgid "Enter the link for Call For Action button"
-msgstr "Masukkan link untuk tombol Call For Action"
-
-#: options.php:204
-msgid "Call For Action Text Color"
-msgstr "Warna Teks Call For Action"
-
-#: options.php:212
-msgid "Call For Action Background Color"
-msgstr "Warna Background Call For Action"
-
-#: options.php:220
-msgid "Call For Action Button Border Color"
-msgstr "Warna Border Tombol Call For Action"
-
-#: options.php:228
-msgid "Call For Action Button Text Color"
-msgstr "Warna Teks Tombol Call For Action"
-
-#: options.php:236
-msgid "Typography"
-msgstr "Tipografi"
-
-#: options.php:241
-msgid "Main Body Text"
-msgstr "Teks tubuh utama"
-
-#: options.php:242
-msgid "Used in P tags"
-msgstr "Digunakan dalam tag P"
-
-#: options.php:250
-msgid "Heading Color"
-msgstr "Warna Heading"
-
-#: options.php:251
-msgid "Color for all headings (h1-h6)"
-msgstr "Warna untuk semua Heading (h1-h6)"
-
-#: options.php:258
-msgid "Link Color"
-msgstr "Warna Link"
-
-#: options.php:266
-msgid "Link:hover Color"
-msgstr "Warna Link:hover"
-
-#: options.php:274
-msgid "Header"
-msgstr "Header"
-
-#: options.php:279
-msgid "Top nav background color"
-msgstr "Warna Top nav background"
-
-#: options.php:287
-msgid "Top nav item color"
-msgstr "Warna Top nav item"
-
-#: options.php:288
-msgid "Link color"
-msgstr "Warna Link"
-
-#: options.php:295
-msgid "Top nav item hover color"
-msgstr "Warna Top nav item hover"
-
-#: options.php:296
-msgid "Link:hover color"
-msgstr "Warna Link:hover"
-
-#: options.php:303
-msgid "Top nav dropdown background color"
-msgstr "Warna Top nav dropdown background"
-
-#: options.php:304 options.php:328
-msgid "Background of dropdown item hover color"
-msgstr "Warna Background dari dropdown item hover"
-
-#: options.php:311
-msgid "Top nav dropdown item color"
-msgstr "Warna Top nav dropdown item"
-
-#: options.php:312
-msgid "Dropdown item color"
-msgstr "Warna Dropdown item"
-
-#: options.php:319
-msgid "Top nav dropdown item hover color"
-msgstr "Warna Top nav dropdown item hover"
-
-#: options.php:320
-msgid "Dropdown item hover color"
-msgstr "Warna Dropdown item hover"
-
-#: options.php:327
-msgid "Top nav dropdown item background hover color"
-msgstr "Warna Top nav dropdown item background hover"
-
-#: options.php:335
-msgid "Footer"
-msgstr "Footer"
-
-#: options.php:340
-msgid "Footer widget area background color"
-msgstr "Warna Background Footer widget area "
-
-#: options.php:347
-msgid "Footer background color"
-msgstr "Warna background footer"
-
-#: options.php:354
-msgid "Footer text color"
-msgstr "Warna teks footer"
-
-#: options.php:361
-msgid "Footer link color"
-msgstr "Warna link footer"
-
-#: options.php:368
-msgid "Footer information"
-msgstr "Informasi footer"
-
-#: options.php:369
-msgid "Copyright text in footer"
-msgstr "Teks hak cipta di footer"
-
-#: options.php:376
-#, fuzzy
-msgid "Footer Social Icons"
-msgstr "Warna footer  ikon sosial"
-
-#: options.php:377
-#, fuzzy
-msgid "Show/Hide social icons in footer"
-msgstr "Warna footer  ikon sosial"
-
-#: options.php:384
-msgid "Social"
-msgstr "Sosial"
-
-#: options.php:389
-msgid "Social icon color"
-msgstr "Warna ikon sosial"
-
-#: options.php:397
-msgid "Footer social icon color"
-msgstr "Warna footer  ikon sosial"
-
-#: options.php:405
-msgid "Add full URL for your social network profiles"
-msgstr "Tambahkan URL lengkap untuk profil jaringan sosial"
-
-#: options.php:406
-msgid "Facebook"
-msgstr "Facebook"
-
-#: options.php:415
-msgid "Twitter"
-msgstr "Twitter"
-
-#: options.php:423
-msgid "Google+"
-msgstr "Google+"
-
-#: options.php:431
-msgid "Youtube"
-msgstr "YouTube"
-
-#: options.php:439
-msgid "Vimeo"
-msgstr "Vimeo"
-
-#: options.php:447
-msgid "LinkedIn"
-msgstr "LinkedIn"
-
-#: options.php:455
-msgid "Pinterest"
-msgstr "Pinterest"
-
-#: options.php:463
-msgid "RSS Feed"
-msgstr "RSS feed"
-
-#: options.php:471
-msgid "Tumblr"
-msgstr "Tumblr"
-
-#: options.php:479
-msgid "Flickr"
-msgstr "Flickr"
-
-#: options.php:487
-msgid "Instagram"
-msgstr "Instagram"
-
-#: options.php:495
-msgid "Dribbble"
-msgstr "Dribbble"
-
-#: options.php:503
-msgid "Skype"
-msgstr "Skype"
-
-#: options.php:511
-msgid "Foursquare"
-msgstr "Foursquare"
-
-#: options.php:519
-msgid "SoundCloud"
-msgstr "SoundCloud"
-
-#: options.php:527
-msgid "GitHub"
-msgstr "GitHub"
-
-#: options.php:535
-msgid "Spotify"
+#: inc/woo-setup.php:96
+msgid "View your shopping cart"
 msgstr ""
 
-#: options.php:542
-msgid "Other"
-msgstr "Lainnya"
+#: inc/woo-setup.php:97
+msgid "Start shopping"
+msgstr ""
 
-#: options.php:547
-msgid "Custom CSS"
-msgstr "Kustom CSS"
-
-#: options.php:548
-msgid "Additional CSS"
-msgstr "CSS Tambahan"
+#: inc/woo-setup.php:101
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
 
 #: search.php:16
 #, php-format
@@ -918,14 +569,410 @@ msgctxt "label"
 msgid "Search for:"
 msgstr "Mencari:"
 
-#: searchform.php:14
-msgctxt "submit button"
-msgid "Search"
-msgstr "Cari"
-
-#: sidebar.php:26
+#: sidebar.php:38
 msgid "Meta"
 msgstr "Meta"
+
+#~ msgctxt "comments title"
+#~ msgid "One thought on &ldquo;%2$s&rdquo;"
+#~ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+#~ msgstr[0] "Satu komentar pada &quot;%2$s&quot;"
+#~ msgstr[1] "%1$s komentar pada &quot;%2$s&quot;"
+
+#~ msgid ", "
+#~ msgstr ","
+
+#~ msgid " %1$s"
+#~ msgstr " %1$s"
+
+#~ msgid "Homepage Widget 1"
+#~ msgstr "Homepage Widget 1"
+
+#~ msgid "Displays on the Home Page"
+#~ msgstr "Tampilkan pada Home Page"
+
+#~ msgid "Homepage Widget 2"
+#~ msgstr "Homepage Widget 2"
+
+#~ msgid "Homepage Widget 3"
+#~ msgstr "Homepage Widget 3"
+
+#~ msgid "Footer Widget 1"
+#~ msgstr "Footer Widget 1"
+
+#~ msgid "Used for footer widget area"
+#~ msgstr "Digunakan untuk footer widget area"
+
+#~ msgid "Footer Widget 2"
+#~ msgstr "Footer Widget 2"
+
+#~ msgid "Footer Widget 3"
+#~ msgstr "Footer Widget 3"
+
+#~ msgid "Theme Options"
+#~ msgstr "Pengaturan Tema"
+
+#~ msgid "Save Options"
+#~ msgstr "Simpan Pilihan"
+
+#~ msgid "Restore Defaults"
+#~ msgstr "Kembalikan Default"
+
+#~ msgid "Click OK to reset. Any theme settings will be lost!"
+#~ msgstr "Klik OK untuk me-reset. Pengaturan tema akan hilang!"
+
+#~ msgid "Default options restored."
+#~ msgstr "Pilihan default dipulihkan."
+
+#~ msgid "Options saved."
+#~ msgstr "Pengaturan disimpan."
+
+#~ msgid "No file chosen"
+#~ msgstr "Tak ada file yang dipilih"
+
+#~ msgid "Upload"
+#~ msgstr "Unggah"
+
+#~ msgid "Remove"
+#~ msgstr "Hapus"
+
+#~ msgid "Upgrade your version of WordPress for full media support."
+#~ msgstr "Meng-upgrade versi WordPress untuk dukungan media penuh."
+
+#~ msgid "View File"
+#~ msgstr "Tampilkan File"
+
+#~ msgid "No Repeat"
+#~ msgstr "No Repeat"
+
+#~ msgid "Repeat Horizontally"
+#~ msgstr "Repeat Horizontally"
+
+#~ msgid "Repeat Vertically"
+#~ msgstr "Repeat Horizontally"
+
+#~ msgid "Repeat All"
+#~ msgstr "Repeat All"
+
+#~ msgid "Top Left"
+#~ msgstr "Kiri Atas"
+
+#~ msgid "Top Center"
+#~ msgstr "Tengah Atas"
+
+#~ msgid "Top Right"
+#~ msgstr "Kanan Atas"
+
+#~ msgid "Middle Left"
+#~ msgstr "Kiri Tengah"
+
+#~ msgid "Middle Center"
+#~ msgstr "Tengah Tengah"
+
+#~ msgid "Middle Right"
+#~ msgstr "Kanan Tengah"
+
+#~ msgid "Bottom Left"
+#~ msgstr "Kiri Bawah"
+
+#~ msgid "Bottom Center"
+#~ msgstr "Tengah Bawah"
+
+#~ msgid "Bottom Right"
+#~ msgstr "Kanan Bawah"
+
+#~ msgid "Scroll Normally"
+#~ msgstr "Gulir biasa"
+
+#~ msgid "Fixed in Place"
+#~ msgstr "Tetap di tempat"
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
+#~ msgid "Italic"
+#~ msgstr "Italic"
+
+#~ msgid "Bold"
+#~ msgstr "Bold"
+
+#~ msgid "Bold Italic"
+#~ msgstr "Bold Italic"
+
+#~ msgid "Page %s"
+#~ msgstr "Halaman %s"
+
+#~ msgid "Follow us on "
+#~ msgstr "Ikuti kami di"
+
+#~ msgid "Sparkling Documentation"
+#~ msgstr "Dokumentasi Sparkling"
+
+#~ msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+#~ msgstr "<i class=\"fa fa-chevron-left\"></i>Entri Lama "
+
+#~ msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+#~ msgstr "Entri Baru <i class=\"fa fa-chevron-right\"></i>"
+
+#~ msgid "Sparkling Categories"
+#~ msgstr "Sparkling Kategori"
+
+#~ msgid "Sparkling Popular Posts Widget"
+#~ msgstr "Widget Sparkling Tulisan Populer"
+
+#~ msgid "Popular Posts"
+#~ msgstr "Tulisan Populer"
+
+#~ msgid "Sparkling Social Widget"
+#~ msgstr "Sparkling Social Widget"
+
+#~ msgid "One"
+#~ msgstr "Satu"
+
+#~ msgid "Two"
+#~ msgstr "Dua"
+
+#~ msgid "Three"
+#~ msgstr "Tiga"
+
+#~ msgid "Four"
+#~ msgstr "Empat"
+
+#~ msgid "Five"
+#~ msgstr "Lima"
+
+#~ msgid "French Toast"
+#~ msgstr "French Toast"
+
+#~ msgid "Pancake"
+#~ msgstr "Pancake"
+
+#~ msgid "Omelette"
+#~ msgstr "Omelette"
+
+#~ msgid "Crepe"
+#~ msgstr "Crepe"
+
+#~ msgid "Waffle"
+#~ msgstr "Waffle"
+
+#~ msgid "Main"
+#~ msgstr "Utama"
+
+#~ msgid "Do You want to display image slider on the Home Page?"
+#~ msgstr "Apakah Anda ingin menampilkan gambar slider pada Home Page?"
+
+#~ msgid "Check if you want to enable slider"
+#~ msgstr "Centang jika Anda ingin mengaktifkan slider"
+
+#~ msgid "Slider Category"
+#~ msgstr "Slider Kategori"
+
+#~ msgid "Select a category for the featured post slider"
+#~ msgstr "Pilih sebuah kategori untuk tampilan slider pos"
+
+#~ msgid "Number of slide items"
+#~ msgstr "Jumlah item slide"
+
+#~ msgid "Enter the number of slide items"
+#~ msgstr "Masukkan jumlah slide item"
+
+#~ msgid "Choose between Left and Right sidebar options to be used as default"
+#~ msgstr ""
+#~ "Pilih antara pilihan sidebar kiri dan kanan untuk digunakan sebagai "
+#~ "default"
+
+#~ msgid "Element color"
+#~ msgstr "Warna Elemen"
+
+#~ msgid "Element color on hover"
+#~ msgstr "Warna Elemen ketika disorot"
+
+#~ msgid "Custom Favicon"
+#~ msgstr "Kustom Favicon"
+
+#~ msgid ""
+#~ "Upload a 32px x 32px PNG/GIF image that will represent your websites "
+#~ "favicon"
+#~ msgstr ""
+#~ "Meng-upload gambar PNG GIF x 32px 32px yang akan mewakili favicon website "
+#~ "Anda"
+
+#~ msgid "Action Button"
+#~ msgstr "Action Button"
+
+#~ msgid "Call For Action Text"
+#~ msgstr "Teks Call For Action"
+
+#~ msgid "Enter the text for call for action section"
+#~ msgstr "Masukkan teks untuk bagian call for action"
+
+#~ msgid "Call For Action Button Title"
+#~ msgstr "Judul Tombol Call For Action"
+
+#~ msgid "Enter the title for Call For Action button"
+#~ msgstr "Masukkan judul untuk tombol Call For Action"
+
+#~ msgid "CFA button link"
+#~ msgstr "CFA tombol link"
+
+#~ msgid "Enter the link for Call For Action button"
+#~ msgstr "Masukkan link untuk tombol Call For Action"
+
+#~ msgid "Call For Action Text Color"
+#~ msgstr "Warna Teks Call For Action"
+
+#~ msgid "Call For Action Background Color"
+#~ msgstr "Warna Background Call For Action"
+
+#~ msgid "Call For Action Button Border Color"
+#~ msgstr "Warna Border Tombol Call For Action"
+
+#~ msgid "Call For Action Button Text Color"
+#~ msgstr "Warna Teks Tombol Call For Action"
+
+#~ msgid "Typography"
+#~ msgstr "Tipografi"
+
+#~ msgid "Main Body Text"
+#~ msgstr "Teks tubuh utama"
+
+#~ msgid "Used in P tags"
+#~ msgstr "Digunakan dalam tag P"
+
+#~ msgid "Heading Color"
+#~ msgstr "Warna Heading"
+
+#~ msgid "Color for all headings (h1-h6)"
+#~ msgstr "Warna untuk semua Heading (h1-h6)"
+
+#~ msgid "Link Color"
+#~ msgstr "Warna Link"
+
+#~ msgid "Link:hover Color"
+#~ msgstr "Warna Link:hover"
+
+#~ msgid "Header"
+#~ msgstr "Header"
+
+#~ msgid "Top nav background color"
+#~ msgstr "Warna Top nav background"
+
+#~ msgid "Top nav item color"
+#~ msgstr "Warna Top nav item"
+
+#~ msgid "Link color"
+#~ msgstr "Warna Link"
+
+#~ msgid "Top nav item hover color"
+#~ msgstr "Warna Top nav item hover"
+
+#~ msgid "Link:hover color"
+#~ msgstr "Warna Link:hover"
+
+#~ msgid "Top nav dropdown background color"
+#~ msgstr "Warna Top nav dropdown background"
+
+#~ msgid "Background of dropdown item hover color"
+#~ msgstr "Warna Background dari dropdown item hover"
+
+#~ msgid "Top nav dropdown item color"
+#~ msgstr "Warna Top nav dropdown item"
+
+#~ msgid "Dropdown item color"
+#~ msgstr "Warna Dropdown item"
+
+#~ msgid "Top nav dropdown item hover color"
+#~ msgstr "Warna Top nav dropdown item hover"
+
+#~ msgid "Dropdown item hover color"
+#~ msgstr "Warna Dropdown item hover"
+
+#~ msgid "Top nav dropdown item background hover color"
+#~ msgstr "Warna Top nav dropdown item background hover"
+
+#~ msgid "Footer widget area background color"
+#~ msgstr "Warna Background Footer widget area "
+
+#~ msgid "Footer background color"
+#~ msgstr "Warna background footer"
+
+#~ msgid "Footer text color"
+#~ msgstr "Warna teks footer"
+
+#~ msgid "Footer link color"
+#~ msgstr "Warna link footer"
+
+#~ msgid "Footer information"
+#~ msgstr "Informasi footer"
+
+#~ msgid "Copyright text in footer"
+#~ msgstr "Teks hak cipta di footer"
+
+#, fuzzy
+#~ msgid "Footer Social Icons"
+#~ msgstr "Warna footer  ikon sosial"
+
+#, fuzzy
+#~ msgid "Show/Hide social icons in footer"
+#~ msgstr "Warna footer  ikon sosial"
+
+#~ msgid "Social"
+#~ msgstr "Sosial"
+
+#~ msgid "Footer social icon color"
+#~ msgstr "Warna footer  ikon sosial"
+
+#~ msgid "Add full URL for your social network profiles"
+#~ msgstr "Tambahkan URL lengkap untuk profil jaringan sosial"
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid "Twitter"
+#~ msgstr "Twitter"
+
+#~ msgid "Google+"
+#~ msgstr "Google+"
+
+#~ msgid "Youtube"
+#~ msgstr "YouTube"
+
+#~ msgid "Vimeo"
+#~ msgstr "Vimeo"
+
+#~ msgid "LinkedIn"
+#~ msgstr "LinkedIn"
+
+#~ msgid "Pinterest"
+#~ msgstr "Pinterest"
+
+#~ msgid "RSS Feed"
+#~ msgstr "RSS feed"
+
+#~ msgid "Tumblr"
+#~ msgstr "Tumblr"
+
+#~ msgid "Flickr"
+#~ msgstr "Flickr"
+
+#~ msgid "Instagram"
+#~ msgstr "Instagram"
+
+#~ msgid "Dribbble"
+#~ msgstr "Dribbble"
+
+#~ msgid "Skype"
+#~ msgstr "Skype"
+
+#~ msgid "Foursquare"
+#~ msgstr "Foursquare"
+
+#~ msgid "SoundCloud"
+#~ msgstr "SoundCloud"
+
+#~ msgid "GitHub"
+#~ msgstr "GitHub"
 
 #~ msgctxt "placeholder"
 #~ msgid "Search..."

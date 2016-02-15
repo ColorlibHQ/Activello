@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-07-08 17:07+0300\n"
-"PO-Revision-Date: 2015-07-08 17:07+0300\n"
+"Project-Id-Version: Activello Theme\n"
+"POT-Creation-Date: 2016-02-11 16:20+0200\n"
+"PO-Revision-Date: 2016-02-11 16:21+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.2\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
@@ -43,7 +43,7 @@ msgstr "Meest gebruikte categorieên"
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Probeer eens te kijken in de maandelijkse archieven. %1$s"
 
-#: ../404.php:53 ../archive.php:66 ../sidebar.php:19
+#: ../404.php:53 ../archive.php:66 ../sidebar.php:31
 msgid "Archives"
 msgstr "Archieven"
 
@@ -111,26 +111,56 @@ msgstr "Chats"
 #: ../comments.php:28
 #, php-format
 msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Een gedachte over &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s gedachten over &ldquo;%2$s&rdquo;"
+msgid "1 Comment"
+msgid_plural "%1$s Comment"
+msgstr[0] ""
+msgstr[1] ""
 
-#: ../comments.php:35 ../comments.php:53
+#: ../comments.php:35 ../comments.php:54
 msgid "Comment navigation"
 msgstr "Reactie navigatie"
 
-#: ../comments.php:36 ../comments.php:54
+#: ../comments.php:36 ../comments.php:55
 msgid "&larr; Older Comments"
 msgstr "&larr; Oudere Reacties"
 
-#: ../comments.php:37 ../comments.php:55
+#: ../comments.php:37 ../comments.php:56
 msgid "Newer Comments &rarr;"
 msgstr "Nieuwere Reacties &rarr;"
 
-#: ../comments.php:65
+#: ../comments.php:66
 msgid "Comments are closed."
 msgstr "Reacties zijn gesloten."
+
+#: ../comments.php:77
+msgid "Name"
+msgstr ""
+
+#: ../comments.php:81
+msgid "Email"
+msgstr ""
+
+#: ../comments.php:85
+msgid "Website"
+msgstr ""
+
+#: ../comments.php:94
+msgid "Post Reply"
+msgstr ""
+
+#: ../content-grid.php:16 ../content-page.php:32 ../inc/extras.php:282
+msgid "Edit"
+msgstr "Wijzigen"
+
+#: ../content-grid.php:28 ../content.php:41 ../content.php:67
+#: ../inc/extras.php:160
+msgid "Read More"
+msgstr "Lees meer"
+
+#: ../content-grid.php:37 ../content-page.php:21 ../content-single.php:43
+#: ../content.php:56 ../image.php:79
+msgid "Pages:"
+msgstr "Pagina&rsquo;s"
 
 #: ../content-none.php:13
 msgid "Nothing Found"
@@ -158,83 +188,80 @@ msgstr ""
 "Het lijkt er op dat we niet kunnen vinden waar je naar zocht. Probeer de "
 "zoekfunctie eens."
 
-#: ../content-page.php:21 ../content-single.php:35 ../content.php:49
-#: ../image.php:79
-msgid "Pages:"
-msgstr "Pagina&rsquo;s"
-
-#: ../content-page.php:32 ../content-single.php:26 ../content.php:23
-msgid "Edit"
-msgstr "Wijzigen"
-
-#: ../content-single.php:19
-msgid ", "
-msgstr ", "
-
-#: ../content-single.php:23
+#: ../content-single.php:21 ../content.php:22
 #, php-format
-msgid " %1$s"
-msgstr " %1$s"
+msgid "Edit %s"
+msgstr ""
 
-#: ../content.php:20
+#: ../content-single.php:55 ../content.php:73
 msgid "Leave a comment"
 msgstr "Reageer"
 
-#: ../content.php:20
+#: ../content-single.php:55
+msgid "Comment (1)"
+msgstr ""
+
+#: ../content-single.php:55
+msgid "Comments (%)"
+msgstr ""
+
+#: ../content.php:73
 msgid "1 Comment"
 msgstr "1 Reactie"
 
-#: ../content.php:20
+#: ../content.php:73
 msgid "% Comments"
 msgstr "% Reacties"
 
-#: ../content.php:32 ../content.php:45
-msgid "Read More"
-msgstr "Lees meer"
-
-#: ../functions.php:69
+#: ../functions.php:71
 msgid "Primary Menu"
 msgstr "Hoofdmenu"
 
-#: ../functions.php:70 ../inc/extras.php:212
-msgid "Footer Links"
-msgstr "Footer Links"
-
-#: ../functions.php:108
+#: ../functions.php:112
 msgid "Sidebar"
 msgstr "Sidebar"
 
-#: ../functions.php:118
-msgid "Homepage Widget 1"
-msgstr "Voorpagina Widget 1"
+#: ../functions.php:231
+msgid "Left Sidebar"
+msgstr "Sidebar Links"
 
-#: ../functions.php:119 ../functions.php:129 ../functions.php:139
-msgid "Displays on the Home Page"
-msgstr "Weergeven op de Voorpagina"
+#: ../functions.php:231
+msgid "Right Sidebar"
+msgstr "Sidebar Rechts"
 
-#: ../functions.php:128
-msgid "Homepage Widget 2"
-msgstr "Voorpagina Widget 2"
+#: ../functions.php:231
+msgid "No Sidebar"
+msgstr ""
 
-#: ../functions.php:138
-msgid "Homepage Widget 3"
-msgstr "Voorpagina Widget 3"
+#: ../functions.php:231
+msgid "Full Width"
+msgstr ""
 
-#: ../functions.php:148
-msgid "Footer Widget 1"
-msgstr "Footer Widget 1"
+#: ../functions.php:233
+msgid "Logo Only"
+msgstr ""
 
-#: ../functions.php:149 ../functions.php:159 ../functions.php:169
-msgid "Used for footer widget area"
-msgstr "Gebruikt voor footer widget area"
+#: ../functions.php:234
+msgid "Logo + Tagline"
+msgstr ""
 
-#: ../functions.php:158
-msgid "Footer Widget 2"
-msgstr "Footer Widget 2"
+#: ../functions.php:235
+msgid "Title Only"
+msgstr ""
 
-#: ../functions.php:168
-msgid "Footer Widget 3"
-msgstr "Footer Widget 3"
+#: ../functions.php:236
+msgid "Title + Tagline"
+msgstr ""
+
+#: ../header.php:50
+msgid "Search"
+msgstr ""
+
+#: ../header.php:51 ../searchform.php:14
+#, fuzzy
+msgctxt "submit button"
+msgid "Search"
+msgstr "Keresés"
 
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
@@ -244,175 +271,94 @@ msgstr "<i class=\"fa fa-chevron-left\"></i> Vorige"
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
 msgstr "Volgende <i class=\"fa fa-chevron-right\"></i>"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:91
-#: ../inc/admin/includes/class-options-framework-admin.php:92
-msgid "Theme Options"
-msgstr "Thema opties"
-
-#: ../inc/admin/includes/class-options-framework-admin.php:204
-msgid "Click OK to reset. Any theme settings will be lost!"
+#: ../inc/customizer.php:30
+msgid "Logo"
 msgstr ""
-"Klik op OK om te resetten. Alle thema instellingen zullen verloren gaan!"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:235
-msgid "Default options restored."
-msgstr "Standaard instellingen hersteld."
+#: ../inc/customizer.php:44
+msgid "Show"
+msgstr ""
 
-#: ../inc/admin/includes/class-options-framework-admin.php:289
-msgid "Options saved."
-msgstr "Instellingen opgeslagen."
+#: ../inc/customizer.php:53
+msgid "Activello Options"
+msgstr ""
 
-#: ../inc/admin/includes/class-options-media-uploader.php:62
-msgid "No file chosen"
-msgstr "Geen bestand geselecteerd"
+#: ../inc/customizer.php:54
+msgid "Panel to update activello theme options"
+msgstr ""
 
-#: ../inc/admin/includes/class-options-media-uploader.php:65
-#: ../inc/admin/includes/class-options-media-uploader.php:118
-msgid "Upload"
-msgstr "Uploaden"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:67
-#: ../inc/admin/includes/class-options-media-uploader.php:119
-msgid "Remove"
-msgstr "Verwijderen"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:70
-msgid "Upgrade your version of WordPress for full media support."
-msgstr "Upgrade je WordPress versie voor volledige media ondersteuning."
-
-#: ../inc/admin/includes/class-options-media-uploader.php:94
-msgid "View File"
-msgstr "Bekijk bestand"
-
-#: ../inc/admin/includes/class-options-sanitization.php:316
-msgid "No Repeat"
-msgstr "Niet Herhalen"
-
-#: ../inc/admin/includes/class-options-sanitization.php:317
-msgid "Repeat Horizontally"
-msgstr "Herhaal Horizontaal"
-
-#: ../inc/admin/includes/class-options-sanitization.php:318
-msgid "Repeat Vertically"
-msgstr "Herhaal Verticaal"
-
-#: ../inc/admin/includes/class-options-sanitization.php:319
-msgid "Repeat All"
-msgstr "Herhaal Alles"
-
-#: ../inc/admin/includes/class-options-sanitization.php:331
-msgid "Top Left"
-msgstr "Boven Links"
-
-#: ../inc/admin/includes/class-options-sanitization.php:332
-msgid "Top Center"
-msgstr "Boven Midden"
-
-#: ../inc/admin/includes/class-options-sanitization.php:333
-msgid "Top Right"
-msgstr "Boven Rechts"
-
-#: ../inc/admin/includes/class-options-sanitization.php:334
-msgid "Middle Left"
-msgstr "Midden Links"
-
-#: ../inc/admin/includes/class-options-sanitization.php:335
-msgid "Middle Center"
-msgstr "Midden Midden"
-
-#: ../inc/admin/includes/class-options-sanitization.php:336
-msgid "Middle Right"
-msgstr "Midden Rechts"
-
-#: ../inc/admin/includes/class-options-sanitization.php:337
-msgid "Bottom Left"
-msgstr "Onder Links"
-
-#: ../inc/admin/includes/class-options-sanitization.php:338
-msgid "Bottom Center"
-msgstr "Onder Midden"
-
-#: ../inc/admin/includes/class-options-sanitization.php:339
-msgid "Bottom Right"
-msgstr "Onder Rechts"
-
-#: ../inc/admin/includes/class-options-sanitization.php:351
-msgid "Scroll Normally"
-msgstr "Scroll normaal"
-
-#: ../inc/admin/includes/class-options-sanitization.php:352
-msgid "Fixed in Place"
-msgstr "Vaste plaats"
-
-#: ../inc/admin/includes/class-options-sanitization.php:424
-msgid "Normal"
-msgstr "Normaal"
-
-#: ../inc/admin/includes/class-options-sanitization.php:425
-msgid "Italic"
-msgstr "Schuin"
-
-#: ../inc/admin/includes/class-options-sanitization.php:426
-msgid "Bold"
-msgstr "Dik"
-
-#: ../inc/admin/includes/class-options-sanitization.php:427
-msgid "Bold Italic"
-msgstr "Dik Schuin"
-
-#: ../inc/customizer.php:27
+#: ../inc/customizer.php:60
 #, fuzzy
 msgid "Content Options"
 msgstr "Thema opties"
 
-#: ../inc/customizer.php:39
+#: ../inc/customizer.php:73
 msgid "Show post excerpts?"
 msgstr ""
 
-#: ../inc/customizer.php:51
+#: ../inc/customizer.php:85
 #, fuzzy
 msgid "Display Comments on Static Pages?"
 msgstr "Weergeven op de Voorpagina"
 
-#: ../inc/extras.php:61
-#, php-format
-msgid "Page %s"
-msgstr "Pagina %s"
-
-#: ../inc/extras.php:125
-msgid ""
-"<p>This post is password protected. To view it please enter your password "
-"below:</p>"
+#: ../inc/customizer.php:94
+msgid "Slider Option"
 msgstr ""
-"<p>Dit bericht is beveiligd met een wachtwoord. Om hem te bekijken gelieve "
-"je wachtwoord in te voeren:</p>"
 
-#: ../inc/extras.php:126
-msgid "Password:"
-msgstr "Wachtwoord:"
+#: ../inc/customizer.php:127
+msgid "Layout options"
+msgstr ""
 
-#: ../inc/extras.php:129
-msgid "Submit"
-msgstr "Toevoegen"
+#: ../inc/customizer.php:138
+msgid "Website Layout Options"
+msgstr "Website Layout Opties"
 
-#: ../inc/extras.php:175
-msgid "Follow us on "
-msgstr "Volg ons op"
+#: ../inc/customizer.php:141
+msgid "Choose between different layout options to be used as default"
+msgstr ""
 
-#: ../inc/extras.php:287
-#, php-format
-msgid "Theme by %1$s Powered by %2$s"
-msgstr "Thema van %1$s, draait op %2$s"
+#: ../inc/customizer.php:150
+msgid "Accent Color"
+msgstr ""
 
-#: ../inc/extras.php:394
+#: ../inc/customizer.php:151 ../inc/customizer.php:161
+#: ../inc/customizer.php:171
+msgid "Default used if no color is selected"
+msgstr "Standaard gebruikt indien geen kleur gekozen"
+
+#: ../inc/customizer.php:160
+msgid "Social icon color"
+msgstr "Social icoon kleur"
+
+#: ../inc/customizer.php:170
+msgid "Social Icon:hover Color"
+msgstr ""
+
+#: ../inc/customizer.php:177
+msgid "Footer"
+msgstr "Footer"
+
+#: ../inc/customizer.php:195
+msgid "Other"
+msgstr "Overige"
+
+#: ../inc/customizer.php:204
+msgid "Custom CSS"
+msgstr "Aangepaste CSS"
+
+#: ../inc/customizer.php:205
+msgid "Additional CSS"
+msgstr "Extra CSS"
+
+#: ../inc/customizer.php:213
 msgid "Support and Documentation"
 msgstr "Support en Documentatie"
 
-#: ../inc/extras.php:400
-msgid "Sparkling Documentation"
-msgstr "Sparkling Documentatie"
+#: ../inc/customizer.php:356
+msgid "Activello Documentation"
+msgstr ""
 
-#: ../inc/extras.php:401
+#: ../inc/customizer.php:357
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -420,46 +366,103 @@ msgstr ""
 "De beste manier om ons te contacteren voor <b>support vragen</b> en <b>bug "
 "meldingen</b> is via"
 
-#: ../inc/extras.php:401
+#: ../inc/customizer.php:357
 msgid "Colorlib support forum"
 msgstr "Colorlib support forum"
 
-#: ../inc/extras.php:402
+#: ../inc/customizer.php:358
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "Als je dit thema leuk vind dan waardeer het volgende:"
 
-#: ../inc/extras.php:404
+#: ../inc/customizer.php:360
 msgid "Rate this Theme"
 msgstr "Waardeer dit Thema"
 
-#: ../inc/extras.php:405
+#: ../inc/customizer.php:361
 msgid "Like on Facebook"
 msgstr "Like ons op Facebook"
 
-#: ../inc/extras.php:406
+#: ../inc/customizer.php:362
 msgid "Follow on Twitter"
 msgstr "Volg ons op Twitter"
+
+#: ../inc/extras.php:71
+msgid ""
+"<p>This post is password protected. To view it please enter your password "
+"below:</p>"
+msgstr ""
+"<p>Dit bericht is beveiligd met een wachtwoord. Om hem te bekijken gelieve "
+"je wachtwoord in te voeren:</p>"
+
+#: ../inc/extras.php:72
+msgid "Password:"
+msgstr "Wachtwoord:"
+
+#: ../inc/extras.php:75
+msgid "Submit"
+msgstr "Toevoegen"
+
+#: ../inc/extras.php:118
+msgid "Footer Links"
+msgstr "Footer Links"
+
+#: ../inc/extras.php:178
+#, php-format
+msgid "Theme by %1$s Powered by %2$s"
+msgstr "Thema van %1$s, draait op %2$s"
+
+#: ../inc/extras.php:276
+#, php-format
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
+msgstr ""
+
+#: ../inc/extras.php:282
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../inc/extras.php:289
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../inc/metaboxes.php:16
+msgid ""
+"Select layout for this specific Page only ( Note: This setting only reflects "
+"if page Template is set as Default Template and Blog Type Templates.)"
+msgstr ""
+
+#: ../inc/metaboxes.php:21
+msgid "Select layout for this specific Post only"
+msgstr ""
+
+#: ../inc/metaboxes.php:28
+msgid "Select layout for this specific Product only"
+msgstr ""
 
 #: ../inc/template-tags.php:23
 msgid "Posts navigation"
 msgstr "Berichten navigatie"
 
 #: ../inc/template-tags.php:27
-msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
-msgstr "<i class=\"fa fa-chevron-left\"></i> Oudere berichten"
+msgid "Older posts"
+msgstr ""
 
 #: ../inc/template-tags.php:31
-msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
-msgstr "Nieuwere berichten<i class=\"fa fa-chevron-right\"></i>"
+msgid "Newer posts"
+msgstr ""
 
 #: ../inc/template-tags.php:56
 msgid "Post navigation"
 msgstr "Bericht navigatie"
 
+#: ../inc/template-tags.php:86
+msgid "Posted on"
+msgstr ""
+
 #: ../inc/widgets/widget-categories.php:11
 #: ../inc/widgets/widget-categories.php:12
-msgid "Sparkling Categories"
-msgstr "Sparkling Categoriën"
+msgid "activello Categories"
+msgstr ""
 
 #: ../inc/widgets/widget-categories.php:17
 #: ../inc/widgets/widget-categories.php:76
@@ -478,401 +481,46 @@ msgstr "Limiteer Categoriën"
 msgid "Enable Posts Count"
 msgstr "Schakel Berichten teller in"
 
-#: ../inc/widgets/widget-popular-posts.php:11
-#: ../inc/widgets/widget-popular-posts.php:12
-msgid "Sparkling Popular Posts Widget"
-msgstr "Sparkling Populaire Berichten Widget"
+#: ../inc/widgets/widget-recent-posts.php:11
+#: ../inc/widgets/widget-recent-posts.php:12
+msgid "activello recent Posts Widget"
+msgstr ""
 
-#: ../inc/widgets/widget-popular-posts.php:17
-#: ../inc/widgets/widget-popular-posts.php:94
-msgid "Popular Posts"
-msgstr "Populaire Berichten"
+#: ../inc/widgets/widget-recent-posts.php:17
+#: ../inc/widgets/widget-recent-posts.php:91
+msgid "recent Posts"
+msgstr ""
 
-#: ../inc/widgets/widget-popular-posts.php:99
+#: ../inc/widgets/widget-recent-posts.php:96
 msgid "Title"
 msgstr "Titel"
 
-#: ../inc/widgets/widget-popular-posts.php:107
+#: ../inc/widgets/widget-recent-posts.php:104
 msgid "Limit Posts Number"
 msgstr "Limiteer Berichten Aantal"
 
 #: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
-msgid "Sparkling Social Widget"
-msgstr "Sparkling Social Widget"
+msgid "activello Social Widget"
+msgstr ""
 
 #: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
 msgid "Follow us"
 msgstr "Volg Ons"
 
-#: ../options.php:23
-msgid "Right Sidebar"
-msgstr "Sidebar Rechts"
-
-#: ../options.php:23
-msgid "Left Sidebar"
-msgstr "Sidebar Links"
-
-#: ../options.php:27
-msgid "One"
-msgstr "Eén"
-
-#: ../options.php:28
-msgid "Two"
-msgstr "Twee"
-
-#: ../options.php:29
-msgid "Three"
-msgstr "Drie"
-
-#: ../options.php:30
-msgid "Four"
-msgstr "Vier"
-
-#: ../options.php:31
-msgid "Five"
-msgstr "Vijf"
-
-#: ../options.php:36
-msgid "French Toast"
-msgstr "Franse Toast"
-
-#: ../options.php:37
-msgid "Pancake"
-msgstr "Pannenkoeken"
-
-#: ../options.php:38
-msgid "Omelette"
-msgstr "Omelet"
-
-#: ../options.php:39
-msgid "Crepe"
-msgstr "Crepe"
-
-#: ../options.php:40
-msgid "Waffle"
-msgstr "Wafel"
-
-#: ../options.php:110
-msgid "Main"
-msgstr "Algemeen"
-
-#: ../options.php:115
-msgid "Do You want to display image slider on the Home Page?"
-msgstr "Wil je de afbeeldings slider op de Voorpagina weergeven?"
-
-#: ../options.php:116
-msgid "Check if you want to enable slider"
-msgstr "Vink aan om te activeren"
-
-#: ../options.php:123
-msgid "Slider Category"
-msgstr "Slider Categorie"
-
-#: ../options.php:124
-msgid "Select a category for the featured post slider"
-msgstr "Selecteer een categorie voor de uitgelichte berichten"
-
-#: ../options.php:132
-msgid "Number of slide items"
-msgstr "Aantal uitgelichte berichten"
-
-#: ../options.php:133
-msgid "Enter the number of slide items"
-msgstr "Voor het aantal uitgelichte berichten in"
-
-#: ../options.php:141
-msgid "Website Layout Options"
-msgstr "Website Layout Opties"
-
-#: ../options.php:142
-msgid "Choose between Left and Right sidebar options to be used as default"
-msgstr ""
-"Maak een keuze tussen een Linker of Rechter sidebar als standaard keuze"
-
-#: ../options.php:151
-msgid "Element color"
-msgstr "Element kleur"
-
-#: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
-#: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
-#: ../options.php:280 ../options.php:390 ../options.php:398
-msgid "Default used if no color is selected"
-msgstr "Standaard gebruikt indien geen kleur gekozen"
-
-#: ../options.php:159
-msgid "Element color on hover"
-msgstr "Element kleur bij hover"
-
-#: ../options.php:167
-msgid "Custom Favicon"
-msgstr "Aangepast Favicon"
-
-#: ../options.php:168
-msgid ""
-"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
-msgstr "Upload een PNG/GIF afbeelding van 32pxx32px als website icoon."
-
-#: ../options.php:175
-msgid "Action Button"
-msgstr "Actie Button"
-
-#: ../options.php:180
-msgid "Call For Action Text"
-msgstr "Tekst voor het actie veld"
-
-#: ../options.php:181
-msgid "Enter the text for call for action section"
-msgstr "Voer de tekst in die je wilt weergeven"
-
-#: ../options.php:188
-msgid "Call For Action Button Title"
-msgstr "Actie knop Titel"
-
-#: ../options.php:189
-msgid "Enter the title for Call For Action button"
-msgstr "Voer de Titel in voor de actie knop"
-
-#: ../options.php:196
-msgid "CFA button link"
-msgstr "Link voor de actie knop"
-
-#: ../options.php:197
-msgid "Enter the link for Call For Action button"
-msgstr "Voer de link in voor de actie knop"
-
-#: ../options.php:204
-msgid "Call For Action Text Color"
-msgstr "Actie veld tekst kleur"
-
-#: ../options.php:212
-msgid "Call For Action Background Color"
-msgstr "Actie knop achtergrond kleur"
-
-#: ../options.php:220
-msgid "Call For Action Button Border Color"
-msgstr "Actie knop rand kleur"
-
-#: ../options.php:228
-msgid "Call For Action Button Text Color"
-msgstr "Actie knop kleur"
-
-#: ../options.php:236
-msgid "Typography"
-msgstr "Opmaak"
-
-#: ../options.php:241
-msgid "Main Body Text"
-msgstr "Hoofd tekst"
-
-#: ../options.php:242
-msgid "Used in P tags"
-msgstr "Gebruik P tags"
-
-#: ../options.php:250
-msgid "Heading Color"
-msgstr "Titel kleur"
-
-#: ../options.php:251
-msgid "Color for all headings (h1-h6)"
-msgstr "Kleur voor alle titels (h1-h6)"
-
-#: ../options.php:258
-msgid "Link Color"
-msgstr "Link kleur"
-
-#: ../options.php:266
-msgid "Link:hover Color"
-msgstr "Link:hover kleur"
-
-#: ../options.php:274
-msgid "Header"
-msgstr "Header"
-
-#: ../options.php:279
-msgid "Top nav background color"
-msgstr "Top navigatie achtergrond kleur"
-
-#: ../options.php:287
-msgid "Top nav item color"
-msgstr "Top navigatie tekst kleur"
-
-#: ../options.php:288
-msgid "Link color"
-msgstr "Link kleur"
-
-#: ../options.php:295
-msgid "Top nav item hover color"
-msgstr "Top naviatie tekst hover kleur"
-
-#: ../options.php:296
-msgid "Link:hover color"
-msgstr "Link:hover kleur"
-
-#: ../options.php:303
-msgid "Top nav dropdown background color"
-msgstr "Top navigatie dropdown achtergrond kleur"
-
-#: ../options.php:304 ../options.php:328
-msgid "Background of dropdown item hover color"
-msgstr "Top navigatie dropdown tekst hover kleur"
-
-#: ../options.php:311
-msgid "Top nav dropdown item color"
-msgstr "Top navigatie dropdown tekst kleur"
-
-#: ../options.php:312
-msgid "Dropdown item color"
-msgstr "Dropdown tekst kleur"
-
-#: ../options.php:319
-#, fuzzy
-msgid "Top nav dropdown item hover color"
-msgstr "Top naviatie tekst hover kleur"
-
-#: ../options.php:320
-#, fuzzy
-msgid "Dropdown item hover color"
-msgstr "Couleur Survol Fond Menu Déroulant Haut"
-
-#: ../options.php:327
-#, fuzzy
-msgid "Top nav dropdown item background hover color"
-msgstr "Couleur Survol Fond Menu Déroulant Haut"
-
-#: ../options.php:335
-msgid "Footer"
-msgstr "Footer"
-
-#: ../options.php:340
-msgid "Footer widget area background color"
-msgstr "Footer widget achtergrond kleur"
-
-#: ../options.php:347
-msgid "Footer background color"
-msgstr "Footer achtergrond kleur"
-
-#: ../options.php:354
-msgid "Footer text color"
-msgstr "Footer tekst kleur"
-
-#: ../options.php:361
-msgid "Footer link color"
-msgstr "Footer link kleur"
-
-#: ../options.php:368
-msgid "Footer information"
-msgstr "Footer informatie"
-
-#: ../options.php:369
-msgid "Copyright text in footer"
-msgstr "Copyright tekst in de footer"
-
-#: ../options.php:376
-#, fuzzy
-msgid "Footer Social Icons"
-msgstr "Footer social icoon kleur"
-
-#: ../options.php:377
-#, fuzzy
-msgid "Show/Hide social icons in footer"
-msgstr "Footer social icoon kleur"
-
-#: ../options.php:384
-msgid "Social"
-msgstr "Social"
-
-#: ../options.php:389
-msgid "Social icon color"
-msgstr "Social icoon kleur"
-
-#: ../options.php:397
-msgid "Footer social icon color"
-msgstr "Footer social icoon kleur"
-
-#: ../options.php:405
-msgid "Add full URL for your social network profiles"
-msgstr "Voeg de volledige URL van je sociale netwerken toe"
-
-#: ../options.php:406
-msgid "Facebook"
-msgstr "Facebook"
-
-#: ../options.php:415
-msgid "Twitter"
-msgstr "Twitter"
-
-#: ../options.php:423
-msgid "Google+"
-msgstr "Google+"
-
-#: ../options.php:431
-msgid "Youtube"
-msgstr "Youtube"
-
-#: ../options.php:439
-msgid "Vimeo"
+#: ../inc/woo-setup.php:96
+msgid "View your shopping cart"
 msgstr ""
 
-#: ../options.php:447
-msgid "LinkedIn"
-msgstr "LinkedIn"
-
-#: ../options.php:455
-msgid "Pinterest"
-msgstr "Pinterest"
-
-#: ../options.php:463
-msgid "RSS Feed"
-msgstr "RSS Feed"
-
-#: ../options.php:471
-msgid "Tumblr"
-msgstr "Tumblr"
-
-#: ../options.php:479
-msgid "Flickr"
-msgstr "Flickr"
-
-#: ../options.php:487
-msgid "Instagram"
-msgstr "Instagram"
-
-#: ../options.php:495
-msgid "Dribbble"
-msgstr "Dribbble"
-
-#: ../options.php:503
-msgid "Skype"
-msgstr "Skype"
-
-#: ../options.php:511
-msgid "Foursquare"
-msgstr "Foursquare"
-
-#: ../options.php:519
-msgid "SoundCloud"
+#: ../inc/woo-setup.php:97
+msgid "Start shopping"
 msgstr ""
 
-#: ../options.php:527
-#, fuzzy
-msgid "GitHub"
-msgstr "Github"
-
-#: ../options.php:535
-msgid "Spotify"
-msgstr ""
-
-#: ../options.php:542
-msgid "Other"
-msgstr "Overige"
-
-#: ../options.php:547
-msgid "Custom CSS"
-msgstr "Aangepaste CSS"
-
-#: ../options.php:548
-msgid "Additional CSS"
-msgstr "Extra CSS"
+#: ../inc/woo-setup.php:101
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../search.php:16
 #, php-format
@@ -896,15 +544,400 @@ msgctxt "label"
 msgid "Search for:"
 msgstr "Keresés"
 
-#: ../searchform.php:14
-#, fuzzy
-msgctxt "submit button"
-msgid "Search"
-msgstr "Keresés"
-
-#: ../sidebar.php:26
+#: ../sidebar.php:38
 msgid "Meta"
 msgstr "Meta"
+
+#~ msgctxt "comments title"
+#~ msgid "One thought on &ldquo;%2$s&rdquo;"
+#~ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+#~ msgstr[0] "Een gedachte over &ldquo;%2$s&rdquo;"
+#~ msgstr[1] "%1$s gedachten over &ldquo;%2$s&rdquo;"
+
+#~ msgid ", "
+#~ msgstr ", "
+
+#~ msgid " %1$s"
+#~ msgstr " %1$s"
+
+#~ msgid "Homepage Widget 1"
+#~ msgstr "Voorpagina Widget 1"
+
+#~ msgid "Displays on the Home Page"
+#~ msgstr "Weergeven op de Voorpagina"
+
+#~ msgid "Homepage Widget 2"
+#~ msgstr "Voorpagina Widget 2"
+
+#~ msgid "Homepage Widget 3"
+#~ msgstr "Voorpagina Widget 3"
+
+#~ msgid "Footer Widget 1"
+#~ msgstr "Footer Widget 1"
+
+#~ msgid "Used for footer widget area"
+#~ msgstr "Gebruikt voor footer widget area"
+
+#~ msgid "Footer Widget 2"
+#~ msgstr "Footer Widget 2"
+
+#~ msgid "Footer Widget 3"
+#~ msgstr "Footer Widget 3"
+
+#~ msgid "Theme Options"
+#~ msgstr "Thema opties"
+
+#~ msgid "Click OK to reset. Any theme settings will be lost!"
+#~ msgstr ""
+#~ "Klik op OK om te resetten. Alle thema instellingen zullen verloren gaan!"
+
+#~ msgid "Default options restored."
+#~ msgstr "Standaard instellingen hersteld."
+
+#~ msgid "Options saved."
+#~ msgstr "Instellingen opgeslagen."
+
+#~ msgid "No file chosen"
+#~ msgstr "Geen bestand geselecteerd"
+
+#~ msgid "Upload"
+#~ msgstr "Uploaden"
+
+#~ msgid "Remove"
+#~ msgstr "Verwijderen"
+
+#~ msgid "Upgrade your version of WordPress for full media support."
+#~ msgstr "Upgrade je WordPress versie voor volledige media ondersteuning."
+
+#~ msgid "View File"
+#~ msgstr "Bekijk bestand"
+
+#~ msgid "No Repeat"
+#~ msgstr "Niet Herhalen"
+
+#~ msgid "Repeat Horizontally"
+#~ msgstr "Herhaal Horizontaal"
+
+#~ msgid "Repeat Vertically"
+#~ msgstr "Herhaal Verticaal"
+
+#~ msgid "Repeat All"
+#~ msgstr "Herhaal Alles"
+
+#~ msgid "Top Left"
+#~ msgstr "Boven Links"
+
+#~ msgid "Top Center"
+#~ msgstr "Boven Midden"
+
+#~ msgid "Top Right"
+#~ msgstr "Boven Rechts"
+
+#~ msgid "Middle Left"
+#~ msgstr "Midden Links"
+
+#~ msgid "Middle Center"
+#~ msgstr "Midden Midden"
+
+#~ msgid "Middle Right"
+#~ msgstr "Midden Rechts"
+
+#~ msgid "Bottom Left"
+#~ msgstr "Onder Links"
+
+#~ msgid "Bottom Center"
+#~ msgstr "Onder Midden"
+
+#~ msgid "Bottom Right"
+#~ msgstr "Onder Rechts"
+
+#~ msgid "Scroll Normally"
+#~ msgstr "Scroll normaal"
+
+#~ msgid "Fixed in Place"
+#~ msgstr "Vaste plaats"
+
+#~ msgid "Normal"
+#~ msgstr "Normaal"
+
+#~ msgid "Italic"
+#~ msgstr "Schuin"
+
+#~ msgid "Bold"
+#~ msgstr "Dik"
+
+#~ msgid "Bold Italic"
+#~ msgstr "Dik Schuin"
+
+#~ msgid "Page %s"
+#~ msgstr "Pagina %s"
+
+#~ msgid "Follow us on "
+#~ msgstr "Volg ons op"
+
+#~ msgid "Sparkling Documentation"
+#~ msgstr "Sparkling Documentatie"
+
+#~ msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+#~ msgstr "<i class=\"fa fa-chevron-left\"></i> Oudere berichten"
+
+#~ msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+#~ msgstr "Nieuwere berichten<i class=\"fa fa-chevron-right\"></i>"
+
+#~ msgid "Sparkling Categories"
+#~ msgstr "Sparkling Categoriën"
+
+#~ msgid "Sparkling Popular Posts Widget"
+#~ msgstr "Sparkling Populaire Berichten Widget"
+
+#~ msgid "Popular Posts"
+#~ msgstr "Populaire Berichten"
+
+#~ msgid "Sparkling Social Widget"
+#~ msgstr "Sparkling Social Widget"
+
+#~ msgid "One"
+#~ msgstr "Eén"
+
+#~ msgid "Two"
+#~ msgstr "Twee"
+
+#~ msgid "Three"
+#~ msgstr "Drie"
+
+#~ msgid "Four"
+#~ msgstr "Vier"
+
+#~ msgid "Five"
+#~ msgstr "Vijf"
+
+#~ msgid "French Toast"
+#~ msgstr "Franse Toast"
+
+#~ msgid "Pancake"
+#~ msgstr "Pannenkoeken"
+
+#~ msgid "Omelette"
+#~ msgstr "Omelet"
+
+#~ msgid "Crepe"
+#~ msgstr "Crepe"
+
+#~ msgid "Waffle"
+#~ msgstr "Wafel"
+
+#~ msgid "Main"
+#~ msgstr "Algemeen"
+
+#~ msgid "Do You want to display image slider on the Home Page?"
+#~ msgstr "Wil je de afbeeldings slider op de Voorpagina weergeven?"
+
+#~ msgid "Check if you want to enable slider"
+#~ msgstr "Vink aan om te activeren"
+
+#~ msgid "Slider Category"
+#~ msgstr "Slider Categorie"
+
+#~ msgid "Select a category for the featured post slider"
+#~ msgstr "Selecteer een categorie voor de uitgelichte berichten"
+
+#~ msgid "Number of slide items"
+#~ msgstr "Aantal uitgelichte berichten"
+
+#~ msgid "Enter the number of slide items"
+#~ msgstr "Voor het aantal uitgelichte berichten in"
+
+#~ msgid "Choose between Left and Right sidebar options to be used as default"
+#~ msgstr ""
+#~ "Maak een keuze tussen een Linker of Rechter sidebar als standaard keuze"
+
+#~ msgid "Element color"
+#~ msgstr "Element kleur"
+
+#~ msgid "Element color on hover"
+#~ msgstr "Element kleur bij hover"
+
+#~ msgid "Custom Favicon"
+#~ msgstr "Aangepast Favicon"
+
+#~ msgid ""
+#~ "Upload a 32px x 32px PNG/GIF image that will represent your websites "
+#~ "favicon"
+#~ msgstr "Upload een PNG/GIF afbeelding van 32pxx32px als website icoon."
+
+#~ msgid "Action Button"
+#~ msgstr "Actie Button"
+
+#~ msgid "Call For Action Text"
+#~ msgstr "Tekst voor het actie veld"
+
+#~ msgid "Enter the text for call for action section"
+#~ msgstr "Voer de tekst in die je wilt weergeven"
+
+#~ msgid "Call For Action Button Title"
+#~ msgstr "Actie knop Titel"
+
+#~ msgid "Enter the title for Call For Action button"
+#~ msgstr "Voer de Titel in voor de actie knop"
+
+#~ msgid "CFA button link"
+#~ msgstr "Link voor de actie knop"
+
+#~ msgid "Enter the link for Call For Action button"
+#~ msgstr "Voer de link in voor de actie knop"
+
+#~ msgid "Call For Action Text Color"
+#~ msgstr "Actie veld tekst kleur"
+
+#~ msgid "Call For Action Background Color"
+#~ msgstr "Actie knop achtergrond kleur"
+
+#~ msgid "Call For Action Button Border Color"
+#~ msgstr "Actie knop rand kleur"
+
+#~ msgid "Call For Action Button Text Color"
+#~ msgstr "Actie knop kleur"
+
+#~ msgid "Typography"
+#~ msgstr "Opmaak"
+
+#~ msgid "Main Body Text"
+#~ msgstr "Hoofd tekst"
+
+#~ msgid "Used in P tags"
+#~ msgstr "Gebruik P tags"
+
+#~ msgid "Heading Color"
+#~ msgstr "Titel kleur"
+
+#~ msgid "Color for all headings (h1-h6)"
+#~ msgstr "Kleur voor alle titels (h1-h6)"
+
+#~ msgid "Link Color"
+#~ msgstr "Link kleur"
+
+#~ msgid "Link:hover Color"
+#~ msgstr "Link:hover kleur"
+
+#~ msgid "Header"
+#~ msgstr "Header"
+
+#~ msgid "Top nav background color"
+#~ msgstr "Top navigatie achtergrond kleur"
+
+#~ msgid "Top nav item color"
+#~ msgstr "Top navigatie tekst kleur"
+
+#~ msgid "Link color"
+#~ msgstr "Link kleur"
+
+#~ msgid "Top nav item hover color"
+#~ msgstr "Top naviatie tekst hover kleur"
+
+#~ msgid "Link:hover color"
+#~ msgstr "Link:hover kleur"
+
+#~ msgid "Top nav dropdown background color"
+#~ msgstr "Top navigatie dropdown achtergrond kleur"
+
+#~ msgid "Background of dropdown item hover color"
+#~ msgstr "Top navigatie dropdown tekst hover kleur"
+
+#~ msgid "Top nav dropdown item color"
+#~ msgstr "Top navigatie dropdown tekst kleur"
+
+#~ msgid "Dropdown item color"
+#~ msgstr "Dropdown tekst kleur"
+
+#, fuzzy
+#~ msgid "Top nav dropdown item hover color"
+#~ msgstr "Top naviatie tekst hover kleur"
+
+#, fuzzy
+#~ msgid "Dropdown item hover color"
+#~ msgstr "Couleur Survol Fond Menu Déroulant Haut"
+
+#, fuzzy
+#~ msgid "Top nav dropdown item background hover color"
+#~ msgstr "Couleur Survol Fond Menu Déroulant Haut"
+
+#~ msgid "Footer widget area background color"
+#~ msgstr "Footer widget achtergrond kleur"
+
+#~ msgid "Footer background color"
+#~ msgstr "Footer achtergrond kleur"
+
+#~ msgid "Footer text color"
+#~ msgstr "Footer tekst kleur"
+
+#~ msgid "Footer link color"
+#~ msgstr "Footer link kleur"
+
+#~ msgid "Footer information"
+#~ msgstr "Footer informatie"
+
+#~ msgid "Copyright text in footer"
+#~ msgstr "Copyright tekst in de footer"
+
+#, fuzzy
+#~ msgid "Footer Social Icons"
+#~ msgstr "Footer social icoon kleur"
+
+#, fuzzy
+#~ msgid "Show/Hide social icons in footer"
+#~ msgstr "Footer social icoon kleur"
+
+#~ msgid "Social"
+#~ msgstr "Social"
+
+#~ msgid "Footer social icon color"
+#~ msgstr "Footer social icoon kleur"
+
+#~ msgid "Add full URL for your social network profiles"
+#~ msgstr "Voeg de volledige URL van je sociale netwerken toe"
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid "Twitter"
+#~ msgstr "Twitter"
+
+#~ msgid "Google+"
+#~ msgstr "Google+"
+
+#~ msgid "Youtube"
+#~ msgstr "Youtube"
+
+#~ msgid "LinkedIn"
+#~ msgstr "LinkedIn"
+
+#~ msgid "Pinterest"
+#~ msgstr "Pinterest"
+
+#~ msgid "RSS Feed"
+#~ msgstr "RSS Feed"
+
+#~ msgid "Tumblr"
+#~ msgstr "Tumblr"
+
+#~ msgid "Flickr"
+#~ msgstr "Flickr"
+
+#~ msgid "Instagram"
+#~ msgstr "Instagram"
+
+#~ msgid "Dribbble"
+#~ msgstr "Dribbble"
+
+#~ msgid "Skype"
+#~ msgstr "Skype"
+
+#~ msgid "Foursquare"
+#~ msgstr "Foursquare"
+
+#, fuzzy
+#~ msgid "GitHub"
+#~ msgstr "Github"
 
 #~ msgid "Search..."
 #~ msgstr "Zoeken..."

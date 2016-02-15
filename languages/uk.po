@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-07-08 17:08+0300\n"
-"PO-Revision-Date: 2015-07-08 17:08+0300\n"
+"Project-Id-Version: Activello Theme\n"
+"POT-Creation-Date: 2016-02-11 16:21+0200\n"
+"PO-Revision-Date: 2016-02-11 16:21+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.2\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
@@ -42,7 +42,7 @@ msgstr "Найпопулярніші категорії"
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Пошукайте в архівах. %1$s"
 
-#: ../404.php:53 ../archive.php:66 ../sidebar.php:19
+#: ../404.php:53 ../archive.php:66 ../sidebar.php:31
 msgid "Archives"
 msgstr "Архіви"
 
@@ -109,26 +109,56 @@ msgstr "Чати"
 #: ../comments.php:28
 #, php-format
 msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Коментарій &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s Коментарів &ldquo;%2$s&rdquo;"
+msgid "1 Comment"
+msgid_plural "%1$s Comment"
+msgstr[0] ""
+msgstr[1] ""
 
-#: ../comments.php:35 ../comments.php:53
+#: ../comments.php:35 ../comments.php:54
 msgid "Comment navigation"
 msgstr "Шляхівниця коментарів"
 
-#: ../comments.php:36 ../comments.php:54
+#: ../comments.php:36 ../comments.php:55
 msgid "&larr; Older Comments"
 msgstr "&larr; Попередні коментарі"
 
-#: ../comments.php:37 ../comments.php:55
+#: ../comments.php:37 ../comments.php:56
 msgid "Newer Comments &rarr;"
 msgstr "Нові комментарии &rarr;"
 
-#: ../comments.php:65
+#: ../comments.php:66
 msgid "Comments are closed."
 msgstr "Публікація коментарів обмежена"
+
+#: ../comments.php:77
+msgid "Name"
+msgstr ""
+
+#: ../comments.php:81
+msgid "Email"
+msgstr ""
+
+#: ../comments.php:85
+msgid "Website"
+msgstr ""
+
+#: ../comments.php:94
+msgid "Post Reply"
+msgstr ""
+
+#: ../content-grid.php:16 ../content-page.php:32 ../inc/extras.php:282
+msgid "Edit"
+msgstr "Редагувати"
+
+#: ../content-grid.php:28 ../content.php:41 ../content.php:67
+#: ../inc/extras.php:160
+msgid "Read More"
+msgstr "Детальніше"
+
+#: ../content-grid.php:37 ../content-page.php:21 ../content-single.php:43
+#: ../content.php:56 ../image.php:79
+msgid "Pages:"
+msgstr "Сторінки:"
 
 #: ../content-none.php:13
 msgid "Nothing Found"
@@ -156,83 +186,80 @@ msgstr ""
 "Схоже, ми не можемо знайти інформацію згідно Вашого запиту. Спробуйте "
 "використати \"Пошук\"."
 
-#: ../content-page.php:21 ../content-single.php:35 ../content.php:49
-#: ../image.php:79
-msgid "Pages:"
-msgstr "Сторінки:"
-
-#: ../content-page.php:32 ../content-single.php:26 ../content.php:23
-msgid "Edit"
-msgstr "Редагувати"
-
-#: ../content-single.php:19
-msgid ", "
-msgstr ","
-
-#: ../content-single.php:23
+#: ../content-single.php:21 ../content.php:22
 #, php-format
-msgid " %1$s"
-msgstr " %1$s"
+msgid "Edit %s"
+msgstr ""
 
-#: ../content.php:20
+#: ../content-single.php:55 ../content.php:73
 msgid "Leave a comment"
 msgstr "Залишити коментар"
 
-#: ../content.php:20
+#: ../content-single.php:55
+msgid "Comment (1)"
+msgstr ""
+
+#: ../content-single.php:55
+msgid "Comments (%)"
+msgstr ""
+
+#: ../content.php:73
 msgid "1 Comment"
 msgstr "1 коментар"
 
-#: ../content.php:20
+#: ../content.php:73
 msgid "% Comments"
 msgstr "% коментарів"
 
-#: ../content.php:32 ../content.php:45
-msgid "Read More"
-msgstr "Детальніше"
-
-#: ../functions.php:69
+#: ../functions.php:71
 msgid "Primary Menu"
 msgstr "Головне меню"
 
-#: ../functions.php:70 ../inc/extras.php:212
-msgid "Footer Links"
-msgstr "Посилання нижнього колонтитула"
-
-#: ../functions.php:108
+#: ../functions.php:112
 msgid "Sidebar"
 msgstr "Бічна панель"
 
-#: ../functions.php:118
-msgid "Homepage Widget 1"
-msgstr "Перший застосунок на Головній сторінці"
+#: ../functions.php:231
+msgid "Left Sidebar"
+msgstr "Ліворуч"
 
-#: ../functions.php:119 ../functions.php:129 ../functions.php:139
-msgid "Displays on the Home Page"
-msgstr "Відображається на Головній сторінці"
+#: ../functions.php:231
+msgid "Right Sidebar"
+msgstr "Праворуч"
 
-#: ../functions.php:128
-msgid "Homepage Widget 2"
-msgstr "Другий застосунок на Головній сторінці"
+#: ../functions.php:231
+msgid "No Sidebar"
+msgstr ""
 
-#: ../functions.php:138
-msgid "Homepage Widget 3"
-msgstr "Третій застосунок на Головній сторінці"
+#: ../functions.php:231
+msgid "Full Width"
+msgstr ""
 
-#: ../functions.php:148
-msgid "Footer Widget 1"
-msgstr "Перший застосунок нижнього колонтитула"
+#: ../functions.php:233
+msgid "Logo Only"
+msgstr ""
 
-#: ../functions.php:149 ../functions.php:159 ../functions.php:169
-msgid "Used for footer widget area"
-msgstr "Використано для застосунка нижнього колонтитула"
+#: ../functions.php:234
+msgid "Logo + Tagline"
+msgstr ""
 
-#: ../functions.php:158
-msgid "Footer Widget 2"
-msgstr "Другий застосунок нижнього колонтитула"
+#: ../functions.php:235
+msgid "Title Only"
+msgstr ""
 
-#: ../functions.php:168
-msgid "Footer Widget 3"
-msgstr "Третій застосунок нижнього колонтитула"
+#: ../functions.php:236
+msgid "Title + Tagline"
+msgstr ""
+
+#: ../header.php:50
+msgid "Search"
+msgstr ""
+
+#: ../header.php:51 ../searchform.php:14
+#, fuzzy
+msgctxt "submit button"
+msgid "Search"
+msgstr "Результат пошуку за запитом: %s"
 
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
@@ -242,176 +269,95 @@ msgstr "<i class=\"fa fa-chevron-left\"></i> Попередній"
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
 msgstr "Наступний <i class=\"fa fa-chevron-right\"></i>"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:91
-#: ../inc/admin/includes/class-options-framework-admin.php:92
-msgid "Theme Options"
-msgstr "Налаштування теми"
-
-#: ../inc/admin/includes/class-options-framework-admin.php:204
-msgid "Click OK to reset. Any theme settings will be lost!"
+#: ../inc/customizer.php:30
+msgid "Logo"
 msgstr ""
-"Натисність ОК для скидування налаштувань. Увага! Усі параментри будуть "
-"видалені!"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:235
-msgid "Default options restored."
-msgstr "Відновленні налаштування за замовчуванням."
+#: ../inc/customizer.php:44
+msgid "Show"
+msgstr ""
 
-#: ../inc/admin/includes/class-options-framework-admin.php:289
-msgid "Options saved."
-msgstr "Налаштування збережені."
+#: ../inc/customizer.php:53
+msgid "Activello Options"
+msgstr ""
 
-#: ../inc/admin/includes/class-options-media-uploader.php:62
-msgid "No file chosen"
-msgstr "Файл не обраний"
+#: ../inc/customizer.php:54
+msgid "Panel to update activello theme options"
+msgstr ""
 
-#: ../inc/admin/includes/class-options-media-uploader.php:65
-#: ../inc/admin/includes/class-options-media-uploader.php:118
-msgid "Upload"
-msgstr "Завантажити"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:67
-#: ../inc/admin/includes/class-options-media-uploader.php:119
-msgid "Remove"
-msgstr "Видалити"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:70
-msgid "Upgrade your version of WordPress for full media support."
-msgstr "Оновіть двигун WordPress  для повної підтримки додатку \"Медіа\"."
-
-#: ../inc/admin/includes/class-options-media-uploader.php:94
-msgid "View File"
-msgstr "Переглянути файл"
-
-#: ../inc/admin/includes/class-options-sanitization.php:316
-msgid "No Repeat"
-msgstr "Не повторювати\t"
-
-#: ../inc/admin/includes/class-options-sanitization.php:317
-msgid "Repeat Horizontally"
-msgstr "Повторити горизонтально"
-
-#: ../inc/admin/includes/class-options-sanitization.php:318
-msgid "Repeat Vertically"
-msgstr "Повторити вертикально"
-
-#: ../inc/admin/includes/class-options-sanitization.php:319
-msgid "Repeat All"
-msgstr "Заповнити"
-
-#: ../inc/admin/includes/class-options-sanitization.php:331
-msgid "Top Left"
-msgstr "Зверху ліворуч"
-
-#: ../inc/admin/includes/class-options-sanitization.php:332
-msgid "Top Center"
-msgstr "Зверху центрально"
-
-#: ../inc/admin/includes/class-options-sanitization.php:333
-msgid "Top Right"
-msgstr "Зверху праворуч"
-
-#: ../inc/admin/includes/class-options-sanitization.php:334
-msgid "Middle Left"
-msgstr "По середині ліворуч"
-
-#: ../inc/admin/includes/class-options-sanitization.php:335
-msgid "Middle Center"
-msgstr "По середині центрально"
-
-#: ../inc/admin/includes/class-options-sanitization.php:336
-msgid "Middle Right"
-msgstr "По середині праворуч"
-
-#: ../inc/admin/includes/class-options-sanitization.php:337
-msgid "Bottom Left"
-msgstr "Знизу ліворуч"
-
-#: ../inc/admin/includes/class-options-sanitization.php:338
-msgid "Bottom Center"
-msgstr "Знизу центрально"
-
-#: ../inc/admin/includes/class-options-sanitization.php:339
-msgid "Bottom Right"
-msgstr "Знизу праворуч"
-
-#: ../inc/admin/includes/class-options-sanitization.php:351
-msgid "Scroll Normally"
-msgstr "Звичайна прокручування"
-
-#: ../inc/admin/includes/class-options-sanitization.php:352
-msgid "Fixed in Place"
-msgstr "Зафіксовано на місці"
-
-#: ../inc/admin/includes/class-options-sanitization.php:424
-msgid "Normal"
-msgstr "Звичайний"
-
-#: ../inc/admin/includes/class-options-sanitization.php:425
-msgid "Italic"
-msgstr "Похилий"
-
-#: ../inc/admin/includes/class-options-sanitization.php:426
-msgid "Bold"
-msgstr "Напівжирний"
-
-#: ../inc/admin/includes/class-options-sanitization.php:427
-msgid "Bold Italic"
-msgstr "Напівширний похилий"
-
-#: ../inc/customizer.php:27
+#: ../inc/customizer.php:60
 #, fuzzy
 msgid "Content Options"
 msgstr "Налаштування теми"
 
-#: ../inc/customizer.php:39
+#: ../inc/customizer.php:73
 msgid "Show post excerpts?"
 msgstr ""
 
-#: ../inc/customizer.php:51
+#: ../inc/customizer.php:85
 #, fuzzy
 msgid "Display Comments on Static Pages?"
 msgstr "Відображається на Головній сторінці"
 
-#: ../inc/extras.php:61
-#, php-format
-msgid "Page %s"
-msgstr "Сторінка %s"
-
-#: ../inc/extras.php:125
-msgid ""
-"<p>This post is password protected. To view it please enter your password "
-"below:</p>"
+#: ../inc/customizer.php:94
+msgid "Slider Option"
 msgstr ""
-"<p>Цей запис захищений гаслом. Аби подивитися цей запис, будь ласка, уведіть "
-"гасло:</p>"
 
-#: ../inc/extras.php:126
-msgid "Password:"
-msgstr "Гасло:"
+#: ../inc/customizer.php:127
+msgid "Layout options"
+msgstr ""
 
-#: ../inc/extras.php:129
-msgid "Submit"
-msgstr "Підтвердити"
+#: ../inc/customizer.php:138
+msgid "Website Layout Options"
+msgstr "Налаштування макету сторінки"
 
-#: ../inc/extras.php:175
-msgid "Follow us on "
-msgstr "Приєднуйтесь до нас"
+#: ../inc/customizer.php:141
+msgid "Choose between different layout options to be used as default"
+msgstr ""
 
-#: ../inc/extras.php:287
-#, php-format
-msgid "Theme by %1$s Powered by %2$s"
-msgstr "Тема від %1$s. Працює на %2$s"
+#: ../inc/customizer.php:150
+msgid "Accent Color"
+msgstr ""
 
-#: ../inc/extras.php:394
+#: ../inc/customizer.php:151 ../inc/customizer.php:161
+#: ../inc/customizer.php:171
+msgid "Default used if no color is selected"
+msgstr ""
+"Якщо Ви не оберете свій колір, буде використано значення за замовчуванням"
+
+#: ../inc/customizer.php:160
+msgid "Social icon color"
+msgstr "Колір піктограми соціальних мереж"
+
+#: ../inc/customizer.php:170
+msgid "Social Icon:hover Color"
+msgstr ""
+
+#: ../inc/customizer.php:177
+msgid "Footer"
+msgstr "Нижній колонтил (Footer)"
+
+#: ../inc/customizer.php:195
+msgid "Other"
+msgstr "Інші"
+
+#: ../inc/customizer.php:204
+msgid "Custom CSS"
+msgstr "CSS користувача"
+
+#: ../inc/customizer.php:205
+msgid "Additional CSS"
+msgstr "Додатковий CSS"
+
+#: ../inc/customizer.php:213
 msgid "Support and Documentation"
 msgstr "Підтримка та Документація"
 
-#: ../inc/extras.php:400
-msgid "Sparkling Documentation"
-msgstr "Документація Sparkling"
+#: ../inc/customizer.php:356
+msgid "Activello Documentation"
+msgstr ""
 
-#: ../inc/extras.php:401
+#: ../inc/customizer.php:357
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -419,48 +365,105 @@ msgstr ""
 "Щоб зв'язатись з питаннь <b>технічної підтримки</b> та <b>звітів про "
 "помилки</b>, використайте"
 
-#: ../inc/extras.php:401
+#: ../inc/customizer.php:357
 msgid "Colorlib support forum"
 msgstr "Толока підтримки Colorlib"
 
-#: ../inc/extras.php:402
+#: ../inc/customizer.php:358
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr ""
 "Якщо Вам сподобалась ця тема, я був би вельми вдячний за будь-який наступний "
 "варіант:"
 
-#: ../inc/extras.php:404
+#: ../inc/customizer.php:360
 msgid "Rate this Theme"
 msgstr "Оцінити цю тему"
 
-#: ../inc/extras.php:405
+#: ../inc/customizer.php:361
 msgid "Like on Facebook"
 msgstr "Поставити вподобайку на Facebook"
 
-#: ../inc/extras.php:406
+#: ../inc/customizer.php:362
 msgid "Follow on Twitter"
 msgstr "Читати Twitter"
+
+#: ../inc/extras.php:71
+msgid ""
+"<p>This post is password protected. To view it please enter your password "
+"below:</p>"
+msgstr ""
+"<p>Цей запис захищений гаслом. Аби подивитися цей запис, будь ласка, уведіть "
+"гасло:</p>"
+
+#: ../inc/extras.php:72
+msgid "Password:"
+msgstr "Гасло:"
+
+#: ../inc/extras.php:75
+msgid "Submit"
+msgstr "Підтвердити"
+
+#: ../inc/extras.php:118
+msgid "Footer Links"
+msgstr "Посилання нижнього колонтитула"
+
+#: ../inc/extras.php:178
+#, php-format
+msgid "Theme by %1$s Powered by %2$s"
+msgstr "Тема від %1$s. Працює на %2$s"
+
+#: ../inc/extras.php:276
+#, php-format
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
+msgstr ""
+
+#: ../inc/extras.php:282
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../inc/extras.php:289
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../inc/metaboxes.php:16
+msgid ""
+"Select layout for this specific Page only ( Note: This setting only reflects "
+"if page Template is set as Default Template and Blog Type Templates.)"
+msgstr ""
+
+#: ../inc/metaboxes.php:21
+msgid "Select layout for this specific Post only"
+msgstr ""
+
+#: ../inc/metaboxes.php:28
+msgid "Select layout for this specific Product only"
+msgstr ""
 
 #: ../inc/template-tags.php:23
 msgid "Posts navigation"
 msgstr "Навігація записами"
 
 #: ../inc/template-tags.php:27
-msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
-msgstr "<i class=\"fa fa-chevron-left\"></i> Показати ще"
+msgid "Older posts"
+msgstr ""
 
 #: ../inc/template-tags.php:31
-msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
-msgstr "Нові записи <i class=\"fa fa-chevron-right\"></i>"
+msgid "Newer posts"
+msgstr ""
 
 #: ../inc/template-tags.php:56
 msgid "Post navigation"
 msgstr "Навігація записами"
 
+#: ../inc/template-tags.php:86
+msgid "Posted on"
+msgstr ""
+
 #: ../inc/widgets/widget-categories.php:11
 #: ../inc/widgets/widget-categories.php:12
-msgid "Sparkling Categories"
-msgstr "(Sparkling) Категорії"
+msgid "activello Categories"
+msgstr ""
 
 #: ../inc/widgets/widget-categories.php:17
 #: ../inc/widgets/widget-categories.php:76
@@ -479,401 +482,46 @@ msgstr "Обмеження категорій"
 msgid "Enable Posts Count"
 msgstr "Увімкнути лічильник записів"
 
-#: ../inc/widgets/widget-popular-posts.php:11
-#: ../inc/widgets/widget-popular-posts.php:12
-msgid "Sparkling Popular Posts Widget"
-msgstr "(Sparkling) Популярні записи"
+#: ../inc/widgets/widget-recent-posts.php:11
+#: ../inc/widgets/widget-recent-posts.php:12
+msgid "activello recent Posts Widget"
+msgstr ""
 
-#: ../inc/widgets/widget-popular-posts.php:17
-#: ../inc/widgets/widget-popular-posts.php:94
-msgid "Popular Posts"
-msgstr "Популярні записи"
+#: ../inc/widgets/widget-recent-posts.php:17
+#: ../inc/widgets/widget-recent-posts.php:91
+msgid "recent Posts"
+msgstr ""
 
-#: ../inc/widgets/widget-popular-posts.php:99
+#: ../inc/widgets/widget-recent-posts.php:96
 msgid "Title"
 msgstr "Назва"
 
-#: ../inc/widgets/widget-popular-posts.php:107
+#: ../inc/widgets/widget-recent-posts.php:104
 msgid "Limit Posts Number"
 msgstr "Увімкнути лічильник записів"
 
 #: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
-msgid "Sparkling Social Widget"
-msgstr "Соціальні мережі Sparkling"
+msgid "activello Social Widget"
+msgstr ""
 
 #: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
 msgid "Follow us"
 msgstr "Приєднуйтесь до нас"
 
-#: ../options.php:23
-msgid "Right Sidebar"
-msgstr "Праворуч"
-
-#: ../options.php:23
-msgid "Left Sidebar"
-msgstr "Ліворуч"
-
-#: ../options.php:27
-msgid "One"
-msgstr "Один"
-
-#: ../options.php:28
-msgid "Two"
-msgstr "Два"
-
-#: ../options.php:29
-msgid "Three"
-msgstr "Три"
-
-#: ../options.php:30
-msgid "Four"
-msgstr "Чотири"
-
-#: ../options.php:31
-msgid "Five"
-msgstr "П'ять"
-
-#: ../options.php:36
-msgid "French Toast"
-msgstr "Французька грінківниця"
-
-#: ../options.php:37
-msgid "Pancake"
-msgstr "Млинець"
-
-#: ../options.php:38
-msgid "Omelette"
-msgstr "Омлет"
-
-#: ../options.php:39
-msgid "Crepe"
-msgstr "Креп"
-
-#: ../options.php:40
-msgid "Waffle"
-msgstr "Вафлі"
-
-#: ../options.php:110
-msgid "Main"
-msgstr "Головна"
-
-#: ../options.php:115
-msgid "Do You want to display image slider on the Home Page?"
-msgstr "Чи бажаєте Ви бачити на головній сторінці повзунок?"
-
-#: ../options.php:116
-msgid "Check if you want to enable slider"
-msgstr "Увімкнити повзунок"
-
-#: ../options.php:123
-msgid "Slider Category"
-msgstr "Категорія для повзунка"
-
-#: ../options.php:124
-msgid "Select a category for the featured post slider"
-msgstr "Оберіть найцікавішу категорію для повзунка"
-
-#: ../options.php:132
-msgid "Number of slide items"
-msgstr "Кількість повзунків"
-
-#: ../options.php:133
-msgid "Enter the number of slide items"
-msgstr "Уведіть кількість повзунків"
-
-#: ../options.php:141
-msgid "Website Layout Options"
-msgstr "Налаштування макету сторінки"
-
-#: ../options.php:142
-msgid "Choose between Left and Right sidebar options to be used as default"
-msgstr ""
-"Оберіть, де за замовчуванням відображатиметься бічна панель: ліворуч чи "
-"праворуч? "
-
-#: ../options.php:151
-msgid "Element color"
-msgstr "Колір складника"
-
-#: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
-#: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
-#: ../options.php:280 ../options.php:390 ../options.php:398
-msgid "Default used if no color is selected"
-msgstr ""
-"Якщо Ви не оберете свій колір, буде використано значення за замовчуванням"
-
-#: ../options.php:159
-msgid "Element color on hover"
-msgstr "Колір сладника при наведенн"
-
-#: ../options.php:167
-msgid "Custom Favicon"
-msgstr "Власний ярличок сайту (Favicon)"
-
-#: ../options.php:168
-msgid ""
-"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
-msgstr ""
-"Завантажте власний ярличок сайту (Favicon) -  зображення розміром 32px х "
-"32px у форматі PNG/GIF."
-
-#: ../options.php:175
-msgid "Action Button"
-msgstr "Action Button"
-
-#: ../options.php:180
-msgid "Call For Action Text"
-msgstr "Текст Call for Action"
-
-#: ../options.php:181
-msgid "Enter the text for call for action section"
-msgstr "Уведіть текст для розділу Call for Action"
-
-#: ../options.php:188
-msgid "Call For Action Button Title"
-msgstr "Текст кнопки Call for Action"
-
-#: ../options.php:189
-msgid "Enter the title for Call For Action button"
-msgstr "Уведіть назву для розділу Call for Action"
-
-#: ../options.php:196
-msgid "CFA button link"
-msgstr "Посилання кнопки Call for Action"
-
-#: ../options.php:197
-msgid "Enter the link for Call For Action button"
-msgstr "Уведіть адресу для кнопки Call for Action"
-
-#: ../options.php:204
-msgid "Call For Action Text Color"
-msgstr "Колір тексту Call for Action"
-
-#: ../options.php:212
-msgid "Call For Action Background Color"
-msgstr "Колір тла для Call for Action"
-
-#: ../options.php:220
-msgid "Call For Action Button Border Color"
-msgstr "Колір меж кнопки  Call for Action"
-
-#: ../options.php:228
-msgid "Call For Action Button Text Color"
-msgstr "Колір текста кнопки Call for Action"
-
-#: ../options.php:236
-msgid "Typography"
-msgstr "Оформлення"
-
-#: ../options.php:241
-msgid "Main Body Text"
-msgstr "Основний шрифт"
-
-#: ../options.php:242
-msgid "Used in P tags"
-msgstr "Використаний у теґах <p> (абзац)"
-
-#: ../options.php:250
-msgid "Heading Color"
-msgstr "Колір заголовку"
-
-#: ../options.php:251
-msgid "Color for all headings (h1-h6)"
-msgstr "Колір для усіх заголовків (h1-h6)"
-
-#: ../options.php:258
-msgid "Link Color"
-msgstr "Колір посилань"
-
-#: ../options.php:266
-msgid "Link:hover Color"
-msgstr "Колір посилань при наведенні"
-
-#: ../options.php:274
-msgid "Header"
-msgstr "Верхній колонтитул"
-
-#: ../options.php:279
-msgid "Top nav background color"
-msgstr "Колір тла верхнього меню"
-
-#: ../options.php:287
-msgid "Top nav item color"
-msgstr "Колір матеріалів складника меню"
-
-#: ../options.php:288
-msgid "Link color"
-msgstr "Колір посилання"
-
-#: ../options.php:295
-msgid "Top nav item hover color"
-msgstr "Колір текста складника мені під час наведення"
-
-#: ../options.php:296
-msgid "Link:hover color"
-msgstr "Колір посилання при наведенні"
-
-#: ../options.php:303
-msgid "Top nav dropdown background color"
-msgstr "Колір тла меню другого рівня"
-
-#: ../options.php:304 ../options.php:328
-msgid "Background of dropdown item hover color"
-msgstr "Колір тла складника меню другого рівня під час наведення"
-
-#: ../options.php:311
-msgid "Top nav dropdown item color"
-msgstr "Колір складника в меню другого рівня"
-
-#: ../options.php:312
-msgid "Dropdown item color"
-msgstr "Колір складника"
-
-#: ../options.php:319
-msgid "Top nav dropdown item hover color"
-msgstr "Колір тексту меню другого рівня під час наведення"
-
-#: ../options.php:320
-msgid "Dropdown item hover color"
-msgstr "Колір тла складника в меню другого рівня"
-
-#: ../options.php:327
-msgid "Top nav dropdown item background hover color"
-msgstr "Колір тексту складника меню другого рівня під час наведення"
-
-#: ../options.php:335
-msgid "Footer"
-msgstr "Нижній колонтил (Footer)"
-
-#: ../options.php:340
-msgid "Footer widget area background color"
-msgstr "Колір фона тла стосунків нижнього колонтитулу"
-
-#: ../options.php:347
-msgid "Footer background color"
-msgstr "Колір тла нижнього колонтитула"
-
-#: ../options.php:354
-msgid "Footer text color"
-msgstr "Колір тексту нижнього колонтитула"
-
-#: ../options.php:361
-msgid "Footer link color"
-msgstr "Колір посилань нижнього колонтитула"
-
-#: ../options.php:368
-msgid "Footer information"
-msgstr "Інформація нижнього колонтутила"
-
-#: ../options.php:369
-msgid "Copyright text in footer"
-msgstr "Текст авторських прав у нижньому колонтитулі"
-
-#: ../options.php:376
-#, fuzzy
-msgid "Footer Social Icons"
-msgstr "Колір піктограми соціальних мереж у нижньому колонтитулі"
-
-#: ../options.php:377
-#, fuzzy
-msgid "Show/Hide social icons in footer"
-msgstr "Колір піктограми соціальних мереж у нижньому колонтитулі"
-
-#: ../options.php:384
-msgid "Social"
-msgstr "Соц. мережі"
-
-#: ../options.php:389
-msgid "Social icon color"
-msgstr "Колір піктограми соціальних мереж"
-
-#: ../options.php:397
-msgid "Footer social icon color"
-msgstr "Колір піктограми соціальних мереж у нижньому колонтитулі"
-
-#: ../options.php:405
-msgid "Add full URL for your social network profiles"
-msgstr "Додати повні посилання облікових записів у соціальних мережах"
-
-#: ../options.php:406
-msgid "Facebook"
-msgstr "Facebook"
-
-#: ../options.php:415
-msgid "Twitter"
-msgstr "Twitter"
-
-#: ../options.php:423
-msgid "Google+"
-msgstr "Google+"
-
-#: ../options.php:431
-msgid "Youtube"
-msgstr "Youtube"
-
-#: ../options.php:439
-msgid "Vimeo"
-msgstr "Vimeo"
-
-#: ../options.php:447
-msgid "LinkedIn"
-msgstr "LinkedIn"
-
-#: ../options.php:455
-msgid "Pinterest"
-msgstr "Pinterest"
-
-#: ../options.php:463
-msgid "RSS Feed"
-msgstr "RSS"
-
-#: ../options.php:471
-msgid "Tumblr"
-msgstr "Tumblr"
-
-#: ../options.php:479
-msgid "Flickr"
-msgstr "Flickr"
-
-#: ../options.php:487
-msgid "Instagram"
-msgstr "Instagram"
-
-#: ../options.php:495
-msgid "Dribbble"
-msgstr "Dribble"
-
-#: ../options.php:503
-msgid "Skype"
-msgstr "Skype"
-
-#: ../options.php:511
-msgid "Foursquare"
-msgstr "Foursquare"
-
-#: ../options.php:519
-msgid "SoundCloud"
-msgstr "SoundCloud"
-
-#: ../options.php:527
-msgid "GitHub"
-msgstr "GitHub"
-
-#: ../options.php:535
-msgid "Spotify"
+#: ../inc/woo-setup.php:96
+msgid "View your shopping cart"
 msgstr ""
 
-#: ../options.php:542
-msgid "Other"
-msgstr "Інші"
+#: ../inc/woo-setup.php:97
+msgid "Start shopping"
+msgstr ""
 
-#: ../options.php:547
-msgid "Custom CSS"
-msgstr "CSS користувача"
-
-#: ../options.php:548
-msgid "Additional CSS"
-msgstr "Додатковий CSS"
+#: ../inc/woo-setup.php:101
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../search.php:16
 #, php-format
@@ -897,15 +545,406 @@ msgctxt "label"
 msgid "Search for:"
 msgstr "Результат пошуку за запитом: %s"
 
-#: ../searchform.php:14
-#, fuzzy
-msgctxt "submit button"
-msgid "Search"
-msgstr "Результат пошуку за запитом: %s"
-
-#: ../sidebar.php:26
+#: ../sidebar.php:38
 msgid "Meta"
 msgstr "Мета"
+
+#~ msgctxt "comments title"
+#~ msgid "One thought on &ldquo;%2$s&rdquo;"
+#~ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+#~ msgstr[0] "Коментарій &ldquo;%2$s&rdquo;"
+#~ msgstr[1] "%1$s Коментарів &ldquo;%2$s&rdquo;"
+
+#~ msgid ", "
+#~ msgstr ","
+
+#~ msgid " %1$s"
+#~ msgstr " %1$s"
+
+#~ msgid "Homepage Widget 1"
+#~ msgstr "Перший застосунок на Головній сторінці"
+
+#~ msgid "Displays on the Home Page"
+#~ msgstr "Відображається на Головній сторінці"
+
+#~ msgid "Homepage Widget 2"
+#~ msgstr "Другий застосунок на Головній сторінці"
+
+#~ msgid "Homepage Widget 3"
+#~ msgstr "Третій застосунок на Головній сторінці"
+
+#~ msgid "Footer Widget 1"
+#~ msgstr "Перший застосунок нижнього колонтитула"
+
+#~ msgid "Used for footer widget area"
+#~ msgstr "Використано для застосунка нижнього колонтитула"
+
+#~ msgid "Footer Widget 2"
+#~ msgstr "Другий застосунок нижнього колонтитула"
+
+#~ msgid "Footer Widget 3"
+#~ msgstr "Третій застосунок нижнього колонтитула"
+
+#~ msgid "Theme Options"
+#~ msgstr "Налаштування теми"
+
+#~ msgid "Click OK to reset. Any theme settings will be lost!"
+#~ msgstr ""
+#~ "Натисність ОК для скидування налаштувань. Увага! Усі параментри будуть "
+#~ "видалені!"
+
+#~ msgid "Default options restored."
+#~ msgstr "Відновленні налаштування за замовчуванням."
+
+#~ msgid "Options saved."
+#~ msgstr "Налаштування збережені."
+
+#~ msgid "No file chosen"
+#~ msgstr "Файл не обраний"
+
+#~ msgid "Upload"
+#~ msgstr "Завантажити"
+
+#~ msgid "Remove"
+#~ msgstr "Видалити"
+
+#~ msgid "Upgrade your version of WordPress for full media support."
+#~ msgstr "Оновіть двигун WordPress  для повної підтримки додатку \"Медіа\"."
+
+#~ msgid "View File"
+#~ msgstr "Переглянути файл"
+
+#~ msgid "No Repeat"
+#~ msgstr "Не повторювати\t"
+
+#~ msgid "Repeat Horizontally"
+#~ msgstr "Повторити горизонтально"
+
+#~ msgid "Repeat Vertically"
+#~ msgstr "Повторити вертикально"
+
+#~ msgid "Repeat All"
+#~ msgstr "Заповнити"
+
+#~ msgid "Top Left"
+#~ msgstr "Зверху ліворуч"
+
+#~ msgid "Top Center"
+#~ msgstr "Зверху центрально"
+
+#~ msgid "Top Right"
+#~ msgstr "Зверху праворуч"
+
+#~ msgid "Middle Left"
+#~ msgstr "По середині ліворуч"
+
+#~ msgid "Middle Center"
+#~ msgstr "По середині центрально"
+
+#~ msgid "Middle Right"
+#~ msgstr "По середині праворуч"
+
+#~ msgid "Bottom Left"
+#~ msgstr "Знизу ліворуч"
+
+#~ msgid "Bottom Center"
+#~ msgstr "Знизу центрально"
+
+#~ msgid "Bottom Right"
+#~ msgstr "Знизу праворуч"
+
+#~ msgid "Scroll Normally"
+#~ msgstr "Звичайна прокручування"
+
+#~ msgid "Fixed in Place"
+#~ msgstr "Зафіксовано на місці"
+
+#~ msgid "Normal"
+#~ msgstr "Звичайний"
+
+#~ msgid "Italic"
+#~ msgstr "Похилий"
+
+#~ msgid "Bold"
+#~ msgstr "Напівжирний"
+
+#~ msgid "Bold Italic"
+#~ msgstr "Напівширний похилий"
+
+#~ msgid "Page %s"
+#~ msgstr "Сторінка %s"
+
+#~ msgid "Follow us on "
+#~ msgstr "Приєднуйтесь до нас"
+
+#~ msgid "Sparkling Documentation"
+#~ msgstr "Документація Sparkling"
+
+#~ msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+#~ msgstr "<i class=\"fa fa-chevron-left\"></i> Показати ще"
+
+#~ msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+#~ msgstr "Нові записи <i class=\"fa fa-chevron-right\"></i>"
+
+#~ msgid "Sparkling Categories"
+#~ msgstr "(Sparkling) Категорії"
+
+#~ msgid "Sparkling Popular Posts Widget"
+#~ msgstr "(Sparkling) Популярні записи"
+
+#~ msgid "Popular Posts"
+#~ msgstr "Популярні записи"
+
+#~ msgid "Sparkling Social Widget"
+#~ msgstr "Соціальні мережі Sparkling"
+
+#~ msgid "One"
+#~ msgstr "Один"
+
+#~ msgid "Two"
+#~ msgstr "Два"
+
+#~ msgid "Three"
+#~ msgstr "Три"
+
+#~ msgid "Four"
+#~ msgstr "Чотири"
+
+#~ msgid "Five"
+#~ msgstr "П'ять"
+
+#~ msgid "French Toast"
+#~ msgstr "Французька грінківниця"
+
+#~ msgid "Pancake"
+#~ msgstr "Млинець"
+
+#~ msgid "Omelette"
+#~ msgstr "Омлет"
+
+#~ msgid "Crepe"
+#~ msgstr "Креп"
+
+#~ msgid "Waffle"
+#~ msgstr "Вафлі"
+
+#~ msgid "Main"
+#~ msgstr "Головна"
+
+#~ msgid "Do You want to display image slider on the Home Page?"
+#~ msgstr "Чи бажаєте Ви бачити на головній сторінці повзунок?"
+
+#~ msgid "Check if you want to enable slider"
+#~ msgstr "Увімкнити повзунок"
+
+#~ msgid "Slider Category"
+#~ msgstr "Категорія для повзунка"
+
+#~ msgid "Select a category for the featured post slider"
+#~ msgstr "Оберіть найцікавішу категорію для повзунка"
+
+#~ msgid "Number of slide items"
+#~ msgstr "Кількість повзунків"
+
+#~ msgid "Enter the number of slide items"
+#~ msgstr "Уведіть кількість повзунків"
+
+#~ msgid "Choose between Left and Right sidebar options to be used as default"
+#~ msgstr ""
+#~ "Оберіть, де за замовчуванням відображатиметься бічна панель: ліворуч чи "
+#~ "праворуч? "
+
+#~ msgid "Element color"
+#~ msgstr "Колір складника"
+
+#~ msgid "Element color on hover"
+#~ msgstr "Колір сладника при наведенн"
+
+#~ msgid "Custom Favicon"
+#~ msgstr "Власний ярличок сайту (Favicon)"
+
+#~ msgid ""
+#~ "Upload a 32px x 32px PNG/GIF image that will represent your websites "
+#~ "favicon"
+#~ msgstr ""
+#~ "Завантажте власний ярличок сайту (Favicon) -  зображення розміром 32px х "
+#~ "32px у форматі PNG/GIF."
+
+#~ msgid "Action Button"
+#~ msgstr "Action Button"
+
+#~ msgid "Call For Action Text"
+#~ msgstr "Текст Call for Action"
+
+#~ msgid "Enter the text for call for action section"
+#~ msgstr "Уведіть текст для розділу Call for Action"
+
+#~ msgid "Call For Action Button Title"
+#~ msgstr "Текст кнопки Call for Action"
+
+#~ msgid "Enter the title for Call For Action button"
+#~ msgstr "Уведіть назву для розділу Call for Action"
+
+#~ msgid "CFA button link"
+#~ msgstr "Посилання кнопки Call for Action"
+
+#~ msgid "Enter the link for Call For Action button"
+#~ msgstr "Уведіть адресу для кнопки Call for Action"
+
+#~ msgid "Call For Action Text Color"
+#~ msgstr "Колір тексту Call for Action"
+
+#~ msgid "Call For Action Background Color"
+#~ msgstr "Колір тла для Call for Action"
+
+#~ msgid "Call For Action Button Border Color"
+#~ msgstr "Колір меж кнопки  Call for Action"
+
+#~ msgid "Call For Action Button Text Color"
+#~ msgstr "Колір текста кнопки Call for Action"
+
+#~ msgid "Typography"
+#~ msgstr "Оформлення"
+
+#~ msgid "Main Body Text"
+#~ msgstr "Основний шрифт"
+
+#~ msgid "Used in P tags"
+#~ msgstr "Використаний у теґах <p> (абзац)"
+
+#~ msgid "Heading Color"
+#~ msgstr "Колір заголовку"
+
+#~ msgid "Color for all headings (h1-h6)"
+#~ msgstr "Колір для усіх заголовків (h1-h6)"
+
+#~ msgid "Link Color"
+#~ msgstr "Колір посилань"
+
+#~ msgid "Link:hover Color"
+#~ msgstr "Колір посилань при наведенні"
+
+#~ msgid "Header"
+#~ msgstr "Верхній колонтитул"
+
+#~ msgid "Top nav background color"
+#~ msgstr "Колір тла верхнього меню"
+
+#~ msgid "Top nav item color"
+#~ msgstr "Колір матеріалів складника меню"
+
+#~ msgid "Link color"
+#~ msgstr "Колір посилання"
+
+#~ msgid "Top nav item hover color"
+#~ msgstr "Колір текста складника мені під час наведення"
+
+#~ msgid "Link:hover color"
+#~ msgstr "Колір посилання при наведенні"
+
+#~ msgid "Top nav dropdown background color"
+#~ msgstr "Колір тла меню другого рівня"
+
+#~ msgid "Background of dropdown item hover color"
+#~ msgstr "Колір тла складника меню другого рівня під час наведення"
+
+#~ msgid "Top nav dropdown item color"
+#~ msgstr "Колір складника в меню другого рівня"
+
+#~ msgid "Dropdown item color"
+#~ msgstr "Колір складника"
+
+#~ msgid "Top nav dropdown item hover color"
+#~ msgstr "Колір тексту меню другого рівня під час наведення"
+
+#~ msgid "Dropdown item hover color"
+#~ msgstr "Колір тла складника в меню другого рівня"
+
+#~ msgid "Top nav dropdown item background hover color"
+#~ msgstr "Колір тексту складника меню другого рівня під час наведення"
+
+#~ msgid "Footer widget area background color"
+#~ msgstr "Колір фона тла стосунків нижнього колонтитулу"
+
+#~ msgid "Footer background color"
+#~ msgstr "Колір тла нижнього колонтитула"
+
+#~ msgid "Footer text color"
+#~ msgstr "Колір тексту нижнього колонтитула"
+
+#~ msgid "Footer link color"
+#~ msgstr "Колір посилань нижнього колонтитула"
+
+#~ msgid "Footer information"
+#~ msgstr "Інформація нижнього колонтутила"
+
+#~ msgid "Copyright text in footer"
+#~ msgstr "Текст авторських прав у нижньому колонтитулі"
+
+#, fuzzy
+#~ msgid "Footer Social Icons"
+#~ msgstr "Колір піктограми соціальних мереж у нижньому колонтитулі"
+
+#, fuzzy
+#~ msgid "Show/Hide social icons in footer"
+#~ msgstr "Колір піктограми соціальних мереж у нижньому колонтитулі"
+
+#~ msgid "Social"
+#~ msgstr "Соц. мережі"
+
+#~ msgid "Footer social icon color"
+#~ msgstr "Колір піктограми соціальних мереж у нижньому колонтитулі"
+
+#~ msgid "Add full URL for your social network profiles"
+#~ msgstr "Додати повні посилання облікових записів у соціальних мережах"
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid "Twitter"
+#~ msgstr "Twitter"
+
+#~ msgid "Google+"
+#~ msgstr "Google+"
+
+#~ msgid "Youtube"
+#~ msgstr "Youtube"
+
+#~ msgid "Vimeo"
+#~ msgstr "Vimeo"
+
+#~ msgid "LinkedIn"
+#~ msgstr "LinkedIn"
+
+#~ msgid "Pinterest"
+#~ msgstr "Pinterest"
+
+#~ msgid "RSS Feed"
+#~ msgstr "RSS"
+
+#~ msgid "Tumblr"
+#~ msgstr "Tumblr"
+
+#~ msgid "Flickr"
+#~ msgstr "Flickr"
+
+#~ msgid "Instagram"
+#~ msgstr "Instagram"
+
+#~ msgid "Dribbble"
+#~ msgstr "Dribble"
+
+#~ msgid "Skype"
+#~ msgstr "Skype"
+
+#~ msgid "Foursquare"
+#~ msgstr "Foursquare"
+
+#~ msgid "SoundCloud"
+#~ msgstr "SoundCloud"
+
+#~ msgid "GitHub"
+#~ msgstr "GitHub"
 
 #~ msgid "Search..."
 #~ msgstr "Результат пошуку за запитом: %s"

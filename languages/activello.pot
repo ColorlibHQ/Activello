@@ -1,0 +1,518 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Activello Theme\n"
+"POT-Creation-Date: 2016-02-11 16:13+0200\n"
+"PO-Revision-Date: 2015-04-04 15:03+0200\n"
+"Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
+"Language-Team: colorlib <info@colorlib.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../404.php:19
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#: ../404.php:25
+msgid "Recent Posts"
+msgstr ""
+
+#: ../404.php:31
+msgid "Most Used Categories"
+msgstr ""
+
+#: ../404.php:52
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: ../404.php:53 ../archive.php:66 ../sidebar.php:31
+msgid "Archives"
+msgstr ""
+
+#: ../404.php:58
+msgid "Tags"
+msgstr ""
+
+#: ../archive.php:27
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: ../archive.php:30
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: ../archive.php:33
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: ../archive.php:36
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: ../archive.php:39
+msgid "Asides"
+msgstr ""
+
+#: ../archive.php:42
+msgid "Galleries"
+msgstr ""
+
+#: ../archive.php:45
+msgid "Images"
+msgstr ""
+
+#: ../archive.php:48
+msgid "Videos"
+msgstr ""
+
+#: ../archive.php:51
+msgid "Quotes"
+msgstr ""
+
+#: ../archive.php:54
+msgid "Links"
+msgstr ""
+
+#: ../archive.php:57
+msgid "Statuses"
+msgstr ""
+
+#: ../archive.php:60
+msgid "Audios"
+msgstr ""
+
+#: ../archive.php:63
+msgid "Chats"
+msgstr ""
+
+#: ../comments.php:28
+#, php-format
+msgctxt "comments title"
+msgid "1 Comment"
+msgid_plural "%1$s Comment"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:35 ../comments.php:54
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:36 ../comments.php:55
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:37 ../comments.php:56
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:66
+msgid "Comments are closed."
+msgstr ""
+
+#: ../comments.php:77
+msgid "Name"
+msgstr ""
+
+#: ../comments.php:81
+msgid "Email"
+msgstr ""
+
+#: ../comments.php:85
+msgid "Website"
+msgstr ""
+
+#: ../comments.php:94
+msgid "Post Reply"
+msgstr ""
+
+#: ../content-grid.php:16 ../content-page.php:32 ../inc/extras.php:282
+msgid "Edit"
+msgstr ""
+
+#: ../content-grid.php:28 ../content.php:41 ../content.php:67
+#: ../inc/extras.php:160
+msgid "Read More"
+msgstr ""
+
+#: ../content-grid.php:37 ../content-page.php:21 ../content-single.php:43
+#: ../content.php:56 ../image.php:79
+msgid "Pages:"
+msgstr ""
+
+#: ../content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: ../content-none.php:19
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: ../content-none.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: ../content-single.php:21 ../content.php:22
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: ../content-single.php:55 ../content.php:73
+msgid "Leave a comment"
+msgstr ""
+
+#: ../content-single.php:55
+msgid "Comment (1)"
+msgstr ""
+
+#: ../content-single.php:55
+msgid "Comments (%)"
+msgstr ""
+
+#: ../content.php:73
+msgid "1 Comment"
+msgstr ""
+
+#: ../content.php:73
+msgid "% Comments"
+msgstr ""
+
+#: ../functions.php:71
+msgid "Primary Menu"
+msgstr ""
+
+#: ../functions.php:112
+msgid "Sidebar"
+msgstr ""
+
+#: ../functions.php:231
+msgid "Left Sidebar"
+msgstr ""
+
+#: ../functions.php:231
+msgid "Right Sidebar"
+msgstr ""
+
+#: ../functions.php:231
+msgid "No Sidebar"
+msgstr ""
+
+#: ../functions.php:231
+msgid "Full Width"
+msgstr ""
+
+#: ../functions.php:233
+msgid "Logo Only"
+msgstr ""
+
+#: ../functions.php:234
+msgid "Logo + Tagline"
+msgstr ""
+
+#: ../functions.php:235
+msgid "Title Only"
+msgstr ""
+
+#: ../functions.php:236
+msgid "Title + Tagline"
+msgstr ""
+
+#: ../header.php:50
+msgid "Search"
+msgstr ""
+
+#: ../header.php:51 ../searchform.php:14
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: ../image.php:22
+msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+msgstr ""
+
+#: ../image.php:23
+msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+msgstr ""
+
+#: ../inc/customizer.php:30
+msgid "Logo"
+msgstr ""
+
+#: ../inc/customizer.php:44
+msgid "Show"
+msgstr ""
+
+#: ../inc/customizer.php:53
+msgid "Activello Options"
+msgstr ""
+
+#: ../inc/customizer.php:54
+msgid "Panel to update activello theme options"
+msgstr ""
+
+#: ../inc/customizer.php:60
+msgid "Content Options"
+msgstr ""
+
+#: ../inc/customizer.php:73
+msgid "Show post excerpts?"
+msgstr ""
+
+#: ../inc/customizer.php:85
+msgid "Display Comments on Static Pages?"
+msgstr ""
+
+#: ../inc/customizer.php:94
+msgid "Slider Option"
+msgstr ""
+
+#: ../inc/customizer.php:127
+msgid "Layout options"
+msgstr ""
+
+#: ../inc/customizer.php:138
+msgid "Website Layout Options"
+msgstr ""
+
+#: ../inc/customizer.php:141
+msgid "Choose between different layout options to be used as default"
+msgstr ""
+
+#: ../inc/customizer.php:150
+msgid "Accent Color"
+msgstr ""
+
+#: ../inc/customizer.php:151 ../inc/customizer.php:161
+#: ../inc/customizer.php:171
+msgid "Default used if no color is selected"
+msgstr ""
+
+#: ../inc/customizer.php:160
+msgid "Social icon color"
+msgstr ""
+
+#: ../inc/customizer.php:170
+msgid "Social Icon:hover Color"
+msgstr ""
+
+#: ../inc/customizer.php:177
+msgid "Footer"
+msgstr ""
+
+#: ../inc/customizer.php:195
+msgid "Other"
+msgstr ""
+
+#: ../inc/customizer.php:204
+msgid "Custom CSS"
+msgstr ""
+
+#: ../inc/customizer.php:205
+msgid "Additional CSS"
+msgstr ""
+
+#: ../inc/customizer.php:213
+msgid "Support and Documentation"
+msgstr ""
+
+#: ../inc/customizer.php:356
+msgid "Activello Documentation"
+msgstr ""
+
+#: ../inc/customizer.php:357
+msgid "The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via"
+msgstr ""
+
+#: ../inc/customizer.php:357
+msgid "Colorlib support forum"
+msgstr ""
+
+#: ../inc/customizer.php:358
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr ""
+
+#: ../inc/customizer.php:360
+msgid "Rate this Theme"
+msgstr ""
+
+#: ../inc/customizer.php:361
+msgid "Like on Facebook"
+msgstr ""
+
+#: ../inc/customizer.php:362
+msgid "Follow on Twitter"
+msgstr ""
+
+#: ../inc/extras.php:71
+msgid "<p>This post is password protected. To view it please enter your password below:</p>"
+msgstr ""
+
+#: ../inc/extras.php:72
+msgid "Password:"
+msgstr ""
+
+#: ../inc/extras.php:75
+msgid "Submit"
+msgstr ""
+
+#: ../inc/extras.php:118
+msgid "Footer Links"
+msgstr ""
+
+#: ../inc/extras.php:178
+#, php-format
+msgid "Theme by %1$s Powered by %2$s"
+msgstr ""
+
+#: ../inc/extras.php:276
+#, php-format
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
+msgstr ""
+
+#: ../inc/extras.php:282
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../inc/extras.php:289
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../inc/metaboxes.php:16
+msgid "Select layout for this specific Page only ( Note: This setting only reflects if page Template is set as Default Template and Blog Type Templates.)"
+msgstr ""
+
+#: ../inc/metaboxes.php:21
+msgid "Select layout for this specific Post only"
+msgstr ""
+
+#: ../inc/metaboxes.php:28
+msgid "Select layout for this specific Product only"
+msgstr ""
+
+#: ../inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr ""
+
+#: ../inc/template-tags.php:27
+msgid "Older posts"
+msgstr ""
+
+#: ../inc/template-tags.php:31
+msgid "Newer posts"
+msgstr ""
+
+#: ../inc/template-tags.php:56
+msgid "Post navigation"
+msgstr ""
+
+#: ../inc/template-tags.php:86
+msgid "Posted on"
+msgstr ""
+
+#: ../inc/widgets/widget-categories.php:11
+#: ../inc/widgets/widget-categories.php:12
+msgid "activello Categories"
+msgstr ""
+
+#: ../inc/widgets/widget-categories.php:17
+#: ../inc/widgets/widget-categories.php:76
+msgid "Categories"
+msgstr ""
+
+#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
+msgid "Title "
+msgstr ""
+
+#: ../inc/widgets/widget-categories.php:91
+msgid "Limit Categories "
+msgstr ""
+
+#: ../inc/widgets/widget-categories.php:104
+msgid "Enable Posts Count"
+msgstr ""
+
+#: ../inc/widgets/widget-recent-posts.php:11
+#: ../inc/widgets/widget-recent-posts.php:12
+msgid "activello recent Posts Widget"
+msgstr ""
+
+#: ../inc/widgets/widget-recent-posts.php:17
+#: ../inc/widgets/widget-recent-posts.php:91
+msgid "recent Posts"
+msgstr ""
+
+#: ../inc/widgets/widget-recent-posts.php:96
+msgid "Title"
+msgstr ""
+
+#: ../inc/widgets/widget-recent-posts.php:104
+msgid "Limit Posts Number"
+msgstr ""
+
+#: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
+msgid "activello Social Widget"
+msgstr ""
+
+#: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
+msgid "Follow us"
+msgstr ""
+
+#: ../inc/woo-setup.php:96
+msgid "View your shopping cart"
+msgstr ""
+
+#: ../inc/woo-setup.php:97
+msgid "Start shopping"
+msgstr ""
+
+#: ../inc/woo-setup.php:101
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../searchform.php:11
+msgid "Search for:"
+msgstr ""
+
+#: ../searchform.php:12
+msgctxt "placeholder"
+msgid "Search&hellip;"
+msgstr ""
+
+#: ../searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: ../sidebar.php:38
+msgid "Meta"
+msgstr ""

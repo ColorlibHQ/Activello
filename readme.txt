@@ -2,7 +2,7 @@
 
 Theme Name: Activello
 Theme URI: http://colorlib.com/wp/Activello/
-Version: 1.0.0
+Version: 1.0.1
 Tested up to: WP 4.4
 
 Author: Aigars Silkalns
@@ -10,7 +10,7 @@ Author URI: http://colorlib.com/wp/
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl.html
 -------------------------------------------------------
-Activello theme, Copyright 2015 colorlib.com
+Activello theme, Copyright 2016 colorlib.com
 Activello WordPress theme is distributed under the terms of the GNU GPL
 Activello is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 -------------------------------------------------------
@@ -27,8 +27,7 @@ Activello theme uses:
 
 /*========= Description =========*/
 
-Coming soon
-
+Activello is a clean and minimal WordPress blog theme with premium look and feel well suited for food, fashion, travel, lifestyle, sports and any other awesome blogs. This theme features WooCommerce integration that allows you to create fully functional eCommerce website side by side with your blog. This theme has several customization options that are available WordPress Theme Customizer. Activello is the only WordPress blog theme you will ever need.
 
 For questions, comments or bug reports, visit Colorlib support forum (http://colorlib.com/wp/forums).
 
@@ -46,7 +45,7 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 * Responsive design
 * Unlimited color variations
 * SEO friendly
-* Theme Options
+* WordPress Customizer
 * Image centric approach
 * Internationalized & localization
 * Drop-down Menu
@@ -61,6 +60,11 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 Theme documentation is available on http://colorlib.com/wp/support/activello
 
 /*========= Changelog =========*/
+
+= 1.0.1 - 11.02.2016 =
+
+* Removed Instagram widget which where no longer in use.
+* Improved theme translation
 
 = 1.0 - 06.11.2015 =
 
