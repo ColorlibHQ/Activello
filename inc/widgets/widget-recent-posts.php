@@ -14,8 +14,8 @@ class activello_recent_posts extends WP_Widget
 
     function widget($args , $instance) {
     	extract($args);
-        $title = isset($instance['title']) ? $instance['title'] : esc_html__('recent Posts', 'activello');
-        $limit = isset($instance['limit']) ? $instance['limit'] : 5;
+        $title = isset($instance['title']) ? esc_html( $instance['title'] ) : esc_html__('recent Posts', 'activello');
+        $limit = isset($instance['limit']) ? esc_html( $instance['limit'] ) : 5;
 
       echo $before_widget;
       echo $before_title;
@@ -95,7 +95,7 @@ class activello_recent_posts extends WP_Widget
 
       <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title', 'activello') ?></label>
 
-      <input  type="text" value="<?php echo esc_attr($instance['title']); ?>"
+      <input  type="text" value="<?php echo esc_html($instance['title']); ?>"
               name="<?php echo $this->get_field_name('title'); ?>"
               id="<?php $this->get_field_id('title'); ?>"
               class="widefat" />
@@ -103,7 +103,7 @@ class activello_recent_posts extends WP_Widget
 
       <p><label for="<?php echo $this->get_field_id('limit'); ?>"><?php esc_html_e('Limit Posts Number', 'activello') ?></label>
 
-      <input  type="text" value="<?php echo esc_attr($instance['limit']); ?>"
+      <input  type="number" value="<?php echo esc_html($instance['limit']); ?>"
               name="<?php echo $this->get_field_name('limit'); ?>"
               id="<?php $this->get_field_id('limit'); ?>"
               class="widefat" />
@@ -111,5 +111,23 @@ class activello_recent_posts extends WP_Widget
 
     	<?php
     }
+    
+    /**
+	 * Sanitize widget form values as they are saved.
+	 *
+	 * @see WP_Widget::update()
+	 *
+	 * @param array $new_instance Values just sent to be saved.
+	 * @param array $old_instance Previously saved values from database.
+	 *
+	 * @return array Updated safe values to be saved.
+	 */
+	public function update( $new_instance, $old_instance ) {
+		$instance = array();
+		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? esc_html( $new_instance['title'] ) : '';
+		$instance['limit'] = ( ! empty( $new_instance['limit'] ) && is_numeric( $new_instance['limit'] )  ) ? esc_html( $new_instance['limit'] ) : '';
+
+		return $instance;
+	}
 }
 ?>

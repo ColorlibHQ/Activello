@@ -51,7 +51,7 @@ add_filter( 'the_title', 'activello_title' );
 
 function activello_title( $title ) {
   if ( $title == '' ) {
-    return 'Untitled';
+    return __( 'Untitled', 'activello' );
   } else {
     return $title;
   }
@@ -105,29 +105,6 @@ function activello_header_menu() {
   ));
 } /* end header menu */
 endif;
-
-if ( ! function_exists( 'activello_footer_links' ) ) :
-/**
- * Footer menu (should you choose to use one)
- */
-function activello_footer_links() {
-  // display the WordPress Custom Menu if available
-  wp_nav_menu(array(
-    'container'       => '',                              // remove nav container
-    'container_class' => 'footer-links clearfix',   // class of container (should you choose to use it)
-    'menu'            => esc_html__( 'Footer Links', 'activello' ),   // nav name
-    'menu_class'      => 'nav footer-nav clearfix',      // adding custom nav class
-    'theme_location'  => 'footer-links',             // where it's located in the theme
-    'before'          => '',                                 // before the menu
-    'after'           => '',                                  // after the menu
-    'link_before'     => '',                            // before each link
-    'link_after'      => '',                             // after each link
-    'depth'           => 0,                                   // limit the depth of the nav
-    'fallback_cb'     => 'activello_footer_links_fallback'  // fallback function
-  ));
-} /* end activello footer link */
-endif;
-
 
 if ( ! function_exists( 'activello_featured_slider' ) ) :
 /**
@@ -226,16 +203,6 @@ function activello_allow_skype_protocol( $protocols ){
     return $protocols;
 }
 add_filter( 'kses_allowed_protocols' , 'activello_allow_skype_protocol' );
-
-/**
- * Add custom favicon displayed in WordPress dashboard and frontend
- */
-function activello_add_favicon() {
-	echo '<link rel="shortcut icon" type="image/x-icon" href="' . get_template_directory_uri() . '/favicon.png" />'. "\n";
-}
-add_action( 'wp_head', 'activello_add_favicon', 0 );
-add_action( 'admin_head', 'activello_add_favicon', 0 );
-
 
 /*
  * This display blog description from wp customizer setting.

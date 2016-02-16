@@ -14,12 +14,12 @@ class activello_categories extends WP_Widget
 
     function widget($args , $instance) {
     	extract($args);
-        $title = isset($instance['title']) ? $instance['title'] : esc_html__('Categories' , 'activello');
+        $title = isset($instance['title']) ? esc_html( $instance['title'] ) : esc_html__('Categories' , 'activello');
         $enable_count = '';
         if(isset($instance['enable_count']))
         $enable_count = $instance['enable_count'] ? $instance['enable_count'] : 'checked';
 
-        $limit = ($instance['limit']) ? $instance['limit'] : 4;
+        $limit = isset($instance['limit']) ? esc_html( $instance['limit'] ) : 4;
 
 
       echo $before_widget;
@@ -90,7 +90,7 @@ class activello_categories extends WP_Widget
 
       <p><label for="<?php echo $this->get_field_id('limit'); ?>"> <?php esc_html_e('Limit Categories ','activello') ?></label>
 
-        <input  type="text" value="<?php echo esc_attr($instance['limit']); ?>"
+        <input  type="number" value="<?php echo esc_attr($instance['limit']); ?>"
                 name="<?php echo $this->get_field_name('limit'); ?>"
                 id="<?php $this->get_field_id('limit'); ?>"
                 class="widefat" />
@@ -106,6 +106,24 @@ class activello_categories extends WP_Widget
 
     	<?php
     }
+    
+    /**
+	 * Sanitize widget form values as they are saved.
+	 *
+	 * @see WP_Widget::update()
+	 *
+	 * @param array $new_instance Values just sent to be saved.
+	 * @param array $old_instance Previously saved values from database.
+	 *
+	 * @return array Updated safe values to be saved.
+	 */
+	public function update( $new_instance, $old_instance ) {
+		$instance = array();
+		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? esc_html( $new_instance['title'] ) : '';
+		$instance['limit'] = ( ! empty( $new_instance['limit'] ) && is_numeric( $new_instance['limit'] )  ) ? esc_html( $new_instance['limit'] ) : '';
+
+		return $instance;
+	}
 }
 
 ?>
