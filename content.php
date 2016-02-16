@@ -8,7 +8,7 @@
 	<div class="blog-item-wrap">
 		<div class="post-inner-content">
 			<header class="entry-header page-header">
-				<?php echo get_single_category(get_the_ID()); ?>
+				<?php echo activello_get_single_category(get_the_ID()); ?>
 				<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
 				<?php if ( 'post' == get_post_type() ) : ?>

@@ -45,11 +45,10 @@
 						</div>
 						<?php activello_header_menu(); // main navigation ?>
 
-						<div class="nav-search">
-							<form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
-								<input type="text" name="s" placeholder="<?php echo esc_attr_x( __('Search', 'activello'), 'search placeholder', 'activello' ); ?>">
-								<button type="submit" class="header-search-icon" name="submit" id="searchsubmit" value="<?php echo esc_attr_x( 'Search', 'submit button', 'activello' ); ?>"><i class="fa fa-search"></i></button>
-							</form>
+						<div class="nav-search"><?php 
+                            add_filter('get_search_form', 'activello_header_search_filter',10,3);
+                            echo get_search_form();
+                            remove_filter('get_search_form', 'activello_header_search_filter');?>							
 						</div>
 					</div>
 				</div>
@@ -61,7 +60,6 @@
 		$show_title = false;
 		$show_tagline = true;
 		$logo = get_theme_mod('header_logo', '');
-		$tagline = ( get_bloginfo( 'description' ) ) ? get_bloginfo( 'description' ) : '';
 		$header_show = get_theme_mod('header_show', 'logo-text');
 
 		if( $header_show == 'logo-only' ){
@@ -79,7 +77,7 @@
 			<div id="logo">
 				<span class="site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php
 					if( $show_logo && $logo ) {
-                                            echo wp_get_attachment_image($logo, 'full');
+                        echo wp_get_attachment_image($logo, 'full');
 					}
 					elseif( $show_title ) {
 						bloginfo( 'name' );
