@@ -60,9 +60,9 @@ function activello_title( $title ) {
 /**
  * Password protected post form using Boostrap classes
  */
-add_filter( 'the_password_form', 'custom_password_form' );
+add_filter( 'the_password_form', 'activello_custom_password_form' );
 
-function custom_password_form() {
+function activello_custom_password_form() {
   global $post;
   $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
   $o = '<form class="protected-post-form" action="' . get_option('siteurl') . '/wp-login.php?action=postpass" method="post">
@@ -100,8 +100,8 @@ function activello_header_menu() {
     'container'         => 'div',
     'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
     'menu_class'        => 'nav navbar-nav',
-    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-    'walker'            => new wp_bootstrap_navwalker()
+    'fallback_cb'       => 'activello_wp_bootstrap_navwalker::fallback',
+    'walker'            => new activello_wp_bootstrap_navwalker()
   ));
 } /* end header menu */
 endif;
@@ -125,22 +125,25 @@ function activello_featured_slider() {
         $query = new WP_Query( array( 'cat' => $slidecat,'posts_per_page' => $count ) );
         if ($query->have_posts()) :
           while ($query->have_posts()) : $query->the_post();
-
-          echo '<li>';
+                
             if ( (function_exists( 'has_post_thumbnail' )) && ( has_post_thumbnail() ) ) :
-              echo get_the_post_thumbnail( get_the_ID(), 'activello-slider' );
+
+                echo '<li>';
+                      echo get_the_post_thumbnail( get_the_ID(), 'activello-slider' );
+
+                    echo '<div class="flex-caption">';
+                      echo get_the_category_list();
+                        if ( get_the_title() != '' ) echo '<a href="' . get_permalink() . '"><h2 class="entry-title">'. get_the_title().'</h2></a>';
+                        echo '<div class="read-more"><a href="' . get_permalink() . '">' . __( 'Read More', 'activello' ) .'</a></div>';
+                    echo '</div>';
+
+                echo '</li>';
             endif;
 
-              echo '<div class="flex-caption">';
-									echo get_the_category_list();
-                  if ( get_the_title() != '' ) echo '<a href="' . get_permalink() . '"><h2 class="entry-title">'. get_the_title().'</h2></a>';
-                  echo '<div class="read-more"><a href="' . get_permalink() . '">' . __( 'Read More', 'activello' ) .'</a></div>';
-              echo '</div>';
+        endwhile; 
+        wp_reset_query();
+        endif;
 
-              endwhile; wp_reset_query();
-            endif;
-
-          echo '</li>';
       echo '</ul>';
     echo ' </div>';
   }
@@ -286,9 +289,9 @@ if (!function_exists('get_activello_theme_setting'))  {
           .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a,
           .navbar-default .navbar-nav > .open > a:hover, blockquote:before,
           .navbar-default .navbar-nav > .open > a:focus, .cat-title a,
-          .single .entry-content a, .site-info a:hover {color:' . get_theme_mod('accent_color') . '}';
+          .single .entry-content a, .site-info a:hover {color:' . esc_html(get_theme_mod('accent_color')) . '}';
 
-      echo 'article.post .post-categories:after, .post-inner-content .cat-item:after, #secondary .widget-title:after {background:' . get_theme_mod('accent_color') . '}';
+      echo 'article.post .post-categories:after, .post-inner-content .cat-item:after, #secondary .widget-title:after {background:' . esc_html(get_theme_mod('accent_color')) . '}';
 
       echo '.btn-default:hover, .label-default[href]:hover,
           .label-default[href]:focus, .btn-default:hover,
@@ -303,17 +306,17 @@ if (!function_exists('get_activello_theme_setting'))  {
           input[type=submit]:hover, .comment-form #submit:hover, .tagcloud a:hover,
           .single .entry-content a:hover, .dropdown-menu > li > a:hover, 
           .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-          .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus{background-color:' . get_theme_mod('accent_color') . '; }';
+          .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus{background-color:' . esc_html( get_theme_mod('accent_color') ) . '; }';
     }
     if ( get_theme_mod('social_color')) {
-      echo '#social a, .header-search-icon { color:' . get_theme_mod('social_color') .'}';
+      echo '#social a, .header-search-icon { color:' . esc_html( get_theme_mod('social_color') ) .'}';
     }
     if ( get_theme_mod('social_hover_color')) {
-      echo '#social a:hover, .header-search-icon:hover { color:' . get_theme_mod('social_hover_color') .'}';
+      echo '#social a:hover, .header-search-icon:hover { color:' . esc_html( get_theme_mod('social_hover_color') ) .'}';
     }
 
     if ( get_theme_mod('custom_css')) {
-      echo html_entity_decode( get_theme_mod( 'custom_css', 'no entry' ) );
+      echo html_entity_decode( esc_html( get_theme_mod( 'custom_css', 'no entry' ) ) );
     }
 
     echo '</style>';

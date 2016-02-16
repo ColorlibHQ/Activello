@@ -7,9 +7,9 @@
 /**
  * Register Social Icon menu
  */
-add_action( 'init', 'register_social_menu' );
+add_action( 'init', 'activello_register_social_menu' );
 
-function register_social_menu() {
+function activello_register_social_menu() {
 	register_nav_menu( 'social-menu', _x( 'Social Menu', 'nav menu location', 'activello' ) );
 }
 
