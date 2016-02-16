@@ -74,15 +74,15 @@ if ( post_password_required() ) {
 	$fields =  array(
 		'author' => '<div class="row">' .
 			'<div class="col-sm-4"><input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
-			'" size="30"' . $aria_req . ' placeholder="' . __( 'Name', 'activello' ) . '" /></div>',
+			'" size="30"' . $aria_req . ' placeholder="' . esc_attr( __( 'Name', 'activello' ) ) . '" /></div>',
 
 		'email' =>
 			'<div class="col-sm-4"><input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
-			'" size="30"' . $aria_req . ' placeholder="' . __( 'Email', 'activello' ) . '" /></div>',
+			'" size="30"' . $aria_req . ' placeholder="' . esc_attr( __( 'Email', 'activello' ) ). '" /></div>',
 
 		'url' =>
 			'<div class="col-sm-4"><input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
-			'" size="30" placeholder="' . __( 'Website', 'activello' ) . '" /></div>' .
+			'" size="30" placeholder="' . esc_attr( __( 'Website', 'activello' ) ) . '" /></div>' .
 			'</div>',
 	);
 

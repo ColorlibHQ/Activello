@@ -55,7 +55,7 @@ function activello_sidebar_layout()
                 <label class="description"><?php
                     $layout = get_post_meta($post->ID, 'site_layout', true);?>                        
                     <select name="site_layout" id="site_layout">
-                        <option value="">Default</option><?php
+                        <option value=""><?php _e( 'Default', 'activello' ); ?></option><?php
                         foreach( $site_layout as $key=>$val ) { ?>
                         <option value="<?php echo $key; ?>" <?php selected( $layout, $key ); ?> ><?php echo $val; ?></option><?php
                         }?>
@@ -94,7 +94,7 @@ function activello_save_custom_meta($post_id)
     }
 
     if ( $_POST['site_layout'] ) {
-        update_post_meta($post_id, 'site_layout', $_POST['site_layout']);
+        update_post_meta($post_id, 'site_layout', esc_html( $_POST['site_layout'] ));
     } else{
         delete_post_meta($post_id, 'site_layout');
     }
