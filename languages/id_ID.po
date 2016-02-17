@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Activello\n"
-"POT-Creation-Date: 2016-02-11 16:20+0200\n"
-"PO-Revision-Date: 2016-02-11 16:20+0200\n"
+"POT-Creation-Date: 2016-02-17 15:37+0200\n"
+"PO-Revision-Date: 2016-02-17 15:37+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: Rhiski Aprilianto <mail@rhiskiapril.com>\n"
 "Language: id_ID\n"
@@ -164,11 +164,11 @@ msgctxt "comment form placeholder"
 msgid "Comment"
 msgstr ""
 
-#: content-grid.php:16 content-page.php:32 inc/extras.php:282
+#: content-grid.php:16 content-page.php:32 inc/extras.php:252
 msgid "Edit"
 msgstr "Edit"
 
-#: content-grid.php:28 content.php:41 content.php:67 inc/extras.php:160
+#: content-grid.php:28 content.php:41 content.php:67 inc/extras.php:137
 msgid "Read More"
 msgstr "Baca Selengkapnya"
 
@@ -238,46 +238,50 @@ msgstr "Menu Utama"
 msgid "Sidebar"
 msgstr "Sidebar"
 
-#: functions.php:231
+#: functions.php:226
 msgid "Left Sidebar"
 msgstr "Sidebar Kiri"
 
-#: functions.php:231
+#: functions.php:226
 msgid "Right Sidebar"
 msgstr "Sidebar Kanan"
 
-#: functions.php:231
+#: functions.php:226
 msgid "No Sidebar"
 msgstr ""
 
-#: functions.php:231
+#: functions.php:226
 msgid "Full Width"
 msgstr ""
 
-#: functions.php:233
+#: functions.php:228
 msgid "Logo Only"
 msgstr ""
 
-#: functions.php:234
+#: functions.php:229
 msgid "Logo + Tagline"
 msgstr ""
 
-#: functions.php:235
+#: functions.php:230
 msgid "Title Only"
 msgstr ""
 
-#: functions.php:236
+#: functions.php:231
 msgid "Title + Tagline"
 msgstr ""
 
-#: header.php:50
+#: functions.php:266 searchform.php:14
 msgid "Search"
 msgstr ""
 
-#: header.php:51 searchform.php:14
+#: functions.php:266 searchform.php:14
 msgctxt "submit button"
 msgid "Search"
 msgstr "Cari"
+
+#: header.php:40
+msgid "Toggle navigation"
+msgstr ""
 
 #: image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
@@ -399,6 +403,10 @@ msgstr "Sukai kami di Facebook"
 msgid "Follow on Twitter"
 msgstr "Ikuti Kami di Twitter"
 
+#: inc/extras.php:54
+msgid "Untitled"
+msgstr ""
+
 #: inc/extras.php:71
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
@@ -415,26 +423,22 @@ msgstr "Kata sandi:"
 msgid "Submit"
 msgstr "Kirim"
 
-#: inc/extras.php:118
-msgid "Footer Links"
-msgstr "Link footer"
-
-#: inc/extras.php:178
+#: inc/extras.php:158
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Tema oleh %1$s diberdayakan oleh %2$s"
 
-#: inc/extras.php:276
+#: inc/extras.php:246
 #, php-format
 msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
 msgstr ""
 
-#: inc/extras.php:282
+#: inc/extras.php:252
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: inc/extras.php:289
+#: inc/extras.php:259
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
@@ -450,6 +454,14 @@ msgstr ""
 
 #: inc/metaboxes.php:28
 msgid "Select layout for this specific Product only"
+msgstr ""
+
+#: inc/metaboxes.php:58
+msgid "Default"
+msgstr ""
+
+#: inc/navwalker.php:196
+msgid "Add a menu"
 msgstr ""
 
 #: inc/socialnav.php:13
@@ -487,8 +499,12 @@ msgstr "%title <i class=\"fa fa-chevron-right\"></i>"
 msgid "Posted on"
 msgstr ""
 
-#: inc/widgets/widget-categories.php:11 inc/widgets/widget-categories.php:12
-msgid "activello Categories"
+#: inc/widgets/widget-categories.php:11
+msgid "Activello widget to display categories"
+msgstr ""
+
+#: inc/widgets/widget-categories.php:12
+msgid "Activello Categories"
 msgstr ""
 
 #: inc/widgets/widget-categories.php:17 inc/widgets/widget-categories.php:76
@@ -508,8 +524,11 @@ msgid "Enable Posts Count"
 msgstr "Mengaktifkan hitungan posting"
 
 #: inc/widgets/widget-recent-posts.php:11
+msgid "Activello recent posts widget with thumbnails"
+msgstr ""
+
 #: inc/widgets/widget-recent-posts.php:12
-msgid "activello recent Posts Widget"
+msgid "Activello Recent Posts Widget"
 msgstr ""
 
 #: inc/widgets/widget-recent-posts.php:17
@@ -525,28 +544,17 @@ msgstr "Judul"
 msgid "Limit Posts Number"
 msgstr "Batasi Jumlah Tulisan"
 
-#: inc/widgets/widget-social.php:11 inc/widgets/widget-social.php:12
-msgid "activello Social Widget"
+#: inc/widgets/widget-social.php:11
+msgid "Activello theme widget to display social media icons"
+msgstr ""
+
+#: inc/widgets/widget-social.php:12
+msgid "Activello Social Widget"
 msgstr ""
 
 #: inc/widgets/widget-social.php:17 inc/widgets/widget-social.php:46
 msgid "Follow us"
 msgstr "Ikuti kami"
-
-#: inc/woo-setup.php:96
-msgid "View your shopping cart"
-msgstr ""
-
-#: inc/woo-setup.php:97
-msgid "Start shopping"
-msgstr ""
-
-#: inc/woo-setup.php:101
-#, php-format
-msgid "%d item"
-msgid_plural "%d items"
-msgstr[0] ""
-msgstr[1] ""
 
 #: search.php:16
 #, php-format
@@ -572,6 +580,9 @@ msgstr "Mencari:"
 #: sidebar.php:38
 msgid "Meta"
 msgstr "Meta"
+
+#~ msgid "Footer Links"
+#~ msgstr "Link footer"
 
 #~ msgctxt "comments title"
 #~ msgid "One thought on &ldquo;%2$s&rdquo;"

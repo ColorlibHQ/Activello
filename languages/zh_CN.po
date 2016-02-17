@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Activello Theme\n"
-"POT-Creation-Date: 2016-02-11 16:21+0200\n"
-"PO-Revision-Date: 2016-02-11 16:21+0200\n"
+"POT-Creation-Date: 2016-02-17 15:38+0200\n"
+"PO-Revision-Date: 2016-02-17 15:38+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: 神楽坂琴梨(Kagurazaka Kotori) <kotori@kagurazaka.moe>\n"
 "Language: zh_CN\n"
@@ -144,12 +144,12 @@ msgstr ""
 msgid "Post Reply"
 msgstr ""
 
-#: ../content-grid.php:16 ../content-page.php:32 ../inc/extras.php:282
+#: ../content-grid.php:16 ../content-page.php:32 ../inc/extras.php:252
 msgid "Edit"
 msgstr "编辑"
 
 #: ../content-grid.php:28 ../content.php:41 ../content.php:67
-#: ../inc/extras.php:160
+#: ../inc/extras.php:137
 msgid "Read More"
 msgstr "继续阅读"
 
@@ -213,47 +213,51 @@ msgstr "主菜单"
 msgid "Sidebar"
 msgstr "侧边栏"
 
-#: ../functions.php:231
+#: ../functions.php:226
 msgid "Left Sidebar"
 msgstr "左边栏"
 
-#: ../functions.php:231
+#: ../functions.php:226
 msgid "Right Sidebar"
 msgstr "右边栏"
 
-#: ../functions.php:231
+#: ../functions.php:226
 msgid "No Sidebar"
 msgstr ""
 
-#: ../functions.php:231
+#: ../functions.php:226
 msgid "Full Width"
 msgstr ""
 
-#: ../functions.php:233
+#: ../functions.php:228
 msgid "Logo Only"
 msgstr ""
 
-#: ../functions.php:234
+#: ../functions.php:229
 msgid "Logo + Tagline"
 msgstr ""
 
-#: ../functions.php:235
+#: ../functions.php:230
 msgid "Title Only"
 msgstr ""
 
-#: ../functions.php:236
+#: ../functions.php:231
 msgid "Title + Tagline"
 msgstr ""
 
-#: ../header.php:50
+#: ../functions.php:266 ../searchform.php:14
 msgid "Search"
 msgstr ""
 
-#: ../header.php:51 ../searchform.php:14
+#: ../functions.php:266 ../searchform.php:14
 #, fuzzy
 msgctxt "submit button"
 msgid "Search"
 msgstr "搜索"
+
+#: ../header.php:40
+msgid "Toggle navigation"
+msgstr ""
 
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
@@ -374,6 +378,10 @@ msgstr "在Facebook上赞我们"
 msgid "Follow on Twitter"
 msgstr "在Twitter上关注我們"
 
+#: ../inc/extras.php:54
+msgid "Untitled"
+msgstr ""
+
 #: ../inc/extras.php:71
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
@@ -388,26 +396,22 @@ msgstr "密码:"
 msgid "Submit"
 msgstr "提交"
 
-#: ../inc/extras.php:118
-msgid "Footer Links"
-msgstr "底部超链接"
-
-#: ../inc/extras.php:178
+#: ../inc/extras.php:158
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Theme by %1$s Powered by %2$s"
 
-#: ../inc/extras.php:276
+#: ../inc/extras.php:246
 #, php-format
 msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
 msgstr ""
 
-#: ../inc/extras.php:282
+#: ../inc/extras.php:252
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: ../inc/extras.php:289
+#: ../inc/extras.php:259
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
@@ -423,6 +427,14 @@ msgstr ""
 
 #: ../inc/metaboxes.php:28
 msgid "Select layout for this specific Product only"
+msgstr ""
+
+#: ../inc/metaboxes.php:58
+msgid "Default"
+msgstr ""
+
+#: ../inc/navwalker.php:196
+msgid "Add a menu"
 msgstr ""
 
 #: ../inc/template-tags.php:23
@@ -446,8 +458,11 @@ msgid "Posted on"
 msgstr ""
 
 #: ../inc/widgets/widget-categories.php:11
+msgid "Activello widget to display categories"
+msgstr ""
+
 #: ../inc/widgets/widget-categories.php:12
-msgid "activello Categories"
+msgid "Activello Categories"
 msgstr ""
 
 #: ../inc/widgets/widget-categories.php:17
@@ -468,8 +483,11 @@ msgid "Enable Posts Count"
 msgstr "启用文章计数"
 
 #: ../inc/widgets/widget-recent-posts.php:11
+msgid "Activello recent posts widget with thumbnails"
+msgstr ""
+
 #: ../inc/widgets/widget-recent-posts.php:12
-msgid "activello recent Posts Widget"
+msgid "Activello Recent Posts Widget"
 msgstr ""
 
 #: ../inc/widgets/widget-recent-posts.php:17
@@ -485,27 +503,17 @@ msgstr "标题"
 msgid "Limit Posts Number"
 msgstr "最多显示文章数"
 
-#: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
-msgid "activello Social Widget"
+#: ../inc/widgets/widget-social.php:11
+msgid "Activello theme widget to display social media icons"
+msgstr ""
+
+#: ../inc/widgets/widget-social.php:12
+msgid "Activello Social Widget"
 msgstr ""
 
 #: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
 msgid "Follow us"
 msgstr "关注我们"
-
-#: ../inc/woo-setup.php:96
-msgid "View your shopping cart"
-msgstr ""
-
-#: ../inc/woo-setup.php:97
-msgid "Start shopping"
-msgstr ""
-
-#: ../inc/woo-setup.php:101
-#, php-format
-msgid "%d item"
-msgid_plural "%d items"
-msgstr[0] ""
 
 #: ../search.php:16
 #, php-format
@@ -532,6 +540,9 @@ msgstr "搜索"
 #: ../sidebar.php:38
 msgid "Meta"
 msgstr "Meta"
+
+#~ msgid "Footer Links"
+#~ msgstr "底部超链接"
 
 #~ msgctxt "comments title"
 #~ msgid "One thought on &ldquo;%2$s&rdquo;"
