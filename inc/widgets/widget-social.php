@@ -8,8 +8,8 @@ class activello_social_widget extends WP_Widget
 {
 	 function activello_social_widget(){
 
-        $widget_ops = array('classname' => 'activello-social','description' => esc_html__( "activello Social Widget" ,'activello') );
-		    parent::__construct('activello-social', esc_html__('activello Social Widget','activello'), $widget_ops);
+        $widget_ops = array('classname' => 'activello-social','description' => esc_html__( "Activello theme widget to display social media icons" ,'activello') );
+		    parent::__construct('activello-social', esc_html__('Activello Social Widget','activello'), $widget_ops);
     }
 
     function widget($args , $instance) {

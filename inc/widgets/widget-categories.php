@@ -8,8 +8,8 @@ class activello_categories extends WP_Widget
 {
 	 function activello_categories(){
 
-        $widget_ops = array('classname' => 'activello-cats','description' => esc_html__( "activello Categories" ,'activello') );
-		    parent::__construct('activello-cats', esc_html__('activello Categories','activello'), $widget_ops);
+        $widget_ops = array('classname' => 'activello-cats','description' => esc_html__( "Activello widget to display categories" ,'activello') );
+		    parent::__construct('activello-cats', esc_html__('Activello Categories','activello'), $widget_ops);
     }
 
     function widget($args , $instance) {
@@ -106,7 +106,7 @@ class activello_categories extends WP_Widget
 
     	<?php
     }
-    
+
     /**
 	 * Sanitize widget form values as they are saved.
 	 *

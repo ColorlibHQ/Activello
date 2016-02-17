@@ -8,8 +8,8 @@ class activello_recent_posts extends WP_Widget
 {
 	 function activello_recent_posts(){
 
-        $widget_ops = array('classname' => 'activello-recent-posts','description' => esc_html__( "activello recent Posts Widget", 'activello') );
-		    parent::__construct('activello_recent_posts', esc_html__('activello recent Posts Widget','activello'), $widget_ops);
+        $widget_ops = array('classname' => 'activello-recent-posts','description' => esc_html__( "Activello recent posts widget with thumbnails", 'activello') );
+		    parent::__construct('activello_recent_posts', esc_html__('Activello Recent Posts Widget','activello'), $widget_ops);
     }
 
     function widget($args , $instance) {
@@ -111,7 +111,7 @@ class activello_recent_posts extends WP_Widget
 
     	<?php
     }
-    
+
     /**
 	 * Sanitize widget form values as they are saved.
 	 *
