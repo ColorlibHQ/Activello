@@ -113,6 +113,10 @@ function activello_social_css(){ ?>
         .fa-vimeo-square:before {
             content: "\f194"
         }
+        #social li a[href*="weheartit.com"] .fa:before,
+        .fa-heart:before {
+            content: "\f004"
+        }
         #social li a[href*="spotify.com"] .fa:before,
         .fa-spotify:before {
             content: "\f1bc"
