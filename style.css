@@ -997,6 +997,11 @@ input[type=submit]:hover,
   color: #fff;
 }
 
+div.flex-caption {
+    top: auto;
+    bottom: 25%;
+}
+
 /* =Navigation
 ----------------------------------------------- */
 
