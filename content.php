@@ -9,7 +9,7 @@
 		<div class="post-inner-content">
 			<header class="entry-header page-header">
 				<?php echo activello_get_single_category(get_the_ID()); ?>
-				<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
 				<?php if ( 'post' == get_post_type() ) : ?>
 				<div class="entry-meta">
@@ -44,7 +44,7 @@
 			<div class="entry-content">
 
 				<?php
-				if ( get_the_excerpt() != "" ) :
+				if ( get_theme_mod( 'activello_excerpts', 1 ) && get_the_excerpt() != "" ) :
 					the_excerpt();
 				else :
 					the_content();
@@ -62,7 +62,7 @@
 						) );
 				?>
 
-				<?php if( ! is_single() ) : ?>
+				<?php if( ! is_single() && get_theme_mod( 'activello_excerpts', 1 ) ) : ?>
 				<div class="read-more">
 					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php esc_html_e( 'Read More', 'activello' ); ?></a>
 				</div>
