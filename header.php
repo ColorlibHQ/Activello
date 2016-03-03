@@ -75,9 +75,10 @@
 
 		<div class="container">
 			<div id="logo">
-				<span class="site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php
+				<?php echo is_home() ?  '<h1 class="site-name">' : '<span class="site-name">'; ?>
+                                    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php
 					if( $show_logo && $logo ) {
-                        echo wp_get_attachment_image($logo, 'full');
+                                                echo wp_get_attachment_image($logo, 'full');
 					}
 					elseif( $show_title ) {
 						bloginfo( 'name' );
@@ -86,7 +87,7 @@
 						bloginfo( 'name' );
 					} ?>
 					</a>
-				</span><!-- end of .site-name -->
+				<?php echo is_home() ?  '</h1>' : '</span>'; ?><!-- end of .site-name -->
 
 				<?php if( $show_tagline && get_bloginfo( 'description' ) != "" ) : ?>
 					<div class="tagline"><?php bloginfo( 'description' ); ?></div>

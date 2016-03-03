@@ -1061,10 +1061,12 @@ letter-spacing: 1px;
 }
 .site-name  {
   display: inline-block;
+  margin: 0;
 }
 .navbar-brand {
     display: inline-block;
     float: none;
+    font-family: 'Lora', serif;
     color: #DADADA;
     font-size: 30px;
     height: auto;
