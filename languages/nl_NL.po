@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Activello Theme\n"
-"POT-Creation-Date: 2016-02-17 15:37+0200\n"
-"PO-Revision-Date: 2016-02-17 15:37+0200\n"
-"Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
+"POT-Creation-Date: 2016-03-04 10:18+0100\n"
+"PO-Revision-Date: 2016-03-04 10:22+0100\n"
+"Last-Translator: Carsten <carsten@presis.nl>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
-"Language: en_US\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.8.2\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
@@ -30,9 +30,8 @@ msgstr ""
 "de zoekfunctie."
 
 #: ../404.php:25
-#, fuzzy
 msgid "Recent Posts"
-msgstr "Berichten navigatie"
+msgstr "Recente berichten"
 
 #: ../404.php:31
 msgid "Most Used Categories"
@@ -48,9 +47,8 @@ msgid "Archives"
 msgstr "Archieven"
 
 #: ../404.php:58
-#, fuzzy
 msgid "Tags"
-msgstr "Gebruik P tags"
+msgstr "Labels"
 
 #: ../archive.php:27
 #, php-format
@@ -113,8 +111,8 @@ msgstr "Chats"
 msgctxt "comments title"
 msgid "1 Comment"
 msgid_plural "%1$s Comment"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 reactie"
+msgstr[1] "%1$s reacties"
 
 #: ../comments.php:35 ../comments.php:54
 msgid "Comment navigation"
@@ -134,19 +132,19 @@ msgstr "Reacties zijn gesloten."
 
 #: ../comments.php:77
 msgid "Name"
-msgstr ""
+msgstr "Naam"
 
 #: ../comments.php:81
 msgid "Email"
-msgstr ""
+msgstr "E-mail"
 
 #: ../comments.php:85
 msgid "Website"
-msgstr ""
+msgstr "Website"
 
 #: ../comments.php:94
 msgid "Post Reply"
-msgstr ""
+msgstr "Plaats reactie"
 
 #: ../content-grid.php:16 ../content-page.php:32 ../inc/extras.php:252
 msgid "Edit"
@@ -191,7 +189,7 @@ msgstr ""
 #: ../content-single.php:21 ../content.php:22
 #, php-format
 msgid "Edit %s"
-msgstr ""
+msgstr "Bewerk %s"
 
 #: ../content-single.php:55 ../content.php:73
 msgid "Leave a comment"
@@ -199,11 +197,11 @@ msgstr "Reageer"
 
 #: ../content-single.php:55
 msgid "Comment (1)"
-msgstr ""
+msgstr "Reactie (1)"
 
 #: ../content-single.php:55
 msgid "Comments (%)"
-msgstr ""
+msgstr "Reacties (%)"
 
 #: ../content.php:73
 msgid "1 Comment"
@@ -231,41 +229,40 @@ msgstr "Sidebar Rechts"
 
 #: ../functions.php:226
 msgid "No Sidebar"
-msgstr ""
+msgstr "Geen Sidebar"
 
 #: ../functions.php:226
 msgid "Full Width"
-msgstr ""
+msgstr "Volledige breedte"
 
 #: ../functions.php:228
 msgid "Logo Only"
-msgstr ""
+msgstr "Alleen logo"
 
 #: ../functions.php:229
 msgid "Logo + Tagline"
-msgstr ""
+msgstr "Logo + ondertitel"
 
 #: ../functions.php:230
 msgid "Title Only"
-msgstr ""
+msgstr "Alleen titel"
 
 #: ../functions.php:231
 msgid "Title + Tagline"
-msgstr ""
+msgstr "Titel en ondertitel"
 
 #: ../functions.php:266 ../searchform.php:14
 msgid "Search"
-msgstr ""
+msgstr "Zoeken"
 
 #: ../functions.php:266 ../searchform.php:14
-#, fuzzy
 msgctxt "submit button"
 msgid "Search"
-msgstr "Keresés"
+msgstr "Zoeken"
 
 #: ../header.php:40
 msgid "Toggle navigation"
-msgstr ""
+msgstr "Toon navigatie"
 
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
@@ -277,41 +274,39 @@ msgstr "Volgende <i class=\"fa fa-chevron-right\"></i>"
 
 #: ../inc/customizer.php:30
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #: ../inc/customizer.php:44
 msgid "Show"
-msgstr ""
+msgstr "Toon"
 
 #: ../inc/customizer.php:53
 msgid "Activello Options"
-msgstr ""
+msgstr "Activello opties"
 
 #: ../inc/customizer.php:54
 msgid "Panel to update activello theme options"
-msgstr ""
+msgstr "Paneel om Activello thema opties aan te passen"
 
 #: ../inc/customizer.php:60
-#, fuzzy
 msgid "Content Options"
-msgstr "Thema opties"
+msgstr "Inhoud opties"
 
 #: ../inc/customizer.php:73
 msgid "Show post excerpts?"
-msgstr ""
+msgstr "Toon bericht samenvatting?"
 
 #: ../inc/customizer.php:85
-#, fuzzy
 msgid "Display Comments on Static Pages?"
-msgstr "Weergeven op de Voorpagina"
+msgstr "Toon reacties op statische pagina?"
 
 #: ../inc/customizer.php:94
 msgid "Slider Option"
-msgstr ""
+msgstr "Slider optie"
 
 #: ../inc/customizer.php:127
 msgid "Layout options"
-msgstr ""
+msgstr "Lay-out opties"
 
 #: ../inc/customizer.php:138
 msgid "Website Layout Options"
@@ -319,11 +314,11 @@ msgstr "Website Layout Opties"
 
 #: ../inc/customizer.php:141
 msgid "Choose between different layout options to be used as default"
-msgstr ""
+msgstr "Kies tussen verschillende lay-out opties om als standaard te gebruiken"
 
 #: ../inc/customizer.php:150
 msgid "Accent Color"
-msgstr ""
+msgstr "Accentkleur"
 
 #: ../inc/customizer.php:151 ../inc/customizer.php:161
 #: ../inc/customizer.php:171
@@ -336,7 +331,7 @@ msgstr "Social icoon kleur"
 
 #: ../inc/customizer.php:170
 msgid "Social Icon:hover Color"
-msgstr ""
+msgstr "Social Icon:hover kleur"
 
 #: ../inc/customizer.php:177
 msgid "Footer"
@@ -354,45 +349,9 @@ msgstr "Aangepaste CSS"
 msgid "Additional CSS"
 msgstr "Extra CSS"
 
-#: ../inc/customizer.php:213
-msgid "Support and Documentation"
-msgstr "Support en Documentatie"
-
-#: ../inc/customizer.php:356
-msgid "Activello Documentation"
-msgstr ""
-
-#: ../inc/customizer.php:357
-msgid ""
-"The best way to contact us with <b>support questions</b> and <b>bug reports</"
-"b> is via"
-msgstr ""
-"De beste manier om ons te contacteren voor <b>support vragen</b> en <b>bug "
-"meldingen</b> is via"
-
-#: ../inc/customizer.php:357
-msgid "Colorlib support forum"
-msgstr "Colorlib support forum"
-
-#: ../inc/customizer.php:358
-msgid "If you like this theme, I'd appreciate any of the following:"
-msgstr "Als je dit thema leuk vind dan waardeer het volgende:"
-
-#: ../inc/customizer.php:360
-msgid "Rate this Theme"
-msgstr "Waardeer dit Thema"
-
-#: ../inc/customizer.php:361
-msgid "Like on Facebook"
-msgstr "Like ons op Facebook"
-
-#: ../inc/customizer.php:362
-msgid "Follow on Twitter"
-msgstr "Volg ons op Twitter"
-
 #: ../inc/extras.php:54
 msgid "Untitled"
-msgstr ""
+msgstr "Zonder titel"
 
 #: ../inc/extras.php:71
 msgid ""
@@ -418,38 +377,41 @@ msgstr "Thema van %1$s, draait op %2$s"
 #: ../inc/extras.php:246
 #, php-format
 msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
-msgstr ""
+msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">zegt:</span>"
 
 #: ../inc/extras.php:252
 #, php-format
 msgid "%1$s at %2$s"
-msgstr ""
+msgstr "%1$s op %2$s"
 
 #: ../inc/extras.php:259
 msgid "Your comment is awaiting moderation."
-msgstr ""
+msgstr "Jouw reactie staat in de wachtrij voor controlle"
 
 #: ../inc/metaboxes.php:16
 msgid ""
 "Select layout for this specific Page only ( Note: This setting only reflects "
 "if page Template is set as Default Template and Blog Type Templates.)"
 msgstr ""
+"Selecteer deze layout alleen voor deze pagina (Opmerking: deze instelling "
+"wordt allen gebruikt als het Sjabloon is ingesteld op standaard sjabloon en "
+"Blog Type Templates.)"
 
 #: ../inc/metaboxes.php:21
 msgid "Select layout for this specific Post only"
-msgstr ""
+msgstr "Selecteer deze layout alleen voor dit bericht"
 
 #: ../inc/metaboxes.php:28
 msgid "Select layout for this specific Product only"
-msgstr ""
+msgstr "Selecteer deze layout alleen voor dit product"
 
 #: ../inc/metaboxes.php:58
 msgid "Default"
-msgstr ""
+msgstr "Standaard"
 
 #: ../inc/navwalker.php:196
 msgid "Add a menu"
-msgstr ""
+msgstr "Voeg een menu toe"
 
 #: ../inc/template-tags.php:23
 msgid "Posts navigation"
@@ -457,11 +419,11 @@ msgstr "Berichten navigatie"
 
 #: ../inc/template-tags.php:27
 msgid "Older posts"
-msgstr ""
+msgstr "Oudere berichten"
 
 #: ../inc/template-tags.php:31
 msgid "Newer posts"
-msgstr ""
+msgstr "Nieuwere berichten"
 
 #: ../inc/template-tags.php:56
 msgid "Post navigation"
@@ -469,15 +431,15 @@ msgstr "Bericht navigatie"
 
 #: ../inc/template-tags.php:86
 msgid "Posted on"
-msgstr ""
+msgstr "Geplaatst op"
 
 #: ../inc/widgets/widget-categories.php:11
 msgid "Activello widget to display categories"
-msgstr ""
+msgstr "Activello widget om categorieën te tonen"
 
 #: ../inc/widgets/widget-categories.php:12
 msgid "Activello Categories"
-msgstr ""
+msgstr "Activello Categorieën"
 
 #: ../inc/widgets/widget-categories.php:17
 #: ../inc/widgets/widget-categories.php:76
@@ -498,16 +460,16 @@ msgstr "Schakel Berichten teller in"
 
 #: ../inc/widgets/widget-recent-posts.php:11
 msgid "Activello recent posts widget with thumbnails"
-msgstr ""
+msgstr "Activello recente berichten widget met thumbnails"
 
 #: ../inc/widgets/widget-recent-posts.php:12
 msgid "Activello Recent Posts Widget"
-msgstr ""
+msgstr "Activello Recente Berichten Widget"
 
 #: ../inc/widgets/widget-recent-posts.php:17
 #: ../inc/widgets/widget-recent-posts.php:91
 msgid "recent Posts"
-msgstr ""
+msgstr "recente berichten"
 
 #: ../inc/widgets/widget-recent-posts.php:96
 msgid "Title"
@@ -519,11 +481,11 @@ msgstr "Limiteer Berichten Aantal"
 
 #: ../inc/widgets/widget-social.php:11
 msgid "Activello theme widget to display social media icons"
-msgstr ""
+msgstr "Activello thema widget om social media icons te tonen"
 
 #: ../inc/widgets/widget-social.php:12
 msgid "Activello Social Widget"
-msgstr ""
+msgstr "Activello Social Widget"
 
 #: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
 msgid "Follow us"
@@ -535,25 +497,47 @@ msgid "Search Results for: %s"
 msgstr "Zoek resultaten voor: %s"
 
 #: ../searchform.php:11
-#, fuzzy
 msgid "Search for:"
-msgstr "Keresés"
+msgstr "Zoek naar"
 
 #: ../searchform.php:12
-#, fuzzy
 msgctxt "placeholder"
 msgid "Search&hellip;"
-msgstr "Keresés"
+msgstr "Search&hellip;"
 
 #: ../searchform.php:12
-#, fuzzy
 msgctxt "label"
 msgid "Search for:"
-msgstr "Keresés"
+msgstr "Zoek naar:"
 
 #: ../sidebar.php:38
 msgid "Meta"
 msgstr "Meta"
+
+#~ msgid "Support and Documentation"
+#~ msgstr "Support en Documentatie"
+
+#~ msgid ""
+#~ "The best way to contact us with <b>support questions</b> and <b>bug "
+#~ "reports</b> is via"
+#~ msgstr ""
+#~ "De beste manier om ons te contacteren voor <b>support vragen</b> en "
+#~ "<b>bug meldingen</b> is via"
+
+#~ msgid "Colorlib support forum"
+#~ msgstr "Colorlib support forum"
+
+#~ msgid "If you like this theme, I'd appreciate any of the following:"
+#~ msgstr "Als je dit thema leuk vind dan waardeer het volgende:"
+
+#~ msgid "Rate this Theme"
+#~ msgstr "Waardeer dit Thema"
+
+#~ msgid "Like on Facebook"
+#~ msgstr "Like ons op Facebook"
+
+#~ msgid "Follow on Twitter"
+#~ msgstr "Volg ons op Twitter"
 
 #~ msgid "Footer Links"
 #~ msgstr "Footer Links"
