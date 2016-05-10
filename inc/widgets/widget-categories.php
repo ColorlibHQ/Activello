@@ -15,10 +15,7 @@ class activello_categories extends WP_Widget
     function widget($args , $instance) {
     	extract($args);
         $title = isset($instance['title']) ? esc_html( $instance['title'] ) : esc_html__('Categories' , 'activello');
-        $enable_count = '';
-        if(isset($instance['enable_count']))
-        $enable_count = $instance['enable_count'] ? $instance['enable_count'] : 'checked';
-
+        $enable_count = isset( $instance['enable_count'] ) ? $instance['enable_count'] : '';
         $limit = isset($instance['limit']) ? esc_html( $instance['limit'] ) : 4;
 
 
@@ -76,8 +73,6 @@ class activello_categories extends WP_Widget
       if(!isset($instance['title'])) $instance['title'] = esc_html__('Categories' , 'activello');
       if(!isset($instance['limit'])) $instance['limit'] = 4;
       if(!isset($instance['enable_count'])) $instance['enable_count'] = '';
-
-
     	?>
 
       <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title ','activello') ?></label>
@@ -99,7 +94,7 @@ class activello_categories extends WP_Widget
       <p><label>
         <input  type="checkbox"
                 name="<?php echo $this->get_field_name('enable_count'); ?>"
-                id="<?php $this->get_field_id('enable_count'); ?>" <?php if($instance['enable_count'] != '') echo 'checked=checked '; ?>
+                id="<?php $this->get_field_id('enable_count');?>"  value="1" <?php if($instance['enable_count'] != '') echo 'checked=checked '; ?>
          />
          <?php esc_html_e('Enable Posts Count','activello') ?></label>
        </p>
@@ -121,6 +116,7 @@ class activello_categories extends WP_Widget
 		$instance = array();
 		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? esc_html( $new_instance['title'] ) : '';
 		$instance['limit'] = ( ! empty( $new_instance['limit'] ) && is_numeric( $new_instance['limit'] )  ) ? esc_html( $new_instance['limit'] ) : '';
+    $instance['enable_count'] = ( ! empty( $new_instance['enable_count'] ) && is_numeric( $new_instance['enable_count'] )  ) ? esc_html( $new_instance['enable_count'] ) : '';
 
 		return $instance;
 	}
