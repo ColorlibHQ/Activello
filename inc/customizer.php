@@ -77,7 +77,7 @@ function activello_customizer( $wp_customize ) {
 	) );
 
 	$wp_customize->add_setting( 'activello_page_comments', array(
-		'default' => 0,
+		'default' => 1,
 		'sanitize_callback' => 'activello_sanitize_checkbox',
 	) );
 
