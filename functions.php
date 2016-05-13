@@ -231,6 +231,7 @@ $header_show = array(
                         'title-text' => __('Title + Tagline', 'activello')
                       );
 
+if ( ! function_exists( 'activello_get_single_category' ) ) :
 /* Get Single Post Category */
 function activello_get_single_category($post_id){
 
@@ -244,6 +245,7 @@ function activello_get_single_category($post_id){
     }
     return '';
 }
+endif;
 
 if ( ! function_exists( 'activello_woo_setup' ) ) :
 /**

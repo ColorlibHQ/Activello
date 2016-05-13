@@ -52,7 +52,7 @@
 			</div><!-- .entry-content -->
             <div class="entry-footer">
                 <?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-                <span class="comments-link"><?php comments_popup_link( esc_html__( 'Leave a comment', 'activello' ), esc_html__( 'Comment (1)', 'activello' ), esc_html__( 'Comments (%)', 'activello' ) ); ?></span>
+                <span class="comments-link"><?php comments_popup_link( esc_html__( 'No comments yet', 'activello' ), esc_html__( 'Comment (1)', 'activello' ), esc_html__( 'Comments (%)', 'activello' ) ); ?></span>
                 <?php endif; ?>	
                 <?php if(has_tag()) : ?>
                 <!-- tags -->
