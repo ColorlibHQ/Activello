@@ -6,7 +6,7 @@
  */
 class activello_categories extends WP_Widget
 {
-	 function activello_categories(){
+	 function __construct(){
 
         $widget_ops = array('classname' => 'activello-cats','description' => esc_html__( "Activello widget to display categories" ,'activello') );
 		    parent::__construct('activello-cats', esc_html__('Activello Categories','activello'), $widget_ops);

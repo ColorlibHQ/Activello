@@ -68,7 +68,7 @@ function activello_custom_password_form() {
   $o = '<form class="protected-post-form" action="' . get_option('siteurl') . '/wp-login.php?action=postpass" method="post">
   <div class="row">
     <div class="col-lg-10">
-        ' . esc_html__( "<p>This post is password protected. To view it please enter your password below:</p>" ,'activello') . '
+        <p>' . esc_html__( "This post is password protected. To view it please enter your password below:" ,'activello') . '</p>
         <label for="' . $label . '">' . esc_html__( "Password:" ,'activello') . ' </label>
       <div class="input-group">
         <input class="form-control" value="' . get_search_query() . '" name="post_password" id="' . $label . '" type="password">
@@ -92,17 +92,32 @@ if ( ! function_exists( 'activello_header_menu' ) ) :
  * Header menu (should you choose to use one)
  */
 function activello_header_menu() {
-  // display the WordPress Custom Menu if available
-  wp_nav_menu(array(
-    'menu'              => 'primary',
-    'theme_location'    => 'primary',
-    'depth'             => 2,
-    'container'         => 'div',
-    'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
-    'menu_class'        => 'nav navbar-nav',
-    'fallback_cb'       => 'activello_wp_bootstrap_navwalker::fallback',
-    'walker'            => new activello_wp_bootstrap_navwalker()
-  ));
+    
+    if( has_nav_menu('primary')){
+        
+        // display the WordPress Custom Menu if available
+        wp_nav_menu(array(
+            'menu'              => 'primary',
+            'theme_location'    => 'primary',
+            'depth'             => 3,
+            'container'         => 'div',
+            'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
+            'menu_class'        => 'nav navbar-nav',
+            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+            'walker'            => new activello_wp_bootstrap_navwalker()
+        ));
+  
+    }else{
+            echo '<ul id="menu-all-pages" class="nav navbar-nav">';
+            wp_list_pages(array(
+                'depth' => 1, //number of tiers, 0 for unlimited
+                'exclude' => '', //comma seperated IDs of pages you want to exclude
+                'title_li' => '', //must override it to empty string so that it does not break our nav
+                'sort_column' => 'post_title', //see documentation for other possibilites
+                'sort_order' => 'ASC', //ASCending or DESCending
+            ));
+            echo '</ul>';
+    }
 } /* end header menu */
 endif;
 
