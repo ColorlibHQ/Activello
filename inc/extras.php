@@ -99,7 +99,7 @@ function activello_header_menu() {
         wp_nav_menu(array(
             'menu'              => 'primary',
             'theme_location'    => 'primary',
-            'depth'             => 2,
+            'depth'             => 3,
             'container'         => 'div',
             'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
             'menu_class'        => 'nav navbar-nav',
