@@ -92,17 +92,32 @@ if ( ! function_exists( 'activello_header_menu' ) ) :
  * Header menu (should you choose to use one)
  */
 function activello_header_menu() {
-  // display the WordPress Custom Menu if available
-  wp_nav_menu(array(
-    'menu'              => 'primary',
-    'theme_location'    => 'primary',
-    'depth'             => 2,
-    'container'         => 'div',
-    'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
-    'menu_class'        => 'nav navbar-nav',
-    'fallback_cb'       => 'activello_wp_bootstrap_navwalker::fallback',
-    'walker'            => new activello_wp_bootstrap_navwalker()
-  ));
+    
+    if( has_nav_menu('primary')){
+        
+        // display the WordPress Custom Menu if available
+        wp_nav_menu(array(
+            'menu'              => 'primary',
+            'theme_location'    => 'primary',
+            'depth'             => 2,
+            'container'         => 'div',
+            'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
+            'menu_class'        => 'nav navbar-nav',
+            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+            'walker'            => new activello_wp_bootstrap_navwalker()
+        ));
+  
+    }else{
+            echo '<ul id="menu-all-pages" class="nav navbar-nav">';
+            wp_list_pages(array(
+                'depth' => 1, //number of tiers, 0 for unlimited
+                'exclude' => '', //comma seperated IDs of pages you want to exclude
+                'title_li' => '', //must override it to empty string so that it does not break our nav
+                'sort_column' => 'post_title', //see documentation for other possibilites
+                'sort_order' => 'ASC', //ASCending or DESCending
+            ));
+            echo '</ul>';
+    }
 } /* end header menu */
 endif;
 
