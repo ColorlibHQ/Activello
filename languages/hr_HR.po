@@ -1,0 +1,512 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Activello Theme\n"
+"POT-Creation-Date: 2016-06-11 11:34+0200\n"
+"PO-Revision-Date: 2016-06-11 17:12+0200\n"
+"Language-Team: colorlib <info@colorlib.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
+"esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Last-Translator: Dragan Đurić <dragan.djuritj@gmail.com>\n"
+"Language: hr\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Stranica nije pronađena"
+
+#: ../404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr "Ništa nije pronađeno na ovoj lokaciji. Pokušajte ponovno."
+
+#: ../404.php:25
+msgid "Recent Posts"
+msgstr "Novosti"
+
+#: ../404.php:31
+msgid "Most Used Categories"
+msgstr "Najčešće Kategorije"
+
+#: ../404.php:52
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Potraži u mjesečnim arhivama. %1$s"
+
+#: ../404.php:53 ../archive.php:66 ../sidebar.php:31
+msgid "Archives"
+msgstr "Arhiva"
+
+#: ../404.php:58
+msgid "Tags"
+msgstr "Oznake"
+
+#: ../archive.php:27
+#, php-format
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+#: ../archive.php:30
+#, php-format
+msgid "Day: %s"
+msgstr "Dan: %s"
+
+#: ../archive.php:33
+#, php-format
+msgid "Month: %s"
+msgstr "Mjesec: %s"
+
+#: ../archive.php:36
+#, php-format
+msgid "Year: %s"
+msgstr "Godina: %s"
+
+#: ../archive.php:39
+msgid "Asides"
+msgstr "Osim"
+
+#: ../archive.php:42
+msgid "Galleries"
+msgstr "Galerije"
+
+#: ../archive.php:45
+msgid "Images"
+msgstr "Fotografije"
+
+#: ../archive.php:48
+msgid "Videos"
+msgstr "Video Snimke"
+
+#: ../archive.php:51
+msgid "Quotes"
+msgstr "Citati"
+
+#: ../archive.php:54
+msgid "Links"
+msgstr "Linkovi"
+
+#: ../archive.php:57
+msgid "Statuses"
+msgstr "Statusi"
+
+#: ../archive.php:60
+msgid "Audios"
+msgstr "Audio Snimke"
+
+#: ../archive.php:63
+msgid "Chats"
+msgstr "Razgovori"
+
+#: ../comments.php:28
+#, php-format
+msgctxt "comments title"
+msgid "1 Comment"
+msgid_plural "%1$s Comment"
+msgstr[0] "%1$s Komentar"
+msgstr[1] "%1$s Komentara"
+msgstr[2] "%1$s Komentara"
+
+#: ../comments.php:35 ../comments.php:54
+msgid "Comment navigation"
+msgstr "Pregled Komentara"
+
+#: ../comments.php:36 ../comments.php:55
+msgid "&larr; Older Comments"
+msgstr "&larr; Stari Komentari"
+
+#: ../comments.php:37 ../comments.php:56
+msgid "Newer Comments &rarr;"
+msgstr "Novi Komentari &rarr;"
+
+#: ../comments.php:66
+msgid "Comments are closed."
+msgstr "Komentari su zaključani."
+
+#: ../comments.php:77
+msgid "Name"
+msgstr "Ime"
+
+#: ../comments.php:81
+msgid "Email"
+msgstr "Email"
+
+#: ../comments.php:85
+msgid "Website"
+msgstr "Internet Stranica"
+
+#: ../comments.php:94
+msgid "Post Reply"
+msgstr "Odgovori"
+
+#: ../content-grid.php:16 ../content-page.php:32 ../inc/extras.php:252
+msgid "Edit"
+msgstr "Uredi"
+
+#: ../content-grid.php:28 ../content.php:41 ../content.php:67
+#: ../inc/extras.php:137
+msgid "Read More"
+msgstr "Saznaj Više"
+
+#: ../content-grid.php:37 ../content-page.php:21 ../content-single.php:43
+#: ../content.php:56 ../image.php:79
+msgid "Pages:"
+msgstr "Stranice:"
+
+#: ../content-none.php:13
+msgid "Nothing Found"
+msgstr "Ništa nije pronađeno"
+
+#: ../content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Želite objaviti svoju prvu Novost? <a href=\"%1$s\">Počnite tu</a>."
+
+#: ../content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Nažalost ništa nije pronađeno za vaš upit.  Molimo vas potražite ponovno sa "
+"drugim riječima."
+
+#: ../content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Izgleda da ne možemo pronaći to što želite. Možda vam može pomoći tražilica."
+
+#: ../content-single.php:21 ../content.php:22
+#, php-format
+msgid "Edit %s"
+msgstr "Uredi %s"
+
+#: ../content-single.php:55 ../content.php:73
+msgid "Leave a comment"
+msgstr "Dodaj Komentar"
+
+#: ../content-single.php:55
+msgid "Comment (1)"
+msgstr "Komentar (1)"
+
+#: ../content-single.php:55
+msgid "Comments (%)"
+msgstr "Komentari (%)"
+
+#: ../content.php:73
+msgid "1 Comment"
+msgstr "1 Komentar"
+
+#: ../content.php:73
+msgid "% Comments"
+msgstr "% Komentara"
+
+#: ../functions.php:71
+msgid "Primary Menu"
+msgstr "Glavni Menu"
+
+#: ../functions.php:112
+msgid "Sidebar"
+msgstr "Bočni Stupac"
+
+#: ../functions.php:226
+msgid "Left Sidebar"
+msgstr "Bočni Stupac Lijevo"
+
+#: ../functions.php:226
+msgid "Right Sidebar"
+msgstr "Bočni Stupac Desno"
+
+#: ../functions.php:226
+msgid "No Sidebar"
+msgstr "Bez Bočnog Stupca"
+
+#: ../functions.php:226
+msgid "Full Width"
+msgstr "Puna Širina"
+
+#: ../functions.php:228
+msgid "Logo Only"
+msgstr "Samo Grafika"
+
+#: ../functions.php:229
+msgid "Logo + Tagline"
+msgstr "Grafika + Podnaslov"
+
+#: ../functions.php:230
+msgid "Title Only"
+msgstr "Samo Naslov"
+
+#: ../functions.php:231
+msgid "Title + Tagline"
+msgstr "Naslov + Podnaslov"
+
+#: ../functions.php:266 ../searchform.php:14
+msgid "Search"
+msgstr "Traži"
+
+#: ../functions.php:266 ../searchform.php:14
+msgctxt "submit button"
+msgid "Search"
+msgstr "Traži"
+
+#: ../header.php:40
+msgid "Toggle navigation"
+msgstr "Uključi/Isključi putokaze"
+
+#: ../image.php:22
+msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Nazad"
+
+#: ../image.php:23
+msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Napred <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/customizer.php:30
+msgid "Logo"
+msgstr "Grafika"
+
+#: ../inc/customizer.php:44
+msgid "Show"
+msgstr "Prikaži"
+
+#: ../inc/customizer.php:53
+msgid "Activello Options"
+msgstr "Podesi Activello"
+
+#: ../inc/customizer.php:54
+msgid "Panel to update activello theme options"
+msgstr "Podesi Temu"
+
+#: ../inc/customizer.php:60
+msgid "Content Options"
+msgstr "Podesi Sadržaj"
+
+#: ../inc/customizer.php:73
+msgid "Show post excerpts?"
+msgstr "Prikaži Sažetak"
+
+#: ../inc/customizer.php:85
+msgid "Display Comments on Static Pages?"
+msgstr "Prikaži komentare na statičnoj stranici"
+
+#: ../inc/customizer.php:94
+msgid "Slider Option"
+msgstr "Podesi \"Slider\""
+
+#: ../inc/customizer.php:127
+msgid "Layout options"
+msgstr "Podesi raspored"
+
+#: ../inc/customizer.php:138
+msgid "Website Layout Options"
+msgstr "Podesi WordPress Raspored "
+
+#: ../inc/customizer.php:141
+msgid "Choose between different layout options to be used as default"
+msgstr "Izaberi Temeljni Raspored"
+
+#: ../inc/customizer.php:150
+msgid "Accent Color"
+msgstr "Naglašena boja"
+
+#: ../inc/customizer.php:151 ../inc/customizer.php:161
+#: ../inc/customizer.php:171
+msgid "Default used if no color is selected"
+msgstr "Temeljna boja"
+
+#: ../inc/customizer.php:160
+msgid "Social icon color"
+msgstr "Boja Ikone Društvene Mreže"
+
+#: ../inc/customizer.php:170
+msgid "Social Icon:hover Color"
+msgstr "Boja Ikone pod mišem"
+
+#: ../inc/customizer.php:177
+msgid "Footer"
+msgstr "Dno strane"
+
+#: ../inc/customizer.php:195
+msgid "Other"
+msgstr "Ostalo"
+
+#: ../inc/customizer.php:204
+msgid "Custom CSS"
+msgstr "Prilagođeni CSS"
+
+#: ../inc/customizer.php:205
+msgid "Additional CSS"
+msgstr "Dodatni CSS"
+
+#: ../inc/extras.php:54
+msgid "Untitled"
+msgstr "Bez Naslova"
+
+#: ../inc/extras.php:71
+msgid ""
+"<p>This post is password protected. To view it please enter your password "
+"below:</p>"
+msgstr "<p>Zaštićeno lozinkom. Za pristup unesi lozinku:</p>"
+
+#: ../inc/extras.php:72
+msgid "Password:"
+msgstr "Lozinka:"
+
+#: ../inc/extras.php:75
+msgid "Submit"
+msgstr "Potvrdi"
+
+#: ../inc/extras.php:158
+#, php-format
+msgid "Theme by %1$s Powered by %2$s"
+msgstr "Tema %1$s Omogućio %2$s"
+
+#: ../inc/extras.php:246
+#, php-format
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
+msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">kaže:</span>"
+
+#: ../inc/extras.php:252
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s u %2$s"
+
+#: ../inc/extras.php:259
+msgid "Your comment is awaiting moderation."
+msgstr "Vaš komentar čeka objavu"
+
+#: ../inc/metaboxes.php:16
+msgid ""
+"Select layout for this specific Page only ( Note: This setting only reflects "
+"if page Template is set as Default Template and Blog Type Templates.)"
+msgstr ""
+"Izaberite raspored za ovu Stranicu (Samo ako su Stranice podešene na "
+"Temeljni ili Blog Raspored)."
+
+#: ../inc/metaboxes.php:21
+msgid "Select layout for this specific Post only"
+msgstr "Izaberite raspored za ovu Novost"
+
+#: ../inc/metaboxes.php:28
+msgid "Select layout for this specific Product only"
+msgstr "Izaberite raspored za ovaj Proizvod"
+
+#: ../inc/metaboxes.php:58
+msgid "Default"
+msgstr "Temeljni"
+
+#: ../inc/navwalker.php:196
+msgid "Add a menu"
+msgstr "Dodaj Menu"
+
+#: ../inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Upravljanje Vijestima"
+
+#: ../inc/template-tags.php:27
+msgid "Older posts"
+msgstr "Stare Vijesti"
+
+#: ../inc/template-tags.php:31
+msgid "Newer posts"
+msgstr "Novosti"
+
+#: ../inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "Upravljanje Vijestima"
+
+#: ../inc/template-tags.php:86
+msgid "Posted on"
+msgstr "Objavljeno"
+
+#: ../inc/widgets/widget-categories.php:11
+msgid "Activello widget to display categories"
+msgstr "Activello Prikaz Kategorija"
+
+#: ../inc/widgets/widget-categories.php:12
+msgid "Activello Categories"
+msgstr "Activello Kategorije"
+
+#: ../inc/widgets/widget-categories.php:17
+#: ../inc/widgets/widget-categories.php:76
+msgid "Categories"
+msgstr "Kategorije"
+
+#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
+msgid "Title "
+msgstr "Naslov"
+
+#: ../inc/widgets/widget-categories.php:91
+msgid "Limit Categories "
+msgstr "Ograniči Kategorije"
+
+#: ../inc/widgets/widget-categories.php:104
+msgid "Enable Posts Count"
+msgstr "Prikaži broj Novosti"
+
+#: ../inc/widgets/widget-recent-posts.php:11
+msgid "Activello recent posts widget with thumbnails"
+msgstr "Activello: Novosti sa Sličicama"
+
+#: ../inc/widgets/widget-recent-posts.php:12
+msgid "Activello Recent Posts Widget"
+msgstr "Activello: Novosti"
+
+#: ../inc/widgets/widget-recent-posts.php:17
+#: ../inc/widgets/widget-recent-posts.php:91
+msgid "recent Posts"
+msgstr "Novosti"
+
+#: ../inc/widgets/widget-recent-posts.php:96
+msgid "Title"
+msgstr "Naslov"
+
+#: ../inc/widgets/widget-recent-posts.php:104
+msgid "Limit Posts Number"
+msgstr "Ograniči broj Novosti"
+
+#: ../inc/widgets/widget-social.php:11
+msgid "Activello theme widget to display social media icons"
+msgstr "Activello: Prikaz Ikone Društvenih Mreža"
+
+#: ../inc/widgets/widget-social.php:12
+msgid "Activello Social Widget"
+msgstr "Activello: Prikaz Društvenih Mreža"
+
+#: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
+msgid "Follow us"
+msgstr "Prati Novosti"
+
+#: ../search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Traži: %s"
+
+#: ../searchform.php:11
+msgid "Search for:"
+msgstr "Traži:"
+
+#: ../searchform.php:12
+msgctxt "placeholder"
+msgid "Search&hellip;"
+msgstr "Traži&hellip;"
+
+#: ../searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr "Traži:"
+
+#: ../sidebar.php:38
+msgid "Meta"
+msgstr "Meta"
