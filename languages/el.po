@@ -1,0 +1,522 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Activello Theme\n"
+"POT-Creation-Date: 2016-06-05 19:02+0300\n"
+"PO-Revision-Date: 2016-06-14 18:48+0300\n"
+"Language-Team: colorlib <info@colorlib.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
+"esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Last-Translator: Tsakman <info@tsakman.gr>\n"
+"Language: el_GR\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ωπ! Η σελίδα αυτή δε μπορεί να βρεθεί."
+
+#: ../404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Φαίνεται πως δε βρέθηκε τίποτα εδώ. Μήπως να δοκιμάζατε κάποιον από τους "
+"παρακάτω συνδέσμους ή μια καινούργια αναζήτηση ;"
+
+#: ../404.php:25
+msgid "Recent Posts"
+msgstr "Πρόσφατα Μηνύματα"
+
+#: ../404.php:31
+msgid "Most Used Categories"
+msgstr "Πιο Συχνές Κατηγορίες"
+
+#: ../404.php:52
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Προσπαθήστε να αναζητήσετε στα μηνιαία αρχεία. %1$s"
+
+#: ../404.php:53 ../archive.php:66 ../sidebar.php:31
+msgid "Archives"
+msgstr "Αρχεία"
+
+#: ../404.php:58
+msgid "Tags"
+msgstr "Ετικέτες"
+
+#: ../archive.php:27
+#, php-format
+msgid "Author: %s"
+msgstr "Συντάκτης: %s"
+
+#: ../archive.php:30
+#, php-format
+msgid "Day: %s"
+msgstr "Ημέρα: %s"
+
+#: ../archive.php:33
+#, php-format
+msgid "Month: %s"
+msgstr "Μήνας: %s"
+
+#: ../archive.php:36
+#, php-format
+msgid "Year: %s"
+msgstr "Έτος: %s"
+
+#: ../archive.php:39
+msgid "Asides"
+msgstr "Παραλειπόμενα"
+
+#: ../archive.php:42
+msgid "Galleries"
+msgstr "Συλλογές"
+
+#: ../archive.php:45
+msgid "Images"
+msgstr "Εικόνες"
+
+#: ../archive.php:48
+msgid "Videos"
+msgstr "Βίντεο"
+
+#: ../archive.php:51
+msgid "Quotes"
+msgstr "Αποσπάσματα"
+
+#: ../archive.php:54
+msgid "Links"
+msgstr "Σύνδεσμοι"
+
+#: ../archive.php:57
+msgid "Statuses"
+msgstr "Καταστάσεις"
+
+#: ../archive.php:60
+msgid "Audios"
+msgstr "Ήχοι"
+
+#: ../archive.php:63
+msgid "Chats"
+msgstr "Συζητήσεις"
+
+#: ../comments.php:28
+#, php-format
+msgctxt "comments title"
+msgid "1 Comment"
+msgid_plural "%1$s Comment"
+msgstr[0] "1 Σχόλιο"
+msgstr[1] "%1$s Σχόλια"
+
+#: ../comments.php:35 ../comments.php:54
+msgid "Comment navigation"
+msgstr "Σχόλιο πλοήγησης"
+
+#: ../comments.php:36 ../comments.php:55
+msgid "&larr; Older Comments"
+msgstr "&larr; Παλαιότερα Σχόλια"
+
+#: ../comments.php:37 ../comments.php:56
+msgid "Newer Comments &rarr;"
+msgstr "Πιο Καινούργια Σχόλια &rarr;"
+
+#: ../comments.php:66
+msgid "Comments are closed."
+msgstr "Δεν επιτρέπονται σχόλια."
+
+#: ../comments.php:77
+msgid "Name"
+msgstr "Όνομα"
+
+#: ../comments.php:81
+msgid "Email"
+msgstr "Email"
+
+#: ../comments.php:85
+msgid "Website"
+msgstr "Ιστοσελίδα"
+
+#: ../comments.php:94
+msgid "Post Reply"
+msgstr "Δημοσίευση Απάντησης"
+
+#: ../content-grid.php:16 ../content-page.php:32 ../inc/extras.php:252
+msgid "Edit"
+msgstr "Επεξεργασία"
+
+#: ../content-grid.php:28 ../content.php:41 ../content.php:67
+#: ../inc/extras.php:137
+msgid "Read More"
+msgstr "Διαβάστε Περισσότερα"
+
+#: ../content-grid.php:37 ../content-page.php:21 ../content-single.php:43
+#: ../content.php:56 ../image.php:79
+msgid "Pages:"
+msgstr "Σελίδες:"
+
+#: ../content-none.php:13
+msgid "Nothing Found"
+msgstr "Δεν βρέθηκε κάτι"
+
+#: ../content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Έτοιμος να δημοσιεύσετε το πρώτο σας μήνυμα; <a href=\"%1$s\"> Ξεκινήστε εδώ "
+"</a>."
+
+#: ../content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Λυπούμαστε, αλλά τίποτα δεν ταιριάζει στους όρους αναζήτησης. Παρακαλώ "
+"δοκιμάστε ξανά με διαφορετικές λέξεις-κλειδιά."
+
+#: ../content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Φαίνεται ότι δεν μπορούμε να βρούμε αυτό που ψάχνετε. Ίσως η αναζήτηση "
+"μπορεί να βοηθήσει."
+
+#: ../content-single.php:21 ../content.php:22
+#, php-format
+msgid "Edit %s"
+msgstr "Επεξεργασία %s"
+
+#: ../content-single.php:55 ../content.php:73
+msgid "Leave a comment"
+msgstr "Αφήστε ένα σχόλιο"
+
+#: ../content-single.php:55
+msgid "Comment (1)"
+msgstr "Σχόλιο (1)"
+
+#: ../content-single.php:55
+msgid "Comments (%)"
+msgstr "Σχόλια (%)"
+
+#: ../content.php:73
+msgid "1 Comment"
+msgstr "1 Σχόλιο"
+
+#: ../content.php:73
+msgid "% Comments"
+msgstr " % Σχόλια"
+
+#: ../functions.php:71
+msgid "Primary Menu"
+msgstr "Κύριο Μενού"
+
+#: ../functions.php:112
+msgid "Sidebar"
+msgstr "Πλευρική Μπάρα"
+
+#: ../functions.php:226
+msgid "Left Sidebar"
+msgstr "Αριστερή Πλευρική Μπάρα "
+
+#: ../functions.php:226
+msgid "Right Sidebar"
+msgstr "Δεξιά Πλευρική Μπάρα "
+
+#: ../functions.php:226
+msgid "No Sidebar"
+msgstr "Χωρίς Πλευρική Μπάρα "
+
+#: ../functions.php:226
+msgid "Full Width"
+msgstr "Πλήρες πλάτος"
+
+#: ../functions.php:228
+msgid "Logo Only"
+msgstr "Μόνο Λογότυπο"
+
+#: ../functions.php:229
+msgid "Logo + Tagline"
+msgstr "Λογότυπο + Tagline"
+
+#: ../functions.php:230
+msgid "Title Only"
+msgstr "Μόνο Τίτλος"
+
+#: ../functions.php:231
+msgid "Title + Tagline"
+msgstr "Τίτλος + Tagline"
+
+#: ../functions.php:266 ../searchform.php:14
+msgid "Search"
+msgstr "Αναζήτηση"
+
+#: ../functions.php:266 ../searchform.php:14
+msgctxt "submit button"
+msgid "Search"
+msgstr "Αναζήτηση"
+
+#: ../header.php:40
+msgid "Toggle navigation"
+msgstr "Εναλλαγή πλοήγησης"
+
+#: ../image.php:22
+msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Προηγούμενο"
+
+#: ../image.php:23
+msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Επόμενο <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/customizer.php:30
+msgid "Logo"
+msgstr "Λογότυπο"
+
+#: ../inc/customizer.php:44
+msgid "Show"
+msgstr "Δείξε"
+
+#: ../inc/customizer.php:53
+msgid "Activello Options"
+msgstr "Επιλογές Activello"
+
+#: ../inc/customizer.php:54
+msgid "Panel to update activello theme options"
+msgstr "Πάνελ για την αναβάθμιση των επιλογών του θέματος activello"
+
+#: ../inc/customizer.php:60
+msgid "Content Options"
+msgstr "Επιλογές Περιεχομένου"
+
+#: ../inc/customizer.php:73
+msgid "Show post excerpts?"
+msgstr "Εμφάνιση αποσπάσματα μηνυμάτων"
+
+#: ../inc/customizer.php:85
+msgid "Display Comments on Static Pages?"
+msgstr "Εμφάνιση Σχόλιων για Στατικές Σελίδες;"
+
+#: ../inc/customizer.php:94
+msgid "Slider Option"
+msgstr "Επιλογές Πλευρικής Μπάρας"
+
+#: ../inc/customizer.php:127
+msgid "Layout options"
+msgstr "Επιλογές διάταξης"
+
+#: ../inc/customizer.php:138
+msgid "Website Layout Options"
+msgstr "Επιλογές διάταξης ιστοσελίδας"
+
+#: ../inc/customizer.php:141
+msgid "Choose between different layout options to be used as default"
+msgstr ""
+"Επιλέξτε ανάμεσα σε διαφορετικές επιλογές διάταξης για να χρησιμοποιηθεί ως "
+"προεπιλογή"
+
+#: ../inc/customizer.php:150
+msgid "Accent Color"
+msgstr "Χρώμα τονισμού"
+
+#: ../inc/customizer.php:151 ../inc/customizer.php:161
+#: ../inc/customizer.php:171
+msgid "Default used if no color is selected"
+msgstr "Χρησιμοποιείται η προεπιλογή αν δεν έχει επιλεγεί χρώμα"
+
+#: ../inc/customizer.php:160
+msgid "Social icon color"
+msgstr "Χρώμα social εικονιδίου"
+
+#: ../inc/customizer.php:170
+msgid "Social Icon:hover Color"
+msgstr "Social εικονίδιο:hover χρώμα"
+
+#: ../inc/customizer.php:177
+msgid "Footer"
+msgstr "Υποσέλιδο"
+
+#: ../inc/customizer.php:195
+msgid "Other"
+msgstr "Άλλο"
+
+#: ../inc/customizer.php:204
+msgid "Custom CSS"
+msgstr "Προσαρμοσμένο CSS"
+
+#: ../inc/customizer.php:205
+msgid "Additional CSS"
+msgstr "Πρόσθετο CSS"
+
+#: ../inc/extras.php:54
+msgid "Untitled"
+msgstr "Άτιτλο"
+
+#: ../inc/extras.php:71
+msgid ""
+"<p>This post is password protected. To view it please enter your password "
+"below:</p>"
+msgstr ""
+"<p>\n"
+"Αυτό το μήνυμα  είναι προστατευμένο με κωδικό πρόσβασης. Για να το δείτε "
+"παρακαλώ εισάγετε τον κωδικό παρακάτω:</p>"
+
+#: ../inc/extras.php:72
+msgid "Password:"
+msgstr "Κωδικός:"
+
+#: ../inc/extras.php:75
+msgid "Submit"
+msgstr "Υποβολή"
+
+#: ../inc/extras.php:158
+#, php-format
+msgid "Theme by %1$s Powered by %2$s"
+msgstr "Θέμα από  %1$s Επιμέλεια από %2$s"
+
+#: ../inc/extras.php:246
+#, php-format
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
+msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
+
+#: ../inc/extras.php:252
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s στο %2$s"
+
+#: ../inc/extras.php:259
+msgid "Your comment is awaiting moderation."
+msgstr "Το σχόλιο πρέπει να εγκριθεί από διαχειριστή."
+
+#: ../inc/metaboxes.php:16
+msgid ""
+"Select layout for this specific Page only ( Note: This setting only reflects "
+"if page Template is set as Default Template and Blog Type Templates.)"
+msgstr ""
+"Επιλογή διάταξης για αυτή τη συγκεκριμένη σελίδα μόνο (Σημείωση: Η ρύθμιση "
+"αυτή αντανακλά μόνο εάν το πρότυπο σελίδας έχει οριστεί ως προεπιλογή "
+"προτύπου και Πρότυπα Τύπου Blog.)"
+
+#: ../inc/metaboxes.php:21
+msgid "Select layout for this specific Post only"
+msgstr "Επιλογή διάταξης για το συγκεκριμένο Μήνυμα μόνο"
+
+#: ../inc/metaboxes.php:28
+msgid "Select layout for this specific Product only"
+msgstr "Επιλογή διάταξης για το συγκεκριμένο Προιόν μόνο"
+
+#: ../inc/metaboxes.php:58
+msgid "Default"
+msgstr "Προεπιλεγμένο"
+
+#: ../inc/navwalker.php:196
+msgid "Add a menu"
+msgstr "Προσθήκη μενού"
+
+#: ../inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Πλοήγηση Μηνυμάτων"
+
+#: ../inc/template-tags.php:27
+msgid "Older posts"
+msgstr "Παλαιότερα μηνύματα"
+
+#: ../inc/template-tags.php:31
+msgid "Newer posts"
+msgstr "Καινούργια μηνύματα"
+
+#: ../inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "Πλοήγηση μηνύματος"
+
+#: ../inc/template-tags.php:86
+msgid "Posted on"
+msgstr "Δημοσιεύτηκε στις"
+
+#: ../inc/widgets/widget-categories.php:11
+msgid "Activello widget to display categories"
+msgstr "Activello widget για να εμφανίσετε τις κατηγορίες"
+
+#: ../inc/widgets/widget-categories.php:12
+msgid "Activello Categories"
+msgstr "Activello Κατηγορίες"
+
+#: ../inc/widgets/widget-categories.php:17
+#: ../inc/widgets/widget-categories.php:76
+msgid "Categories"
+msgstr "Κατηγορίες"
+
+#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
+msgid "Title "
+msgstr "Τίτλος"
+
+#: ../inc/widgets/widget-categories.php:91
+msgid "Limit Categories "
+msgstr "Όριο Κατηγοριών"
+
+#: ../inc/widgets/widget-categories.php:104
+msgid "Enable Posts Count"
+msgstr "Ενεργοποίηση μέτρησης μηνυμάτων"
+
+#: ../inc/widgets/widget-recent-posts.php:11
+msgid "Activello recent posts widget with thumbnails"
+msgstr "Activello widget νεότερων μηνυμάτων με εικόνες"
+
+#: ../inc/widgets/widget-recent-posts.php:12
+msgid "Activello Recent Posts Widget"
+msgstr "Activello widget Νεότερων Μηνυμάτων "
+
+#: ../inc/widgets/widget-recent-posts.php:17
+#: ../inc/widgets/widget-recent-posts.php:91
+msgid "recent Posts"
+msgstr "νεότερα Μηνύματα"
+
+#: ../inc/widgets/widget-recent-posts.php:96
+msgid "Title"
+msgstr "Τίτλος"
+
+#: ../inc/widgets/widget-recent-posts.php:104
+msgid "Limit Posts Number"
+msgstr "Όριο Αριθμού Μηνυμάτων"
+
+#: ../inc/widgets/widget-social.php:11
+msgid "Activello theme widget to display social media icons"
+msgstr ""
+"Activello theme widget που εμφανίζει εικονίδια από μέσα κοινωνικής δικτύωσης"
+
+#: ../inc/widgets/widget-social.php:12
+msgid "Activello Social Widget"
+msgstr "Activello Social Widget"
+
+#: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
+msgid "Follow us"
+msgstr "Ακολουθήστε μας"
+
+#: ../search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Αποτελέσματα Αναζήτησης για: %s"
+
+#: ../searchform.php:11
+msgid "Search for:"
+msgstr "Αναζήτηση για:"
+
+#: ../searchform.php:12
+msgctxt "placeholder"
+msgid "Search&hellip;"
+msgstr "Αναζήτηση &hellip;"
+
+#: ../searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr "Αναζήτηση για:"
+
+#: ../sidebar.php:38
+msgid "Meta"
+msgstr "Μετα"
