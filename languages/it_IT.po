@@ -26,17 +26,17 @@ msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
-"Sembra che non è stato trovato in questa posizione. Magari prova uno dei "
+"Sembra che non è stato trovato nulla in questa posizione. Magari prova uno dei "
 "link seguenti o una ricerca?"
 
 #: ../404.php:25
 #, fuzzy
 msgid "Recent Posts"
-msgstr "Navigazione post"
+msgstr "Post recenti"
 
 #: ../404.php:31
 msgid "Most Used Categories"
-msgstr "Categorie più popolari"
+msgstr "Categorie popolari"
 
 #: ../404.php:52
 #, php-format
@@ -45,12 +45,12 @@ msgstr "Prova a guardare negli archivi mensili. %1$s"
 
 #: ../404.php:53 ../archive.php:66 ../sidebar.php:31
 msgid "Archives"
-msgstr "Archivi"
+msgstr "Archivio"
 
 #: ../404.php:58
 #, fuzzy
 msgid "Tags"
-msgstr "Usado en los tags P"
+msgstr "Tags"
 
 #: ../archive.php:27
 #, php-format
@@ -86,7 +86,7 @@ msgstr "Immagini"
 
 #: ../archive.php:48
 msgid "Videos"
-msgstr "Vídeo"
+msgstr "Video"
 
 #: ../archive.php:51
 msgid "Quotes"
@@ -134,19 +134,19 @@ msgstr "I commenti sono stati chiusi."
 
 #: ../comments.php:77
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #: ../comments.php:81
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: ../comments.php:85
 msgid "Website"
-msgstr ""
+msgstr "Sito web"
 
 #: ../comments.php:94
 msgid "Post Reply"
-msgstr ""
+msgstr "Rispondi al post"
 
 #: ../content-grid.php:16 ../content-page.php:32 ../inc/extras.php:252
 msgid "Edit"
@@ -187,12 +187,12 @@ msgid ""
 "searching can help."
 msgstr ""
 "Sembra che non riusciamo a trovare quello che stai cercando. Forse la "
-"ricerca può aiutare."
+"ricerca ti può aiutare."
 
 #: ../content-single.php:21 ../content.php:22
 #, php-format
 msgid "Edit %s"
-msgstr ""
+msgstr "Edita %s"
 
 #: ../content-single.php:55 ../content.php:73
 msgid "Leave a comment"
@@ -200,11 +200,11 @@ msgstr "Lascia un commento"
 
 #: ../content-single.php:55
 msgid "Comment (1)"
-msgstr ""
+msgstr "Commento (1)"
 
 #: ../content-single.php:55
 msgid "Comments (%)"
-msgstr ""
+msgstr "Commenti (%)"
 
 #: ../content.php:73
 msgid "1 Comment"
@@ -232,37 +232,37 @@ msgstr "Colonna laterale destra"
 
 #: ../functions.php:226
 msgid "No Sidebar"
-msgstr ""
+msgstr "Nessun menu laterale"
 
 #: ../functions.php:226
 msgid "Full Width"
-msgstr ""
+msgstr "Piena larghezza"
 
 #: ../functions.php:228
 msgid "Logo Only"
-msgstr ""
+msgstr "Solo logo"
 
 #: ../functions.php:229
 msgid "Logo + Tagline"
-msgstr ""
+msgstr "Logo + Tagline"
 
 #: ../functions.php:230
 msgid "Title Only"
-msgstr ""
+msgstr "Solo titolo"
 
 #: ../functions.php:231
 msgid "Title + Tagline"
-msgstr ""
+msgstr "Titolo + Tagline"
 
 #: ../functions.php:266 ../searchform.php:14
 msgid "Search"
-msgstr ""
+msgstr "Ricerca"
 
 #: ../functions.php:266 ../searchform.php:14
 #, fuzzy
 msgctxt "submit button"
 msgid "Search"
-msgstr "Busca"
+msgstr "Ricerca"
 
 #: ../header.php:40
 msgid "Toggle navigation"
