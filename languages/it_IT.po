@@ -26,17 +26,17 @@ msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
-"Sembra che non è stato trovato in questa posizione. Magari prova uno dei "
+"Sembra che non è stato trovato nulla in questa posizione. Magari prova uno dei "
 "link seguenti o una ricerca?"
 
 #: ../404.php:25
 #, fuzzy
 msgid "Recent Posts"
-msgstr "Navigazione post"
+msgstr "Post recenti"
 
 #: ../404.php:31
 msgid "Most Used Categories"
-msgstr "Categorie più popolari"
+msgstr "Categorie popolari"
 
 #: ../404.php:52
 #, php-format
@@ -45,12 +45,12 @@ msgstr "Prova a guardare negli archivi mensili. %1$s"
 
 #: ../404.php:53 ../archive.php:66 ../sidebar.php:31
 msgid "Archives"
-msgstr "Archivi"
+msgstr "Archivio"
 
 #: ../404.php:58
 #, fuzzy
 msgid "Tags"
-msgstr "Usado en los tags P"
+msgstr "Tags"
 
 #: ../archive.php:27
 #, php-format
@@ -86,7 +86,7 @@ msgstr "Immagini"
 
 #: ../archive.php:48
 msgid "Videos"
-msgstr "Vídeo"
+msgstr "Video"
 
 #: ../archive.php:51
 msgid "Quotes"
@@ -134,19 +134,19 @@ msgstr "I commenti sono stati chiusi."
 
 #: ../comments.php:77
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #: ../comments.php:81
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: ../comments.php:85
 msgid "Website"
-msgstr ""
+msgstr "Sito web"
 
 #: ../comments.php:94
 msgid "Post Reply"
-msgstr ""
+msgstr "Rispondi al post"
 
 #: ../content-grid.php:16 ../content-page.php:32 ../inc/extras.php:252
 msgid "Edit"
@@ -187,12 +187,12 @@ msgid ""
 "searching can help."
 msgstr ""
 "Sembra che non riusciamo a trovare quello che stai cercando. Forse la "
-"ricerca può aiutare."
+"ricerca ti può aiutare."
 
 #: ../content-single.php:21 ../content.php:22
 #, php-format
 msgid "Edit %s"
-msgstr ""
+msgstr "Edita %s"
 
 #: ../content-single.php:55 ../content.php:73
 msgid "Leave a comment"
@@ -200,11 +200,11 @@ msgstr "Lascia un commento"
 
 #: ../content-single.php:55
 msgid "Comment (1)"
-msgstr ""
+msgstr "Commento (1)"
 
 #: ../content-single.php:55
 msgid "Comments (%)"
-msgstr ""
+msgstr "Commenti (%)"
 
 #: ../content.php:73
 msgid "1 Comment"
@@ -232,41 +232,41 @@ msgstr "Colonna laterale destra"
 
 #: ../functions.php:226
 msgid "No Sidebar"
-msgstr ""
+msgstr "Nessun menu laterale"
 
 #: ../functions.php:226
 msgid "Full Width"
-msgstr ""
+msgstr "Piena larghezza"
 
 #: ../functions.php:228
 msgid "Logo Only"
-msgstr ""
+msgstr "Solo logo"
 
 #: ../functions.php:229
 msgid "Logo + Tagline"
-msgstr ""
+msgstr "Logo + Tagline"
 
 #: ../functions.php:230
 msgid "Title Only"
-msgstr ""
+msgstr "Solo titolo"
 
 #: ../functions.php:231
 msgid "Title + Tagline"
-msgstr ""
+msgstr "Titolo + Tagline"
 
 #: ../functions.php:266 ../searchform.php:14
 msgid "Search"
-msgstr ""
+msgstr "Ricerca"
 
 #: ../functions.php:266 ../searchform.php:14
 #, fuzzy
 msgctxt "submit button"
 msgid "Search"
-msgstr "Busca"
+msgstr "Ricerca"
 
 #: ../header.php:40
 msgid "Toggle navigation"
-msgstr ""
+msgstr "Stato navigazione"
 
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
@@ -278,19 +278,19 @@ msgstr "Successivo <i class=\"fa fa-chevron-right\"></i>"
 
 #: ../inc/customizer.php:30
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #: ../inc/customizer.php:44
 msgid "Show"
-msgstr ""
+msgstr "Mostra"
 
 #: ../inc/customizer.php:53
 msgid "Activello Options"
-msgstr ""
+msgstr "Opzioni Activello"
 
 #: ../inc/customizer.php:54
 msgid "Panel to update activello theme options"
-msgstr ""
+msgstr "Pannello per aggiornate le opzioni di Activello"
 
 #: ../inc/customizer.php:60
 #, fuzzy
@@ -299,20 +299,20 @@ msgstr "Opzioni del tema"
 
 #: ../inc/customizer.php:73
 msgid "Show post excerpts?"
-msgstr ""
+msgstr "Mostra gli estratti del post?"
 
 #: ../inc/customizer.php:85
 #, fuzzy
 msgid "Display Comments on Static Pages?"
-msgstr "Mostra sulla prima pagina"
+msgstr "Mostra commenti sulle pagine statiche?"
 
 #: ../inc/customizer.php:94
 msgid "Slider Option"
-msgstr ""
+msgstr "Opzioni Slider"
 
 #: ../inc/customizer.php:127
 msgid "Layout options"
-msgstr ""
+msgstr "Opzioni Layout"
 
 #: ../inc/customizer.php:138
 msgid "Website Layout Options"
@@ -320,16 +320,16 @@ msgstr "Opzioni layout sito web"
 
 #: ../inc/customizer.php:141
 msgid "Choose between different layout options to be used as default"
-msgstr ""
+msgstr "Scegli tra opzioni di layout differenti da usare di default"
 
 #: ../inc/customizer.php:150
 msgid "Accent Color"
-msgstr ""
+msgstr "Risalto colore"
 
 #: ../inc/customizer.php:151 ../inc/customizer.php:161
 #: ../inc/customizer.php:171
 msgid "Default used if no color is selected"
-msgstr "Valore predefinito usato se nessun colore è selezionato"
+msgstr "Valore di default usato se nessun colore è selezionato"
 
 #: ../inc/customizer.php:160
 msgid "Social icon color"
@@ -341,7 +341,7 @@ msgstr ""
 
 #: ../inc/customizer.php:177
 msgid "Footer"
-msgstr "Piè di pagina"
+msgstr "Footer"
 
 #: ../inc/customizer.php:195
 msgid "Other"
@@ -361,7 +361,7 @@ msgstr "Supporto e Documentazione"
 
 #: ../inc/customizer.php:356
 msgid "Activello Documentation"
-msgstr ""
+msgstr "Documentazione Activello"
 
 #: ../inc/customizer.php:357
 msgid ""
@@ -393,14 +393,14 @@ msgstr "Seguici su Twitter"
 
 #: ../inc/extras.php:54
 msgid "Untitled"
-msgstr ""
+msgstr "Senza titolo"
 
 #: ../inc/extras.php:71
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
 msgstr ""
-"<p>Questo post è protetto da password. Per leggerlo inserire la password di "
+"<p>Questo post è protetto da password. Per leggerlo inserisci la password di "
 "seguito:</p>"
 
 #: ../inc/extras.php:72
@@ -419,16 +419,16 @@ msgstr "Tema per %1$s Disegnato da %2$s"
 #: ../inc/extras.php:246
 #, php-format
 msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
-msgstr ""
+msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">dice:</span>"
 
 #: ../inc/extras.php:252
 #, php-format
 msgid "%1$s at %2$s"
-msgstr ""
+msgstr "%1$s at %2$s"
 
 #: ../inc/extras.php:259
 msgid "Your comment is awaiting moderation."
-msgstr ""
+msgstr "Il tuo commento è in attesa di moderazione."
 
 #: ../inc/metaboxes.php:16
 msgid ""
@@ -438,19 +438,19 @@ msgstr ""
 
 #: ../inc/metaboxes.php:21
 msgid "Select layout for this specific Post only"
-msgstr ""
+msgstr "Seleziona il layout solo per questo specifico Post"
 
 #: ../inc/metaboxes.php:28
 msgid "Select layout for this specific Product only"
-msgstr ""
+msgstr "Seleziona il layout solo per questo specifico Prodotto"
 
 #: ../inc/metaboxes.php:58
 msgid "Default"
-msgstr ""
+msgstr "Default"
 
 #: ../inc/navwalker.php:196
 msgid "Add a menu"
-msgstr ""
+msgstr "Aggiungi un menu"
 
 #: ../inc/template-tags.php:23
 msgid "Posts navigation"
@@ -458,11 +458,11 @@ msgstr "Navigazione post"
 
 #: ../inc/template-tags.php:27
 msgid "Older posts"
-msgstr ""
+msgstr "Vecchi post"
 
 #: ../inc/template-tags.php:31
 msgid "Newer posts"
-msgstr ""
+msgstr "Nuovi post"
 
 #: ../inc/template-tags.php:56
 msgid "Post navigation"
@@ -470,15 +470,15 @@ msgstr "Navigazione post"
 
 #: ../inc/template-tags.php:86
 msgid "Posted on"
-msgstr ""
+msgstr "Pubblicato il"
 
 #: ../inc/widgets/widget-categories.php:11
 msgid "Activello widget to display categories"
-msgstr ""
+msgstr "Widget Activello per mostrare le categorie"
 
 #: ../inc/widgets/widget-categories.php:12
 msgid "Activello Categories"
-msgstr ""
+msgstr "Categorie Activello"
 
 #: ../inc/widgets/widget-categories.php:17
 #: ../inc/widgets/widget-categories.php:76
@@ -487,11 +487,11 @@ msgstr "Categorie"
 
 #: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
 msgid "Title "
-msgstr "Titolo"
+msgstr "Titolo "
 
 #: ../inc/widgets/widget-categories.php:91
 msgid "Limit Categories "
-msgstr "Limite categorie"
+msgstr "Limite categorie "
 
 #: ../inc/widgets/widget-categories.php:104
 msgid "Enable Posts Count"
@@ -499,16 +499,16 @@ msgstr "Abilita il conteggio dei post"
 
 #: ../inc/widgets/widget-recent-posts.php:11
 msgid "Activello recent posts widget with thumbnails"
-msgstr ""
+msgstr "Widget Activello per i post recenti con thumbnails"
 
 #: ../inc/widgets/widget-recent-posts.php:12
 msgid "Activello Recent Posts Widget"
-msgstr ""
+msgstr "Widget Activello Post Recenti"
 
 #: ../inc/widgets/widget-recent-posts.php:17
 #: ../inc/widgets/widget-recent-posts.php:91
 msgid "recent Posts"
-msgstr ""
+msgstr "post recenti"
 
 #: ../inc/widgets/widget-recent-posts.php:96
 msgid "Title"
@@ -520,11 +520,11 @@ msgstr "Limita il numero di post"
 
 #: ../inc/widgets/widget-social.php:11
 msgid "Activello theme widget to display social media icons"
-msgstr ""
+msgstr "Widget Activello per mostrare le icone social"
 
 #: ../inc/widgets/widget-social.php:12
 msgid "Activello Social Widget"
-msgstr ""
+msgstr "Widget Activello Social"
 
 #: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
 msgid "Follow us"
@@ -544,7 +544,7 @@ msgstr "Cerca..."
 #, fuzzy
 msgctxt "placeholder"
 msgid "Search&hellip;"
-msgstr "Busca"
+msgstr "Cerca&hellip;"
 
 #: ../searchform.php:12
 #, fuzzy
@@ -560,7 +560,7 @@ msgstr "Meta"
 #~ msgstr "Link nel footer"
 
 #~ msgid ", "
-#~ msgstr ","
+#~ msgstr ", "
 
 #~ msgid " %1$s"
 #~ msgstr " %1$s"
@@ -569,25 +569,25 @@ msgstr "Meta"
 #~ msgstr "Widget Prima Pagina 1"
 
 #~ msgid "Displays on the Home Page"
-#~ msgstr "Mostra sulla prima pagina"
+#~ msgstr "Mostra sulla Homepage"
 
 #~ msgid "Homepage Widget 2"
-#~ msgstr "Widget Prima Pagina 2"
+#~ msgstr "Widget Homepage 2"
 
 #~ msgid "Homepage Widget 3"
-#~ msgstr "Widget Prima Pagina 3"
+#~ msgstr "Widget Homepage 3"
 
 #~ msgid "Footer Widget 1"
-#~ msgstr "Widget Piè di Pagina 1"
+#~ msgstr "Widget Footer 1"
 
 #~ msgid "Used for footer widget area"
 #~ msgstr "Usato per l'area widget nel footer"
 
 #~ msgid "Footer Widget 2"
-#~ msgstr "Widget Piè di Pagina 2"
+#~ msgstr "Widget footer 2"
 
 #~ msgid "Footer Widget 3"
-#~ msgstr "Widget Piè di Pagina 3"
+#~ msgstr "Widget footer 3"
 
 #~ msgid "Theme Options"
 #~ msgstr "Opzioni del tema"
@@ -613,8 +613,7 @@ msgstr "Meta"
 #~ msgstr "Rimuovi"
 
 #~ msgid "Upgrade your version of WordPress for full media support."
-#~ msgstr ""
-#~ "Aggiorna la tua versione di WordPress per il pieno supporto dei media."
+#~ msgstr "Aggiorna la tua versione di WordPress per il pieno supporto dei media."
 
 #~ msgid "View File"
 #~ msgstr "Visualizza file"
@@ -629,7 +628,7 @@ msgstr "Meta"
 #~ msgstr "Ripeti verticalmente"
 
 #~ msgid "Repeat All"
-#~ msgstr "Ripeti"
+#~ msgstr "Ripeti tutti"
 
 #~ msgid "Top Left"
 #~ msgstr "In Alto a Sinistra"
@@ -680,7 +679,7 @@ msgstr "Meta"
 #~ msgstr "Pagina %s"
 
 #~ msgid "Follow us on "
-#~ msgstr "Seguici su"
+#~ msgstr "Seguici su "
 
 #~ msgid "Sparkling Documentation"
 #~ msgstr "Documentazione Sparkling"
@@ -945,4 +944,4 @@ msgstr "Meta"
 #~ msgstr "Cerca..."
 
 #~ msgid "Default used if no color is selected."
-#~ msgstr "Valore predefinito usato se nessun colore è selezionato"
+#~ msgstr "Valore predefinito usato se nessun colore è selezionato."
