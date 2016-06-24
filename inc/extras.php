@@ -134,10 +134,9 @@ function activello_featured_slider() {
     echo '<div class="flexslider">';
       echo '<ul class="slides">';
 
-        $count = 4;
         $slidecat = get_theme_mod( 'activello_featured_cat' );
 
-        $query = new WP_Query( array( 'cat' => $slidecat,'posts_per_page' => $count ) );
+        $query = new WP_Query( array( 'cat' => $slidecat,'posts_per_page' => -1 ) );
         if ($query->have_posts()) :
           while ($query->have_posts()) : $query->the_post();
                 
