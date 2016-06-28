@@ -217,6 +217,11 @@ require get_template_directory() . '/inc/navwalker.php';
 require get_template_directory() . '/inc/metaboxes.php';
 
 /**
+ * TGMPA
+ */
+require get_template_directory() . '/inc/tgmpa/tgm-plugin-activation.php';
+
+/**
  * Social Nav Menu
  */
 require get_template_directory() . '/inc/socialnav.php';
