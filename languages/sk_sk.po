@@ -1,0 +1,1091 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Activello Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-30 15:34+0300\n"
+"PO-Revision-Date: 2016-06-30 15:34+0300\n"
+"Last-Translator: spravca <marek.kucak@gmail.com>\n"
+"Language-Team: colorlib <info@colorlib.com>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=( n == 1 ) ? 0 : ( n >= 2 && n <= 4 ) ? 1 : "
+"2;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Loco-Target-Locale: sk_SK\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Niečo sa pokazilo. Zdá sa, že stránka nebola nájdená."
+
+#: ../404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Vypadá to tak, že v zadanej adrese sa nič nenachádza. Môžete vyskúšať "
+"niektorý z odkazov nižšie."
+
+#: ../404.php:25
+msgid "Recent Posts"
+msgstr "Aktuálne články"
+
+#: ../404.php:31
+msgid "Most Used Categories"
+msgstr "Najpoužívanejšie kategórie"
+
+#: ../404.php:52
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Skúste sa pozrieť do mesačných archívov. %1$s"
+
+#: ../404.php:53 ../archive.php:66 ../sidebar.php:31
+msgid "Archives"
+msgstr "Archív"
+
+#: ../404.php:58
+msgid "Tags"
+msgstr "Značky"
+
+#: ../archive.php:27
+#, php-format
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+#: ../archive.php:30
+#, php-format
+msgid "Day: %s"
+msgstr "Deň: %s"
+
+#: ../archive.php:33
+#, php-format
+msgid "Month: %s"
+msgstr "Mesiac: %s"
+
+#: ../archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: ../archive.php:36
+#, php-format
+msgid "Year: %s"
+msgstr "Rok: %s"
+
+#: ../archive.php:36
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: ../archive.php:39
+msgid "Asides"
+msgstr "Poznámky s odkazom"
+
+#: ../archive.php:42
+msgid "Galleries"
+msgstr "Galérie"
+
+#: ../archive.php:45
+msgid "Images"
+msgstr "Obrázky"
+
+#: ../archive.php:48
+msgid "Videos"
+msgstr "Videá"
+
+#: ../archive.php:51
+msgid "Quotes"
+msgstr "Citácie"
+
+#: ../archive.php:54
+msgid "Links"
+msgstr "Odkazy"
+
+#: ../archive.php:57
+msgid "Statuses"
+msgstr "Statusy"
+
+#: ../archive.php:60
+msgid "Audios"
+msgstr "Zvukové záznamy"
+
+#: ../archive.php:63
+msgid "Chats"
+msgstr "Chaty"
+
+#: ../comments.php:28
+#, php-format
+msgctxt "comments title"
+msgid "1 Comment"
+msgid_plural "%1$s Comment"
+msgstr[0] "1 Komentár"
+msgstr[1] "%1$s Komentáre"
+msgstr[2] "%1$s Komentárov"
+
+#: ../comments.php:35 ../comments.php:54
+msgid "Comment navigation"
+msgstr "Navigácia obsahu"
+
+#: ../comments.php:36 ../comments.php:55
+msgid "&larr; Older Comments"
+msgstr "&larr; Staršie komentáre"
+
+#: ../comments.php:37 ../comments.php:56
+msgid "Newer Comments &rarr;"
+msgstr "Novšie komentáre &rarr;"
+
+#: ../comments.php:66
+msgid "Comments are closed."
+msgstr "Nie je možné pridávať komentáre"
+
+#: ../comments.php:77
+msgid "Name"
+msgstr "Meno"
+
+#: ../comments.php:81
+msgid "Email"
+msgstr "Email"
+
+#: ../comments.php:85
+msgid "Website"
+msgstr "Webstránka"
+
+#: ../comments.php:94
+msgid "Post Reply"
+msgstr "Odpoveď  článku"
+
+#: ../comments.php:96
+msgctxt "comment form placeholder"
+msgid "Comment"
+msgstr ""
+
+#: ../content-grid.php:16 ../content-page.php:26 ../inc/extras.php:266
+msgid "Edit"
+msgstr "Upraviť"
+
+#: ../content-grid.php:28 ../content.php:41 ../content.php:67
+#: ../inc/extras.php:151
+msgid "Read More"
+msgstr "Čítaj viac"
+
+#: ../content-grid.php:37 ../content-page.php:21 ../content-single.php:43
+#: ../content.php:56 ../image.php:79
+msgid "Pages:"
+msgstr "Stránky:"
+
+#: ../content-none.php:13
+msgid "Nothing Found"
+msgstr "Nič sa nenašlo"
+
+#: ../content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Chcete zverejniť váš prvý článok? <a href=\"%1$s\">Začnite tu</a>."
+
+#: ../content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Ľutujeme ale k vášmu hľadaniu sme nič nenašli. Skúste prosím hľadanie s iným "
+"podobným slovom."
+
+#: ../content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Zdá sa, že nemôžeme nájsť to čo hľadáte. Skúste zadať slovko do vyhľadávania."
+
+#: ../content-single.php:21 ../content.php:22
+#, php-format
+msgid "Edit %s"
+msgstr "Uprav %s"
+
+#: ../content-single.php:55 ../content.php:73
+msgid "No comments yet"
+msgstr ""
+
+#: ../content-single.php:55
+msgid "Comment (1)"
+msgstr "Komentár (1)"
+
+#: ../content-single.php:55
+msgid "Comments (%)"
+msgstr "Komentáre (1)"
+
+#: ../content.php:73
+msgid "1 Comment"
+msgstr "1 Komentár"
+
+#: ../content.php:73
+msgid "% Comments"
+msgstr "% Komentárov"
+
+#: ../functions.php:71
+msgid "Primary Menu"
+msgstr "Primárne menu"
+
+#: ../functions.php:112
+msgid "Sidebar"
+msgstr "Postranný panel"
+
+#: ../functions.php:231
+msgid "Left Sidebar"
+msgstr "Ľavý panel"
+
+#: ../functions.php:231
+msgid "Right Sidebar"
+msgstr "Pravý panel"
+
+#: ../functions.php:231
+msgid "No Sidebar"
+msgstr "Bez postranného panelu"
+
+#: ../functions.php:231
+msgid "Full Width"
+msgstr "Celá šírka obrazovky"
+
+#: ../functions.php:233
+msgid "Logo Only"
+msgstr "Len Logo"
+
+#: ../functions.php:234
+msgid "Logo + Tagline"
+msgstr "Logo + Slogan"
+
+#: ../functions.php:235
+msgid "Title Only"
+msgstr "Len nadpis"
+
+#: ../functions.php:236
+msgid "Title + Tagline"
+msgstr "Nadpis + Slogan"
+
+#: ../functions.php:273 ../searchform.php:14
+msgid "Search"
+msgstr "Hľadaj"
+
+#: ../functions.php:273 ../searchform.php:14
+msgctxt "submit button"
+msgid "Search"
+msgstr "Hľadaj"
+
+#: ../header.php:40
+msgid "Toggle navigation"
+msgstr "Otvor navigáciu"
+
+#: ../image.php:22
+msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Predošlé"
+
+#: ../image.php:23
+msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Ďalšie"
+
+#: ../inc/customizer.php:30
+msgid "Logo"
+msgstr "Logo"
+
+#: ../inc/customizer.php:44
+msgid "Show"
+msgstr "Ukáž"
+
+#: ../inc/customizer.php:53
+msgid "Activello Options"
+msgstr "Nastavenia Activello"
+
+#: ../inc/customizer.php:54
+msgid "Panel to update activello theme options"
+msgstr "Panel na aktualizáciu nastavenia témy Activello"
+
+#: ../inc/customizer.php:60
+msgid "Content Options"
+msgstr "Zrušiť nastavenie"
+
+#: ../inc/customizer.php:73
+msgid "Show post excerpts?"
+msgstr "Ukázať zhrnutie"
+
+#: ../inc/customizer.php:85
+msgid "Display Comments on Static Pages?"
+msgstr "Zobraziť komentáre na statickej stránke?"
+
+#: ../inc/customizer.php:94
+msgid "Slider Option"
+msgstr "Možnosti bežca"
+
+#: ../inc/customizer.php:127
+msgid "Layout options"
+msgstr "Nastavenie rozloženia"
+
+#: ../inc/customizer.php:138
+msgid "Website Layout Options"
+msgstr "Nastavenie rozloženia stránky"
+
+#: ../inc/customizer.php:141
+msgid "Choose between different layout options to be used as default"
+msgstr ""
+"Možnosť vybrať si rôzne rozloženia stránky nastavené ako prednastavená "
+"možnosť."
+
+#: ../inc/customizer.php:150
+msgid "Accent Color"
+msgstr "Doplnková farba"
+
+#: ../inc/customizer.php:151 ../inc/customizer.php:161
+#: ../inc/customizer.php:171
+msgid "Default used if no color is selected"
+msgstr "Použi prednastavené možnosti ak nie je nastavená žiadna farba"
+
+#: ../inc/customizer.php:160
+msgid "Social icon color"
+msgstr "Farba ikony pre sociálne médiá"
+
+#: ../inc/customizer.php:170
+msgid "Social Icon:hover Color"
+msgstr "Nastavenie ikony:hover farba"
+
+#: ../inc/customizer.php:177
+msgid "Footer"
+msgstr "Pätička"
+
+#: ../inc/customizer.php:195
+msgid "Other"
+msgstr "Iné"
+
+#: ../inc/customizer.php:204
+msgid "Custom CSS"
+msgstr "Vlastné CSS"
+
+#: ../inc/customizer.php:205
+msgid "Additional CSS"
+msgstr "Dodatočné CSS"
+
+#: ../inc/customizer.php:213
+msgid "Support and Documentation"
+msgstr ""
+
+#: ../inc/customizer.php:356
+msgid "Activello Documentation"
+msgstr ""
+
+#: ../inc/customizer.php:357
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr ""
+
+#: ../inc/customizer.php:357
+msgid "Colorlib support forum"
+msgstr ""
+
+#: ../inc/customizer.php:358
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr ""
+
+#: ../inc/customizer.php:360
+msgid "Rate this Theme"
+msgstr ""
+
+#: ../inc/customizer.php:361
+msgid "Like on Facebook"
+msgstr ""
+
+#: ../inc/customizer.php:362
+msgid "Follow on Twitter"
+msgstr ""
+
+#: ../inc/extras.php:54
+msgid "Untitled"
+msgstr "Neobmedzené"
+
+#: ../inc/extras.php:71
+msgid ""
+"This post is password protected. To view it please enter your password below:"
+msgstr ""
+
+#: ../inc/extras.php:72
+msgid "Password:"
+msgstr "Heslo:"
+
+#: ../inc/extras.php:75
+msgid "Submit"
+msgstr "Vyplň"
+
+#: ../inc/extras.php:172
+#, php-format
+msgid "Theme by %1$s Powered by %2$s"
+msgstr "Téme od %1$s beží na %2$s"
+
+#: ../inc/extras.php:260
+#, php-format
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
+msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">napísal:</span>"
+
+#: ../inc/extras.php:266
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s o %2$s"
+
+#: ../inc/extras.php:273
+msgid "Your comment is awaiting moderation."
+msgstr "Vaše komentáre čakajú na moderáciu."
+
+#: ../inc/metaboxes.php:16
+msgid ""
+"Select layout for this specific Page only ( Note: This setting only reflects "
+"if page Template is set as Default Template and Blog Type Templates.)"
+msgstr ""
+"Vyberte rozloženie len pre túto konkrétnu stránku (Poznámka: Toto nastavenie "
+"len reflektuje nastavenie, ak je šablóna nastavená ako Štandardná šablóna - "
+"Default Template a Blog Type Templates)"
+
+#: ../inc/metaboxes.php:21
+msgid "Select layout for this specific Post only"
+msgstr "Vyberte rozloženie len pre tento konkrétny článok"
+
+#: ../inc/metaboxes.php:28
+msgid "Select layout for this specific Product only"
+msgstr "Vyberte rozloženie len pre tento konkrétny produkt"
+
+#: ../inc/metaboxes.php:58
+msgid "Default"
+msgstr "Predvolené nastavenia"
+
+#: ../inc/navwalker.php:196
+msgid "Add a menu"
+msgstr "Pridať menu"
+
+#: ../inc/socialnav.php:13
+msgctxt "nav menu location"
+msgid "Social Menu"
+msgstr ""
+
+#: ../inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Navigácia článkov"
+
+#: ../inc/template-tags.php:27
+msgid "Older posts"
+msgstr "Staršie články"
+
+#: ../inc/template-tags.php:31
+msgid "Newer posts"
+msgstr "Novšie články"
+
+#: ../inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "Navigácia článku"
+
+#: ../inc/template-tags.php:59
+msgctxt "Previous post link"
+msgid "<i class=\"fa fa-chevron-left\"></i> %title"
+msgstr ""
+
+#: ../inc/template-tags.php:60
+msgctxt "Next post link"
+msgid "%title <i class=\"fa fa-chevron-right\"></i>"
+msgstr ""
+
+#: ../inc/template-tags.php:86
+msgid "Posted on"
+msgstr "Publikované na"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:327
+#: ../inc/tgmpa/tgm-plugin-activation.php:79
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:328
+#: ../inc/tgmpa/tgm-plugin-activation.php:80
+msgid "Install Plugins"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:330
+#: ../inc/tgmpa/tgm-plugin-activation.php:81
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:332
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:333
+#: ../inc/tgmpa/tgm-plugin-activation.php:82
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:336
+#: ../inc/tgmpa/tgm-plugin-activation.php:83
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:342
+#: ../inc/tgmpa/tgm-plugin-activation.php:84
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:348
+#: ../inc/tgmpa/tgm-plugin-activation.php:89
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:354
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:360
+#: ../inc/tgmpa/tgm-plugin-activation.php:86
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:366
+#: ../inc/tgmpa/tgm-plugin-activation.php:87
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:371
+#: ../inc/tgmpa/tgm-plugin-activation.php:91
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:376
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:381
+#: ../inc/tgmpa/tgm-plugin-activation.php:92
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:385
+#: ../inc/tgmpa/tgm-plugin-activation.php:93
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:386
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:827
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2533
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:387
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3159
+#: ../inc/tgmpa/tgm-plugin-activation.php:94
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:388
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:390
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:392
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:394
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:396
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:934
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:934
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:937
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:937
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:1121
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:1982
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2342
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2388
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2392
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2396
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2400
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2603
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2608
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2614
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3498
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3501
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3503
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3512
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3517
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3520
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/tgmpa/tgm-plugin-activation.php:85
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../inc/tgmpa/tgm-plugin-activation.php:88
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../inc/tgmpa/tgm-plugin-activation.php:90
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../inc/tgmpa/tgm-plugin-activation.php:95
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../inc/widgets/widget-categories.php:11
+msgid "Activello widget to display categories"
+msgstr "Widget od Activella na zobrazenie kategórií"
+
+#: ../inc/widgets/widget-categories.php:12
+msgid "Activello Categories"
+msgstr "Activello Kategórie"
+
+#: ../inc/widgets/widget-categories.php:17
+#: ../inc/widgets/widget-categories.php:73
+msgid "Categories"
+msgstr "Kategórie"
+
+#: ../inc/widgets/widget-categories.php:78 ../inc/widgets/widget-social.php:49
+msgid "Title "
+msgstr "Nadpis"
+
+#: ../inc/widgets/widget-categories.php:86
+msgid "Limit Categories "
+msgstr "Obmedziť kategórie"
+
+#: ../inc/widgets/widget-categories.php:99
+msgid "Enable Posts Count"
+msgstr "Umožniť číselník článkov"
+
+#: ../inc/widgets/widget-recent-posts.php:11
+msgid "Activello recent posts widget with thumbnails"
+msgstr "Widget Najnovších článkov od Activella s miniatúrami obrázkov"
+
+#: ../inc/widgets/widget-recent-posts.php:12
+msgid "Activello Recent Posts Widget"
+msgstr "Widget Najnovších článkov od Activella"
+
+#: ../inc/widgets/widget-recent-posts.php:17
+#: ../inc/widgets/widget-recent-posts.php:91
+msgid "recent Posts"
+msgstr "najnovšie články"
+
+#: ../inc/widgets/widget-recent-posts.php:96
+msgid "Title"
+msgstr "Nadpis"
+
+#: ../inc/widgets/widget-recent-posts.php:104
+msgid "Limit Posts Number"
+msgstr "Obmedzenie počtu článkov"
+
+#: ../inc/widgets/widget-social.php:11
+msgid "Activello theme widget to display social media icons"
+msgstr "Widget témy Activello na zobrazenie ikon sociálnych médií"
+
+#: ../inc/widgets/widget-social.php:12
+msgid "Activello Social Widget"
+msgstr "Activelo widget sociálnych médií"
+
+#: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
+msgid "Follow us"
+msgstr "Pridaj sa"
+
+#: ../search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Výsledky hľadania pre: %s"
+
+#: ../searchform.php:11
+msgid "Search for:"
+msgstr "Hľadaj:"
+
+#: ../searchform.php:12
+msgctxt "placeholder"
+msgid "Search&hellip;"
+msgstr "Hľadaj..."
+
+#: ../searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr "Hľadaj:"
+
+#: ../sidebar.php:38
+msgid "Meta"
+msgstr "Meta"
+
+#~ msgid "Leave a comment"
+#~ msgstr "Napíšte komentár"
+
+#~ msgid ""
+#~ "<p>This post is password protected. To view it please enter your password "
+#~ "below:</p>"
+#~ msgstr ""
+#~ "<p>Tento článok je chránený heslom. Aby ste ho mohli zobraziť, vložte "
+#~ "prosím heslo nižšie:</p>"

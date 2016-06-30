@@ -65,9 +65,12 @@ Theme documentation is available on http://colorlib.com/wp/support/activello
 = 1.1.0 - 30.06.2016 =
 
 * Added Link to documentation
-* Fixed compatibility errors with the WP 4.6 and PHP 7. 
+* Fixed compatibility errors with the WP 4.6 and PHP 7.
 * Now you can use unlimited number of slides on Slider
 * Other minor code tweaks and improvements
+* Added French translation thanks to Eddy Lelièvre-Berna
+* Added Greek translation thanks to Tsakman
+* Added Slovak translation thanks to Marek
 
 = 1.0.3 - 28.06.2016 =
 

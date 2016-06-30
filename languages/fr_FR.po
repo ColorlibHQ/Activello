@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Activello Theme\n"
 "POT-Creation-Date: 2016-02-17 15:37+0200\n"
-"PO-Revision-Date: 2016-02-17 15:37+0200\n"
-"Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
+"PO-Revision-Date: 2016-03-28 22:21+0200\n"
+"Last-Translator: Eddy Lelièvre-Berna <eddy@lelievre-berna.net>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
@@ -31,10 +31,8 @@ msgstr ""
 "liens ci-dessous ou une recherche ?"
 
 #: ../404.php:25
-#, fuzzy
 msgid "Recent Posts"
-msgstr ""
-"Affiche les listes d'articles populaires, r&eacute;cents & commentaires"
+msgstr "Articles récents"
 
 #: ../404.php:31
 msgid "Most Used Categories"
@@ -50,9 +48,8 @@ msgid "Archives"
 msgstr "Archives"
 
 #: ../404.php:58
-#, fuzzy
 msgid "Tags"
-msgstr "Appliqu&eacute; &agrave; la balise P ou paragraphe"
+msgstr "Étiquettes"
 
 #: ../archive.php:27
 #, php-format
@@ -115,8 +112,8 @@ msgstr "Discussions"
 msgctxt "comments title"
 msgid "1 Comment"
 msgid_plural "%1$s Comment"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 Commentaire"
+msgstr[1] "%1$s Commentaires"
 
 #: ../comments.php:35 ../comments.php:54
 msgid "Comment navigation"
@@ -136,19 +133,19 @@ msgstr "Les commentaires sont clos."
 
 #: ../comments.php:77
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #: ../comments.php:81
 msgid "Email"
-msgstr ""
+msgstr "E-mail "
 
 #: ../comments.php:85
 msgid "Website"
-msgstr ""
+msgstr "Site Web"
 
 #: ../comments.php:94
 msgid "Post Reply"
-msgstr ""
+msgstr "Publier une réponse"
 
 #: ../content-grid.php:16 ../content-page.php:32 ../inc/extras.php:252
 msgid "Edit"
@@ -193,7 +190,7 @@ msgstr ""
 #: ../content-single.php:21 ../content.php:22
 #, php-format
 msgid "Edit %s"
-msgstr ""
+msgstr "Modifier %s"
 
 #: ../content-single.php:55 ../content.php:73
 msgid "Leave a comment"
@@ -201,11 +198,11 @@ msgstr "Laisser un commentaire"
 
 #: ../content-single.php:55
 msgid "Comment (1)"
-msgstr ""
+msgstr "Commentaire (1)"
 
 #: ../content-single.php:55
 msgid "Comments (%)"
-msgstr ""
+msgstr "Commentaires (%)"
 
 #: ../content.php:73
 msgid "1 Comment"
@@ -233,41 +230,40 @@ msgstr "Barre latérale à droite"
 
 #: ../functions.php:226
 msgid "No Sidebar"
-msgstr ""
+msgstr "Pas de barre latérale"
 
 #: ../functions.php:226
 msgid "Full Width"
-msgstr ""
+msgstr "Pleine largeur"
 
 #: ../functions.php:228
 msgid "Logo Only"
-msgstr ""
+msgstr "Logo Seulement"
 
 #: ../functions.php:229
 msgid "Logo + Tagline"
-msgstr ""
+msgstr "Logo + slogan"
 
 #: ../functions.php:230
 msgid "Title Only"
-msgstr ""
+msgstr "Titre seulement"
 
 #: ../functions.php:231
 msgid "Title + Tagline"
-msgstr ""
+msgstr "Titre + slogan"
 
 #: ../functions.php:266 ../searchform.php:14
 msgid "Search"
-msgstr ""
+msgstr "Rechercher"
 
 #: ../functions.php:266 ../searchform.php:14
-#, fuzzy
 msgctxt "submit button"
 msgid "Search"
 msgstr "Rechercher"
 
 #: ../header.php:40
 msgid "Toggle navigation"
-msgstr ""
+msgstr "Activer/désactiver la navigation"
 
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
@@ -279,41 +275,39 @@ msgstr "Suivant <i class=\"fa fa-chevron-right\"></i>"
 
 #: ../inc/customizer.php:30
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #: ../inc/customizer.php:44
 msgid "Show"
-msgstr ""
+msgstr "Afficher"
 
 #: ../inc/customizer.php:53
 msgid "Activello Options"
-msgstr ""
+msgstr "Options Activello"
 
 #: ../inc/customizer.php:54
 msgid "Panel to update activello theme options"
-msgstr ""
+msgstr "Panneau pour mettre à jour les options du thème Activello"
 
 #: ../inc/customizer.php:60
-#, fuzzy
 msgid "Content Options"
-msgstr "Options du thème"
+msgstr "Options du contenu"
 
 #: ../inc/customizer.php:73
 msgid "Show post excerpts?"
-msgstr ""
+msgstr "Afficher les extraits des articles ?"
 
 #: ../inc/customizer.php:85
-#, fuzzy
 msgid "Display Comments on Static Pages?"
-msgstr "Affiché sur la page d'accueil"
+msgstr "Afficher les commentaires sur les pages statiques ?"
 
 #: ../inc/customizer.php:94
 msgid "Slider Option"
-msgstr ""
+msgstr "Option curseur"
 
 #: ../inc/customizer.php:127
 msgid "Layout options"
-msgstr ""
+msgstr "Options de mise en page"
 
 #: ../inc/customizer.php:138
 msgid "Website Layout Options"
@@ -322,10 +316,11 @@ msgstr "Options de mise en page du site"
 #: ../inc/customizer.php:141
 msgid "Choose between different layout options to be used as default"
 msgstr ""
+"Choisir entre différentes options de mise en page à utiliser par défaut"
 
 #: ../inc/customizer.php:150
 msgid "Accent Color"
-msgstr ""
+msgstr "Couleur d’accentuation"
 
 #: ../inc/customizer.php:151 ../inc/customizer.php:161
 #: ../inc/customizer.php:171
@@ -338,7 +333,7 @@ msgstr "Couleur des icônes de réseaux sociaux"
 
 #: ../inc/customizer.php:170
 msgid "Social Icon:hover Color"
-msgstr ""
+msgstr "Couleur au survol de l’icône"
 
 #: ../inc/customizer.php:177
 msgid "Footer"
@@ -362,7 +357,7 @@ msgstr "Support et documentation"
 
 #: ../inc/customizer.php:356
 msgid "Activello Documentation"
-msgstr ""
+msgstr "Documentation Activello"
 
 #: ../inc/customizer.php:357
 msgid ""
@@ -394,7 +389,7 @@ msgstr "Nous suivre sur Twitter"
 
 #: ../inc/extras.php:54
 msgid "Untitled"
-msgstr ""
+msgstr "Sans titre"
 
 #: ../inc/extras.php:71
 msgid ""
@@ -420,38 +415,41 @@ msgstr "Thème par %1$s. Propulsé par %2$s"
 #: ../inc/extras.php:246
 #, php-format
 msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
-msgstr ""
+msgstr "<cite class=“fn”>%s</cite> <span class=“says”>dit :</span>"
 
 #: ../inc/extras.php:252
 #, php-format
 msgid "%1$s at %2$s"
-msgstr ""
+msgstr "%1$s à %2$s"
 
 #: ../inc/extras.php:259
 msgid "Your comment is awaiting moderation."
-msgstr ""
+msgstr "Votre commentaire est en attente de modération."
 
 #: ../inc/metaboxes.php:16
 msgid ""
 "Select layout for this specific Page only ( Note: This setting only reflects "
 "if page Template is set as Default Template and Blog Type Templates.)"
 msgstr ""
+"Choisir une disposition spécifique pour cette page uniquement (Remarque : Ce "
+"paramètre ne s’applique que si la page modèle est défini comme modèle par "
+"défaut et modèles de type blog.)"
 
 #: ../inc/metaboxes.php:21
 msgid "Select layout for this specific Post only"
-msgstr ""
+msgstr "Sélectionnez une mise en page spécifique pour cet article uniquement"
 
 #: ../inc/metaboxes.php:28
 msgid "Select layout for this specific Product only"
-msgstr ""
+msgstr "Sélectionner une mise en page uniquement pour pour ce produit"
 
 #: ../inc/metaboxes.php:58
 msgid "Default"
-msgstr ""
+msgstr "Défaut"
 
 #: ../inc/navwalker.php:196
 msgid "Add a menu"
-msgstr ""
+msgstr "Ajouter un menu"
 
 #: ../inc/template-tags.php:23
 msgid "Posts navigation"
@@ -459,11 +457,11 @@ msgstr "Pagination des articles"
 
 #: ../inc/template-tags.php:27
 msgid "Older posts"
-msgstr ""
+msgstr "Anciens Articles"
 
 #: ../inc/template-tags.php:31
 msgid "Newer posts"
-msgstr ""
+msgstr "Articles récents"
 
 #: ../inc/template-tags.php:56
 msgid "Post navigation"
@@ -471,15 +469,15 @@ msgstr "Pagination d'article"
 
 #: ../inc/template-tags.php:86
 msgid "Posted on"
-msgstr ""
+msgstr "Publié le"
 
 #: ../inc/widgets/widget-categories.php:11
 msgid "Activello widget to display categories"
-msgstr ""
+msgstr "Widget Activello pour afficher les catégories"
 
 #: ../inc/widgets/widget-categories.php:12
 msgid "Activello Categories"
-msgstr ""
+msgstr "Catégories Activello"
 
 #: ../inc/widgets/widget-categories.php:17
 #: ../inc/widgets/widget-categories.php:76
@@ -500,16 +498,16 @@ msgstr "Activer le compteur d'articles"
 
 #: ../inc/widgets/widget-recent-posts.php:11
 msgid "Activello recent posts widget with thumbnails"
-msgstr ""
+msgstr "Widget Activello des articles récents avec vignettes"
 
 #: ../inc/widgets/widget-recent-posts.php:12
 msgid "Activello Recent Posts Widget"
-msgstr ""
+msgstr "Widget Activello des Articles Récents"
 
 #: ../inc/widgets/widget-recent-posts.php:17
 #: ../inc/widgets/widget-recent-posts.php:91
 msgid "recent Posts"
-msgstr ""
+msgstr "Articles récents"
 
 #: ../inc/widgets/widget-recent-posts.php:96
 msgid "Title"
@@ -521,11 +519,11 @@ msgstr "Limite du nombre d'articles"
 
 #: ../inc/widgets/widget-social.php:11
 msgid "Activello theme widget to display social media icons"
-msgstr ""
+msgstr "Widget thème Activello pour afficher des icônes de médias sociaux"
 
 #: ../inc/widgets/widget-social.php:12
 msgid "Activello Social Widget"
-msgstr ""
+msgstr "Widget Activello Réseaux Sociaux"
 
 #: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
 msgid "Follow us"
@@ -537,21 +535,18 @@ msgid "Search Results for: %s"
 msgstr "Résultats de recherche pour : %s"
 
 #: ../searchform.php:11
-#, fuzzy
 msgid "Search for:"
-msgstr "Rechercher..."
+msgstr "Rechercher&nbsp:"
 
 #: ../searchform.php:12
-#, fuzzy
 msgctxt "placeholder"
 msgid "Search&hellip;"
-msgstr "Rechercher"
+msgstr "Rechercher &hellip;"
 
 #: ../searchform.php:12
-#, fuzzy
 msgctxt "label"
 msgid "Search for:"
-msgstr "Rechercher..."
+msgstr "Rechercher&nbsp:"
 
 #: ../sidebar.php:38
 msgid "Meta"
