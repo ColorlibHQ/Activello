@@ -62,6 +62,11 @@ Theme documentation is available on http://colorlib.com/wp/support/activello
 
 /*========= Changelog =========*/
 
+= 1.0.3 - 28.06.2016 =
+
+* Added TGMPA & Kiwi Social Share Plugin
+* Updated theme tags
+
 = 1.0.2 - 17.02.2016 =
 
 * Prefixed functions
