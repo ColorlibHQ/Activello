@@ -2,8 +2,8 @@
 
 Theme Name: Activello
 Theme URI: http://colorlib.com/wp/Activello/
-Version: 1.0.2
-Tested up to: WP 4.4
+Version: 1.1.0
+Tested up to: WP 4.6
 
 Author: Aigars Silkalns
 Author URI: http://colorlib.com/wp/
@@ -61,6 +61,13 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 Theme documentation is available on http://colorlib.com/wp/support/activello
 
 /*========= Changelog =========*/
+
+= 1.1.0 - 30.06.2016 =
+
+* Added Link to documentation
+* Fixed compatibility errors with the WP 4.6 and PHP 7. 
+* Now you can use unlimited number of slides on Slider
+* Other minor code tweaks and improvements
 
 = 1.0.3 - 28.06.2016 =
 
