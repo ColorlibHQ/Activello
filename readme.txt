@@ -2,7 +2,7 @@
 
 Theme Name: Activello
 Theme URI: http://colorlib.com/wp/Activello/
-Version: 1.1.0
+Version: 1.1.1
 Tested up to: WP 4.6
 
 Author: Aigars Silkalns
@@ -62,7 +62,13 @@ Theme documentation is available on http://colorlib.com/wp/support/activello
 
 /*========= Changelog =========*/
 
-= 1.1.0 - 30.06.2016 =
+= 1.1.0 - 11.10.2016 =
+
+* Updated Bootstrap to 3.3.7
+* Updated Font Awesome to 4.6.3
+* Updated FlexSlider to 2.6.3
+
+= 1.1.0 - 11.10.2016 =
 
 * Added Link to documentation
 * Fixed compatibility errors with the WP 4.6 and PHP 7.

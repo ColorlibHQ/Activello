@@ -216,10 +216,10 @@ require get_template_directory() . '/inc/navwalker.php';
  */
 require get_template_directory() . '/inc/metaboxes.php';
 
-/**
- * TGMPA
- */
-require get_template_directory() . '/inc/tgmpa/tgm-plugin-activation.php';
+// /**
+//  * TGMPA
+//  */
+// require get_template_directory() . '/inc/tgmpa/tgm-plugin-activation.php';
 
 /**
  * Social Nav Menu
@@ -271,5 +271,5 @@ add_action( 'after_setup_theme', 'activello_woo_setup' );
  */
 function activello_header_search_filter($form){
     $form = '<form action="'.esc_url( home_url( "/" ) ).'" method="get"><input type="text" name="s" value="'.get_search_query().'" placeholder="'. esc_attr_x( __('Search', 'activello'), 'search placeholder', 'activello' ).'"><button type="submit" class="header-search-icon" name="submit" id="searchsubmit" value="'. esc_attr_x( 'Search', 'submit button', 'activello' ).'"><i class="fa fa-search"></i></button></form>';
-    return $form;    
+    return $form;
 }
