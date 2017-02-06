@@ -1326,6 +1326,11 @@ p.logged-in-as {
     margin: 0 4px 4px 0;
     overflow: hidden;
     position: relative;
+    width: 100%;
+}
+.gallery-icon img {
+    margin: 0 auto;
+    display: block;
 }
 .gallery-columns-1 .gallery-item {
     max-width: 100%;
