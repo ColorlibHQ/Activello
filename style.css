@@ -314,6 +314,10 @@ hr.section-divider {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+.single-category {
+    margin: 0;
+    padding: 0;
+}
 
 /* author */
 
