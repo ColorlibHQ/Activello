@@ -100,6 +100,9 @@ function activello_setup() {
    */
   add_theme_support( 'title-tag' );
 
+  // Add welcome screen
+  require get_template_directory() . '/inc/welcome-screen/welcome-page-setup.php';
+
 }
 endif; // activello_setup
 add_action( 'after_setup_theme', 'activello_setup' );
