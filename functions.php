@@ -100,6 +100,9 @@ function activello_setup() {
    */
   add_theme_support( 'title-tag' );
 
+  // Add welcome screen
+  require get_template_directory() . '/inc/welcome-screen/welcome-page-setup.php';
+
 }
 endif; // activello_setup
 add_action( 'after_setup_theme', 'activello_setup' );
@@ -246,7 +249,7 @@ function activello_get_single_category($post_id){
     $post_categories = wp_get_post_categories( $post_id );
 
     if( !empty( $post_categories ) ){
-        return wp_list_categories('echo=0&title_li=&show_count=0&include='.$post_categories[0]);
+        return '<ul class="single-category">' . wp_list_categories('echo=0&title_li=&show_count=0&include='.$post_categories[0]) . '</ul>';
     }
     return '';
 }

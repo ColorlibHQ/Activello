@@ -255,7 +255,7 @@ function activello_cb_comment($comment, $args, $depth) {
 	 <div id="div-comment-<?php comment_ID() ?>" class="comment-body">
 	<?php endif; ?>
 
-	<div class="comment-author vcard">
+	<div class="comment-author vcard asdasd">
   	<?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
   	<?php printf( __( '<cite class="fn">%s</cite> <span class="says">says:</span>', 'activello' ), get_comment_author_link() ); ?>
   	<?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
@@ -263,7 +263,7 @@ function activello_cb_comment($comment, $args, $depth) {
     <div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>">
       <?php
         /* translators: 1: date, 2: time */
-        sprintf( __( '%1$s at %2$s', 'activello' ), get_comment_date(), get_comment_time() ); ?></a><?php edit_comment_link( __( 'Edit', 'activello' ), '  ', '' );
+        printf( __( '%1$s at %2$s', 'activello' ), get_comment_date(), get_comment_time() ); ?></a><?php edit_comment_link( __( 'Edit', 'activello' ), '  ', '' );
       ?>
     </div>
 
