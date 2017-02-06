@@ -871,8 +871,10 @@ ul.children, ul.children li {
     border-bottom: 1px solid #ddd;
     margin-bottom: 10px;
 }
-.tagline {
+.site-name .navbar-brand {
     color: #1c202a;
+}
+.tagline {
     font-family: 'Montserrat', sans-serif;
     margin-top: 10px;
     letter-spacing: 1px;
