@@ -100,8 +100,7 @@ function activello_setup() {
    */
   add_theme_support( 'title-tag' );
 
-  // Add welcome screen
-  require get_template_directory() . '/inc/welcome-screen/welcome-page-setup.php';
+  
 
 }
 endif; // activello_setup
@@ -276,3 +275,7 @@ function activello_header_search_filter($form){
     $form = '<form action="'.esc_url( home_url( "/" ) ).'" method="get"><input type="text" name="s" value="'.get_search_query().'" placeholder="'. esc_attr_x( __('Search', 'activello'), 'search placeholder', 'activello' ).'"><button type="submit" class="header-search-icon" name="submit" id="searchsubmit" value="'. esc_attr_x( 'Search', 'submit button', 'activello' ).'"><i class="fa fa-search"></i></button></form>';
     return $form;
 }
+
+
+// Add welcome screen
+require get_template_directory() . '/inc/welcome-screen/welcome-page-setup.php';

@@ -1,11 +1,15 @@
-jQuery(document).ready(function () {
-    var activello_aboutpage = activelloWelcomeScreenCustomizerObject.aboutpage;
-    var activello_nr_actions_required = activelloWelcomeScreenCustomizerObject.nr_actions_required;
+( function( api ) {
 
-    /* Number of required actions */
-    if ((typeof activello_aboutpage !== 'undefined') && (typeof activello_nr_actions_required !== 'undefined') && (activello_nr_actions_required != '0')) {
-        jQuery('#accordion-section-themes .accordion-section-title').append('<a href="' + activello_aboutpage + '"><span class="activello-actions-count">' + activello_nr_actions_required + '</span></a>');
-    }
+	// Extends our custom "activello-pro-section" section.
+	api.sectionConstructor['activello-recomended-section'] = api.Section.extend( {
 
+		// No events for this type of section.
+		attachEvents: function () {},
 
-});
+		// Always make the section active.
+		isContextuallyActive: function () {
+			return true;
+		}
+	} );
+
+} )( wp.customize );
