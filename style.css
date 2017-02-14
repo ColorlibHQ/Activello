@@ -1612,6 +1612,9 @@ p.logged-in-as {
 .woocommerce .woocommerce-info:before {
     color: #a161bf;
 }
+.related.products {
+    clear: both;
+}
 
 /* Layout */
 
