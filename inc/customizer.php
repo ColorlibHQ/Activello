@@ -91,7 +91,7 @@ function activello_customizer( $wp_customize ) {
 
 	// add "Featured Posts" section
 	$wp_customize->add_section( 'activello_featured_section' , array(
-		'title'      => esc_html__( 'Slider Option', 'activello' ),
+		'title'      => esc_html__( 'Slider Options', 'activello' ),
 		'priority'   => 60,
                 'panel' => 'activello_main_options'
 	) );
@@ -109,6 +109,18 @@ function activello_customizer( $wp_customize ) {
 		'section' => 'activello_featured_section',
 	) );
 
+	$wp_customize->add_setting( 'activello_featured_limit', array(
+			'default' => 0,
+			'transport'   => 'refresh',
+			'sanitize_callback' => 'activello_sanitize_number'
+	) );
+	
+	$wp_customize->add_control( 'activello_featured_limit', array(
+			'type' => 'number',
+			'label' => 'Limit posts',
+			'section' => 'activello_featured_section',
+	) );
+	
 	$wp_customize->add_setting( 'activello_featured_hide', array(
 		'default' => 0,
 		'transport'   => 'refresh',
