@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Activello Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-19 17:45+0100\n"
-"PO-Revision-Date: 2017-02-19 17:45+0100\n"
+"POT-Creation-Date: 2017-02-19 21:23+0100\n"
+"PO-Revision-Date: 2017-02-19 23:13+0100\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: pl\n"
@@ -118,8 +118,8 @@ msgstr "Czaty"
 msgctxt "comments title"
 msgid "1 Comment"
 msgid_plural "%1$s Comment"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 komentarz"
+msgstr[1] "%1$s komentarzy"
 
 #: ../comments.php:35 ../comments.php:54
 msgid "Comment navigation"
@@ -139,11 +139,11 @@ msgstr "Komentarze są zamknięte."
 
 #: ../comments.php:77
 msgid "Name"
-msgstr ""
+msgstr "Nazwa"
 
 #: ../comments.php:81
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: ../comments.php:85
 msgid "Website"
@@ -198,7 +198,7 @@ msgstr ""
 #: ../content-single.php:21 ../content.php:22
 #, php-format
 msgid "Edit %s"
-msgstr ""
+msgstr "Edytuj %s"
 
 #: ../content-single.php:55 ../content.php:73
 msgid "No comments yet"
@@ -206,11 +206,11 @@ msgstr "Brak komentarzy"
 
 #: ../content-single.php:55
 msgid "Comment (1)"
-msgstr ""
+msgstr "Komentarz (1)"
 
 #: ../content-single.php:55
 msgid "Comments (%)"
-msgstr ""
+msgstr "Komentarze (%)"
 
 #: ../content.php:73
 msgid "1 Comment"
@@ -230,15 +230,15 @@ msgstr "Pasek boczny"
 
 #: ../functions.php:233
 msgid "Left Sidebar"
-msgstr "Lewy pasek boczny"
+msgstr "Lewy Pasek Boczny"
 
 #: ../functions.php:233
 msgid "Right Sidebar"
-msgstr "Prawy pasek boczny"
+msgstr "Prawy Pasek Boczny"
 
 #: ../functions.php:233
 msgid "No Sidebar"
-msgstr ""
+msgstr "Brak paska bocznego"
 
 #: ../functions.php:233
 msgid "Full Width"
@@ -265,10 +265,9 @@ msgid "Search"
 msgstr "Wyszukaj"
 
 #: ../functions.php:275 ../searchform.php:14
-#, fuzzy
 msgctxt "submit button"
 msgid "Search"
-msgstr "Szukaj"
+msgstr "Znajdź"
 
 #: ../header.php:40
 msgid "Toggle navigation"
@@ -299,22 +298,20 @@ msgid "Panel to update activello theme options"
 msgstr ""
 
 #: ../inc/customizer.php:60
-#, fuzzy
 msgid "Content Options"
-msgstr "Opcje tematu"
+msgstr "Opcje treści"
 
 #: ../inc/customizer.php:73
 msgid "Show post excerpts?"
-msgstr ""
+msgstr "Pokazuj fragmenty postów"
 
 #: ../inc/customizer.php:85
-#, fuzzy
 msgid "Display Comments on Static Pages?"
-msgstr "Wyświetl na stronie głównej"
+msgstr "Wyświetlaj komentarze na stronach statycznych"
 
 #: ../inc/customizer.php:94
 msgid "Slider Options"
-msgstr "Opcje suwaka"
+msgstr "Opcje slidera"
 
 #: ../inc/customizer.php:139
 msgid "Layout options"
@@ -343,7 +340,7 @@ msgstr "Kolor ikon społecznościowych"
 
 #: ../inc/customizer.php:182
 msgid "Social Icon:hover Color"
-msgstr ""
+msgstr "Aktywny kolor ikon społecznościowych"
 
 #: ../inc/customizer.php:189
 msgid "Footer"
@@ -359,7 +356,7 @@ msgstr "Wsparcie i dokumentacja"
 
 #: ../inc/customizer.php:368
 msgid "Activello Documentation"
-msgstr ""
+msgstr "Dokumentacja Activello"
 
 #: ../inc/customizer.php:369
 msgid ""
@@ -439,7 +436,7 @@ msgstr ""
 
 #: ../inc/metaboxes.php:58
 msgid "Default"
-msgstr ""
+msgstr "Domyślny"
 
 #: ../inc/navwalker.php:196
 msgid "Add a menu"
@@ -468,7 +465,7 @@ msgstr "Opublikowany"
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:327
 #: ../inc/tgmpa/tgm-plugin-activation.php:79
 msgid "Install Required Plugins"
-msgstr ""
+msgstr "Zainstaluj Wymagane wtyczki"
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:328
 #: ../inc/tgmpa/tgm-plugin-activation.php:80
@@ -484,7 +481,7 @@ msgstr ""
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:332
 #, php-format
 msgid "Updating Plugin: %s"
-msgstr ""
+msgstr "Aktualizacja wtyczki: %s"
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:333
 #: ../inc/tgmpa/tgm-plugin-activation.php:82
@@ -531,11 +528,11 @@ msgstr ""
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:394
 #, php-format
 msgid "All plugins installed and activated successfully. %1$s"
-msgstr ""
+msgstr "Wszystkie wtyczki z powodzeniem zainstalowane i aktywowane. %1$s "
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:395
 msgid "Dismiss this notice"
-msgstr ""
+msgstr "Ukryj wiadomość"
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:396
 msgid ""
@@ -549,7 +546,7 @@ msgstr ""
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:522
 msgid "This plugin needs to be updated to be compatible with your theme."
-msgstr ""
+msgstr "Ta wtyczka musi być zaktualizowana by była zgodna z Twoim motywem"
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:523
 msgid "Update Required"
@@ -589,7 +586,7 @@ msgstr ""
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:2292
 msgid "WordPress Repository"
-msgstr ""
+msgstr "Repozytorium WrdPress"
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:2295
 msgid "External Source"
@@ -601,7 +598,7 @@ msgstr ""
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:2315
 msgid "Not Installed"
-msgstr ""
+msgstr "Nie zainstalowany"
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:2319
 msgid "Installed But Not Activated"
@@ -609,7 +606,7 @@ msgstr ""
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:2321
 msgid "Active"
-msgstr ""
+msgstr "Aktywny"
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:2327
 msgid "Required Update not Available"
@@ -617,7 +614,7 @@ msgstr ""
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:2330
 msgid "Requires Update"
-msgstr ""
+msgstr "Wymaga aktualizacji"
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:2333
 msgid "Update recommended"
@@ -662,7 +659,7 @@ msgstr ""
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:2510
 msgid "Available version:"
-msgstr ""
+msgstr "Dostępna wersja:"
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:2533
 msgid "No plugins to install, update or activate."
@@ -678,15 +675,15 @@ msgstr ""
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:2549
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:2553
 msgid "Version"
-msgstr ""
+msgstr "Wersja"
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:2554
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:2603
 #, php-format
@@ -701,7 +698,7 @@ msgstr ""
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:2614
 #, php-format
 msgid "Activate %2$s"
-msgstr ""
+msgstr "Aktywuj %2$s"
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:2684
 msgid "Upgrade message from the plugin author:"
@@ -712,7 +709,7 @@ msgstr ""
 #: ../inc/welcome-screen/sections/actions-required.php:41
 #: ../inc/welcome-screen/sections/recommended-plugins.php:24
 msgid "Install"
-msgstr ""
+msgstr "Zainstaluj"
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:2723
 msgid "Update"
@@ -723,7 +720,7 @@ msgstr ""
 #: ../inc/welcome-screen/sections/actions-required.php:45
 #: ../inc/welcome-screen/sections/recommended-plugins.php:28
 msgid "Activate"
-msgstr ""
+msgstr "Aktywuj"
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:2757
 msgid "No plugins were selected to be installed. No action taken."
@@ -782,12 +779,12 @@ msgstr ""
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:3517
 msgid "Show Details"
-msgstr ""
+msgstr "Pokaż szczegóły"
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:3517
 msgid "Hide Details"
-msgstr ""
+msgstr "Ukryj szczegóły"
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:3510
 msgid "All installations and activations have been completed."
@@ -827,34 +824,34 @@ msgstr ""
 #: ../inc/welcome-screen/sections/actions-required.php:49
 #: ../inc/welcome-screen/sections/recommended-plugins.php:32
 msgid "Deactivate"
-msgstr ""
+msgstr "Dezaktywuj"
 
 #: ../inc/welcome-screen/notify-system-checks.php:154
 #: ../inc/welcome-screen/notify-system-checks.php:162
 msgid "Install: Widget Importer Exporter Plugin"
-msgstr ""
+msgstr "Zainstaluj: Wtyczka Widget Importer Exporter"
 
 #: ../inc/welcome-screen/notify-system-checks.php:159
 msgid "Activate: Widget Importer Exporter Plugin"
-msgstr ""
+msgstr "Aktywuj: Wtyczka Widget Importer Exporter "
 
 #: ../inc/welcome-screen/notify-system-checks.php:168
 #: ../inc/welcome-screen/notify-system-checks.php:176
 msgid "Install: WordPress Importer"
-msgstr ""
+msgstr "Zainstaluj: WordPress Importer"
 
 #: ../inc/welcome-screen/notify-system-checks.php:173
 msgid "Activate: WordPress Importer"
-msgstr ""
+msgstr "Aktywuj: WordPress Importer"
 
 #: ../inc/welcome-screen/notify-system-checks.php:185
 #: ../inc/welcome-screen/notify-system-checks.php:193
 msgid "Please install the WordPress Importer to create the demo content."
-msgstr ""
+msgstr "Zainstaluj WordPress Importer by stworzyć przykładowe treści. "
 
 #: ../inc/welcome-screen/notify-system-checks.php:190
 msgid "Please activate the WordPress Importer to create the demo content."
-msgstr ""
+msgstr "Aktywuj WordPress Importer by stworzyć przykładową treść."
 
 #: ../inc/welcome-screen/notify-system-checks.php:199
 #: ../inc/welcome-screen/notify-system-checks.php:207
@@ -864,22 +861,24 @@ msgstr ""
 #: ../inc/welcome-screen/notify-system-checks.php:204
 msgid ""
 "Please activate the WordPress Widget Importer to create the demo content."
-msgstr ""
+msgstr "Aktywuj Importer Wtyczek WordPress by stworzyć przykładową treść."
 
 #: ../inc/welcome-screen/sections/actions-required.php:80
 #: ../inc/welcome-screen/welcome-screen.php:149
 msgid "Hooray! There are no required actions for you right now."
-msgstr ""
+msgstr "Hurra! Aktualnie nie ma żadnej wymaganej akcji."
 
 #: ../inc/welcome-screen/sections/getting-started.php:11
 msgid "Step 1 - Implement recommended actions"
-msgstr ""
+msgstr "Krok 1 - Przeprowadź zalecane akcje"
 
 #: ../inc/welcome-screen/sections/getting-started.php:12
 msgid ""
 "We've compiled a list of steps for you, to take make sure the experience "
 "you'll have using one of our products is very easy to follow."
 msgstr ""
+"Sporządziliśmy dla Ciebie listę kroków, by  upewnić się, że doświadczenia z "
+"naszymi produktami będą dla Ciebie łatwe i przejemne."
 
 #: ../inc/welcome-screen/sections/getting-started.php:15
 msgid "No recommended actions left to perform"
@@ -887,54 +886,61 @@ msgstr ""
 
 #: ../inc/welcome-screen/sections/getting-started.php:18
 msgid "Check recommended actions"
-msgstr ""
+msgstr "Sprawdź polecane akcje"
 
 #: ../inc/welcome-screen/sections/getting-started.php:24
 msgid "Step 2 - Check our documentation"
-msgstr ""
+msgstr "Krok 2 - Przeczytaj naszą dokumentację "
 
 #: ../inc/welcome-screen/sections/getting-started.php:25
 msgid ""
 "Even if you're a long-time WordPress user, we still believe you should give "
 "our documentation a very quick Read."
 msgstr ""
+"Nawet jeśli jesteś użytkownikiem WordPressa od dawna, uważamy że powinieneś "
+"poświęcić chociaż krótką chwilę na lekturę naszej dokumentacji."
 
 #: ../inc/welcome-screen/sections/getting-started.php:28
 msgid "Full documentation"
-msgstr ""
+msgstr "Pełna dokumentacja"
 
 #: ../inc/welcome-screen/sections/getting-started.php:33
 msgid "Step 3 - Customize everything"
-msgstr ""
+msgstr "Krok 3 - Dostosuj wszystko"
 
 #: ../inc/welcome-screen/sections/getting-started.php:34
 msgid ""
 "Using the WordPress Customizer you can easily customize every aspect of the "
 "theme."
 msgstr ""
+"Korzystając z WordPress Customizera możesz z łatwością dostosowywać każdy "
+"element motywu."
 
 #: ../inc/welcome-screen/sections/getting-started.php:36
 msgid "Go to Customizer"
-msgstr ""
+msgstr "Idź do Customizera"
 
 #: ../inc/welcome-screen/sections/recommended-plugins.php:39
 msgid "Version:"
-msgstr ""
+msgstr "Wersja:"
 
 #: ../inc/welcome-screen/sections/support.php:5
 #: ../inc/welcome-screen/sections/support.php:10
 msgid "Contact Support"
-msgstr ""
+msgstr "Uzyskaj pomoc"
 
 #: ../inc/welcome-screen/sections/support.php:7
 msgid ""
 "We offer excellent support through our advanced ticketing system. Make sure "
 "to register your purchase before contacting support!"
 msgstr ""
+"Oferujemy doskonałe wsparcie poprzez nasz zaawansowany system obsługi "
+"zgłoszeń. Upewnij się, by zarejestrować swój zakup zanim skontaktujesz się z "
+"pomocą!"
 
 #: ../inc/welcome-screen/sections/support.php:15
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentacja"
 
 #: ../inc/welcome-screen/sections/support.php:17
 msgid ""
@@ -942,29 +948,35 @@ msgid ""
 "online documentation is an incredible resource for learning the ins and outs "
 "of using Activello."
 msgstr ""
+"Tutaj znajdują się informacje dotyczące różnych aspektów motywu. Nasza "
+"dokumentacja online jest niesamowitym źródłem wiedzy oraz tajników pracy z "
+"Activello."
 
 #: ../inc/welcome-screen/sections/support.php:20
 msgid "See our full documentation"
-msgstr ""
+msgstr "Zobacz naszą pełną dokumentację"
 
 #: ../inc/welcome-screen/sections/support.php:25
 #: ../inc/welcome-screen/welcome-screen.php:385
 msgid "Changelog"
-msgstr ""
+msgstr "Historia zmian"
 
 #: ../inc/welcome-screen/sections/support.php:27
 msgid ""
 "Want to get the gist on the latest theme changes? Just consult our changelog "
 "below to get a taste of the recent fixes and features implemented."
 msgstr ""
+"Chcesz dowiedzieć si‍ę więcej na temat najnowszych zmian motywu? Wystarczy "
+"spojrzeć na naszą historię zmian aby poznać ostatnie poprawek oraz "
+"zaimplementowanych funkcjonalności."
 
 #: ../inc/welcome-screen/sections/support.php:30
 msgid "See changelog"
-msgstr ""
+msgstr "Zobacz historię zmian"
 
 #: ../inc/welcome-screen/welcome-page-setup.php:16
 msgid "Recomended Actions"
-msgstr ""
+msgstr "Polecane akcje"
 
 #: ../inc/welcome-screen/welcome-page-setup.php:17
 msgid "We're social"
@@ -972,7 +984,7 @@ msgstr ""
 
 #: ../inc/welcome-screen/welcome-page-setup.php:75
 msgid "Download theme sample data"
-msgstr ""
+msgstr "Pobierz przykładowe dane dla motywu"
 
 #: ../inc/welcome-screen/welcome-page-setup.php:76
 msgid "Head over to our website and download the sample content data."
@@ -980,11 +992,11 @@ msgstr ""
 
 #: ../inc/welcome-screen/welcome-page-setup.php:77
 msgid "Posts"
-msgstr ""
+msgstr "Posty"
 
 #: ../inc/welcome-screen/welcome-page-setup.php:78
 msgid "Widgets"
-msgstr ""
+msgstr "Widgety"
 
 #: ../inc/welcome-screen/welcome-page-setup.php:83
 msgid "Import Sample Data"
@@ -992,11 +1004,11 @@ msgstr ""
 
 #: ../inc/welcome-screen/welcome-page-setup.php:84
 msgid "Import Posts"
-msgstr ""
+msgstr "Importuj posty"
 
 #: ../inc/welcome-screen/welcome-page-setup.php:85
 msgid "Import Widgets"
-msgstr ""
+msgstr "Importuj widżety"
 
 #: ../inc/welcome-screen/welcome-screen.php:128
 #, php-format
@@ -1007,15 +1019,15 @@ msgstr ""
 
 #: ../inc/welcome-screen/welcome-screen.php:130
 msgid "Get started with Activello"
-msgstr ""
+msgstr "Pierwsze kroki z Activello"
 
 #: ../inc/welcome-screen/welcome-screen.php:168
 msgid "View Theme Info"
-msgstr ""
+msgstr "Wyświetl informacje o motywie"
 
 #: ../inc/welcome-screen/welcome-screen.php:366
 msgid "Welcome to Activello! - Version "
-msgstr ""
+msgstr "Witaj w Activello! - Wersja "
 
 #: ../inc/welcome-screen/welcome-screen.php:369
 msgid ""
@@ -1025,30 +1037,36 @@ msgid ""
 "necessary information for you. We hope you will enjoy using Activello, as "
 "much as we enjoy creating great products."
 msgstr ""
+"Activello został zainstalowany i jest gotowy do użycia! Przygotuj się na "
+"stworzenie czegoś pięknego. Mamy nadzieję, że Ci się spodoba! Chcemy się "
+"upewnić, że praca z Activello  dostarczy Ci najlepszych przeżyć i dlatego "
+"zgromadziliśmy tutaj wszystkie niezbędne dla Ciebie informacje. Mamy "
+"nadzieję, że praca z  Activello sprawi Ci tyle przyjemności ile nam sprawia "
+"tworzenie świetnych produktów."
 
 #: ../inc/welcome-screen/welcome-screen.php:376
 msgid "Getting Started"
-msgstr ""
+msgstr "Pierwsze kroki"
 
 #: ../inc/welcome-screen/welcome-screen.php:378
 msgid "Recommended Actions"
-msgstr ""
+msgstr "Polecane akcje"
 
 #: ../inc/welcome-screen/welcome-screen.php:381
 msgid "Recommended Plugins"
-msgstr ""
+msgstr "Polecane wtyczki"
 
 #: ../inc/welcome-screen/welcome-screen.php:383
 msgid "Support"
-msgstr ""
+msgstr "Wsparcie"
 
 #: ../inc/widgets/widget-categories.php:11
 msgid "Activello widget to display categories"
-msgstr ""
+msgstr "Lista kategorii"
 
 #: ../inc/widgets/widget-categories.php:12
 msgid "Activello Categories"
-msgstr ""
+msgstr "Activello Kategorie"
 
 #: ../inc/widgets/widget-categories.php:17
 #: ../inc/widgets/widget-categories.php:73
@@ -1069,16 +1087,16 @@ msgstr "Włącz licznik postów"
 
 #: ../inc/widgets/widget-recent-posts.php:11
 msgid "Activello recent posts widget with thumbnails"
-msgstr ""
+msgstr "Lista najnowszych wpisów wraz  z miniaturami"
 
 #: ../inc/widgets/widget-recent-posts.php:12
 msgid "Activello Recent Posts Widget"
-msgstr ""
+msgstr "Activello Najnowsze wpisy"
 
 #: ../inc/widgets/widget-recent-posts.php:17
 #: ../inc/widgets/widget-recent-posts.php:91
 msgid "recent Posts"
-msgstr ""
+msgstr "ostatnie posty"
 
 #: ../inc/widgets/widget-recent-posts.php:96
 msgid "Title"
@@ -1090,11 +1108,11 @@ msgstr "Limit postów"
 
 #: ../inc/widgets/widget-social.php:11
 msgid "Activello theme widget to display social media icons"
-msgstr ""
+msgstr "Wyświetla ikony mediów społecznościowych"
 
 #: ../inc/widgets/widget-social.php:12
 msgid "Activello Social Widget"
-msgstr ""
+msgstr "Activello Ikony społecznościowe"
 
 #: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
 msgid "Follow us"
@@ -1111,10 +1129,9 @@ msgid "Search for:"
 msgstr "Szukaj:"
 
 #: ../searchform.php:12
-#, fuzzy
 msgctxt "placeholder"
 msgid "Search&hellip;"
-msgstr "Szukaj&hellip;"
+msgstr "napisz&hellip;"
 
 #: ../searchform.php:12
 #, fuzzy
