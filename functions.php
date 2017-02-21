@@ -100,6 +100,13 @@ function activello_setup() {
    */
   add_theme_support( 'title-tag' );
 
+  // Backwards compatibility
+  $custom_css = get_theme_mod('custom_css');
+  if ( $custom_css ) {
+    wp_update_custom_css_post( $custom_css );
+    remove_theme_mod( 'custom_css' );
+  }
+
   
 
 }
