@@ -196,32 +196,22 @@ function activello_customizer( $wp_customize ) {
             'priority' => 70,
             'panel' => 'activello_main_options'
         ));
-            // $wp_customize->add_setting('custom_css', array(
-            //     'default' => '',
-            //     'sanitize_callback' => 'activello_sanitize_strip_slashes'
-            // ));
-            // $wp_customize->add_control('custom_css', array(
-            //     'label' => __('Custom CSS', 'activello'),
-            //     'description' => sprintf(__('Additional CSS', 'activello')),
-            //     'section' => 'activello_other_options',
-            //     'type' => 'textarea'
-            // ));
 
-				/* Support & Documentation */
-				$wp_customize->add_section('activello_important_links', array(
-						'priority' => 5,
-						'title' => __('Support and Documentation', 'activello')
-				));
-				    $wp_customize->add_setting('activello[imp_links]', array(
-				      	'sanitize_callback' => 'esc_url_raw'
-				    ));
-				    $wp_customize->add_control(
-				    new Activello_Important_Links(
-				    $wp_customize,
-				        'activello[imp_links]', array(
-				        'section' => 'activello_important_links',
-				        'type' => 'activello-important-links'
-				    )));
+		/* Support & Documentation */
+		$wp_customize->add_section('activello_important_links', array(
+				'priority' => 5,
+				'title' => __('Support and Documentation', 'activello')
+		));
+	    $wp_customize->add_setting('activello[imp_links]', array(
+	      	'sanitize_callback' => 'esc_url_raw'
+	    ));
+	    $wp_customize->add_control(
+	    new Activello_Important_Links(
+	    $wp_customize,
+	        'activello[imp_links]', array(
+	        'section' => 'activello_important_links',
+	        'type' => 'activello-important-links'
+	    )));
 
 }
 add_action( 'customize_register', 'activello_customizer' );
