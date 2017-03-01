@@ -20,20 +20,6 @@ add_action( 'customize_register', 'activello_customize_register' );
  */
 function activello_customizer( $wp_customize ) {
 
-	// logo
-	$wp_customize->add_setting( 'header_logo', array(
-		'default' => '',
-		'transport'   => 'refresh',
-                'sanitize_callback' => 'activello_sanitize_number'
-	) );
-        $wp_customize->add_control(new WP_Customize_Media_Control( $wp_customize, 'header_logo', array(
-    		'label' => __( 'Logo', 'activello' ),
-    		'section' => 'title_tagline',
-    		'mime_type' => 'image',
-    		'priority'  => 10,
-    	) ) );
-
-
     global $header_show;
     $wp_customize->add_setting('header_show', array(
             'default' => 'logo-text',
