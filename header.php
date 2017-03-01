@@ -76,17 +76,15 @@
 		<div class="container">
 			<div id="logo">
 				<?php echo is_home() ?  '<h1 class="site-name">' : '<span class="site-name">'; ?>
-                                    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php
-					if( $show_logo && $logo ) {
-                                                echo wp_get_attachment_image($logo, 'full');
-					}
-					elseif( $show_title ) {
-						bloginfo( 'name' );
-					}
-					else{
-						bloginfo( 'name' );
-					} ?>
-					</a>
+                    
+                <?php 
+
+                if( $show_logo && has_custom_logo() ) {
+                	the_custom_logo();
+				}else{?>
+					<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php  bloginfo( 'name' ); ?></a>
+				<?php } ?>
+                    
 				<?php echo is_home() ?  '</h1>' : '</span>'; ?><!-- end of .site-name -->
 
 				<?php if( $show_tagline && get_bloginfo( 'description' ) != "" ) : ?>

@@ -96,6 +96,20 @@ function activello_setup() {
     'caption',
   ) );
 
+  // Enable Custom Logo
+  add_theme_support( 'custom-logo', array(
+      'height'      => 200,
+      'width'       => 400,
+      'flex-width' => true,
+    ) );
+
+  // Backwards compatibility for custom Logo
+  $old_logo = get_theme_mod( 'header_logo' );
+  if ( $old_logo ) {
+    set_theme_mod( 'custom_logo', $old_logo );
+    remove_theme_mod( 'header_logo' );
+  }
+
   /*
    * Let WordPress manage the document title.
    * By adding theme support, we declare that this theme does not use a
