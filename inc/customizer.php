@@ -129,7 +129,7 @@ function activello_customizer( $wp_customize ) {
             ));
 
             $wp_customize->add_setting('accent_color', array(
-                    'default' => '',
+                    'default' => '#a161bf',
                     'sanitize_callback' => 'activello_sanitize_hexcolor'
                 ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'accent_color', array(
@@ -139,7 +139,7 @@ function activello_customizer( $wp_customize ) {
             )));
 
             $wp_customize->add_setting('social_color', array(
-                'default' => '',
+                'default' => '#696969',
                 'sanitize_callback' => 'activello_sanitize_hexcolor'
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'social_color', array(
@@ -149,7 +149,7 @@ function activello_customizer( $wp_customize ) {
             )));
 
             $wp_customize->add_setting('social_hover_color', array(
-                'default' => '',
+                'default' => '#a161bf',
                 'sanitize_callback' => 'activello_sanitize_hexcolor'
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'social_hover_color', array(
