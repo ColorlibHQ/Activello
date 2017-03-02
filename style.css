@@ -229,6 +229,11 @@ textarea {
     /* Above WP toolbar */
 }
 
+/* Search */
+.site-navigation-inner .nav-search input:focus {
+    outline: none;
+}
+
 /* Clearing floats */
 
 .clear:before, .clear:after, .gallery:before, .gallery:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-header:before, .site-header:after, .site-content:before, .site-content:after, .site-footer:before, .site-footer:after, .home-widget-area:before {
@@ -1056,10 +1061,11 @@ div.flex-caption {
     color: #DADADA;
 }
 @media (min-width: 979px) {
-    ul.nav li.dropdown:hover> ul.dropdown-menu {
+    ul.nav li.menu-item-has-children:hover> ul.dropdown-menu {
         display: block;
     }
 }
+
 .nav .open> a, .nav .open> a:hover, .nav .open> a:focus {
     border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -1094,6 +1100,25 @@ div.flex-caption {
 }
 .nav.navbar-nav {
     float: left;
+}
+@media (max-width: 979px) {
+    .dropdown-menu {
+        display: block;
+        position: relative;
+        min-width: 100%;
+        border: 0 none !important;
+        padding-bottom: 15px !important;
+    }
+    .dropdown-menu> li:first-child> a {
+        padding-top: 0;
+    }
+    .dropdown-menu> li> a {
+        border-bottom: 0 none;
+    }
+    .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus, .dropdown-menu> li> a:hover {
+        background-color: transparent;
+        color: #a161bf;
+    }
 }
 @media (max-width: 767px) {
     .nav.navbar-nav {
