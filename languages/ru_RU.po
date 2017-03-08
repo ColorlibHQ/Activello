@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Activello Theme\n"
-"POT-Creation-Date: 2016-02-17 15:37+0200\n"
-"PO-Revision-Date: 2016-02-17 15:37+0200\n"
+"POT-Creation-Date: 2017-02-19 17:44+0100\n"
+"PO-Revision-Date: 2017-02-19 17:44+0100\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
@@ -148,12 +148,12 @@ msgstr ""
 msgid "Post Reply"
 msgstr ""
 
-#: ../content-grid.php:16 ../content-page.php:32 ../inc/extras.php:252
+#: ../content-grid.php:16 ../content-page.php:26 ../inc/extras.php:266
 msgid "Edit"
 msgstr "Правка"
 
 #: ../content-grid.php:28 ../content.php:41 ../content.php:67
-#: ../inc/extras.php:137
+#: ../inc/extras.php:151
 msgid "Read More"
 msgstr "Подробнее"
 
@@ -194,8 +194,8 @@ msgid "Edit %s"
 msgstr ""
 
 #: ../content-single.php:55 ../content.php:73
-msgid "Leave a comment"
-msgstr "Оставить комментарий"
+msgid "No comments yet"
+msgstr ""
 
 #: ../content-single.php:55
 msgid "Comment (1)"
@@ -217,47 +217,47 @@ msgstr "% комментарии"
 msgid "Primary Menu"
 msgstr "Основное меню"
 
-#: ../functions.php:112
+#: ../functions.php:114
 msgid "Sidebar"
 msgstr "Боковая панель"
 
-#: ../functions.php:226
+#: ../functions.php:233
 msgid "Left Sidebar"
 msgstr "Слева"
 
-#: ../functions.php:226
+#: ../functions.php:233
 msgid "Right Sidebar"
 msgstr "Справа"
 
-#: ../functions.php:226
+#: ../functions.php:233
 msgid "No Sidebar"
 msgstr ""
 
-#: ../functions.php:226
+#: ../functions.php:233
 msgid "Full Width"
 msgstr ""
 
-#: ../functions.php:228
+#: ../functions.php:235
 msgid "Logo Only"
 msgstr ""
 
-#: ../functions.php:229
+#: ../functions.php:236
 msgid "Logo + Tagline"
 msgstr ""
 
-#: ../functions.php:230
+#: ../functions.php:237
 msgid "Title Only"
 msgstr ""
 
-#: ../functions.php:231
+#: ../functions.php:238
 msgid "Title + Tagline"
 msgstr ""
 
-#: ../functions.php:266 ../searchform.php:14
+#: ../functions.php:275 ../searchform.php:14
 msgid "Search"
 msgstr ""
 
-#: ../functions.php:266 ../searchform.php:14
+#: ../functions.php:275 ../searchform.php:14
 #, fuzzy
 msgctxt "submit button"
 msgid "Search"
@@ -308,63 +308,55 @@ msgid "Display Comments on Static Pages?"
 msgstr "Отображается на Главной странице"
 
 #: ../inc/customizer.php:94
-msgid "Slider Option"
+msgid "Slider Options"
 msgstr ""
 
-#: ../inc/customizer.php:127
+#: ../inc/customizer.php:139
 msgid "Layout options"
 msgstr ""
 
-#: ../inc/customizer.php:138
+#: ../inc/customizer.php:150
 msgid "Website Layout Options"
 msgstr "Варианты разметки сайта"
 
-#: ../inc/customizer.php:141
+#: ../inc/customizer.php:153
 msgid "Choose between different layout options to be used as default"
 msgstr ""
 
-#: ../inc/customizer.php:150
+#: ../inc/customizer.php:162
 msgid "Accent Color"
 msgstr ""
 
-#: ../inc/customizer.php:151 ../inc/customizer.php:161
-#: ../inc/customizer.php:171
+#: ../inc/customizer.php:163 ../inc/customizer.php:173
+#: ../inc/customizer.php:183
 msgid "Default used if no color is selected"
 msgstr "Если не выберите свой цвет, будет использовано стандартное значение"
 
-#: ../inc/customizer.php:160
+#: ../inc/customizer.php:172
 msgid "Social icon color"
 msgstr "Цвет иконки соц. сетей"
 
-#: ../inc/customizer.php:170
+#: ../inc/customizer.php:182
 msgid "Social Icon:hover Color"
 msgstr ""
 
-#: ../inc/customizer.php:177
+#: ../inc/customizer.php:189
 msgid "Footer"
 msgstr "Нижний колонтитул"
 
-#: ../inc/customizer.php:195
+#: ../inc/customizer.php:207
 msgid "Other"
 msgstr "Другие"
 
-#: ../inc/customizer.php:204
-msgid "Custom CSS"
-msgstr "Пользовательский CSS"
-
-#: ../inc/customizer.php:205
-msgid "Additional CSS"
-msgstr "Дополнительный CSS"
-
-#: ../inc/customizer.php:213
+#: ../inc/customizer.php:225
 msgid "Support and Documentation"
 msgstr "Поддержка и Документация"
 
-#: ../inc/customizer.php:356
+#: ../inc/customizer.php:368
 msgid "Activello Documentation"
 msgstr ""
 
-#: ../inc/customizer.php:357
+#: ../inc/customizer.php:369
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -372,25 +364,25 @@ msgstr ""
 "Чтобы связаться с нами по вопросам <b>технической поддержки</b> и <b>отчетов "
 "об ошибках</b>, используйте"
 
-#: ../inc/customizer.php:357
+#: ../inc/customizer.php:369
 msgid "Colorlib support forum"
 msgstr "Форум поддержки Colorlib"
 
-#: ../inc/customizer.php:358
+#: ../inc/customizer.php:370
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr ""
 "Если вам понравилась эта тема, я был бы благодарен за любой из следующих "
 "вариантов:"
 
-#: ../inc/customizer.php:360
+#: ../inc/customizer.php:372
 msgid "Rate this Theme"
 msgstr "Оценить эту тему"
 
-#: ../inc/customizer.php:361
+#: ../inc/customizer.php:373
 msgid "Like on Facebook"
 msgstr "Поставить лайк на Facebook"
 
-#: ../inc/customizer.php:362
+#: ../inc/customizer.php:374
 msgid "Follow on Twitter"
 msgstr "Читать Twitter"
 
@@ -400,11 +392,8 @@ msgstr ""
 
 #: ../inc/extras.php:71
 msgid ""
-"<p>This post is password protected. To view it please enter your password "
-"below:</p>"
+"This post is password protected. To view it please enter your password below:"
 msgstr ""
-"<p>Эта запись защищена паролем. Чтобы просмотреть эту запись, пожалуйста, "
-"введите пароль:</p>"
 
 #: ../inc/extras.php:72
 msgid "Password:"
@@ -414,22 +403,22 @@ msgstr "Пароль:"
 msgid "Submit"
 msgstr "Отправить"
 
-#: ../inc/extras.php:158
+#: ../inc/extras.php:172
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Тема от %1$s. Работает на %2$s"
 
-#: ../inc/extras.php:246
+#: ../inc/extras.php:260
 #, php-format
 msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
 msgstr ""
 
-#: ../inc/extras.php:252
+#: ../inc/extras.php:266
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: ../inc/extras.php:259
+#: ../inc/extras.php:273
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
@@ -475,6 +464,583 @@ msgstr "Навигация записей"
 msgid "Posted on"
 msgstr ""
 
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:327
+#: ../inc/tgmpa/tgm-plugin-activation.php:79
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:328
+#: ../inc/tgmpa/tgm-plugin-activation.php:80
+msgid "Install Plugins"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:330
+#: ../inc/tgmpa/tgm-plugin-activation.php:81
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:332
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:333
+#: ../inc/tgmpa/tgm-plugin-activation.php:82
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:385
+#: ../inc/tgmpa/tgm-plugin-activation.php:93
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:386
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:827
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2533
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:387
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3159
+#: ../inc/tgmpa/tgm-plugin-activation.php:94
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:388
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:390
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:392
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:394
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:396
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:934
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:934
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:937
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:937
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:1982
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2388
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2392
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2396
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2400
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2603
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2608
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2614
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2717
+#: ../inc/welcome-screen/custom-recommend-action-section.php:108
+#: ../inc/welcome-screen/sections/actions-required.php:41
+#: ../inc/welcome-screen/sections/recommended-plugins.php:24
+msgid "Install"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2726
+#: ../inc/welcome-screen/custom-recommend-action-section.php:112
+#: ../inc/welcome-screen/sections/actions-required.php:45
+#: ../inc/welcome-screen/sections/recommended-plugins.php:28
+msgid "Activate"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3498
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3501
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3503
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3512
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3517
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3520
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/tgmpa/tgm-plugin-activation.php:95
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../inc/welcome-screen/custom-recommend-action-section.php:116
+#: ../inc/welcome-screen/sections/actions-required.php:49
+#: ../inc/welcome-screen/sections/recommended-plugins.php:32
+msgid "Deactivate"
+msgstr ""
+
+#: ../inc/welcome-screen/notify-system-checks.php:154
+#: ../inc/welcome-screen/notify-system-checks.php:162
+msgid "Install: Widget Importer Exporter Plugin"
+msgstr ""
+
+#: ../inc/welcome-screen/notify-system-checks.php:159
+msgid "Activate: Widget Importer Exporter Plugin"
+msgstr ""
+
+#: ../inc/welcome-screen/notify-system-checks.php:168
+#: ../inc/welcome-screen/notify-system-checks.php:176
+msgid "Install: WordPress Importer"
+msgstr ""
+
+#: ../inc/welcome-screen/notify-system-checks.php:173
+msgid "Activate: WordPress Importer"
+msgstr ""
+
+#: ../inc/welcome-screen/notify-system-checks.php:185
+#: ../inc/welcome-screen/notify-system-checks.php:193
+msgid "Please install the WordPress Importer to create the demo content."
+msgstr ""
+
+#: ../inc/welcome-screen/notify-system-checks.php:190
+msgid "Please activate the WordPress Importer to create the demo content."
+msgstr ""
+
+#: ../inc/welcome-screen/notify-system-checks.php:199
+#: ../inc/welcome-screen/notify-system-checks.php:207
+msgid "Please install the WordPress widget importer to create the demo content"
+msgstr ""
+
+#: ../inc/welcome-screen/notify-system-checks.php:204
+msgid ""
+"Please activate the WordPress Widget Importer to create the demo content."
+msgstr ""
+
+#: ../inc/welcome-screen/sections/actions-required.php:80
+#: ../inc/welcome-screen/welcome-screen.php:149
+msgid "Hooray! There are no required actions for you right now."
+msgstr ""
+
+#: ../inc/welcome-screen/sections/getting-started.php:11
+msgid "Step 1 - Implement recommended actions"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/getting-started.php:12
+msgid ""
+"We've compiled a list of steps for you, to take make sure the experience "
+"you'll have using one of our products is very easy to follow."
+msgstr ""
+
+#: ../inc/welcome-screen/sections/getting-started.php:15
+msgid "No recommended actions left to perform"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/getting-started.php:18
+msgid "Check recommended actions"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/getting-started.php:24
+msgid "Step 2 - Check our documentation"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/getting-started.php:25
+msgid ""
+"Even if you're a long-time WordPress user, we still believe you should give "
+"our documentation a very quick Read."
+msgstr ""
+
+#: ../inc/welcome-screen/sections/getting-started.php:28
+msgid "Full documentation"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/getting-started.php:33
+msgid "Step 3 - Customize everything"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/getting-started.php:34
+msgid ""
+"Using the WordPress Customizer you can easily customize every aspect of the "
+"theme."
+msgstr ""
+
+#: ../inc/welcome-screen/sections/getting-started.php:36
+msgid "Go to Customizer"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/recommended-plugins.php:39
+msgid "Version:"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/support.php:5
+#: ../inc/welcome-screen/sections/support.php:10
+msgid "Contact Support"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/support.php:7
+msgid ""
+"We offer excellent support through our advanced ticketing system. Make sure "
+"to register your purchase before contacting support!"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/support.php:15
+msgid "Documentation"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/support.php:17
+msgid ""
+"This is the place to go to reference different aspects of the theme. Our "
+"online documentation is an incredible resource for learning the ins and outs "
+"of using Activello."
+msgstr ""
+
+#: ../inc/welcome-screen/sections/support.php:20
+msgid "See our full documentation"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/support.php:25
+#: ../inc/welcome-screen/welcome-screen.php:385
+msgid "Changelog"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/support.php:27
+msgid ""
+"Want to get the gist on the latest theme changes? Just consult our changelog "
+"below to get a taste of the recent fixes and features implemented."
+msgstr ""
+
+#: ../inc/welcome-screen/sections/support.php:30
+msgid "See changelog"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-page-setup.php:16
+msgid "Recomended Actions"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-page-setup.php:17
+msgid "We're social"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-page-setup.php:75
+msgid "Download theme sample data"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-page-setup.php:76
+msgid "Head over to our website and download the sample content data."
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-page-setup.php:77
+msgid "Posts"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-page-setup.php:78
+msgid "Widgets"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-page-setup.php:83
+msgid "Import Sample Data"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-page-setup.php:84
+msgid "Import Posts"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-page-setup.php:85
+msgid "Import Widgets"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-screen.php:128
+#, php-format
+msgid ""
+"Welcome! Thank you for choosing Activello! To fully take advantage of the "
+"best our theme can offer please make sure you visit our %swelcome page%s."
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-screen.php:130
+msgid "Get started with Activello"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-screen.php:168
+msgid "View Theme Info"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-screen.php:366
+msgid "Welcome to Activello! - Version "
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-screen.php:369
+msgid ""
+"Activello is now installed and ready to use! Get ready to build something "
+"beautiful. We hope you enjoy it! We want to make sure you have the best "
+"experience using Activello and that is why we gathered here all the "
+"necessary information for you. We hope you will enjoy using Activello, as "
+"much as we enjoy creating great products."
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-screen.php:376
+msgid "Getting Started"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-screen.php:378
+msgid "Recommended Actions"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-screen.php:381
+msgid "Recommended Plugins"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-screen.php:383
+msgid "Support"
+msgstr ""
+
 #: ../inc/widgets/widget-categories.php:11
 msgid "Activello widget to display categories"
 msgstr ""
@@ -484,19 +1050,19 @@ msgid "Activello Categories"
 msgstr ""
 
 #: ../inc/widgets/widget-categories.php:17
-#: ../inc/widgets/widget-categories.php:76
+#: ../inc/widgets/widget-categories.php:73
 msgid "Categories"
 msgstr "Категории"
 
-#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
+#: ../inc/widgets/widget-categories.php:78 ../inc/widgets/widget-social.php:49
 msgid "Title "
 msgstr "Название"
 
-#: ../inc/widgets/widget-categories.php:91
+#: ../inc/widgets/widget-categories.php:86
 msgid "Limit Categories "
 msgstr "Лимит категорий"
 
-#: ../inc/widgets/widget-categories.php:104
+#: ../inc/widgets/widget-categories.php:99
 msgid "Enable Posts Count"
 msgstr "Включить счётчик записей"
 
@@ -564,6 +1130,22 @@ msgstr ""
 #: ../sidebar.php:38
 msgid "Meta"
 msgstr "Мета"
+
+#~ msgid "Leave a comment"
+#~ msgstr "Оставить комментарий"
+
+#~ msgid "Custom CSS"
+#~ msgstr "Пользовательский CSS"
+
+#~ msgid "Additional CSS"
+#~ msgstr "Дополнительный CSS"
+
+#~ msgid ""
+#~ "<p>This post is password protected. To view it please enter your password "
+#~ "below:</p>"
+#~ msgstr ""
+#~ "<p>Эта запись защищена паролем. Чтобы просмотреть эту запись, пожалуйста, "
+#~ "введите пароль:</p>"
 
 #~ msgid "Footer Links"
 #~ msgstr "Ссылки нижнего колонтитула"
