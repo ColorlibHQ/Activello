@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Activello Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-30 15:34+0300\n"
-"PO-Revision-Date: 2016-06-30 15:34+0300\n"
+"POT-Creation-Date: 2017-02-19 17:44+0100\n"
+"PO-Revision-Date: 2017-02-19 17:44+0100\n"
 "Last-Translator: spravca <marek.kucak@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: sk\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=( n == 1 ) ? 0 : ( n >= 2 && n <= 4 ) ? 1 : "
 "2;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
 "__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
@@ -237,47 +237,47 @@ msgstr "% Komentárov"
 msgid "Primary Menu"
 msgstr "Primárne menu"
 
-#: ../functions.php:112
+#: ../functions.php:114
 msgid "Sidebar"
 msgstr "Postranný panel"
 
-#: ../functions.php:231
+#: ../functions.php:233
 msgid "Left Sidebar"
 msgstr "Ľavý panel"
 
-#: ../functions.php:231
+#: ../functions.php:233
 msgid "Right Sidebar"
 msgstr "Pravý panel"
 
-#: ../functions.php:231
+#: ../functions.php:233
 msgid "No Sidebar"
 msgstr "Bez postranného panelu"
 
-#: ../functions.php:231
+#: ../functions.php:233
 msgid "Full Width"
 msgstr "Celá šírka obrazovky"
 
-#: ../functions.php:233
+#: ../functions.php:235
 msgid "Logo Only"
 msgstr "Len Logo"
 
-#: ../functions.php:234
+#: ../functions.php:236
 msgid "Logo + Tagline"
 msgstr "Logo + Slogan"
 
-#: ../functions.php:235
+#: ../functions.php:237
 msgid "Title Only"
 msgstr "Len nadpis"
 
-#: ../functions.php:236
+#: ../functions.php:238
 msgid "Title + Tagline"
 msgstr "Nadpis + Slogan"
 
-#: ../functions.php:273 ../searchform.php:14
+#: ../functions.php:275 ../searchform.php:14
 msgid "Search"
 msgstr "Hľadaj"
 
-#: ../functions.php:273 ../searchform.php:14
+#: ../functions.php:275 ../searchform.php:14
 msgctxt "submit button"
 msgid "Search"
 msgstr "Hľadaj"
@@ -323,87 +323,79 @@ msgid "Display Comments on Static Pages?"
 msgstr "Zobraziť komentáre na statickej stránke?"
 
 #: ../inc/customizer.php:94
-msgid "Slider Option"
-msgstr "Možnosti bežca"
+msgid "Slider Options"
+msgstr ""
 
-#: ../inc/customizer.php:127
+#: ../inc/customizer.php:139
 msgid "Layout options"
 msgstr "Nastavenie rozloženia"
 
-#: ../inc/customizer.php:138
+#: ../inc/customizer.php:150
 msgid "Website Layout Options"
 msgstr "Nastavenie rozloženia stránky"
 
-#: ../inc/customizer.php:141
+#: ../inc/customizer.php:153
 msgid "Choose between different layout options to be used as default"
 msgstr ""
 "Možnosť vybrať si rôzne rozloženia stránky nastavené ako prednastavená "
 "možnosť."
 
-#: ../inc/customizer.php:150
+#: ../inc/customizer.php:162
 msgid "Accent Color"
 msgstr "Doplnková farba"
 
-#: ../inc/customizer.php:151 ../inc/customizer.php:161
-#: ../inc/customizer.php:171
+#: ../inc/customizer.php:163 ../inc/customizer.php:173
+#: ../inc/customizer.php:183
 msgid "Default used if no color is selected"
 msgstr "Použi prednastavené možnosti ak nie je nastavená žiadna farba"
 
-#: ../inc/customizer.php:160
+#: ../inc/customizer.php:172
 msgid "Social icon color"
 msgstr "Farba ikony pre sociálne médiá"
 
-#: ../inc/customizer.php:170
+#: ../inc/customizer.php:182
 msgid "Social Icon:hover Color"
 msgstr "Nastavenie ikony:hover farba"
 
-#: ../inc/customizer.php:177
+#: ../inc/customizer.php:189
 msgid "Footer"
 msgstr "Pätička"
 
-#: ../inc/customizer.php:195
+#: ../inc/customizer.php:207
 msgid "Other"
 msgstr "Iné"
 
-#: ../inc/customizer.php:204
-msgid "Custom CSS"
-msgstr "Vlastné CSS"
-
-#: ../inc/customizer.php:205
-msgid "Additional CSS"
-msgstr "Dodatočné CSS"
-
-#: ../inc/customizer.php:213
+#: ../inc/customizer.php:225
 msgid "Support and Documentation"
 msgstr ""
 
-#: ../inc/customizer.php:356
+#: ../inc/customizer.php:368
 msgid "Activello Documentation"
 msgstr ""
 
-#: ../inc/customizer.php:357
+#: ../inc/customizer.php:369
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
 msgstr ""
 
-#: ../inc/customizer.php:357
+#: ../inc/customizer.php:369
 msgid "Colorlib support forum"
 msgstr ""
 
-#: ../inc/customizer.php:358
+#: ../inc/customizer.php:370
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr ""
 
-#: ../inc/customizer.php:360
+#: ../inc/customizer.php:372
 msgid "Rate this Theme"
 msgstr ""
 
-#: ../inc/customizer.php:361
+#: ../inc/customizer.php:373
 msgid "Like on Facebook"
 msgstr ""
 
-#: ../inc/customizer.php:362
+#: ../inc/customizer.php:374
 msgid "Follow on Twitter"
 msgstr ""
 
@@ -848,6 +840,9 @@ msgid "Upgrade message from the plugin author:"
 msgstr ""
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:2717
+#: ../inc/welcome-screen/custom-recommend-action-section.php:108
+#: ../inc/welcome-screen/sections/actions-required.php:41
+#: ../inc/welcome-screen/sections/recommended-plugins.php:24
 msgid "Install"
 msgstr ""
 
@@ -856,6 +851,9 @@ msgid "Update"
 msgstr ""
 
 #: ../inc/tgmpa/class-tgm-plugin-activation.php:2726
+#: ../inc/welcome-screen/custom-recommend-action-section.php:112
+#: ../inc/welcome-screen/sections/actions-required.php:45
+#: ../inc/welcome-screen/sections/recommended-plugins.php:28
 msgid "Activate"
 msgstr ""
 
@@ -999,6 +997,225 @@ msgstr[2] ""
 msgid "All plugins installed and activated successfully. %s"
 msgstr ""
 
+#: ../inc/welcome-screen/custom-recommend-action-section.php:116
+#: ../inc/welcome-screen/sections/actions-required.php:49
+#: ../inc/welcome-screen/sections/recommended-plugins.php:32
+msgid "Deactivate"
+msgstr ""
+
+#: ../inc/welcome-screen/notify-system-checks.php:154
+#: ../inc/welcome-screen/notify-system-checks.php:162
+msgid "Install: Widget Importer Exporter Plugin"
+msgstr ""
+
+#: ../inc/welcome-screen/notify-system-checks.php:159
+msgid "Activate: Widget Importer Exporter Plugin"
+msgstr ""
+
+#: ../inc/welcome-screen/notify-system-checks.php:168
+#: ../inc/welcome-screen/notify-system-checks.php:176
+msgid "Install: WordPress Importer"
+msgstr ""
+
+#: ../inc/welcome-screen/notify-system-checks.php:173
+msgid "Activate: WordPress Importer"
+msgstr ""
+
+#: ../inc/welcome-screen/notify-system-checks.php:185
+#: ../inc/welcome-screen/notify-system-checks.php:193
+msgid "Please install the WordPress Importer to create the demo content."
+msgstr ""
+
+#: ../inc/welcome-screen/notify-system-checks.php:190
+msgid "Please activate the WordPress Importer to create the demo content."
+msgstr ""
+
+#: ../inc/welcome-screen/notify-system-checks.php:199
+#: ../inc/welcome-screen/notify-system-checks.php:207
+msgid "Please install the WordPress widget importer to create the demo content"
+msgstr ""
+
+#: ../inc/welcome-screen/notify-system-checks.php:204
+msgid ""
+"Please activate the WordPress Widget Importer to create the demo content."
+msgstr ""
+
+#: ../inc/welcome-screen/sections/actions-required.php:80
+#: ../inc/welcome-screen/welcome-screen.php:149
+msgid "Hooray! There are no required actions for you right now."
+msgstr ""
+
+#: ../inc/welcome-screen/sections/getting-started.php:11
+msgid "Step 1 - Implement recommended actions"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/getting-started.php:12
+msgid ""
+"We've compiled a list of steps for you, to take make sure the experience "
+"you'll have using one of our products is very easy to follow."
+msgstr ""
+
+#: ../inc/welcome-screen/sections/getting-started.php:15
+msgid "No recommended actions left to perform"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/getting-started.php:18
+msgid "Check recommended actions"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/getting-started.php:24
+msgid "Step 2 - Check our documentation"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/getting-started.php:25
+msgid ""
+"Even if you're a long-time WordPress user, we still believe you should give "
+"our documentation a very quick Read."
+msgstr ""
+
+#: ../inc/welcome-screen/sections/getting-started.php:28
+msgid "Full documentation"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/getting-started.php:33
+msgid "Step 3 - Customize everything"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/getting-started.php:34
+msgid ""
+"Using the WordPress Customizer you can easily customize every aspect of the "
+"theme."
+msgstr ""
+
+#: ../inc/welcome-screen/sections/getting-started.php:36
+msgid "Go to Customizer"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/recommended-plugins.php:39
+msgid "Version:"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/support.php:5
+#: ../inc/welcome-screen/sections/support.php:10
+msgid "Contact Support"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/support.php:7
+msgid ""
+"We offer excellent support through our advanced ticketing system. Make sure "
+"to register your purchase before contacting support!"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/support.php:15
+msgid "Documentation"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/support.php:17
+msgid ""
+"This is the place to go to reference different aspects of the theme. Our "
+"online documentation is an incredible resource for learning the ins and outs "
+"of using Activello."
+msgstr ""
+
+#: ../inc/welcome-screen/sections/support.php:20
+msgid "See our full documentation"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/support.php:25
+#: ../inc/welcome-screen/welcome-screen.php:385
+msgid "Changelog"
+msgstr ""
+
+#: ../inc/welcome-screen/sections/support.php:27
+msgid ""
+"Want to get the gist on the latest theme changes? Just consult our changelog "
+"below to get a taste of the recent fixes and features implemented."
+msgstr ""
+
+#: ../inc/welcome-screen/sections/support.php:30
+msgid "See changelog"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-page-setup.php:16
+msgid "Recomended Actions"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-page-setup.php:17
+msgid "We're social"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-page-setup.php:75
+msgid "Download theme sample data"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-page-setup.php:76
+msgid "Head over to our website and download the sample content data."
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-page-setup.php:77
+msgid "Posts"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-page-setup.php:78
+msgid "Widgets"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-page-setup.php:83
+msgid "Import Sample Data"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-page-setup.php:84
+msgid "Import Posts"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-page-setup.php:85
+msgid "Import Widgets"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-screen.php:128
+#, php-format
+msgid ""
+"Welcome! Thank you for choosing Activello! To fully take advantage of the "
+"best our theme can offer please make sure you visit our %swelcome page%s."
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-screen.php:130
+msgid "Get started with Activello"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-screen.php:168
+msgid "View Theme Info"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-screen.php:366
+msgid "Welcome to Activello! - Version "
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-screen.php:369
+msgid ""
+"Activello is now installed and ready to use! Get ready to build something "
+"beautiful. We hope you enjoy it! We want to make sure you have the best "
+"experience using Activello and that is why we gathered here all the "
+"necessary information for you. We hope you will enjoy using Activello, as "
+"much as we enjoy creating great products."
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-screen.php:376
+msgid "Getting Started"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-screen.php:378
+msgid "Recommended Actions"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-screen.php:381
+msgid "Recommended Plugins"
+msgstr ""
+
+#: ../inc/welcome-screen/welcome-screen.php:383
+msgid "Support"
+msgstr ""
+
 #: ../inc/widgets/widget-categories.php:11
 msgid "Activello widget to display categories"
 msgstr "Widget od Activella na zobrazenie kategórií"
@@ -1079,6 +1296,15 @@ msgstr "Hľadaj:"
 #: ../sidebar.php:38
 msgid "Meta"
 msgstr "Meta"
+
+#~ msgid "Slider Option"
+#~ msgstr "Možnosti bežca"
+
+#~ msgid "Custom CSS"
+#~ msgstr "Vlastné CSS"
+
+#~ msgid "Additional CSS"
+#~ msgstr "Dodatočné CSS"
 
 #~ msgid "Leave a comment"
 #~ msgstr "Napíšte komentár"
