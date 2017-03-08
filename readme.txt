@@ -62,6 +62,22 @@ Theme documentation is available on http://colorlib.com/wp/support/activello
 
 /*========= Changelog =========*/
 
+= 1.2.0 - 08.03.2017
+
+* Added Welcome Screen
+* Added Customizer Documentation Section
+* Fixed search menu css
+* Added for customizer colors defaults
+* Fixed Social Widget title bug
+* Fixed responsive menu css
+* Added logo max height
+* Added native WordPress Additional CSS section
+* Activello functions now are pluggable.
+* Fixed Woocommerce related tab issue
+* Added dates for comments
+* Fixed WordPress gallery css issue
+* Fixed categories html bug
+
 = 1.1.0 - 11.10.2016 =
 
 * Updated Bootstrap to 3.3.7

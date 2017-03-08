@@ -135,7 +135,7 @@ function activello_featured_slider() {
       echo '<ul class="slides">';
 
         $slidecat = get_theme_mod( 'activello_featured_cat' );
-        $slidelimit = get_theme_mod( 'activello_featured_limit' );
+        $slidelimit = get_theme_mod( 'activello_featured_limit', -1 );
         $query = new WP_Query( array( 'cat' => $slidecat,'posts_per_page' => $slidelimit ) );
         if ($query->have_posts()) :
           while ($query->have_posts()) : $query->the_post();
