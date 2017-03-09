@@ -74,8 +74,8 @@ if ( is_admin() ) {
 			"id"          => 'activello-req-ac-download-data',
 			"title"       => esc_html__( 'Download theme sample data', 'activello' ),
 			"description" => esc_html__( 'Head over to our website and download the sample content data.', 'activello' ),
-			"help"        => '<a target="_blank"  href="https://www.machothemes.com/sample-data/activello-lite-posts.xml">' . __( 'Posts', 'activello' ) . '</a>, 
-							   <a target="_blank"  href="https://www.machothemes.com/sample-data/activello-lite-widgets.wie">' . __( 'Widgets', 'activello' ) . '</a>',
+			"help"        => '<a target="_blank"  href="https://colorlibvault-divilabltd.netdna-ssl.com/activello-content.xml">' . __( 'Posts', 'activello' ) . '</a>, 
+							   <a target="_blank"  href="https://colorlibvault-divilabltd.netdna-ssl.com/activello-widgets.wie">' . __( 'Widgets', 'activello' ) . '</a>',
 			"check"       => MT_Notify_System::has_content(),
 		),
 		array(
