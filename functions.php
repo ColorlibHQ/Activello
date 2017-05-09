@@ -295,6 +295,13 @@ function activello_woo_setup() {
 	*/
 	add_theme_support( 'woocommerce' );
 
+  /*
+   * Enable support for WooCemmerce Lightbox & Zoom.
+  */
+  add_theme_support( 'wc-product-gallery-zoom' );
+  add_theme_support( 'wc-product-gallery-lightbox' );
+  add_theme_support( 'wc-product-gallery-slider' );
+
 }
 endif; // activello_woo_setup
 add_action( 'after_setup_theme', 'activello_woo_setup' );

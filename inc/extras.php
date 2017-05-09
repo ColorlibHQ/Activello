@@ -30,16 +30,16 @@ function activello_body_classes( $classes ) {
   if ( is_multi_author() ) {
     $classes[] = 'group-blog';
   }
-	
-	if ( get_theme_mod( 'activello_sidebar_position' ) == "pull-right" ) {
-		$classes[] = 'has-sidebar-left';
-	} else if ( get_theme_mod( 'activello_sidebar_position' ) == "no-sidebar" ) {
-		$classes[] = 'has-no-sidebar';
-	} else if ( get_theme_mod( 'activello_sidebar_position' ) == "full-width" ) {
-		$classes[] = 'has-full-width';
-	} else {
-		$classes[] = 'has-sidebar-right';
-	}
+  
+  if ( get_theme_mod( 'activello_sidebar_position' ) == "pull-right" ) {
+    $classes[] = 'has-sidebar-left';
+  } else if ( get_theme_mod( 'activello_sidebar_position' ) == "no-sidebar" ) {
+    $classes[] = 'has-no-sidebar';
+  } else if ( get_theme_mod( 'activello_sidebar_position' ) == "full-width" ) {
+    $classes[] = 'has-full-width';
+  } else {
+    $classes[] = 'has-sidebar-right';
+  }
 
   return $classes;
 }
@@ -127,10 +127,10 @@ if ( ! function_exists( 'activello_featured_slider' ) ) :
  */
 function activello_featured_slider() {
   if ( ( is_home() || is_front_page() ) && get_theme_mod( 'activello_featured_hide' ) == 1 ) {
-		
-		wp_enqueue_style( 'flexslider-css' );
-		wp_enqueue_script( 'flexslider-js' );
-		
+    
+    wp_enqueue_style( 'flexslider-css' );
+    wp_enqueue_script( 'flexslider-js' );
+    
     echo '<div class="flexslider">';
       echo '<ul class="slides">';
 
@@ -148,6 +148,12 @@ function activello_featured_slider() {
         );
         $query = new WP_Query( $slider_args );
         if ($query->have_posts()) :
+
+          // Jetpack Photon Fix : https://colorlib.com/wp/forums/topic/slider-is-not-compatible-with-jetpacks-photon/
+          if ( class_exists( 'Jetpack' ) && Jetpack::is_module_active( 'photon' ) ) {
+            add_filter( 'jetpack_photon_override_image_downsize', '__return_true', 99 );
+          }
+          
           while ($query->have_posts()) : $query->the_post();
                 
             if ( (function_exists( 'has_post_thumbnail' )) && ( has_post_thumbnail() ) ) :
@@ -163,8 +169,14 @@ function activello_featured_slider() {
 
                 echo '</li>';
             endif;
+            
+        endwhile;
 
-        endwhile; 
+        // Jetpack Photon Fix : https://colorlib.com/wp/forums/topic/slider-is-not-compatible-with-jetpacks-photon/
+        if ( class_exists( 'Jetpack' ) && Jetpack::is_module_active( 'photon' ) ) {
+          remove_filter( 'jetpack_photon_override_image_downsize', '__return_true', 99 );
+        }
+        
         wp_reset_query();
         endif;
 
@@ -235,40 +247,40 @@ add_filter( 'kses_allowed_protocols' , 'activello_allow_skype_protocol' );
  * This display blog description from wp customizer setting.
  */
 function activello_cats() {
-	$cats = array();
-	$cats[0] = "All";
-	
-	foreach ( get_categories() as $categories => $category ) {
-		$cats[$category->term_id] = $category->name;
-	}
+  $cats = array();
+  $cats[0] = "All";
+  
+  foreach ( get_categories() as $categories => $category ) {
+    $cats[$category->term_id] = $category->name;
+  }
 
-	return $cats;
+  return $cats;
 }
 
 /**
  * Custom comment template
  */
 function activello_cb_comment($comment, $args, $depth) {
-	$GLOBALS['comment'] = $comment;
-	extract($args, EXTR_SKIP);
+  $GLOBALS['comment'] = $comment;
+  extract($args, EXTR_SKIP);
 
-	if ( 'div' == $args['style'] ) {
-		$tag = 'div';
-		$add_below = 'comment';
-	} else {
-		$tag = 'li';
-		$add_below = 'div-comment';
-	}
+  if ( 'div' == $args['style'] ) {
+    $tag = 'div';
+    $add_below = 'comment';
+  } else {
+    $tag = 'li';
+    $add_below = 'div-comment';
+  }
 ?>
-	<<?php echo $tag ?> <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ) ?> id="comment-<?php comment_ID() ?>">
-	<?php if ( 'div' != $args['style'] ) : ?>
-	 <div id="div-comment-<?php comment_ID() ?>" class="comment-body">
-	<?php endif; ?>
+  <<?php echo $tag ?> <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ) ?> id="comment-<?php comment_ID() ?>">
+  <?php if ( 'div' != $args['style'] ) : ?>
+   <div id="div-comment-<?php comment_ID() ?>" class="comment-body">
+  <?php endif; ?>
 
-	<div class="comment-author vcard asdasd">
-  	<?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
-  	<?php printf( __( '<cite class="fn">%s</cite> <span class="says">says:</span>', 'activello' ), get_comment_author_link() ); ?>
-  	<?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+  <div class="comment-author vcard asdasd">
+    <?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
+    <?php printf( __( '<cite class="fn">%s</cite> <span class="says">says:</span>', 'activello' ), get_comment_author_link() ); ?>
+    <?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 
     <div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>">
       <?php
@@ -279,16 +291,16 @@ function activello_cb_comment($comment, $args, $depth) {
 
   </div>
 
-	<?php if ( $comment->comment_approved == '0' ) : ?>
-		<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'activello' ); ?></em>
-		<br />
-	<?php endif; ?>
+  <?php if ( $comment->comment_approved == '0' ) : ?>
+    <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'activello' ); ?></em>
+    <br />
+  <?php endif; ?>
 
-	<?php comment_text(); ?>
+  <?php comment_text(); ?>
 
-	<?php if ( 'div' != $args['style'] ) : ?>
-	</div>
-	<?php endif; ?>
+  <?php if ( 'div' != $args['style'] ) : ?>
+  </div>
+  <?php endif; ?>
 <?php
 }
 
