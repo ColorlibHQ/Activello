@@ -148,18 +148,21 @@ function activello_featured_slider() {
         );
         $query = new WP_Query( $slider_args );
         if ($query->have_posts()) :
-
-          // Jetpack Photon Fix : https://colorlib.com/wp/forums/topic/slider-is-not-compatible-with-jetpacks-photon/
-          if ( class_exists( 'Jetpack' ) && Jetpack::is_module_active( 'photon' ) ) {
-            add_filter( 'jetpack_photon_override_image_downsize', '__return_true', 99 );
-          }
           
           while ($query->have_posts()) : $query->the_post();
                 
             if ( (function_exists( 'has_post_thumbnail' )) && ( has_post_thumbnail() ) ) :
 
                 echo '<li>';
-                      echo get_the_post_thumbnail( get_the_ID(), 'activello-slider' );
+
+                      if ( class_exists( 'Jetpack' ) && Jetpack::is_module_active( 'photon' ) ) {
+                        $feat_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
+                        $args = array( 'resize' => '1920,550' );
+                        $photon_url = jetpack_photon_url( $feat_image_url[0], $args );
+                        echo '<img src="'.$photon_url.'">';
+                      }else{
+                        echo get_the_post_thumbnail( get_the_ID(), 'activello-slider' );
+                      }
 
                     echo '<div class="flex-caption">';
                       echo get_the_category_list();
@@ -171,11 +174,6 @@ function activello_featured_slider() {
             endif;
             
         endwhile;
-
-        // Jetpack Photon Fix : https://colorlib.com/wp/forums/topic/slider-is-not-compatible-with-jetpacks-photon/
-        if ( class_exists( 'Jetpack' ) && Jetpack::is_module_active( 'photon' ) ) {
-          remove_filter( 'jetpack_photon_override_image_downsize', '__return_true', 99 );
-        }
         
         wp_reset_query();
         endif;

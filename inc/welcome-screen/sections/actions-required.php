@@ -10,21 +10,34 @@ wp_enqueue_script( 'updates' );
 <div class="feature-section action-required demo-import-boxed" id="plugin-filter">
 
 	<?php
-	global $activello_required_actions;
+	global $activello_required_actions, $activello_recommended_plugins;
 	if ( ! empty( $activello_required_actions ) ):
 		/* activello_show_required_actions is an array of true/false for each required action that was dismissed */
+		$nr_actions_required = 0;
+		$nr_action_dismissed = 0;
 		$activello_show_required_actions = get_option( "activello_show_required_actions" );
 		foreach ( $activello_required_actions as $activello_required_action_key => $activello_required_action_value ):
+			$hidden = false;
 			if ( @$activello_show_required_actions[ $activello_required_action_value['id'] ] === false ) {
-				continue;
+				$hidden = true;
 			}
 			if ( @$activello_required_action_value['check'] ) {
 				continue;
 			}
+			$nr_actions_required ++;
+			if ( $hidden ) {
+				$nr_action_dismissed ++;
+			}
+			
 			?>
 			<div class="activello-action-required-box">
-				<span class="dashicons dashicons-no-alt activello-dismiss-required-action"
-				      id="<?php echo $activello_required_action_value['id']; ?>"></span>
+				<?php if ( ! $hidden ): ?>
+					<span data-action="dismiss" class="dashicons dashicons-visibility activello-required-action-button"
+					      id="<?php echo esc_attr( $activello_required_action_value['id'] ); ?>"></span>
+				<?php else: ?>
+					<span data-action="add" class="dashicons dashicons-hidden activello-required-action-button"
+					      id="<?php echo esc_attr( $activello_required_action_value['id'] ); ?>"></span>
+				<?php endif; ?>
 				<h3><?php if ( ! empty( $activello_required_action_value['title'] ) ): echo $activello_required_action_value['title']; endif; ?></h3>
 				<p>
 					<?php if ( ! empty( $activello_required_action_value['description'] ) ): echo $activello_required_action_value['description']; endif; ?>
@@ -62,23 +75,76 @@ wp_enqueue_script( 'updates' );
 			<?php
 		endforeach;
 	endif;
-	$nr_actions_required = 0;
-	/* get number of required actions */
-	if ( get_option( 'activello_show_required_actions' ) ):
-		$activello_show_required_actions = get_option( 'activello_show_required_actions' );
-	else:
-		$activello_show_required_actions = array();
+	$nr_recommended_plugins = 0;
+	if ( $nr_actions_required == 0 || $nr_actions_required == $nr_action_dismissed ):
+
+		$activello_show_recommended_plugins = get_option( "activello_show_recommended_plugins" );
+		foreach ( $activello_recommended_plugins as $slug => $plugin_opt ) {
+			
+			if ( !$plugin_opt['recommended'] ) {
+				continue;
+			}
+
+			if ( Allegiant_Notify_System::has_plugin( $slug ) ) {
+				continue;
+			}
+			if ( $nr_recommended_plugins == 0 ) {
+				echo '<h3 class="hooray">' . __( 'Hooray! There are no required actions for you right now. But you can make your theme more powerful with next actions: ', 'activello' ) . '</h3>';
+			}
+
+			$nr_recommended_plugins ++;
+			echo '<div class="activello-action-required-box">';
+
+			if ( !isset($activello_show_recommended_plugins[$slug]) || ( isset($activello_show_recommended_plugins[$slug]) && $activello_show_recommended_plugins[$slug] ) ): ?>
+				<span data-action="dismiss" class="dashicons dashicons-visibility activello-recommended-plugin-button"
+				      id="<?php echo esc_attr( $slug ); ?>"></span>
+			<?php else: ?>
+				<span data-action="add" class="dashicons dashicons-hidden activello-recommended-plugin-button"
+				      id="<?php echo esc_attr( $slug ); ?>"></span>
+			<?php endif;
+
+			$active = $this->check_active( $slug );
+			$url    = $this->create_action_link( $active['needs'], $slug );
+			$info   = $this->call_plugin_api( $slug );
+			$label  = '';
+			$class = '';
+			switch ( $active['needs'] ) {
+				case 'install':
+					$class = 'install-now button';
+					$label = __( 'Install', 'activello' );
+					break;
+				case 'activate':
+					$class = 'activate-now button button-primary';
+					$label = __( 'Activate', 'activello' );
+					break;
+				case 'deactivate':
+					$class = 'deactivate-now button';
+					$label = __( 'Deactivate', 'activello' );
+					break;
+			}
+
+			?>
+			<h3><?php echo $label .': '.$info->name ?></h3>
+			<p>
+				<?php echo $info->short_description ?>
+			</p>
+			<p class="plugin-card-<?php echo esc_attr( $slug ) ?> action_button <?php echo ( $active['needs'] !== 'install' && $active['status'] ) ? 'active' : '' ?>">
+				<a data-slug="<?php echo esc_attr( $slug ) ?>"
+				   class="<?php echo $class; ?>"
+				   href="<?php echo esc_url( $url ) ?>"> <?php echo $label ?> </a>
+			</p>
+			<?php
+
+			echo '</div>';
+
+		}
+
 	endif;
-	if ( ! empty( $activello_required_actions ) ):
-		foreach ( $activello_required_actions as $activello_required_action_value ):
-			if ( ( ! isset( $activello_required_action_value['check'] ) || ( isset( $activello_required_action_value['check'] ) && ( $activello_required_action_value['check'] == false ) ) ) && ( ( isset( $activello_show_required_actions[ $activello_required_action_value['id'] ] ) && ( $activello_show_required_actions[ $activello_required_action_value['id'] ] == true ) ) || ! isset( $activello_show_required_actions[ $activello_required_action_value['id'] ] ) ) ) :
-				$nr_actions_required ++;
-			endif;
-		endforeach;
-	endif;
-	if ( $nr_actions_required == 0 ):
+
+	if ( $nr_recommended_plugins == 0 && $nr_actions_required == 0 ) {
 		echo '<span class="hooray">' . __( 'Hooray! There are no required actions for you right now.', 'activello' ) . '</span>';
-	endif;
+	}
+
 	?>
 
 </div>

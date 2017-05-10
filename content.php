@@ -6,10 +6,18 @@
 
 global $wp_query;
 $index = $wp_query->current_post + 1;
+$layout = get_theme_mod( 'activello_sidebar_position' );
 
-$image_size = 'activello-featured';
+$image_size = 'activello-big';
 if ( $index > 2 ) {
-	$image_size = 'activello-medium';
+	if ( $layout == "full-width" ) {
+		$image_size = 'activello-medium';
+	}else{
+		$image_size = 'activello-thumbnail';
+	}
+	
+}else if ( $layout == "full-width" ) {
+	$image_size = 'activello-featured';
 }
 
 

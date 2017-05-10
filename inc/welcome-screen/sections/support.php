@@ -1,5 +1,5 @@
 
-<div class="feature-section three-col">
+<div class="feature-section two-col">
 
 	<div class="col">
 		<h3><i class="dashicons dashicons-sos"></i><?php esc_html_e( 'Contact Support', 'activello' ); ?></h3>
@@ -21,14 +21,4 @@
 		</p>
 	</div><!--/.col-->
 
-	<div class="col">
-		<h3><i class="dashicons dashicons-portfolio"></i><?php esc_html_e( 'Changelog', 'activello' ); ?></h3>
-		<p>
-			<i><?php esc_html_e( 'Want to get the gist on the latest theme changes? Just consult our changelog below to get a taste of the recent fixes and features implemented.', 'activello' ) ?></i>
-		</p>
-		<p>
-			<a target="_blank"  href="<?php echo esc_url( admin_url( 'themes.php?page=activello-welcome&tab=changelog' ) ); ?>"><?php esc_html_e( 'See changelog', 'activello' ); ?></a>
-		</p>
-	</div><!--/.col-->
-
-	</div>
+</div>
