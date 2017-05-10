@@ -4,36 +4,54 @@ add_action( 'customize_register', 'activello_ws_customize_register' );
 
 function activello_ws_customize_register($wp_customize){
 
-	require_once get_template_directory() . '/inc/welcome-screen/custom-recommend-action-section.php';
-		$wp_customize->register_section_type( 'Activello_Customize_Section_Recommend' );
+	// Recomended actions
+    global $activello_required_actions, $activello_recommended_plugins;
 
-		// Recomended Actions
-		$wp_customize->add_section(
-			new Activello_Customize_Section_Recommend(
-				$wp_customize,
-				'activello_recomended-section',
-				array(
-					'title'    => esc_html__( 'Recomended Actions', 'activello' ),
-					'succes_text'	=> esc_html__( 'We\'re social', 'activello' ),
-					'facebook' => 'https://www.facebook.com/colorlib',
-					'twitter' => 'https://twitter.com/colorlib',
-					'wp_review' => true,
-					'priority' => 0
-				)
-			)
-		);
+    $customizer_recommended_plugins = array();
+    if ( is_array( $activello_recommended_plugins ) ) {
+        foreach ( $activello_recommended_plugins as $k => $s ) {
+            if( $s['recommended'] ) {
+                $customizer_recommended_plugins[$k] = $s;
+            }
+        }
+    }
 
-}
+    $theme_slug = 'activello';
 
-add_action( 'customize_controls_enqueue_scripts', 'activello_welcome_scripts_for_customizer', 0 );
+    $wp_customize->add_section(
+      new Epsilon_Section_Recommended_Actions(
+        $wp_customize,
+        'epsilon_recomended_section',
+        array(
+          'title'                        => esc_html__( 'Recomended Actions', 'activello' ),
+          'social_text'                  => esc_html__( 'We are social', 'activello' ),
+          'plugin_text'                  => esc_html__( 'Recomended Plugins', 'activello' ),
+          'actions'                      => $activello_required_actions,
+          'plugins'                      => $customizer_recommended_plugins,
+          'theme_specific_option'        => $theme_slug . '_show_required_actions',
+          'theme_specific_plugin_option' => $theme_slug . '_show_recommended_plugins',
+          'facebook'                     => 'https://www.facebook.com/cpothemes',
+          'twitter'                      => 'https://twitter.com/cpothemes',
+          'wp_review'                    => true,
+          'priority'                     => 0
+        )
+      )
+    );
 
-function activello_welcome_scripts_for_customizer(){
-	wp_enqueue_style( 'cpotheme-welcome-screen-customizer-css', get_template_directory_uri() . '/inc/welcome-screen/css/welcome_customizer.css' );
-	wp_enqueue_style( 'plugin-install' );
-	wp_enqueue_script( 'plugin-install' );
-	wp_enqueue_script( 'updates' );
-	wp_add_inline_script( 'plugin-install', 'var pagenow = "customizer";' );
-	wp_enqueue_script( 'cpotheme-welcome-screen-customizer-js', get_template_directory_uri() . '/inc/welcome-screen/js/welcome_customizer.js', array( 'customize-controls' ), '1.0', true );
+    $wp_customize->add_section(
+        new Epsilon_Section_Pro(
+            $wp_customize,
+            'epsilon-section-pro',
+            array(
+                'title'       => esc_html__( 'Activello', 'activello' ),
+                'button_text' => esc_html__( 'Documentation', 'activello' ),
+                'button_url'  => 'https://colorlib.com/wp/support/activello/',
+                'priority'    => 0
+            )
+        )
+    );
+
+
 }
 
 // Load the system checks ( used for notifications )

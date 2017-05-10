@@ -5,10 +5,15 @@
  */
 class Activello_Welcome {
 
+	public $activello; 
+
 	/**
 	 * Constructor for the welcome screen
 	 */
 	public function __construct() {
+
+		$this->activello = wp_get_theme();
+
 		/* create dashbord page */
 		add_action( 'admin_menu', array( $this, 'activello_welcome_register_menu' ) );
 
@@ -18,18 +23,22 @@ class Activello_Welcome {
 		/* enqueue script and style for welcome screen */
 		add_action( 'admin_enqueue_scripts', array( $this, 'activello_welcome_style_and_scripts' ) );
 
-		/* enqueue script for customizer */
-		add_action( 'customize_controls_enqueue_scripts', array( $this, 'activello_welcome_scripts_for_customizer' ) );
-
 		/* ajax callback for dismissable required actions */
 		add_action( 'wp_ajax_activello_dismiss_required_action', array(
 			$this,
 			'activello_dismiss_required_action_callback'
 		) );
-		add_action( 'wp_ajax_nopriv_activello_dismiss_required_action', array(
+
+		add_action( 'wp_ajax_activello_dismiss_recommended_plugins', array(
 			$this,
-			'activello_dismiss_required_action_callback'
+			'activello_dismiss_recommended_plugins_callback'
 		) );
+
+		add_action( 'wp_ajax_activello_activello_set_frontpage', array(
+			$this,
+			'activello_set_pages'
+		) );
+
 
 		add_action( 'admin_init', array( $this, 'activello_activate_plugin' ) );
 		add_action( 'admin_init', array( $this, 'activello_deactivate_plugin' ) );
@@ -41,8 +50,7 @@ class Activello_Welcome {
 			/**
 			 * Check action
 			 */
-			if ( ! empty( $_GET['action'] ) && $_GET['action'] === 'set_page_automatic' ) {
-				$active_tab = $_GET['tab'];
+			if ( ! empty( $_GET['action'] ) && $_GET['action'] === 'activello_set_frontpage' ) {
 				$about      = get_page_by_title( 'Homepage' );
 				update_option( 'page_on_front', $about->ID );
 				update_option( 'show_on_front', 'page' );
@@ -50,8 +58,9 @@ class Activello_Welcome {
 				// Set the blog page
 				$blog = get_page_by_title( 'Blog' );
 				update_option( 'page_for_posts', $blog->ID );
+				echo 'succes';
+				exit();
 
-				wp_redirect( self_admin_url( 'themes.php?page=activello-welcome&tab=' . $active_tab ) );
 			}
 		}
 	}
@@ -139,34 +148,23 @@ class Activello_Welcome {
 	 */
 	public function activello_welcome_style_and_scripts( $hook_suffix ) {
 
-		wp_enqueue_style( 'activello-welcome-screen-css', get_template_directory_uri() . '/inc/welcome-screen/css/welcome.css' );
-		wp_enqueue_script( 'activello-welcome-screen-js', get_template_directory_uri() . '/inc/welcome-screen/js/welcome.js', array( 'jquery' ) );
+		$screen = get_current_screen();
 
-		wp_localize_script( 'activello-welcome-screen-js', 'activelloWelcomeScreenObject', array(
-			'nr_actions_required'      => $this->count_actions(),
-			'ajaxurl'                  => admin_url( 'admin-ajax.php' ),
-			'template_directory'       => get_template_directory_uri(),
-			'no_required_actions_text' => __( 'Hooray! There are no required actions for you right now.', 'activello' )
-		) );
+		wp_enqueue_style( 'activello-welcome-screen-css', get_template_directory_uri() . '/inc/welcome-screen/css/welcome.css', array(), $this->activello['Version'] );
 
-	}
+		if ( $screen->base != 'customize' ) {
+			wp_enqueue_script( 'activello-welcome-screen-js', get_template_directory_uri() . '/inc/welcome-screen/js/welcome.js', array( 'jquery' ), $this->activello['Version'], true );
 
-	/**
-	 * Load scripts for customizer page
-	 *
-	 * @since  1.8.2.4
-	 */
-	public function activello_welcome_scripts_for_customizer() {
+			wp_localize_script( 'activello-welcome-screen-js', 'activelloWelcomeScreenObject', array(
+				'nr_actions_required'      => $this->count_actions(),
+				'ajaxurl'                  => admin_url( 'admin-ajax.php' ),
+				'template_directory'       => get_template_directory_uri(),
+				'no_required_actions_text' => __( 'Hooray! There are no required actions for you right now.', 'activello' )
+			) );
+		}
+		
 
-		wp_enqueue_style( 'activello-welcome-screen-customizer-css', get_template_directory_uri() . '/inc/welcome-screen/css/welcome_customizer.css' );
-		wp_enqueue_script( 'activello-welcome-screen-customizer-js', get_template_directory_uri() . '/inc/welcome-screen/js/welcome_customizer.js', array( 'jquery' ), '20120206', true );
 
-		wp_localize_script( 'activello-welcome-screen-customizer-js', 'activelloWelcomeScreenCustomizerObject', array(
-			'nr_actions_required' => $this->count_actions(),
-			'aboutpage'           => esc_url( admin_url( 'themes.php?page=activello-welcome&tab=recommended_actions' ) ),
-			'customizerpage'      => esc_url( admin_url( 'customize.php#recommended_actions' ) ),
-			'themeinfo'           => __( 'View Theme Info', 'activello' ),
-		) );
 	}
 
 	/**
@@ -175,49 +173,58 @@ class Activello_Welcome {
 	 * @since 1.8.2.4
 	 */
 	public function activello_dismiss_required_action_callback() {
-
 		global $activello_required_actions;
-
-		$activello_dismiss_id = ( isset( $_GET['dismiss_id'] ) ) ? $_GET['dismiss_id'] : 0;
-
-		echo $activello_dismiss_id; /* this is needed and it's the id of the dismissable required action */
-
-		if ( ! empty( $activello_dismiss_id ) ):
-
+		$action_id = ( isset( $_GET['id'] ) ) ? $_GET['id'] : 0;
+		echo $action_id; /* this is needed and it's the id of the dismissable required action */
+		if ( ! empty( $action_id ) ):
 			/* if the option exists, update the record for the specified id */
 			if ( get_option( 'activello_show_required_actions' ) ):
-
 				$activello_show_required_actions = get_option( 'activello_show_required_actions' );
-
-				$activello_show_required_actions[ $activello_dismiss_id ] = false;
-
+				switch ( $_GET['todo'] ) {
+					case 'add';
+						$activello_show_required_actions[ $action_id ] = true;
+						break;
+					case 'dismiss';
+						$activello_show_required_actions[ $action_id ] = false;
+						break;
+				}
 				update_option( 'activello_show_required_actions', $activello_show_required_actions );
-
 			/* create the new option,with false for the specified id */
 			else:
-
 				$activello_show_required_actions_new = array();
-
 				if ( ! empty( $activello_required_actions ) ):
-
 					foreach ( $activello_required_actions as $activello_required_action ):
-
-						if ( $activello_required_action['id'] == $activello_dismiss_id ):
+						if ( $activello_required_action['id'] == $action_id ):
 							$activello_show_required_actions_new[ $activello_required_action['id'] ] = false;
 						else:
 							$activello_show_required_actions_new[ $activello_required_action['id'] ] = true;
 						endif;
-
 					endforeach;
-
 					update_option( 'activello_show_required_actions', $activello_show_required_actions_new );
-
 				endif;
-
 			endif;
-
 		endif;
+		die(); // this is required to return a proper result
+	}
 
+	public function activello_dismiss_recommended_plugins_callback() {
+		$action_id = ( isset( $_GET['id'] ) ) ? $_GET['id'] : 0;
+		echo $action_id; /* this is needed and it's the id of the dismissable required action */
+		if ( ! empty( $action_id ) ):
+			/* if the option exists, update the record for the specified id */
+			$activello_show_recommended_plugins = get_option( 'activello_show_recommended_plugins' );
+				
+				switch ( $_GET['todo'] ) {
+					case 'add';
+						$activello_show_recommended_plugins[ $action_id ] = true;
+						break;
+					case 'dismiss';
+						$activello_show_recommended_plugins[ $action_id ] = false;
+						break;
+				}
+				update_option( 'activello_show_recommended_plugins', $activello_show_recommended_plugins );
+			/* create the new option,with false for the specified id */
+		endif;
 		die(); // this is required to return a proper result
 	}
 
@@ -355,7 +362,7 @@ class Activello_Welcome {
 		require_once( ABSPATH . 'wp-admin/admin.php' );
 		require_once( ABSPATH . 'wp-admin/admin-header.php' );
 
-		$activello      = wp_get_theme();
+		
 		$active_tab   = isset( $_GET['tab'] ) ? $_GET['tab'] : 'getting_started';
 		$action_count = $this->count_actions();
 
@@ -363,7 +370,7 @@ class Activello_Welcome {
 
 		<div class="wrap about-wrap epsilon-wrap">
 
-			<h1><?php echo __( 'Welcome to Activello! - Version ', 'activello' ) . $activello['Version']; ?></h1>
+			<h1><?php echo __( 'Welcome to Activello! - Version ', 'activello' ) . $this->activello['Version']; ?></h1>
 
 			<div
 				class="about-text"><?php echo esc_html__( 'Activello is now installed and ready to use! Get ready to build something beautiful. We hope you enjoy it! We want to make sure you have the best experience using Activello and that is why we gathered here all the necessary information for you. We hope you will enjoy using Activello, as much as we enjoy creating great products.', 'activello' ); ?></div>
@@ -381,8 +388,6 @@ class Activello_Welcome {
 				   class="nav-tab <?php echo $active_tab == 'recommended_plugins' ? 'nav-tab-active' : ''; ?> "><?php echo esc_html__( 'Recommended Plugins', 'activello' ); ?></a>
 				<a href="<?php echo admin_url( 'themes.php?page=activello-welcome&tab=support' ); ?>"
 				   class="nav-tab <?php echo $active_tab == 'support' ? 'nav-tab-active' : ''; ?> "><?php echo esc_html__( 'Support', 'activello' ); ?></a>
-				<a href="<?php echo admin_url( 'themes.php?page=activello-welcome&tab=changelog' ); ?>"
-				   class="nav-tab <?php echo $active_tab == 'changelog' ? 'nav-tab-active' : ''; ?> "><?php echo esc_html__( 'Changelog', 'activello' ); ?></a>
 			</h2>
 
 			<?php
@@ -398,9 +403,6 @@ class Activello_Welcome {
 					break;
 				case 'support':
 					require_once get_template_directory() . '/inc/welcome-screen/sections/support.php';
-					break;
-				case 'changelog':
-					require_once get_template_directory() . '/inc/welcome-screen/sections/changelog.php';
 					break;
 				default:
 					require_once get_template_directory() . '/inc/welcome-screen/sections/getting-started.php';
