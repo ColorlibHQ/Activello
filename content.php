@@ -2,6 +2,17 @@
 /**
  * @package activello
  */
+
+
+global $wp_query;
+$index = $wp_query->current_post + 1;
+
+$image_size = 'activello-featured';
+if ( $index > 2 ) {
+	$image_size = 'activello-medium';
+}
+
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -32,7 +43,7 @@
 			</header><!-- .entry-header -->
 
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
-                    <?php the_post_thumbnail( 'activello-featured', array( 'class' => 'single-featured' )); ?>
+                    <?php the_post_thumbnail( $image_size, array( 'class' => 'single-featured' )); ?>
             </a>
 
 			<?php if ( is_search() ) : // Only display Excerpts for Search ?>
