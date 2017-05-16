@@ -2,7 +2,7 @@
 
 Theme Name: Activello
 Theme URI: http://colorlib.com/wp/Activello/
-Version: 1.1.1
+Version: 1.3
 Tested up to: WP 4.6
 
 Author: Aigars Silkalns
