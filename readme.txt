@@ -3,16 +3,16 @@
 Theme Name: Activello
 Theme URI: http://colorlib.com/wp/Activello/
 Version: 1.3
-Tested up to: WP 4.6
+Tested up to: WP 4.7
 
 Author: Aigars Silkalns
 Author URI: http://colorlib.com/wp/
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl.html
 -------------------------------------------------------
-Activello theme, Copyright 2016 colorlib.com
+Activello theme, Copyright 2017 colorlib.com
 Activello WordPress theme is distributed under the terms of the GNU GPL
-Activello is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Activello is based on Underscores http://underscores.me/, (C) 2012-2017 Automattic, Inc.
 -------------------------------------------------------
 
 /*========= Credits =========*/
@@ -61,6 +61,12 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 Theme documentation is available on http://colorlib.com/wp/support/activello
 
 /*========= Changelog =========*/
+
+= 1.3.0 - 16.05.2017 
+
+* Fixed slider & JetPack Photon integration
+* Added Epsilon Framework as a git sub-module
+* Fixed image serving - we were serving larger images than necessary
 
 = 1.2.0 - 08.03.2017
 
