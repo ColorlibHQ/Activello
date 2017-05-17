@@ -1,0 +1,9 @@
+v1.0.2
+	- An error was thrown if no range slider option created
+
+v1.0.1
+	- Backward compatibility for the color coded categories
+	- Fixed an issue with the recommended actions counter
+
+v1.0.0
+	- Start changelog
