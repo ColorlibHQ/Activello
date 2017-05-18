@@ -12,13 +12,15 @@ Here's a short tutorial on how to achieve this as well as a better explanation o
 * Version: 1.3
 * Tested up to: WP 4.7
 
+```
 * Author: Aigars Silkalns
-* Author URI: http://colorlib.com/wp/
+* Author URI: http://colorlib.com/
 * License: GNU General Public License v3.0
 * License URI: http://www.gnu.org/licenses/gpl.html
 * Activello theme, Copyright 2017 colorlib.com 
 * Activello WordPress theme is distributed under the terms of the GNU GPL 
 * Activello is based on Underscores http://underscores.me/, (C) 2012-2017 Automattic, Inc. 
+```
 
 ---
 
