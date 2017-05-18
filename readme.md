@@ -1,21 +1,30 @@
-/*========= About Theme =========*/
+# Repository clone/download :fire: :fire: :fire:
 
-Theme Name: Activello
-Theme URI: http://colorlib.com/wp/Activello/
-Version: 1.3
-Tested up to: WP 4.7
+This repository contains a git sub-module and as such, can not be completely downloaded using the web-interface of GitHub. This is a known limitation of GitHub's own tools. However, cloning this repository via CLI works absolutely fine and will pull all sub-modules as long as you use the proper commands. 
 
-Author: Aigars Silkalns
-Author URI: http://colorlib.com/wp/
-License: GNU General Public License v3.0
-License URI: http://www.gnu.org/licenses/gpl.html
--------------------------------------------------------
-Activello theme, Copyright 2017 colorlib.com
-Activello WordPress theme is distributed under the terms of the GNU GPL
-Activello is based on Underscores http://underscores.me/, (C) 2012-2017 Automattic, Inc.
--------------------------------------------------------
+Here's a short tutorial on how to achieve this as well as a better explanation of what Git sub-modules are and how they're useful: https://gist.github.com/gitaarik/8735255
 
-/*========= Credits =========*/
+
+# About Theme 
+
+* Theme Name: Activello
+* Theme URI: http://colorlib.com/wp/Activello/
+* Version: 1.3
+* Tested up to: WP 4.7
+
+```
+* Author: Aigars Silkalns
+* Author URI: http://colorlib.com/
+* License: GNU General Public License v3.0
+* License URI: http://www.gnu.org/licenses/gpl.html
+* Activello theme, Copyright 2017 colorlib.com 
+* Activello WordPress theme is distributed under the terms of the GNU GPL 
+* Activello is based on Underscores http://underscores.me/, (C) 2012-2017 Automattic, Inc. 
+```
+
+---
+
+## Credits 
 Unless otherwise specified, all the theme files, scripts and images are licensed under GPLv2 license
 
 Activello theme uses:
@@ -26,13 +35,13 @@ Activello theme uses:
 * Modernizr (https://github.com/Modernizr/Modernizr) licensed under MIT license
 * Unless otherwise specified, all images are created by Colorlib
 
-/*========= Description =========*/
+### Description 
 
 Activello is a clean and minimal WordPress blog theme with premium look and feel well suited for food, fashion, travel, lifestyle, sports and any other awesome blogs. This theme features WooCommerce integration that allows you to create fully functional eCommerce website side by side with your blog. This theme has several customization options that are available WordPress Theme Customizer. Theme is also multilingual ready and translated in several languages. This awesome blog theme is also SEO friendly helping you to achieve the highest positions on Google. Activello is the only WordPress blog theme you will ever need.
 
 For questions, comments or bug reports, visit Colorlib support forum (http://colorlib.com/wp/forums).
 
-/*========= Installation =========*/
+### Installation 
 
 You can install the theme through the WordPress installer under "Themes" > "Install themes" by searching for "Activello".
 
@@ -40,7 +49,7 @@ Alternatively you can download the file, unzip it and move the unzipped contents
 
 Afterwards you can continue theme setup and customization via WordPress Dashboard - Appearance - Theme Options. For detailed theme documentation, please visit http://colorlib.com/wp/support/activello
 
-/*========= Theme Features =========*/
+### Theme Features 
 
 * Bootstrap 3 integration
 * Responsive design
@@ -56,11 +65,11 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 * Featured slider
 * Font Awesome icons
 
-/*========= Documentation =========*/
+### Documentation 
 
 Theme documentation is available on http://colorlib.com/wp/support/activello
 
-/*========= Changelog =========*/
+#### Changelog 
 
 = 1.3.0 - 16.05.2017 
 
