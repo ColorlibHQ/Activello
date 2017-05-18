@@ -1,7 +1,7 @@
 # Repository download
-```
+
 This repository contains a git sub-module and as such, can not be completely downloaded using the web-interface of GitHub. This is a known limitation of GitHub's own tools. However, cloning this repository via CLI works absolutely fine and will pull all sub-modules as long as you use the proper commands. Here's a short tutorial: 
-```
+
 
 # About Theme 
 
