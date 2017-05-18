@@ -1,4 +1,5 @@
 # About Theme 
+---
 
 Theme Name: Activello
 Theme URI: http://colorlib.com/wp/Activello/
