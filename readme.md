@@ -10,11 +10,11 @@
 * Author URI: http://colorlib.com/wp/
 * License: GNU General Public License v3.0
 * License URI: http://www.gnu.org/licenses/gpl.html
--------------------------------------------------------
-Activello theme, Copyright 2017 colorlib.com
-Activello WordPress theme is distributed under the terms of the GNU GPL
-Activello is based on Underscores http://underscores.me/, (C) 2012-2017 Automattic, Inc.
--------------------------------------------------------
+* Activello theme, Copyright 2017 colorlib.com 
+* Activello WordPress theme is distributed under the terms of the GNU GPL 
+* Activello is based on Underscores http://underscores.me/, (C) 2012-2017 Automattic, Inc. 
+
+---
 
 ## Credits 
 Unless otherwise specified, all the theme files, scripts and images are licensed under GPLv2 license
