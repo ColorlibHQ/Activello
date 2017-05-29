@@ -7,9 +7,10 @@
 global $wp_query;
 $index = $wp_query->current_post + 1;
 $layout = get_theme_mod( 'activello_sidebar_position' );
+$blog_layout = get_theme_mod( 'activello_blog_layout', 'default' );
 
 $image_size = 'activello-big';
-if ( $index > 2 ) {
+if ( $index > 2 && is_home() && 'default' == $blog_layout ) {
 	if ( $layout == "full-width" ) {
 		$image_size = 'activello-medium';
 	}else{

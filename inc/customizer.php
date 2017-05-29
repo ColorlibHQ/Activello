@@ -135,54 +135,69 @@ function activello_customizer( $wp_customize ) {
 
 
 	// add "Sidebar" section
-        $wp_customize->add_section('activello_layout_section', array(
-            'title' => esc_html__('Layout options', 'activello'),
-            'priority' => 31,
-            'panel' => 'activello_main_options'
+    $wp_customize->add_section('activello_layout_section', array(
+        'title' => esc_html__('Layout options', 'activello'),
+        'priority' => 31,
+        'panel' => 'activello_main_options'
+    ));
+    // Layout options
+    global $site_layout;
+    $wp_customize->add_setting('activello_sidebar_position', array(
+         'default' => 'side-right',
+         'sanitize_callback' => 'activello_sanitize_layout'
+    ));
+    $wp_customize->add_control('activello_sidebar_position', array(
+         'label' => esc_html__('Website Layout Options', 'activello'),
+         'section' => 'activello_layout_section',
+         'type'    => 'select',
+         'description' => esc_html__('Choose between different layout options to be used as default', 'activello'),
+         'choices'    => $site_layout
+    ));
+
+    $wp_customize->add_setting('activello_blog_layout', array(
+         'default' => 'default',
+         'sanitize_callback' => 'activello_sanitize_blog_layout'
+    ));
+    $wp_customize->add_control('activello_blog_layout', array(
+         'label' => esc_html__('Blog Posts Layout Options', 'activello'),
+         'section' => 'activello_layout_section',
+         'type'    => 'radio',
+         'description' => esc_html__('Choose how you want your posts to look on the Blog Page', 'activello'),
+         'choices'    => array(
+                'default'       => esc_html__('Two full width posts then half width posts', 'activello'),
+                'full-width'    => esc_html__('Full width posts', 'activello')
+            )
+    ));
+
+    $wp_customize->add_setting('accent_color', array(
+            'default' => '#a161bf',
+            'sanitize_callback' => 'activello_sanitize_hexcolor'
         ));
-            // Layout options
-            global $site_layout;
-            $wp_customize->add_setting('activello_sidebar_position', array(
-                 'default' => 'side-right',
-                 'sanitize_callback' => 'activello_sanitize_layout'
-            ));
-            $wp_customize->add_control('activello_sidebar_position', array(
-                 'label' => esc_html__('Website Layout Options', 'activello'),
-                 'section' => 'activello_layout_section',
-                 'type'    => 'select',
-                 'description' => esc_html__('Choose between different layout options to be used as default', 'activello'),
-                 'choices'    => $site_layout
-            ));
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'accent_color', array(
+        'label' => esc_html__('Accent Color', 'activello'),
+        'description'   => esc_html__('Default used if no color is selected','activello'),
+        'section' => 'activello_layout_section',
+    )));
 
-            $wp_customize->add_setting('accent_color', array(
-                    'default' => '#a161bf',
-                    'sanitize_callback' => 'activello_sanitize_hexcolor'
-                ));
-            $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'accent_color', array(
-                'label' => esc_html__('Accent Color', 'activello'),
-                'description'   => esc_html__('Default used if no color is selected','activello'),
-                'section' => 'activello_layout_section',
-            )));
+    $wp_customize->add_setting('social_color', array(
+        'default' => '#696969',
+        'sanitize_callback' => 'activello_sanitize_hexcolor'
+    ));
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'social_color', array(
+        'label' => esc_html__('Social icon color', 'activello'),
+        'description' => esc_html__('Default used if no color is selected', 'activello'),
+        'section' => 'activello_layout_section',
+    )));
 
-            $wp_customize->add_setting('social_color', array(
-                'default' => '#696969',
-                'sanitize_callback' => 'activello_sanitize_hexcolor'
-            ));
-            $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'social_color', array(
-                'label' => esc_html__('Social icon color', 'activello'),
-                'description' => esc_html__('Default used if no color is selected', 'activello'),
-                'section' => 'activello_layout_section',
-            )));
-
-            $wp_customize->add_setting('social_hover_color', array(
-                'default' => '#a161bf',
-                'sanitize_callback' => 'activello_sanitize_hexcolor'
-            ));
-            $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'social_hover_color', array(
-                'label' => esc_html__('Social Icon:hover Color', 'activello'),
-                'description' => esc_html__('Default used if no color is selected', 'activello'),
-                'section' => 'activello_layout_section',
-            )));
+    $wp_customize->add_setting('social_hover_color', array(
+        'default' => '#a161bf',
+        'sanitize_callback' => 'activello_sanitize_hexcolor'
+    ));
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'social_hover_color', array(
+        'label' => esc_html__('Social Icon:hover Color', 'activello'),
+        'description' => esc_html__('Default used if no color is selected', 'activello'),
+        'section' => 'activello_layout_section',
+    )));
 
 	// add "Footer" section
 	$wp_customize->add_section( 'activello_footer_section' , array(
@@ -237,6 +252,19 @@ function activello_sanitize_checkbox( $input ) {
 function activello_sanitize_layout( $input ) {
     global $site_layout;
     if ( array_key_exists( $input, $site_layout ) ) {
+        return $input;
+    } else {
+        return '';
+    }
+}
+
+/**
+ * Adds sanitization callback function: Blog Posts Layout
+ * @package Activello
+ */
+function activello_sanitize_blog_layout( $input ) {
+    global $site_layout;
+    if ( in_array(  $input, array( 'default', 'full-width' )) ) {
         return $input;
     } else {
         return '';

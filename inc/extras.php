@@ -41,6 +41,11 @@ function activello_body_classes( $classes ) {
     $classes[] = 'has-sidebar-right';
   }
 
+  $blog_layout = get_theme_mod( 'activello_blog_layout', 'default' );
+  if ( is_home() && 'default' == $blog_layout ) {
+    $classes[] = 'half-posts';
+  }
+
   return $classes;
 }
 add_filter( 'body_class', 'activello_body_classes' );

@@ -323,3 +323,5 @@ new Epsilon_Framework( $args );
 
 // Add welcome screen
 require get_template_directory() . '/inc/welcome-screen/welcome-page-setup.php';
+
+require get_template_directory() . '/inc/notifications.php';
