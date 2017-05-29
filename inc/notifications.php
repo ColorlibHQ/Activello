@@ -58,8 +58,9 @@ if ( ! class_exists( 'Activello_NUX_Admin' ) ) :
 
 			<div class="notice notice-info sf-notice-nux is-dismissible">
 				<div class="notice-content">
-					<p>Hello, we want to inform you that we added in this version of Activello a new type of blog page layout. Now we introduced an option to make all posts to be full width, to do this go to Customizer -> Activello Options -> Layout Options -> Blog Posts Layout Options. In the previous version they were: 2 full width posts then all were half width posts .  If you previously achieved this with custom CSS you will need to go to select this option in order for the pictures to be full width.</p>
-					<p>Also in order to increase our theme speed we changed the images' sizes. In order to take advantage of this improvement you'll need to use <a href="https://wordpress.org/plugins/force-regenerate-thumbnails/" target="_blank">Force Regenerate Thumbnails</a> to regenerate all your image sizes.</p>
+					<p><img src="<?php echo get_template_directory_uri() ?>/inc/welcome-screen/img/logo.png" width="200"></p>
+					<p><?php esc_html_e('Activello now support full width posts on homepage. If you have done this usiging custom CSS please go to Customizer -> Activello Options -> Layout Options -> Blog Posts Layout Options in order to have full width images.', 'activello') ?></p>
+					<p><?php printf( '%s <a href="%s" target="_blank">%s</a> %s', esc_html__( "Also in order to increase our theme speed we changed the images' sizes. In order to take advantage of this improvement you'll need to use", 'activello' ), esc_url( 'https://wordpress.org/plugins/force-regenerate-thumbnails/' ), esc_html__('Force Regenerate Thumbnails','activello'), esc_html__('to regenerate all your image sizes.','activello') ) ?></p>
 				</div>
 			</div>
 		<?php }
