@@ -33,12 +33,12 @@ module.exports = function( grunt ) {
           {
             src: [
               '**/*.php',
-              '!**/node_modules/**',
+              '!**/node_modules/**'
             ], //all php
             expand: true
           } ]
       }
-    },
+    }
 
   } );
 
