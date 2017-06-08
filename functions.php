@@ -16,7 +16,7 @@ if ( ! isset( $content_width ) ) {
  * Set the content width for full width pages with no sidebar.
  */
 if ( ! function_exists( 'activello_content_width' ) ) {
-  function activello_content_width() {
+	function activello_content_width() {
     if ( is_page_template( 'page-fullwidth.php' ) ) {
       global $content_width;
       $content_width = 1008; /* pixels */
@@ -273,9 +273,24 @@ function activello_get_single_category($post_id){
         return '';
 
     $post_categories = wp_get_post_categories( $post_id );
+    $show_one_category = get_theme_mod( 'activello_categories', 0 );
 
     if( !empty( $post_categories ) ){
-        return '<ul class="single-category">' . wp_list_categories('echo=0&title_li=&show_count=0&include='.$post_categories[0]) . '</ul>';
+        if ( ! $show_one_category && count( $post_categories ) > 1 ) {
+          $extra_categories = array_slice($post_categories, 1, count($post_categories)-1, true);
+          $extra_categories_args = array(
+              'echo' => 0,
+              'title_li' => '',
+              'show_count' => 0,
+              'include' => $extra_categories,
+            );
+          $html = '<div class="activello-categories">';
+          $html .= '<ul class="single-category">' . wp_list_categories('echo=0&title_li=&show_count=0&include='.$post_categories[0]) . '<li class="show-more-categories">...<ul class="subcategories">' . wp_list_categories($extra_categories_args) . '</ul><li></ul>';
+          $html .= '</div>';
+          return $html;
+        }else{
+          return '<ul class="single-category">' . wp_list_categories('echo=0&title_li=&show_count=0&include='.$post_categories[0]) . '</ul>';
+        }
     }
     return '';
 }
@@ -322,6 +337,6 @@ $args = array(
 new Epsilon_Framework( $args );
 
 // Add welcome screen
-require get_template_directory() . '/inc/welcome-screen/welcome-page-setup.php';
+require get_template_directory().'/inc/welcome-screen/welcome-page-setup.php';
 
-require get_template_directory() . '/inc/notifications.php';
+require get_template_directory().'/inc/notifications.php';

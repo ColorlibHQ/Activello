@@ -16,7 +16,6 @@ if ( $index > 2 && is_home() && 'default' == $blog_layout ) {
 	}else{
 		$image_size = 'activello-thumbnail';
 	}
-	
 }else if ( $layout == "full-width" ) {
 	$image_size = 'activello-featured';
 }

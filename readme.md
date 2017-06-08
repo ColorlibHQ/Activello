@@ -11,8 +11,8 @@ Here's a short tutorial on how to achieve this as well as a better explanation o
 
 * Theme Name: Activello
 * Theme URI: http://colorlib.com/wp/Activello/
-* Version: 1.3
-* Tested up to: WP 4.7
+* Version: 1.3.2
+* Tested up to: WP 4.7.5
 
 ```
 * Author: Aigars Silkalns

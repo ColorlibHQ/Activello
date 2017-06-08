@@ -66,6 +66,25 @@ function activello_customizer( $wp_customize ) {
         )
     );
 
+    // add setting for excerpts/full posts toggle
+    $wp_customize->add_setting( 'activello_categories', array(
+        'default'           => 0,
+        'sanitize_callback' => 'activello_sanitize_checkbox',
+    ) );
+
+    // add checkbox control for excerpts/full posts toggle
+    $wp_customize->add_control( new Epsilon_Control_Toggle(
+        $wp_customize,
+        'activello_categories',
+            array(
+                'type'        => 'epsilon-toggle',
+                'label'     => esc_html__( 'Show only one category in archives?', 'activello' ),
+                'section'   => 'activello_content_section',
+                'priority'  => 10,
+            )
+        )
+    );
+
 	$wp_customize->add_setting( 'activello_page_comments', array(
 		'default' => 1,
 		'sanitize_callback' => 'activello_sanitize_checkbox',
