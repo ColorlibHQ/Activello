@@ -7,6 +7,7 @@
 	}
 
 	$( function() {
+
 		// Dismiss notice
 		$( document ).on( 'click', '.sf-notice-nux .notice-dismiss', function() {
 			$.ajax({
