@@ -33,13 +33,13 @@ if ( ! class_exists( 'Activello_NUX_Admin' ) ) :
 				return;
 			}
 
-			wp_enqueue_style( 'activello-admin-nux', get_template_directory_uri() . '/inc/css/admin.css', '', '' );
+			wp_enqueue_style( 'activello-admin-nux', get_template_directory_uri() . '/assets/css/admin.css', '', '' );
 
-			wp_enqueue_script( 'activello-admin-nux', get_template_directory_uri() . '/inc/js/admin.js', array( 'jquery' ), '', 'all' );
-			wp_enqueue_script( 'activello-plugin-install-nux', get_template_directory_uri() . '/inc/js/plugin-install.js', array( 'jquery', 'updates' ), '', 'all' );
+			wp_enqueue_script( 'activello-admin-nux', get_template_directory_uri() . '/assets/js/admin.js', array( 'jquery' ), '', 'all' );
+			wp_enqueue_script( 'activello-plugin-install-nux', get_template_directory_uri() . '/assets/js/plugin-install.js', array( 'jquery', 'updates' ), '', 'all' );
 
 			$activello_nux = array(
-				'nonce' => wp_create_nonce( 'activello_notice_dismiss' )
+				'nonce' => wp_create_nonce( 'activello_notice_dismiss' ),
 			);
 
 			wp_localize_script( 'activello-admin-nux', 'activelloNUX', $activello_nux );
@@ -60,8 +60,8 @@ if ( ! class_exists( 'Activello_NUX_Admin' ) ) :
 			<div class="notice notice-info sf-notice-nux is-dismissible">
 				<div class="notice-content">
 					<p><img src="<?php echo get_template_directory_uri() ?>/inc/welcome-screen/img/logo.png" width="200"></p>
-					<h2><?php esc_html_e('Thanks for installing Activello, you rock!', 'activello') ?> <img draggable="false" class="emoji" alt="🤘" src="https://s.w.org/images/core/emoji/2.2.1/svg/1f918.svg"></h2>
-					<p><?php esc_html_e('Activello now support full width posts on homepage. If you have done this usiging custom CSS please go to Customizer -> Activello Options -> Layout Options -> Blog Posts Layout Options in order to have full width images.', 'activello') ?></p>
+					<h2><?php esc_html_e( 'Thanks for installing Activello, you rock!', 'activello' ) ?> <img draggable="false" class="emoji" alt="🤘" src="https://s.w.org/images/core/emoji/2.2.1/svg/1f918.svg"></h2>
+					<p><?php esc_html_e( 'Activello now support full width posts on homepage. If you have done this usiging custom CSS please go to Customizer -> Activello Options -> Layout Options -> Blog Posts Layout Options in order to have full width images.', 'activello' ) ?></p>
 					<p><?php esc_html_e( "Also in order to increase our theme speed we changed the images' sizes. In order to take advantage of this improvement you'll need to use Force Regenerate Thumbnails to regenerate all your image sizes.", 'activello' ) ?></p>
 					<p><?php $this->install_plugin_button( 'force-regenerate-thumbnails', 'force-regenerate-thumbnails.php', 'Force Regenerate Thumbnails', array( 'sf-nux-button' ), __( 'Force Regenerate Thumbnails activated', 'activello' ), __( 'Activate Force Regenerate Thumbnails', 'activello' ), __( 'Install Force Regenerate Thumbnails', 'activello' ) ); ?></p>
 				</div>
@@ -85,6 +85,7 @@ if ( ! class_exists( 'Activello_NUX_Admin' ) ) :
 
 		public function install_plugin_button( $plugin_slug, $plugin_file, $plugin_name, $classes = array(), $activated = '', $activate = '', $install = '' ) {
 			if ( current_user_can( 'install_plugins' ) && current_user_can( 'activate_plugins' ) ) {
+				$url = $this->_is_plugin_installed( $plugin_slug );
 				if ( is_plugin_active( $plugin_slug . '/' . $plugin_file ) ) {
 					// The plugin is already active
 					$button = array(
@@ -96,7 +97,7 @@ if ( ! class_exists( 'Activello_NUX_Admin' ) ) :
 					if ( '' !== $activated ) {
 						$button['message'] = esc_attr( $activated );
 					}
-				} elseif ( $url = $this->_is_plugin_installed( $plugin_slug ) ) {
+				} elseif ( $url ) {
 					// The plugin exists but isn't activated yet.
 					$button = array(
 						'message' => esc_attr__( 'Activate', 'activello' ),
@@ -122,7 +123,7 @@ if ( ! class_exists( 'Activello_NUX_Admin' ) ) :
 					if ( '' !== $install ) {
 						$button['message'] = esc_attr( $install );
 					}
-				}
+				}// End if().
 
 				if ( ! empty( $classes ) ) {
 					$button['classes'] = array_merge( $button['classes'], $classes );
@@ -135,7 +136,7 @@ if ( ! class_exists( 'Activello_NUX_Admin' ) ) :
 					<a href="<?php echo esc_url( $button['url'] ); ?>" class="<?php echo esc_attr( $button['classes'] ); ?>" data-originaltext="<?php echo esc_attr( $button['message'] ); ?>" data-name="<?php echo esc_attr( $plugin_name ); ?>" data-slug="<?php echo esc_attr( $plugin_slug ); ?>" aria-label="<?php echo esc_attr( $button['message'] ); ?>"><?php echo esc_attr( $button['message'] ); ?></a>
 				</span>
 				<?php
-			}
+			}// End if().
 		}
 
 		private function _is_plugin_installed( $plugin_slug ) {

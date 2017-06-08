@@ -250,7 +250,7 @@ textarea {
 
 article.sticky.post {
     background: #f9f9f9;
-    padding: 10px 0;
+    padding: 20px 0 0;
 }
 .sticky .entry-content {
     margin: 10px 20px;
@@ -525,7 +525,7 @@ article.grid iframe {
     }
     .blog.home .page-1 article.post:first-child, .blog.home .page-1 article.post:nth-child(2) {
         width: 100%;
-        padding: 0!important;
+        padding-right: 0!important;
     }
     .blog.home .page-1 article.post:first-child .post-inner-content, .blog.home .page-1 article.post:nth-child(2) .post-inner-content {
         border-bottom: 1px solid #dedede;

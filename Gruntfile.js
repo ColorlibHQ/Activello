@@ -9,8 +9,7 @@ module.exports = function( grunt ) {
     checktextdomain: {
       standard: {
         options: {
-          text_domain: [ 'activello' ], //Specify allowed
-                                                         // domain(s)
+          text_domain: [ 'activello', 'epsilon-framework' ], //Specify allowed domain(s)
           create_report_file: 'true',
           keywords: [ //List keyword specifications
             '__:1,2d',
@@ -33,7 +32,8 @@ module.exports = function( grunt ) {
           {
             src: [
               '**/*.php',
-              '!**/node_modules/**'
+              '!**/node_modules/**',
+              '!**/vendor/**',
             ], //all php
             expand: true
           } ]

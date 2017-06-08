@@ -5,6 +5,7 @@ matrix:
   include:
   - php: '5.3'
   - php: '5.4'
+  - php: '5.5'
   - php: '5.6'
   - php: '7.0'
   - php: '7.1'
@@ -26,20 +27,13 @@ before_script:
 script:
 - mkdir -p build/logs
 - find -L . -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l
-- jshint ./inc/js/*.js
-- jscs ./inc/js/*.js
+- jshint ./assets/js/*.js
+- jscs ./assets/js/*.js
 - grunt textdomain
 - "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./*.php --standard=./phpcs.ruleset.xml --extensions=php"
-- "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/*.php --standard=./phpcs.ruleset.xml
-  --extensions=php --ignore=./woocommerce/*.php,./node_modules/*.php"
-- "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/**/*.php --standard=./phpcs.ruleset.xml
-  --extensions=php --ignore=./woocommerce/**/*.php,./inc/libraries/class-tgm-plugin-activation.php,./node_modules/**/*.php"
-- "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/**/**/*.php --standard=./phpcs.ruleset.xml
-  --extensions=php --ignore=./woocommerce/**/**/*.php,./node_modules/**/**/*.php"
-- "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/**/**/**/*.php --standard=./phpcs.ruleset.xml
-  --extensions=php --ignore=./node_modules/**/**/**/*.php"
-- "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/**/**/**/**/*.php --standard=./phpcs.ruleset.xml
-  --extensions=php --ignore=./node_modules/**/**/**/**/*.php"
+- "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/*.php --standard=./phpcs.ruleset.xml --extensions=php"
+- "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/**/*.php --standard=./phpcs.ruleset.xml --extensions=php"
+- "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/**/**/*.php --standard=./phpcs.ruleset.xml --extensions=php"
 notifications:
   email: false
 cache:
