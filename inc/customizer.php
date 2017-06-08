@@ -172,7 +172,7 @@ function activello_customizer( $wp_customize ) {
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'accent_color', array(
 		'label' => esc_html__( 'Accent Color', 'activello' ),
 		'description'   => esc_html__( 'Default used if no color is selected','activello' ),
-		'section' => 'activello_layout_section',
+		'section' => 'colors',
 	)));
 
 	$wp_customize->add_setting( 'social_color', array(
@@ -182,7 +182,7 @@ function activello_customizer( $wp_customize ) {
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'social_color', array(
 		'label' => esc_html__( 'Social icon color', 'activello' ),
 		'description' => esc_html__( 'Default used if no color is selected', 'activello' ),
-		'section' => 'activello_layout_section',
+		'section' => 'colors',
 	)));
 
 	$wp_customize->add_setting( 'social_hover_color', array(
@@ -192,7 +192,7 @@ function activello_customizer( $wp_customize ) {
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'social_hover_color', array(
 		'label' => esc_html__( 'Social Icon:hover Color', 'activello' ),
 		'description' => esc_html__( 'Default used if no color is selected', 'activello' ),
-		'section' => 'activello_layout_section',
+		'section' => 'colors',
 	)));
 
 	// add "Footer" section

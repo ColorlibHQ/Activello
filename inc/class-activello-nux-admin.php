@@ -63,7 +63,7 @@ if ( ! class_exists( 'Activello_NUX_Admin' ) ) :
 					<h2><?php esc_html_e( 'Thanks for installing Activello, you rock!', 'activello' ) ?> <img draggable="false" class="emoji" alt="🤘" src="https://s.w.org/images/core/emoji/2.2.1/svg/1f918.svg"></h2>
 					<p><?php esc_html_e( 'Activello now support full width posts on homepage. If you have done this usiging custom CSS please go to Customizer -> Activello Options -> Layout Options -> Blog Posts Layout Options in order to have full width images.', 'activello' ) ?></p>
 					<p><?php esc_html_e( "Also in order to increase our theme speed we changed the images' sizes. In order to take advantage of this improvement you'll need to use Force Regenerate Thumbnails to regenerate all your image sizes.", 'activello' ) ?></p>
-					<p><?php $this->install_plugin_button( 'force-regenerate-thumbnails', 'force-regenerate-thumbnails.php', 'Force Regenerate Thumbnails', array( 'sf-nux-button' ), __( 'Force Regenerate Thumbnails activated', 'activello' ), __( 'Activate Force Regenerate Thumbnails', 'activello' ), __( 'Install Force Regenerate Thumbnails', 'activello' ) ); ?></p>
+					<p><?php $this->install_plugin_button( 'force-regenerate-thumbnails', 'force-regenerate-thumbnails.php', 'Force Regenerate Thumbnails', array( 'sf-nux-button' ), __( 'Regenerate Thumbnails Now', 'activello' ), __( 'Activate Force Regenerate Thumbnails', 'activello' ), __( 'Install Force Regenerate Thumbnails', 'activello' ) ); ?></p>
 				</div>
 			</div>
 		<?php }
@@ -89,8 +89,8 @@ if ( ! class_exists( 'Activello_NUX_Admin' ) ) :
 				if ( is_plugin_active( $plugin_slug . '/' . $plugin_file ) ) {
 					// The plugin is already active
 					$button = array(
-						'message' => esc_attr__( 'Activated', 'activello' ),
-						'url'     => '#',
+						'message' => esc_attr__( 'Settings', 'activello' ),
+						'url'     => admin_url( 'tools.php?page=force-regenerate-thumbnails' ),
 						'classes' => array( 'activello-button', 'disabled' ),
 					);
 
