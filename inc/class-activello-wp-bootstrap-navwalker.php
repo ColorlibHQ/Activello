@@ -169,43 +169,47 @@ class Activello_Wp_Bootstrap_Navwalker extends Walker_Nav_Menu {
 		 *
 		 */
 	public static function fallback( $args ) {
-		if ( current_user_can( 'manage_options' ) ) {
+		$fb_output = null;
 
-			$fb_output = null;
+		if ( $args['container'] ) {
+			$fb_output = '<' . $args['container'];
 
-			if ( $args['container'] ) {
-				$fb_output = '<' . $args['container'];
-
-				if ( $container_id ) {
-						$fb_output .= ' id="' . $args['container_id'] . '"';
-				}
-
-				if ( $container_class ) {
-						$fb_output .= ' class="' . $args['container_class'] . '"';
-				}
-
-				$fb_output .= '>';
+			if ( $args['container_id'] ) {
+					$fb_output .= ' id="' . $args['container_id'] . '"';
 			}
 
-			$fb_output .= '<ul';
-
-			if ( $args['menu_id'] ) {
-					$fb_output .= ' id="' . $args['menu_id'] . '"';
-			}
-
-			if ( $args['menu_class'] ) {
-					$fb_output .= ' class="' . $args['menu_class'] . '"';
+			if ( $args['container_class'] ) {
+					$fb_output .= ' class="' . $args['container_class'] . '"';
 			}
 
 			$fb_output .= '>';
-			$fb_output .= '<li><a href="' . admin_url( 'nav-menus.php' ) . '">' . __( 'Add a menu', 'activello' ) . '</a></li>';
-			$fb_output .= '</ul>';
+		}
 
-			if ( $args['container'] ) {
-					$fb_output .= '</' . $args['container'] . '>';
-			}
+		$fb_output .= '<ul';
 
-			echo $fb_output;
-		}// End if().
+		if ( $args['menu_id'] ) {
+				$fb_output .= ' id="' . $args['menu_id'] . '"';
+		}
+
+		if ( $args['menu_class'] ) {
+				$fb_output .= ' class="' . $args['menu_class'] . '"';
+		}
+
+		$fb_output .= '>';
+		$fb_output .= wp_list_pages( array(
+			'depth' => 1, //number of tiers, 0 for unlimited
+			'exclude' => '', //comma seperated IDs of pages you want to exclude
+			'title_li' => '', //must override it to empty string so that it does not break our nav
+			'sort_column' => 'post_title', //see documentation for other possibilites
+			'sort_order' => 'ASC', //ASCending or DESCending
+			'echo' => false,
+		));
+		$fb_output .= '</ul>';
+
+		if ( $args['container'] ) {
+				$fb_output .= '</' . $args['container'] . '>';
+		}
+
+		echo $fb_output;
 	}
 }
