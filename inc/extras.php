@@ -97,32 +97,18 @@ if ( ! function_exists( 'activello_header_menu' ) ) :
  */
 	function activello_header_menu() {
 
-		if ( has_nav_menu( 'primary' ) ) {
-
-			// display the WordPress Custom Menu if available
-			wp_nav_menu( array(
-				'menu'              => 'primary',
-				'theme_location'    => 'primary',
-				'depth'             => 3,
-				'container'         => 'div',
-				'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
-				'menu_class'        => 'nav navbar-nav',
-				'fallback_cb'       => 'Activello_Wp_Bootstrap_Navwalker::fallback',
-				'walker'            => new Activello_Wp_Bootstrap_Navwalker(),
-			));
-
-		} else {
-			echo '<ul id="menu-all-pages" class="nav navbar-nav">';
-			wp_list_pages( array(
-				'depth' => 1, //number of tiers, 0 for unlimited
-				'exclude' => '', //comma seperated IDs of pages you want to exclude
-				'title_li' => '', //must override it to empty string so that it does not break our nav
-				'sort_column' => 'post_title', //see documentation for other possibilites
-				'sort_order' => 'ASC', //ASCending or DESCending
-			));
-			echo '</ul>';
-		}
-	} /* end header menu */
+		// display the WordPress Custom Menu if available
+		wp_nav_menu( array(
+			'menu'              => 'primary',
+			'theme_location'    => 'primary',
+			'depth'             => 3,
+			'container'         => 'div',
+			'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
+			'menu_class'        => 'nav navbar-nav',
+			'fallback_cb'       => 'Activello_Wp_Bootstrap_Navwalker::fallback',
+			'walker'            => new Activello_Wp_Bootstrap_Navwalker(),
+		));
+	}
 endif;
 
 if ( ! function_exists( 'activello_featured_slider' ) ) :
