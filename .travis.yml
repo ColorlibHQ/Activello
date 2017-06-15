@@ -31,11 +31,28 @@ script:
 - jscs ./assets/js/*.js
 - grunt textdomain
 - "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./*.php --standard=./phpcs.ruleset.xml --extensions=php"
-- "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/*.php --standard=./phpcs.ruleset.xml --extensions=php"
-- "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/**/*.php --standard=./phpcs.ruleset.xml --extensions=php"
-- "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/**/**/*.php --standard=./phpcs.ruleset.xml --extensions=php"
+- "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/*.php --standard=./phpcs.ruleset.xml
+  --extensions=php"
+- "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/**/*.php --standard=./phpcs.ruleset.xml
+  --extensions=php"
+- "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/**/**/*.php --standard=./phpcs.ruleset.xml
+  --extensions=php"
 notifications:
   email: false
 cache:
   directories:
   - node_modules
+after_success:
+  - npm uninstall --save grunt-contrib-sass
+  - npm install --save node-sass grunt-sass
+  - grunt build-archive
+  - sh set_tags.sh
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: P0/kVoZRik+ieSh90+g9uXy4SzztDu2sn4SuzE2bVlL2zhCw/O0V36Tv8cWpD2SUs7r0IJQeyMZQMMIQgF5ZMCIXkDZL87nPq+cfrtYR2Mnu3cp4+S749LAvdmI8rJPxTLmwffbxFro3kZRv1rWEfsOa9XcM3+esZG1GcytZGXwu65YOBknk8UXJD3qzjrMKKI6+ZWaCtg5vwQEStkrOWT5FkqbTDWwBaJLVQvU8ctKV0A0iNipBQUzriUtir2zTyyZkjJs1XarDePzreknBAk1GoAZKl6G9Fjxz43GS3ZuSW7OLl7czX7UufpUisEMZXQA8QLDBD0Ct3p5tzhUD7hgsduMDXxsFvzBprbguIUHO+2EeFxbbOPf2VHvLrlwWXuHKwM9s78t7scYbbLAq1fgmbhQ6fsx8LFPnxYH6NSq+FmiWZglpUvgw9eGMszDOcqBx49rLmTa+2E+MuuEQTlZrRa5MSmBh3PmXSHZfPT8Im0/b0ebZSHcKdLtDY80uCAFGwg87I0SX0TmckJtaDHPKV5RJu28m8FnI33cDDJmiGkc90dzzDP6AUE1penC938wTxgANkevqdQRho4wGXyij32tSZdQi8sRqtRfHr6+RipG60vz/Z+jjjmh4HXRTfb1ra1O25OvB2sfMBUEAPA4EEWSIKDqFOyvsholD92o=
+  file: activello.zip
+  on:
+    branch: master
+    repo: giucu91/Activello
