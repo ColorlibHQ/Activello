@@ -27,6 +27,15 @@ function ActivelloIsMobile() {
     );
 }
 
+function generateMobileMenu() {
+	var menu = jQuery( '#masthead .site-navigation-inner .navbar-collapse > ul.nav' );
+	if ( ActivelloIsMobile() && jQuery( window ).width() > 768 ) {
+		menu.addClass( 'activello-mobile-menu' );
+	} else {
+		menu.removeClass( 'activello-mobile-menu' );
+	}
+}
+
 jQuery( document ).ready(function() {
 
 	//Check to see if the window is top if not then display button
@@ -48,6 +57,14 @@ jQuery( document ).ready(function() {
 		if ( ActivelloIsMobile() ) {
 			jQuery( this ).toggleClass( 'active' );
 		}
+	});
+
+	jQuery( '.activello-dropdown' ).click( function( evt ) {
+		jQuery( this ).parent().find( '> ul' ).toggleClass( 'active' );
+	});
+	generateMobileMenu();
+	jQuery( window ).resize(function() {
+		generateMobileMenu();
 	});
 
 });

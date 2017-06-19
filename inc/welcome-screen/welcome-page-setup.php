@@ -30,8 +30,8 @@ function activello_ws_customize_register( $wp_customize ) {
 				'plugins'                      => $customizer_recommended_plugins,
 				'theme_specific_option'        => $theme_slug . '_show_required_actions',
 				'theme_specific_plugin_option' => $theme_slug . '_show_recommended_plugins',
-				'facebook'                     => 'https://www.facebook.com/cpothemes',
-				'twitter'                      => 'https://twitter.com/cpothemes',
+				'facebook'                     => 'https://www.facebook.com/colorlib',
+				'twitter'                      => 'https://twitter.com/colorlib',
 				'wp_review'                    => true,
 				'priority'                     => 0,
 			)
