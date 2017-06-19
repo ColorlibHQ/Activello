@@ -310,10 +310,9 @@ if ( ! function_exists( 'get_activello_theme_setting' ) ) {
 			  .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a,
 			  .navbar-default .navbar-nav > .open > a:hover, blockquote:before,
 			  .navbar-default .navbar-nav > .open > a:focus, .cat-title a,
-			  .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus,
 			  .single .entry-content a, .site-info a:hover {color:' . esc_html( get_theme_mod( 'accent_color' ) ) . '}';
 
-			echo 'article.post .post-categories:after, .post-inner-content .cat-item:after, #secondary .widget-title:after {background:' . esc_html( get_theme_mod( 'accent_color' ) ) . '}';
+			echo 'article.post .post-categories:after, .post-inner-content .cat-item:after, #secondary .widget-title:after, .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {background:' . esc_html( get_theme_mod( 'accent_color' ) ) . '}';
 
 			echo '.btn-default:hover, .label-default[href]:hover,
 			  .label-default[href]:focus, .btn-default:hover,
@@ -328,6 +327,7 @@ if ( ! function_exists( 'get_activello_theme_setting' ) ) {
 			  input[type=submit]:hover, .comment-form #submit:hover, .tagcloud a:hover,
 			  .single .entry-content a:hover,  
 			  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+			  .dropdown-menu> li> a:hover, .dropdown-menu> li> a:focus,
 			  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus{background-color:' . esc_html( get_theme_mod( 'accent_color' ) ) . '; }';
 		}
 		if ( get_theme_mod( 'social_color' ) ) {
