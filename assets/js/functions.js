@@ -27,7 +27,7 @@ function ActivelloIsMobile() {
     );
 }
 
-function generateMobileMenu(){
+function generateMobileMenu() {
 	var menu = jQuery( '#masthead .site-navigation-inner .navbar-collapse > ul.nav' );
 	if ( ActivelloIsMobile() && jQuery( window ).width() > 768 ) {
 		menu.addClass( 'activello-mobile-menu' );
@@ -59,8 +59,8 @@ jQuery( document ).ready(function() {
 		}
 	});
 
-	jQuery('.activello-dropdown').click( function( evt ){
-		jQuery(this).parent().find( '> ul' ).toggleClass( 'active' );
+	jQuery( '.activello-dropdown' ).click( function( evt ) {
+		jQuery( this ).parent().find( '> ul' ).toggleClass( 'active' );
 	});
 	generateMobileMenu();
 	jQuery( window ).resize(function() {
