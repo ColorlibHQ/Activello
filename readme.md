@@ -71,7 +71,14 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 
 Theme documentation is available on http://colorlib.com/wp/support/activello
 
-#### Changelog 
+#### Changelog
+
+= 1.3.2
+* Added a new Blog Layout
+* Added option to show all categories in the blog page
+* Fixed mobile menu
+* Integrated with Travis
+* Added a notice inside admin dashboard so users know they need to regenerate thumbnails
 
 = 1.3.0 - 16.05.2017 
 
