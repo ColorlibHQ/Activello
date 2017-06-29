@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/MachoThemes/Activello.svg?branch=master)](https://travis-ci.org/MachoThemes/Activello)
+
 # Repository clone/download :fire: :fire: :fire:
 
 This repository contains a git sub-module and as such, can not be completely downloaded using the web-interface of GitHub. This is a known limitation of GitHub's own tools. However, cloning this repository via CLI works absolutely fine and will pull all sub-modules as long as you use the proper commands. 
@@ -9,8 +11,8 @@ Here's a short tutorial on how to achieve this as well as a better explanation o
 
 * Theme Name: Activello
 * Theme URI: http://colorlib.com/wp/Activello/
-* Version: 1.3
-* Tested up to: WP 4.7
+* Version: 1.3.2
+* Tested up to: WP 4.7.5
 
 ```
 * Author: Aigars Silkalns
@@ -69,7 +71,14 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 
 Theme documentation is available on http://colorlib.com/wp/support/activello
 
-#### Changelog 
+#### Changelog
+
+= 1.3.2
+* Added a new Blog Layout
+* Added option to show all categories in the blog page
+* Fixed mobile menu
+* Integrated with Travis
+* Added a notice inside admin dashboard so users know they need to regenerate thumbnails
 
 = 1.3.0 - 16.05.2017 
 

@@ -12,18 +12,19 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'content', 'single' ); ?>
+			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template
-				if ( comments_open() || '0' != get_comments_number() ) :
-					comments_template();
+			if ( comments_open() || '0' != get_comments_number() ) :
+				comments_template();
 				endif;
 			?>
 
 			<?php activello_post_nav(); ?>
 
-		<?php endwhile; wp_reset_query(); // end of the loop. ?>
+		<?php endwhile;
+wp_reset_query(); // end of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

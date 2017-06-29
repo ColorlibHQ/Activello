@@ -4,7 +4,7 @@ Theme URI: https://colorlib.com/wp/themes/activello/
 Author: Colorlib
 Author URI: http://colorlib.com
 Description: Activello is a clean and minimal WordPress blog theme with premium look and feel well suited for food, fashion, travel, lifestyle, sports and any other awesome blogs. This theme features WooCommerce integration that allows you to create fully functional eCommerce website side by side with your blog. This theme has several customization options that are available WordPress Theme Customizer. Theme is also multilingual ready and translated in several languages. This awesome blog theme is also SEO friendly helping you to achieve the highest positions on Google. Activello is the only WordPress blog theme you will ever need.
-Version: 1.3.1
+Version: 1.3.2
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: activello
@@ -14,7 +14,7 @@ Tags: grid-layout, footer-widgets, blog, education, entertainment, food-and-drin
 
 This theme, like WordPress, is licensed under the GPL.
 
-sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 
 */
 
@@ -74,6 +74,9 @@ a:focus {
 .single .entry-content a:hover {
     background: #a161bf;
     color: #fff;
+}
+.single .entry-content .page-links a:hover {
+    background-color: transparent;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color: #696969;
@@ -250,7 +253,7 @@ textarea {
 
 article.sticky.post {
     background: #f9f9f9;
-    padding: 10px 0;
+    padding: 20px 0 0;
 }
 .sticky .entry-content {
     margin: 10px 20px;
@@ -323,6 +326,41 @@ hr.section-divider {
 .single-category {
     margin: 0;
     padding: 0;
+    list-style: none;
+}
+.single-category > li {
+    display: inline-block;
+}
+.single-category > li.show-more-categories {
+    cursor: pointer;
+    position: relative;
+}
+.show-more-categories .subcategories {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate( -50%, 100% );
+    margin: 0;
+    padding: 0;
+    min-width: 150px;
+    background-color: #fff;
+}
+.show-more-categories .subcategories li {
+    margin-bottom: 0;
+}
+.show-more-categories .subcategories li:after {
+    display: none;
+}
+.single-category > li.show-more-categories:hover .subcategories,
+.single-category > li.show-more-categories.active .subcategories {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .single-category > li.show-more-categories:not(.active) .subcategories {
+        display: none;
+    }
 }
 
 /* author */
@@ -474,7 +512,7 @@ article.grid iframe {
     .article-container {
         overflow: hidden;
     }
-    .blog.home article.post {
+    .half-posts article.post {
         width: 50%;
         margin: 0;
         padding-right: 10px;
@@ -488,9 +526,9 @@ article.grid iframe {
         border: 0;
         padding: 0 0 30px;
     }
-    .blog.home .page-1 article.post:first-child, .blog.home .page-1 article.post:nth-child(2) {
+    .blog .page-1 .article-container article.post:first-child, .blog .page-1 .article-container article.post:nth-child(2) {
         width: 100%;
-        padding: 0!important;
+        padding-right: 0!important;
     }
     .blog.home .page-1 article.post:first-child .post-inner-content, .blog.home .page-1 article.post:nth-child(2) .post-inner-content {
         border-bottom: 1px solid #dedede;
@@ -505,7 +543,7 @@ article.grid iframe {
     .blog.home .page-1 article.post:first-child .read-more, .blog.home .page-1 article.post:nth-child(2) .read-more, .blog.home .page-1 article.post:first-child .entry-footer, .blog.home .page-1 article.post:nth-child(2) .entry-footer {
         display: block;
     }
-    .blog.home article.post:nth-child(odd) {
+    .half-posts article.post:nth-child(odd) {
         clear: left;
         padding-right: 25px;
     }
@@ -517,7 +555,7 @@ article.grid iframe {
 .site-main {
     max-width: 100%;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .site-main {
         width: 100% !important;
     }
@@ -527,6 +565,11 @@ article.grid iframe {
     }
     #secondary {
         padding: 30px 15px 0!important;
+    }
+    #masthead ul.nav ul ul {
+        left: auto;
+        margin: 0;
+        padding-left: 20px;
     }
 }
 
@@ -648,6 +691,10 @@ embed, iframe, object {
 .widget_search .search-submit {
     display: none;
 }
+.widget input[type="text"].search-query {
+    width: 100%;
+}
+
 .widget ul li {
     list-style: none;
     border-bottom: 1px solid #F2F2F2;
@@ -978,13 +1025,15 @@ div.flex-caption {
     padding: 0;
     box-shadow: 0 0 2px #e3e3e3;
 }
+.navbar-default .navbar-nav> li {
+    margin-right: 25px;
+}
 .navbar-default .navbar-nav> li> a {
     color: #1c202a;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: bold;
     padding: 20px 0;
-    margin-right: 25px;
     line-height: 2.6;
     letter-spacing: 1px;
 }
@@ -1023,6 +1072,14 @@ div.flex-caption {
 }
 .dropdown-menu li {
     position: relative;
+    border-bottom: 1px solid #eeeeee;
+}
+.dropdown-menu > li:last-child {
+    border-bottom: 0 none;
+}
+.dropdown-menu > li:last-child > a {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 .navbar-collapse {
     float: left;
@@ -1048,7 +1105,7 @@ div.flex-caption {
         left: 0;
         padding: 0 15px;
         width: 100% !important;
-        z-index: 999;
+        z-index: 99999;
     }
     .navbar-nav {
         margin: 0;
@@ -1081,7 +1138,12 @@ div.flex-caption {
 .dropdown-menu> li> a {
     padding: 10px 15px;
     color: #636467;
-    border-bottom: 1px solid #eeeeee;
+    display: block;
+}
+
+.dropdown-menu> li> .activello-dropdown {
+    padding: 10px 0;
+    line-height: 1.42857143;
 }
 .dropdown-menu, .dropdown-menu> .active> a, .dropdown-menu> .active> a:hover, .dropdown-menu> .active> a:focus {
     border: none;
@@ -1110,6 +1172,69 @@ div.flex-caption {
 .nav.navbar-nav {
     float: left;
 }
+.nav.activello-mobile-menu > li > a {
+    display: inline-block;
+}
+.activello-dropdown {
+    display: none;
+    padding: 20px 0;
+}
+.activello-dropdown:after,
+.nav:not(.activello-mobile-menu) li.menu-item-has-children > a:after {
+    font-family:'FontAwesome';
+    font-size: inherit;
+    content: "\f107";
+    display: block;
+    width: 30px;
+    text-align: center;
+}
+.dropdown-menu .activello-dropdown:after,
+.nav:not(.activello-mobile-menu) .dropdown-menu li.menu-item-has-children > a:after {
+    content: "\f105";
+}
+.nav:not(.activello-mobile-menu) .dropdown-menu .dropdown-menu li.menu-item-has-children > a:after {
+    display: none;
+}
+.nav:not(.activello-mobile-menu) li.menu-item-has-children > a:after {
+    display: inline-block;
+    float: right;
+}
+.nav:not(.activello-mobile-menu) .dropdown-menu li.menu-item-has-children > a:after {
+    display: block;
+    float: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -9px;
+}
+.dropdown-menu > li.menu-item-has-children > a {
+    padding-right: 30px;
+}
+.dropdown-menu .activello-dropdown {
+    float: right;
+}
+.activello-mobile-menu .dropdown-menu> li> a:hover {
+    color: #333;
+    background-color: #fff;
+}
+.activello-mobile-menu .activello-dropdown {
+    display: inline-block;
+}
+.activello-mobile-menu .dropdown-menu> li> a {
+    display: inline-block;
+}
+
+/* Remove Hover for mobile menu */
+.navbar-default .navbar-nav.activello-mobile-menu> li> a:hover {
+    color: #333;
+}
+ul.nav.activello-mobile-menu li.menu-item-has-children:hover> ul.dropdown-menu {
+    display: none;
+}
+ul.nav.activello-mobile-menu li.menu-item-has-children > ul.dropdown-menu.active {
+    display: block;
+}
+
 @media (max-width: 768px) {
 
 	.dropdown-menu {
@@ -1117,17 +1242,21 @@ div.flex-caption {
         position: relative;
         min-width: 100%;
         border: 0 none !important;
-        padding-bottom: 15px !important;
+        /*padding-bottom: 15px !important;*/
     }
     .dropdown-menu> li:first-child> a {
         padding-top: 0;
     }
-    .dropdown-menu> li> a {
+    .dropdown-menu li {
         border-bottom: 0 none;
     }
-    .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus, .dropdown-menu> li> a:hover {
+    
+    body .dropdown-menu>.active>a, 
+    body .dropdown-menu>.active>a:hover, 
+    body .dropdown-menu>.active>a:focus, 
+    body .dropdown-menu> li> a:hover {
         background-color: transparent;
-        color: #a161bf;
+        color: #262626;
     }
 
     .nav.navbar-nav {
@@ -1158,6 +1287,14 @@ div.flex-caption {
 	.navbar-collapse.collapse.in {
 		display: block !important;
 	}
+    .navbar-default .navbar-nav> li.menu-item-has-children:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .nav li.menu-item-has-children > a:after {
+        display: none !important;
+    }
 }
 
 /* Make third level sub menu visible */
@@ -1664,6 +1801,35 @@ p.logged-in-as {
 }
 .woocommerce div.product div.images .flex-control-thumbs li:nth-child(4n+1) { clear: left; }
 .woocommerce div.product div.images .woocommerce-product-gallery__wrapper { margin: 0; }
+.woocommerce-product-search {
+    width: 100%;
+}
+.woocommerce-product-search:after {
+    display: block;
+    content: "";
+    clear: left;
+}
+.woocommerce-product-search .search-field,
+.woocommerce-product-search input[type=submit] {
+    float: left;
+    box-sizing: border-box;
+}
+
+.widget .woocommerce-product-search input[type="search"].search-field {
+    width: 80%;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    padding: 0 10px;
+    line-height: 35px;
+}
+
+.woocommerce-product-search input[type=submit] {
+    width: 20%;
+    padding: 1px 0;
+    border: 0 none;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
 
 /* Layout */
 
@@ -1677,4 +1843,3 @@ p.logged-in-as {
 .full-width {
     width: 100%;
 }
-
