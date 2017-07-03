@@ -1,7 +1,7 @@
 {
   "name": "activello",
   "main": "Gruntfile.js",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "homepage": "https://www.colorlib.com",
   "author": "Colorlib",
   "license": "GPL v3",
