@@ -101,7 +101,7 @@ if ( ! function_exists( 'activello_header_menu' ) ) :
 		wp_nav_menu( array(
 			'menu'              => 'primary',
 			'theme_location'    => 'primary',
-			'depth'             => 3,
+			'depth'             => 6,
 			'container'         => 'div',
 			'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
 			'menu_class'        => 'nav navbar-nav',
