@@ -1192,9 +1192,6 @@ div.flex-caption {
 .nav:not(.activello-mobile-menu) .dropdown-menu li.menu-item-has-children > a:after {
     content: "\f105";
 }
-.nav:not(.activello-mobile-menu) .dropdown-menu .dropdown-menu li.menu-item-has-children > a:after {
-    display: none;
-}
 .nav:not(.activello-mobile-menu) li.menu-item-has-children > a:after {
     display: inline-block;
     float: right;
