@@ -83,7 +83,7 @@ if ( ! function_exists( 'activello_posted_on' ) ) :
 			esc_html( get_the_modified_date() )
 		);
 
-			printf( '<span class="posted-on">' . __( 'Posted on', 'activello' ) . ' %1$s</span>',
+			printf( '<span class="posted-on">' . __( 'Posted on', 'activello' ) . ' %1$s</span>' . __( 'by', 'activello' ) . ' %2$s',
 				sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>',
 					esc_url( get_permalink() ),
 					$time_string
