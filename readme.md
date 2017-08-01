@@ -72,6 +72,8 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 Theme documentation is available on http://colorlib.com/wp/support/activello
 
 #### Changelog
+= 1.3.3
+* Fixed search functionality
 
 = 1.3.4
 * Structured data missing hatom author
