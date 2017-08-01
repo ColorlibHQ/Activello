@@ -73,6 +73,10 @@ Theme documentation is available on http://colorlib.com/wp/support/activello
 
 #### Changelog
 
+= 1.3.4
+* Structured data missing hatom author
+* Allow theme to display more than 2 sub level menus
+
 = 1.3.2
 * Added a new Blog Layout
 * Added option to show all categories in the blog page
