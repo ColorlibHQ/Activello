@@ -1,11 +1,11 @@
 {
   "name": "activello",
   "main": "Gruntfile.js",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "homepage": "https://www.colorlib.com",
   "author": "Colorlib",
   "license": "GPL v3",
-  "repository": "https://github.com/giucu91/Activello",
+  "repository": "https://github.com/puikinsh/Activello",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-checktextdomain": "^1.0.0",
