@@ -908,10 +908,6 @@ ul.children, ul.children li {
     border: 1px solid #DADADA;
     background: #fff;
     color: #a161bf;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
 }
 #infinite-handle span:hover {
     background-color: #a161bf;
@@ -1839,4 +1835,11 @@ p.logged-in-as {
 }
 .full-width {
     width: 100%;
+}
+
+/* Infinite Scroll */
+.infinite-wrap:after {
+    content: "";
+    display: block;
+    clear: both;
 }
