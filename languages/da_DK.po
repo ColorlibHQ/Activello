@@ -1,0 +1,1150 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Activello Theme\n"
+"POT-Creation-Date: 2017-07-02 12:19+0200\n"
+"PO-Revision-Date: 2017-07-03 03:55+0200\n"
+"Language-Team: colorlib <info@colorlib.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.2\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
+"esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Last-Translator: \n"
+"Language: da_DK\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ups! Denne side kan ikke findes."
+
+#: ../404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Der blev ikke fundet noget her. Prøv et par af linkene nedenunder eller en "
+"søgning?"
+
+#: ../404.php:25
+msgid "Recent Posts"
+msgstr "Seneste indlæg"
+
+#: ../404.php:31
+msgid "Most Used Categories"
+msgstr "Mest benyttede kategorier"
+
+#: ../404.php:52
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Prøv at kigge i de månedlige arkiver %1$s"
+
+#: ../404.php:53 ../archive.php:66 ../sidebar.php:31
+msgid "Archives"
+msgstr "Blog arkiv"
+
+#: ../404.php:58
+msgid "Tags"
+msgstr "Mærkater"
+
+#: ../archive.php:27
+#, php-format
+msgid "Author: %s"
+msgstr "Forfatter: %s"
+
+#: ../archive.php:30
+#, php-format
+msgid "Day: %s"
+msgstr "Dag: %s"
+
+#: ../archive.php:33
+#, php-format
+msgid "Month: %s"
+msgstr "Måned: %s"
+
+#: ../archive.php:36
+#, php-format
+msgid "Year: %s"
+msgstr "År: %s"
+
+#: ../archive.php:39
+msgid "Asides"
+msgstr "Asides"
+
+#: ../archive.php:42
+msgid "Galleries"
+msgstr "Gallerier"
+
+#: ../archive.php:45
+msgid "Images"
+msgstr "Billeder"
+
+#: ../archive.php:48
+msgid "Videos"
+msgstr "Videoer"
+
+#: ../archive.php:51
+msgid "Quotes"
+msgstr "Citat"
+
+#: ../archive.php:54
+msgid "Links"
+msgstr "Links"
+
+#: ../archive.php:57
+msgid "Statuses"
+msgstr "Statuses"
+
+#: ../archive.php:60
+msgid "Audios"
+msgstr "Lyd"
+
+#: ../archive.php:63
+msgid "Chats"
+msgstr "Chats"
+
+#: ../comments.php:28
+#, php-format
+msgctxt "comments title"
+msgid "1 Comment"
+msgid_plural "%1$s Comment"
+msgstr[0] "1 Kommentar"
+msgstr[1] "%1$s Kommentarer"
+
+#: ../comments.php:35 ../comments.php:54
+msgid "Comment navigation"
+msgstr "Kommentar navigation"
+
+#: ../comments.php:36 ../comments.php:55
+msgid "&larr; Older Comments"
+msgstr "&larr; Tidligere kommentarer"
+
+#: ../comments.php:37 ../comments.php:56
+msgid "Newer Comments &rarr;"
+msgstr "Nyere kommentarer &rarr;"
+
+#: ../comments.php:66
+msgid "Comments are closed."
+msgstr "Lukket for kommentarer."
+
+#: ../comments.php:77
+msgid "Name"
+msgstr "Navn"
+
+#: ../comments.php:81
+msgid "Email"
+msgstr "Email"
+
+#: ../comments.php:85
+msgid "Website"
+msgstr "Webside"
+
+#: ../comments.php:94
+msgid "Post Reply"
+msgstr "Svar på indlæg"
+
+#: ../content-grid.php:16 ../content-page.php:26 ../inc/extras.php:266
+msgid "Edit"
+msgstr "Rediger"
+
+#: ../content-grid.php:28 ../content.php:41 ../content.php:67
+#: ../inc/extras.php:151
+msgid "Read More"
+msgstr "Læs mere"
+
+#: ../content-grid.php:37 ../content-page.php:21 ../content-single.php:43
+#: ../content.php:56 ../image.php:79
+msgid "Pages:"
+msgstr "Sider:"
+
+#: ../content-none.php:13
+msgid "Nothing Found"
+msgstr "Ingenting fundet"
+
+#: ../content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Klar til at udgive dit første indlæg? <a href=“%1$s”>Start her</a>."
+
+#: ../content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "Desværre, ingenting fundet. Prøv igen med andre søgeord."
+
+#: ../content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"﻿Det lader til at vi ikke kan finde det du leder efter. Måske en søgning kan "
+"hjælpe dig videre."
+
+#: ../content-single.php:21 ../content.php:22
+#, php-format
+msgid "Edit %s"
+msgstr "Rediger %s"
+
+#: ../content-single.php:55 ../content.php:73
+msgid "No comments yet"
+msgstr "Ingen kommentarer endnu"
+
+#: ../content-single.php:55
+msgid "Comment (1)"
+msgstr "Kommentarer (1)"
+
+#: ../content-single.php:55
+msgid "Comments (%)"
+msgstr "Kommentarer (%)"
+
+#: ../content.php:73
+msgid "1 Comment"
+msgstr "1 kommentar"
+
+#: ../content.php:73
+msgid "% Comments"
+msgstr "% kommentarer"
+
+#: ../functions.php:71
+msgid "Primary Menu"
+msgstr "Primære menu"
+
+#: ../functions.php:114
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: ../functions.php:233
+msgid "Left Sidebar"
+msgstr "Venstre sidebar"
+
+#: ../functions.php:233
+msgid "Right Sidebar"
+msgstr "Højre sidebar"
+
+#: ../functions.php:233
+msgid "No Sidebar"
+msgstr "Ingen sidebar"
+
+#: ../functions.php:233
+msgid "Full Width"
+msgstr "Fuld bredde"
+
+#: ../functions.php:235
+msgid "Logo Only"
+msgstr "Logo"
+
+#: ../functions.php:236
+msgid "Logo + Tagline"
+msgstr "Logo + slogan"
+
+#: ../functions.php:237
+msgid "Title Only"
+msgstr "Title"
+
+#: ../functions.php:238
+msgid "Title + Tagline"
+msgstr "Titel + slogan"
+
+#: ../functions.php:275 ../searchform.php:14
+msgid "Search"
+msgstr "Søg"
+
+#: ../functions.php:275 ../searchform.php:14
+msgctxt "submit button"
+msgid "Search"
+msgstr "Søg"
+
+#: ../header.php:40
+msgid "Toggle navigation"
+msgstr "Slå navigation til/fra"
+
+#: ../image.php:22
+msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+msgstr "<i class=“fa fa-chevron-left”></i> Forrige"
+
+#: ../image.php:23
+msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Næste <i class=“fa fa-chevron-right”></i>"
+
+#: ../inc/customizer.php:30
+msgid "Logo"
+msgstr "Logo"
+
+#: ../inc/customizer.php:44
+msgid "Show"
+msgstr "Vis"
+
+#: ../inc/customizer.php:53
+msgid "Activello Options"
+msgstr "Activello indstillinger"
+
+#: ../inc/customizer.php:54
+msgid "Panel to update activello theme options"
+msgstr "Panel til at opdatere Sparkling temaets indstillinger"
+
+#: ../inc/customizer.php:60
+msgid "Content Options"
+msgstr "Indholds Indstillinger"
+
+#: ../inc/customizer.php:73
+msgid "Show post excerpts?"
+msgstr "Vis uddrag?"
+
+#: ../inc/customizer.php:85
+msgid "Display Comments on Static Pages?"
+msgstr "Vis kommnetarer på statiske sider?"
+
+#: ../inc/customizer.php:94
+msgid "Slider Options"
+msgstr "Slider indstillinger"
+
+#: ../inc/customizer.php:139
+msgid "Layout options"
+msgstr "Layout indstillinger"
+
+#: ../inc/customizer.php:150
+msgid "Website Layout Options"
+msgstr "Websted Layout indstillinger"
+
+#: ../inc/customizer.php:153
+msgid "Choose between different layout options to be used as default"
+msgstr "Vælg mellem forskellige layouts, der bruges som standard"
+
+#: ../inc/customizer.php:162
+msgid "Accent Color"
+msgstr "Temafarve"
+
+#: ../inc/customizer.php:163 ../inc/customizer.php:173
+#: ../inc/customizer.php:183
+msgid "Default used if no color is selected"
+msgstr "Standardfarve hvis ingen farve er valgt"
+
+#: ../inc/customizer.php:172
+msgid "Social icon color"
+msgstr "Social ikon farve"
+
+#: ../inc/customizer.php:182
+msgid "Social Icon:hover Color"
+msgstr "Social Icon: hover farve"
+
+#: ../inc/customizer.php:189
+msgid "Footer"
+msgstr "Tekst i bunden"
+
+#: ../inc/customizer.php:207
+msgid "Other"
+msgstr "Andre"
+
+#: ../inc/customizer.php:225
+msgid "Support and Documentation"
+msgstr "Support og dokumentation"
+
+#: ../inc/customizer.php:368
+msgid "Activello Documentation"
+msgstr "Activello dokumentation"
+
+#: ../inc/customizer.php:369
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr ""
+"Den bedste måde at kontakte os på med <b>spørgsmål</b> og <b>fejl</b> er via"
+
+#: ../inc/customizer.php:369
+msgid "Colorlib support forum"
+msgstr "Colorlib support forum"
+
+#: ../inc/customizer.php:370
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr "Hvis du kan lide dette team, vil jeg være taknemmelig for:"
+
+#: ../inc/customizer.php:372
+msgid "Rate this Theme"
+msgstr "Vurder dette tema"
+
+#: ../inc/customizer.php:373
+msgid "Like on Facebook"
+msgstr "Synes godt om på Facebook"
+
+#: ../inc/customizer.php:374
+msgid "Follow on Twitter"
+msgstr "Følg på Twitter"
+
+#: ../inc/extras.php:54
+msgid "Untitled"
+msgstr "Unavngiven"
+
+#: ../inc/extras.php:71
+msgid ""
+"This post is password protected. To view it please enter your password below:"
+msgstr ""
+"Dette indhold er beskyttet med en adgangskode. Venligst indtast din "
+"adgangskode:"
+
+#: ../inc/extras.php:72
+msgid "Password:"
+msgstr "Adgangskode:"
+
+#: ../inc/extras.php:75
+msgid "Submit"
+msgstr "Send"
+
+#: ../inc/extras.php:172
+#, php-format
+msgid "Theme by %1$s Powered by %2$s"
+msgstr "Tema af %1$s hosted af %2$s"
+
+#: ../inc/extras.php:260
+#, php-format
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
+msgstr "<cite class=“fn”>%s</cite> <span class=“says”>siger:</span>"
+
+#: ../inc/extras.php:266
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s den %2$s"
+
+#: ../inc/extras.php:273
+msgid "Your comment is awaiting moderation."
+msgstr "Din kommentarer venter på godkendelse."
+
+#: ../inc/metaboxes.php:16
+msgid ""
+"Select layout for this specific Page only ( Note: This setting only reflects "
+"if page Template is set as Default Template and Blog Type Templates.)"
+msgstr ""
+"Vælg layout til denne specifikke side (Bemærk: Denne indstilling virker kun, "
+"hvis sideskabelon er indstillet som standardskabelon og Blog Type "
+"skabeloner.)"
+
+#: ../inc/metaboxes.php:21
+msgid "Select layout for this specific Post only"
+msgstr "Vælg layout kun for dette indlæg"
+
+#: ../inc/metaboxes.php:28
+msgid "Select layout for this specific Product only"
+msgstr "Vælg layout kun for dette Produkt"
+
+#: ../inc/metaboxes.php:58
+msgid "Default"
+msgstr "Standard"
+
+#: ../inc/navwalker.php:196
+msgid "Add a menu"
+msgstr "Tilføj menu"
+
+#: ../inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Indlæg navigation"
+
+#: ../inc/template-tags.php:27
+msgid "Older posts"
+msgstr "Tidligere indlæg"
+
+#: ../inc/template-tags.php:31
+msgid "Newer posts"
+msgstr "Nyere indlæg"
+
+#: ../inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "Indlæg navigation"
+
+#: ../inc/template-tags.php:86
+msgid "Posted on"
+msgstr "Udgivet den"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:327
+#: ../inc/tgmpa/tgm-plugin-activation.php:79
+msgid "Install Required Plugins"
+msgstr "Installer nødvendige Plugins"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:328
+#: ../inc/tgmpa/tgm-plugin-activation.php:80
+msgid "Install Plugins"
+msgstr "Installer Plugins"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:330
+#: ../inc/tgmpa/tgm-plugin-activation.php:81
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Installerer Plugin: %s"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:332
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr "Opdaterer Plugin: %s"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:333
+#: ../inc/tgmpa/tgm-plugin-activation.php:82
+msgid "Something went wrong with the plugin API."
+msgstr "Noget gik galt med plugin API."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:385
+#: ../inc/tgmpa/tgm-plugin-activation.php:93
+msgid "Return to Required Plugins Installer"
+msgstr "Vend tilbage til Installation af Påkrævede Plugins"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:386
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:827
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2533
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr "Tilbage til Kontrolpanel"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:387
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3159
+#: ../inc/tgmpa/tgm-plugin-activation.php:94
+msgid "Plugin activated successfully."
+msgstr "Plugin aktiveret ok."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:388
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "Dette plugin blev aktiveret ok:"
+msgstr[1] "Disse plugins blev aktiveret ok:"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:390
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "Ingen handling foretaget. Plugin %1$s var allerede aktiv."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:392
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+"Plugin ikke aktiveret. En nyere version af %s er krævet for dette tema. "
+"Opdater venligst plugin."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:394
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Alle plugins er installeret og aktiveret korrekt. %1$s"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr "Skjul denne besked"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:396
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+"Der er en eller flere nødvendige eller anbefalede plugins som skal "
+"installeres, opdateres eller aktiveres."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr "Kontakt administrator for hjælp."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr "Dette plugin skal opdateres for at være kompatibel med temaet."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr "Opdatering påkrævet"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:934
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+"Den eksterne plugin-pakke indeholder ikke en mappe med den ønskede slug, og "
+"omdøbning virkede ikke."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:934
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:937
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+"Kontakt venligst udbyderen af dette plugin og bed dem om at pakke deres "
+"plugin i henhold til WordPress' retningslinjer."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:937
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+"Den eksterne plugin-pakke indeholder mere end én fil, men filerne er ikke "
+"pakket i en mappe."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:1982
+#, php-format
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr "Obligatorisk"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr "Anbefalet"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr "WordPress arkiv"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr "Ekstern Kilde"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr "Færdigpakket"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr "Ikke installeret"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr "Installeret, men ikke aktiveret"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr "Aktiv"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr "Nødvendig Opdatering ikke tilgængelig"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr "Kræver opdatering"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr "Opdatering anbefales"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2388
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "Alle <span class=“count”>(%s)</span>"
+msgstr[1] "Alle <span class=“count”>(%s)</span>"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2392
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "For at installere <span class=“count”>(%s)</span>"
+msgstr[1] "For at installere <span class=“count”>(%s)</span>"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2396
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "Opdatering tilgængelig <span class=“count”>(%s)</span>"
+msgstr[1] "Opdatering tilgængelig <span class=“count”>(%s)</span>"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2400
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "Aktivering <span class=“count”>(%s)</span>"
+msgstr[1] "Aktivering <span class=“count”>(%s)</span>"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr "Installeret version:"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr "Minimum påkrævet version:"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr "Tilgængelig version:"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr "Ingen plugins at installere, opdatere eller aktivere."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr "Plugin"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr "Kilde"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr "Type"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr "Version"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr "Status"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2603
+#, php-format
+msgid "Install %2$s"
+msgstr "Installér %2$s"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2608
+#, php-format
+msgid "Update %2$s"
+msgstr "Opdater %2$s"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2614
+#, php-format
+msgid "Activate %2$s"
+msgstr "Aktiver %2$s"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr "Opgradeingsmeddelelse fra plugin udgiver:"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2717
+#: ../inc/welcome-screen/custom-recommend-action-section.php:108
+#: ../inc/welcome-screen/sections/actions-required.php:41
+#: ../inc/welcome-screen/sections/recommended-plugins.php:24
+msgid "Install"
+msgstr "Installer"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr "Opdater"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2726
+#: ../inc/welcome-screen/custom-recommend-action-section.php:112
+#: ../inc/welcome-screen/sections/actions-required.php:45
+#: ../inc/welcome-screen/sections/recommended-plugins.php:28
+msgid "Activate"
+msgstr "Aktiver"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr "Ingen plugins blev valgt til installation. Ingen handling taget."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr "Ingen plugins blev valgt til opdatering. Ingen handling taget."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr "Ingen plugins er tilgængelige til installation i øjeblikket."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr "Ingen plugins er tilgængelige til opdatering i øjeblikket."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr "Ingen plugins blev valgt til aktivering. Ingen handling taget."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr "Ingen plugins er tilgængelige til aktivering i øjeblikket."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr "Plugin aktivering fejlede."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3498
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Opdaterer Plugin %1$s (%2$d/%3$d)"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3501
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "Der skete en fejl under installationen af %1$s: <strong>%2$s</strong>."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3503
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "Installationen af %1$s fejlede."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Installering og aktivering startes. Denne proces kan tage lidt tid for nogle "
+"hosts, så hav venligst tålmodighed."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s installeret og aktiveret uden fejl."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr "Vis detaljer"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr "Skjul detaljer"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr "Alle installationer og aktiveringer er fuldendt."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3512
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Installerer og aktiverer plugin %1$s (%2$d/%3$d)"
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"Installering starter. Det kan tage lidt tid for nogle hosts, så hav venligst "
+"tålmodighed."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3517
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s blev installeret korrekt."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr "Alle installationer er fuldendt."
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3520
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Installerer plugin %1$s (%2$d/%3$d)"
+
+#: ../inc/tgmpa/tgm-plugin-activation.php:95
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr "Alle plugins er installeret og aktiveret korrekt. %s"
+
+#: ../inc/welcome-screen/custom-recommend-action-section.php:116
+#: ../inc/welcome-screen/sections/actions-required.php:49
+#: ../inc/welcome-screen/sections/recommended-plugins.php:32
+msgid "Deactivate"
+msgstr "Deaktiver"
+
+#: ../inc/welcome-screen/notify-system-checks.php:154
+#: ../inc/welcome-screen/notify-system-checks.php:162
+msgid "Install: Widget Importer Exporter Plugin"
+msgstr "Installer: Widet Importer Exporter Plugin"
+
+#: ../inc/welcome-screen/notify-system-checks.php:159
+msgid "Activate: Widget Importer Exporter Plugin"
+msgstr "Aktiver: Widget Importer Exporter Plugin"
+
+#: ../inc/welcome-screen/notify-system-checks.php:168
+#: ../inc/welcome-screen/notify-system-checks.php:176
+msgid "Install: WordPress Importer"
+msgstr "Installer: WordPress Importer"
+
+#: ../inc/welcome-screen/notify-system-checks.php:173
+msgid "Activate: WordPress Importer"
+msgstr "Aktiver: WordPress Importer"
+
+#: ../inc/welcome-screen/notify-system-checks.php:185
+#: ../inc/welcome-screen/notify-system-checks.php:193
+msgid "Please install the WordPress Importer to create the demo content."
+msgstr "Installer WordPress Importer for at oprette demo indholdet."
+
+#: ../inc/welcome-screen/notify-system-checks.php:190
+msgid "Please activate the WordPress Importer to create the demo content."
+msgstr "Aktiver WordPress Importer for at oprette demo indholdet."
+
+#: ../inc/welcome-screen/notify-system-checks.php:199
+#: ../inc/welcome-screen/notify-system-checks.php:207
+msgid "Please install the WordPress widget importer to create the demo content"
+msgstr "Installer WordPress widget importer for at oprette demo indholdet"
+
+#: ../inc/welcome-screen/notify-system-checks.php:204
+msgid ""
+"Please activate the WordPress Widget Importer to create the demo content."
+msgstr "Aktiver WordPress Widget Importer for at oprette demo indholdet."
+
+#: ../inc/welcome-screen/sections/actions-required.php:80
+#: ../inc/welcome-screen/welcome-screen.php:149
+msgid "Hooray! There are no required actions for you right now."
+msgstr "Hurrah! Der er ikke noget for dig at gøre lige nu."
+
+#: ../inc/welcome-screen/sections/getting-started.php:11
+msgid "Step 1 - Implement recommended actions"
+msgstr "Step 1 - Gennemfør anbefalede handlinger"
+
+#: ../inc/welcome-screen/sections/getting-started.php:12
+msgid ""
+"We've compiled a list of steps for you, to take make sure the experience "
+"you'll have using one of our products is very easy to follow."
+msgstr ""
+"Vi har samlet en liste af handlinger til dig, der skal sikre at brugen af "
+"vores produkter er så let som muligt."
+
+#: ../inc/welcome-screen/sections/getting-started.php:15
+msgid "No recommended actions left to perform"
+msgstr "Ingen anbefalede handlinger tilbage"
+
+#: ../inc/welcome-screen/sections/getting-started.php:18
+msgid "Check recommended actions"
+msgstr "Check anbefalede handlinger"
+
+#: ../inc/welcome-screen/sections/getting-started.php:24
+msgid "Step 2 - Check our documentation"
+msgstr "Trin 2 - tjek vores dokumentation"
+
+#: ../inc/welcome-screen/sections/getting-started.php:25
+msgid ""
+"Even if you're a long-time WordPress user, we still believe you should give "
+"our documentation a very quick Read."
+msgstr ""
+"Selv om du er en erfaren WordPress-bruger, mener vi stadig, du bør give "
+"vores dokumentation en hurtig gennemlæsning."
+
+#: ../inc/welcome-screen/sections/getting-started.php:28
+msgid "Full documentation"
+msgstr "Fuld dokumentation"
+
+#: ../inc/welcome-screen/sections/getting-started.php:33
+msgid "Step 3 - Customize everything"
+msgstr "Trin 3 - Tilpas alt"
+
+#: ../inc/welcome-screen/sections/getting-started.php:34
+msgid ""
+"Using the WordPress Customizer you can easily customize every aspect of the "
+"theme."
+msgstr ""
+"Ved hjælp af WordPress Customizer kan du nemt tilpasse alle dele af temaet."
+
+#: ../inc/welcome-screen/sections/getting-started.php:36
+msgid "Go to Customizer"
+msgstr "Gå til Customizer"
+
+#: ../inc/welcome-screen/sections/recommended-plugins.php:39
+msgid "Version:"
+msgstr "Version:"
+
+#: ../inc/welcome-screen/sections/support.php:5
+#: ../inc/welcome-screen/sections/support.php:10
+msgid "Contact Support"
+msgstr "Kontakt support"
+
+#: ../inc/welcome-screen/sections/support.php:7
+msgid ""
+"We offer excellent support through our advanced ticketing system. Make sure "
+"to register your purchase before contacting support!"
+msgstr ""
+"Vi tilbyder god support gennem vores avancerede billetsystem. Sørg for at "
+"registrere dit køb forl at få adgang til vores support og andre ressourcer!"
+
+#: ../inc/welcome-screen/sections/support.php:15
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#: ../inc/welcome-screen/sections/support.php:17
+msgid ""
+"This is the place to go to reference different aspects of the theme. Our "
+"online documentation is an incredible resource for learning the ins and outs "
+"of using Activello."
+msgstr ""
+"Dette er stedet at besøge for mere detaljeret info om temaet. Vores online "
+"dokumentaiton er en fyldestgørende ressource for at lære hvad der er op og "
+"ned i brugen af Activello."
+
+#: ../inc/welcome-screen/sections/support.php:20
+msgid "See our full documentation"
+msgstr "Se vores komplette dokumentation"
+
+#: ../inc/welcome-screen/sections/support.php:25
+#: ../inc/welcome-screen/welcome-screen.php:385
+msgid "Changelog"
+msgstr "Ændringslog"
+
+#: ../inc/welcome-screen/sections/support.php:27
+msgid ""
+"Want to get the gist on the latest theme changes? Just consult our changelog "
+"below to get a taste of the recent fixes and features implemented."
+msgstr ""
+"Ønsker du information om de seneste ændringer til temaet? Brug Ændringslog "
+"nedenfor for at se, hvad de seneste rettelser og features indeholder."
+
+#: ../inc/welcome-screen/sections/support.php:30
+msgid "See changelog"
+msgstr "Se ændringslog"
+
+#: ../inc/welcome-screen/welcome-page-setup.php:16
+msgid "Recomended Actions"
+msgstr "Anbefalet handlinger"
+
+#: ../inc/welcome-screen/welcome-page-setup.php:17
+msgid "We're social"
+msgstr "Vi er sociale"
+
+#: ../inc/welcome-screen/welcome-page-setup.php:75
+msgid "Download theme sample data"
+msgstr "Hent temaets eksempeldata"
+
+#: ../inc/welcome-screen/welcome-page-setup.php:76
+msgid "Head over to our website and download the sample content data."
+msgstr "Smut over til vores hjemmeside og hent eksempeldata."
+
+#: ../inc/welcome-screen/welcome-page-setup.php:77
+msgid "Posts"
+msgstr "Indlæg"
+
+#: ../inc/welcome-screen/welcome-page-setup.php:78
+msgid "Widgets"
+msgstr "Widgets"
+
+#: ../inc/welcome-screen/welcome-page-setup.php:83
+msgid "Import Sample Data"
+msgstr "Importer eksempeldata"
+
+#: ../inc/welcome-screen/welcome-page-setup.php:84
+msgid "Import Posts"
+msgstr "Importer indlæg"
+
+#: ../inc/welcome-screen/welcome-page-setup.php:85
+msgid "Import Widgets"
+msgstr "Importer widgets"
+
+#: ../inc/welcome-screen/welcome-screen.php:128
+#, php-format
+msgid ""
+"Welcome! Thank you for choosing Activello! To fully take advantage of the "
+"best our theme can offer please make sure you visit our %swelcome page%s."
+msgstr ""
+"Velkommen! Tak fordi du valgte Activello! For at få det bedste ud af temaet, "
+"sørg for at besøge  %swelcome side %s."
+
+#: ../inc/welcome-screen/welcome-screen.php:130
+msgid "Get started with Activello"
+msgstr "Introduktion til Activello"
+
+#: ../inc/welcome-screen/welcome-screen.php:168
+msgid "View Theme Info"
+msgstr "Se tema Info"
+
+#: ../inc/welcome-screen/welcome-screen.php:366
+msgid "Welcome to Activello! - Version "
+msgstr "Velkommen til Activello! -Version "
+
+#: ../inc/welcome-screen/welcome-screen.php:369
+msgid ""
+"Activello is now installed and ready to use! Get ready to build something "
+"beautiful. We hope you enjoy it! We want to make sure you have the best "
+"experience using Activello and that is why we gathered here all the "
+"necessary information for you. We hope you will enjoy using Activello, as "
+"much as we enjoy creating great products."
+msgstr ""
+"Activello er nu installeret og klar til brug! Gør dig klar til at bygge "
+"noget smukt. Vi håber du vil nyde det! Vi ønsker at du får den bedste "
+"oplevelse med at bruge Activello, og derfor har vi samlet alle de nødvendige "
+"oplysninger for dig her. Vi håber du vil nyde at bruge Activello, så meget "
+"som vi nyder at skabe fantastiske produkter."
+
+#: ../inc/welcome-screen/welcome-screen.php:376
+msgid "Getting Started"
+msgstr "Kom i gang"
+
+#: ../inc/welcome-screen/welcome-screen.php:378
+msgid "Recommended Actions"
+msgstr "Anbefalede handlinger"
+
+#: ../inc/welcome-screen/welcome-screen.php:381
+msgid "Recommended Plugins"
+msgstr "Anbefalede Plugins"
+
+#: ../inc/welcome-screen/welcome-screen.php:383
+msgid "Support"
+msgstr "Support"
+
+#: ../inc/widgets/widget-categories.php:11
+msgid "Activello widget to display categories"
+msgstr "Activello widget til at vise kategorier"
+
+#: ../inc/widgets/widget-categories.php:12
+msgid "Activello Categories"
+msgstr "Activello kategorier"
+
+#: ../inc/widgets/widget-categories.php:17
+#: ../inc/widgets/widget-categories.php:73
+msgid "Categories"
+msgstr "Kategorier"
+
+#: ../inc/widgets/widget-categories.php:78 ../inc/widgets/widget-social.php:49
+msgid "Title "
+msgstr "Titel "
+
+#: ../inc/widgets/widget-categories.php:86
+msgid "Limit Categories "
+msgstr "Begræns kategorier "
+
+#: ../inc/widgets/widget-categories.php:99
+msgid "Enable Posts Count"
+msgstr "Vis indlægstæller"
+
+#: ../inc/widgets/widget-recent-posts.php:11
+msgid "Activello recent posts widget with thumbnails"
+msgstr "Nyeste opslag med thumbnails widget"
+
+#: ../inc/widgets/widget-recent-posts.php:12
+msgid "Activello Recent Posts Widget"
+msgstr "Nyeste opslag med thumbnails widget"
+
+#: ../inc/widgets/widget-recent-posts.php:17
+#: ../inc/widgets/widget-recent-posts.php:91
+msgid "recent Posts"
+msgstr "seneste indlæg"
+
+#: ../inc/widgets/widget-recent-posts.php:96
+msgid "Title"
+msgstr "Titel"
+
+#: ../inc/widgets/widget-recent-posts.php:104
+msgid "Limit Posts Number"
+msgstr "Begræns antal indlæg"
+
+#: ../inc/widgets/widget-social.php:11
+msgid "Activello theme widget to display social media icons"
+msgstr "Activello tema widget til at vise sociale medier ikoner"
+
+#: ../inc/widgets/widget-social.php:12
+msgid "Activello Social Widget"
+msgstr "Activello Sociale Widget"
+
+#: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
+msgid "Follow us"
+msgstr "Følg os på"
+
+#: ../search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Søgeresultater for: %s"
+
+#: ../searchform.php:11
+msgid "Search for:"
+msgstr "Søg efter:"
+
+#: ../searchform.php:12
+msgctxt "placeholder"
+msgid "Search&hellip;"
+msgstr "Søg&hellip;"
+
+#: ../searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr "Søg efter:"
+
+#: ../sidebar.php:38
+msgid "Meta"
+msgstr "Meta"
