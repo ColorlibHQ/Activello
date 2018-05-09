@@ -60,8 +60,11 @@ require get_template_directory() . '/inc/welcome-screen/class-mt-notify-system.p
 if ( is_admin() ) {
 	global $activello_required_actions, $activello_recommended_plugins;
 	$activello_recommended_plugins = array(
+		'colorlib-login-customizer' => array(
+			'recommended' => true,
+		),
 		'kiwi-social-share' => array(
-			'recommended' => false,
+			'recommended' => true,
 		),
 	);
 	/*
