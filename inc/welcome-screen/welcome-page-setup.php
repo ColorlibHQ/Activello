@@ -66,6 +66,12 @@ if ( is_admin() ) {
 		'kiwi-social-share' => array(
 			'recommended' => true,
 		),
+        'colorlib-404-customizer' => array(
+            'recommended' => true,
+        ),
+        'colorlib-coming-soon-maintenance' => array(
+            'recommended' => true,
+        ),
 	);
 	/*
 	 * id - unique id; required
