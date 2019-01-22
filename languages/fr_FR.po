@@ -194,7 +194,7 @@ msgstr "Modifier %s"
 
 #: ../content-single.php:55 ../content.php:73
 msgid "No comments yet"
-msgstr ""
+msgstr "Aucun commentaire"
 
 #: ../content-single.php:55
 msgid "Comment (1)"
