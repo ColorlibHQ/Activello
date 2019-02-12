@@ -63,9 +63,6 @@ if ( is_admin() ) {
 		'colorlib-login-customizer' => array(
 			'recommended' => true,
 		),
-		'kiwi-social-share' => array(
-			'recommended' => true,
-		),
         'colorlib-404-customizer' => array(
             'recommended' => true,
         ),

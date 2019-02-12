@@ -53,6 +53,9 @@ Alternatively you can download the file, unzip it and move the unzipped contents
 
 Afterwards you can continue theme setup and customization via WordPress Dashboard - Appearance - Theme Options. For detailed theme documentation, please visit http://colorlib.com/wp/support/activello
 
+### Translation
+Theme can be translated directly on https://translate.wordpress.org/projects/wp-themes/activello without relying on the .po file. All the translatable strings are pulled automatically. For more info please check this link https://make.wordpress.org/polyglots/handbook/tools/glotpress-translate-wordpress-org/
+
 ### Theme Features
 
 * Bootstrap 3 integration
