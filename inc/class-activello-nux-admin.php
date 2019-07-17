@@ -57,13 +57,12 @@ if ( ! class_exists( 'Activello_NUX_Admin' ) ) :
 			}
 			?>
 
-			<div class="notice notice-info sf-notice-nux is-dismissible">
+			<div class="notice notice-info is-dismissible">
 				<div class="notice-content">
-					<p><img src="<?php echo get_template_directory_uri() ?>/inc/welcome-screen/img/logo.png" width="200"></p>
-					<h2><?php esc_html_e( 'Thanks for installing Activello, you rock!', 'activello' ) ?> <img draggable="false" class="emoji" alt="🤘" src="https://s.w.org/images/core/emoji/2.2.1/svg/1f918.svg"></h2>
+					<h3><?php esc_html_e( 'Thanks for installing Activello, you rock!', 'activello' ) ?> <img draggable="false" class="emoji" alt="🤘" src="https://s.w.org/images/core/emoji/2.2.1/svg/1f918.svg"></h3>
 					<p><?php esc_html_e( 'Activello now support full width posts on homepage. If you have done this using custom CSS please go to Customizer -> Activello Options -> Layout Options -> Blog Posts Layout Options in order to have full width images.', 'activello' ) ?></p>
 					<p><?php esc_html_e( "Also in order to increase our theme speed we changed the images' sizes. In order to take advantage of this improvement you'll need to use Force Regenerate Thumbnails to regenerate all your image sizes.", 'activello' ) ?></p>
-					<p><?php $this->install_plugin_button( 'force-regenerate-thumbnails', 'force-regenerate-thumbnails.php', 'Force Regenerate Thumbnails', array( 'sf-nux-button' ), __( 'Regenerate Thumbnails Now', 'activello' ), __( 'Activate Force Regenerate Thumbnails', 'activello' ), __( 'Install Force Regenerate Thumbnails', 'activello' ) ); ?></p>
+					<p><?php $this->install_plugin_button( 'force-regenerate-thumbnails', 'force-regenerate-thumbnails.php', 'Force Regenerate Thumbnails', array(), __( 'Regenerate Thumbnails Now', 'activello' ), __( 'Activate Force Regenerate Thumbnails', 'activello' ), __( 'Install Force Regenerate Thumbnails', 'activello' ) ); ?></p>
 				</div>
 			</div>
 		<?php }
@@ -91,7 +90,7 @@ if ( ! class_exists( 'Activello_NUX_Admin' ) ) :
 					$button = array(
 						'message' => esc_attr__( 'Settings', 'activello' ),
 						'url'     => admin_url( 'tools.php?page=force-regenerate-thumbnails' ),
-						'classes' => array( 'activello-button', 'disabled' ),
+						'classes' => array( 'button-primary', 'disabled' ),
 					);
 
 					if ( '' !== $activated ) {
@@ -102,7 +101,7 @@ if ( ! class_exists( 'Activello_NUX_Admin' ) ) :
 					$button = array(
 						'message' => esc_attr__( 'Activate', 'activello' ),
 						'url'     => $url,
-						'classes' => array( 'activello-button', 'activate-now' ),
+						'classes' => array( 'button-primary', 'activate-now' ),
 					);
 
 					if ( '' !== $activate ) {
@@ -117,7 +116,7 @@ if ( ! class_exists( 'Activello_NUX_Admin' ) ) :
 					$button = array(
 						'message' => esc_attr__( 'Install now', 'activello' ),
 						'url'     => $url,
-						'classes' => array( 'activello-button', 'sf-install-now', 'install-now', 'install-' . $plugin_slug ),
+						'classes' => array( 'button-primary', 'sf-install-now', 'install-now', 'install-' . $plugin_slug ),
 					);
 
 					if ( '' !== $install ) {
