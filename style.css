@@ -4,7 +4,7 @@ Theme URI: https://colorlib.com/wp/themes/activello/
 Author: Colorlib
 Author URI: http://colorlib.com
 Description: Activello is a clean and minimal WordPress blog theme with premium look and feel well suited for food, fashion, travel, lifestyle, sports and any other awesome blogs. This theme features WooCommerce integration that allows you to create fully functional eCommerce website side by side with your blog. This theme has several customization options that are available WordPress Theme Customizer. Theme is also multilingual ready and translated in several languages. This awesome blog theme is also SEO friendly helping you to achieve the highest positions on Google. Activello is the only WordPress blog theme you will ever need.
-Version: 1.3.8
+Version: 1.4.0
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: activello
@@ -71,11 +71,13 @@ a:focus {
 .single .entry-content a {
     color: #a161bf;
 }
-.single .entry-content a:hover {
+.single .entry-content a:hover,
+.single .entry-content a:focus {
     background: #a161bf;
     color: #fff;
 }
-.single .entry-content .page-links a:hover {
+.single .entry-content .page-links a:hover,
+.single .entry-content .page-links a:focus {
     background-color: transparent;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -177,7 +179,8 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="url"], i
     border-radius: 3px;
 }
 input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, textarea:focus {
-    color: #111;
+	color: #111;
+	outline: 1px solid #a161bf;
 }
 textarea {
     overflow: auto;
@@ -232,11 +235,7 @@ textarea {
     /* Above WP toolbar */
 }
 
-/* Search */
-.site-navigation-inner .nav-search input:focus,
-.header-search-icon:focus {
-    outline: none;
-}
+
 
 /* Clearing floats */
 
@@ -353,6 +352,7 @@ hr.section-divider {
     display: none;
 }
 .single-category > li.show-more-categories:hover .subcategories,
+.single-category > li.show-more-categories:focus-within .subcategories,
 .single-category > li.show-more-categories.active .subcategories {
     display: block;
 }
@@ -593,7 +593,8 @@ article.grid iframe {
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
-.page-links a:hover span {
+.page-links a:hover span,
+.page-links a:focus-within span {
     background-color: #a161bf;
     border: none;
     color: #fff;
@@ -604,10 +605,16 @@ article.grid iframe {
 .pagination li a {
     color: #a161bf;
 }
-.pagination li:hover a {
+.pagination li:hover a,
+.pagination li:focus-within a {
     color: #a161bf;
 }
-.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
     color: #FFF;
     background-color: #a161bf;
     border-color: #a161bf;
@@ -644,7 +651,8 @@ article.grid iframe {
     display: block;
     margin: auto;
 }
-.single-featured:hover {
+.single-featured:hover,
+.single-featured:focus-within {
     opacity: 0.8;
 }
 .wp-caption {
@@ -790,7 +798,8 @@ ul.children, ul.children li {
     background-repeat: no-repeat;
     overflow: hidden;
 }
-.recent-posts-wrapper .post .post-image img:hover {
+.recent-posts-wrapper .post .post-image img:hover,
+.recent-posts-wrapper .post .post-image img:focus-within {
     opacity: 0.6 !important;
 }
 .recent-posts-wrapper .post .post-content {
@@ -822,7 +831,8 @@ ul.children, ul.children li {
     font-size: 10px !important;
     text-transform: uppercase;
 }
-.tagcloud a:hover {
+.tagcloud a:hover,
+.tagcloud a:focus {
     color: #ffffff!important;
     background-color: #a161bf;
     border-color: #a161bf;
@@ -853,7 +863,38 @@ ul.children, ul.children li {
     -o-transition: background-color 0.3s linear;
     transition: background-color 0.3s linear;
 }
-.btn-default:hover, .label-default[href]:hover, .label-default[href]:focus, .btn-default:hover, .btn-default:focus, .btn-default:active, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, button:hover, .input-group-btn:last-child>.btn:hover, input[type=submit]:hover {
+
+.label-default[href]:hover,
+.label-default[href]:focus,
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+#image-navigation .nav-previous a:hover,
+#image-navigation .nav-previous a:focus,
+#image-navigation .nav-next a:hover,
+#image-navigation .nav-next a:focus,
+.woocommerce #respond input#submit:hover,
+.woocommerce #respond input#submit:focus,
+.woocommerce a.button:hover,
+.woocommerce a.button:focus,
+.woocommerce button.button:hover,
+.woocommerce button.button:focus,
+.woocommerce input.button:hover,
+.woocommerce input.button:focus,
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce #respond input#submit.alt:focus,
+.woocommerce a.button.alt:hover,
+.woocommerce a.button.alt:focus,
+.woocommerce button.button.alt:hover,
+.woocommerce button.button.alt:focus,
+.woocommerce input.button.alt:hover,
+.woocommerce input.button.alt:focus,
+button:hover,
+button:focus,
+.input-group-btn:last-child>.btn:hover,
+.input-group-btn:last-child>.btn:focus,
+input[type=submit]:hover,
+input[type=submit]:focus {
     background-color: #a161bf;
     border-color: transparent;
     color: #fff;
@@ -909,7 +950,8 @@ ul.children, ul.children li {
     background: #fff;
     color: #a161bf;
 }
-#infinite-handle span:hover {
+#infinite-handle span:hover,
+#infinite-handle span:focus-within {
     background-color: #a161bf;
     color: #fff;
 }
@@ -966,10 +1008,38 @@ button, html input[type=button], input[type=reset], input[type=submit], .comment
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
-article.post .post-categories a:hover, .entry-title a:hover, .entry-meta a:hover, .entry-footer a:hover, .read-more a:hover, .flex-caption .post-categories a:hover, .flex-caption .read-more a:hover, .flex-caption h2:hover, .comment-meta.commentmetadata a:hover, .post-inner-content .cat-item a:hover {
+article.post .post-categories a:hover,
+article.post .post-categories a:focus,
+.entry-title a:hover,
+.entry-title a:focus,
+.entry-meta a:hover,
+.entry-meta a:focus,
+.entry-footer a:hover,
+.entry-footer a:focus,
+.read-more a:hover,
+.read-more a:focus,
+.flex-caption .post-categories a:hover,
+.flex-caption .post-categories a:focus,
+.flex-caption .read-more a:hover,
+.flex-caption .read-more a:focus,
+.flex-caption h2:hover,
+.flex-caption h2:focus-within,
+.comment-meta.commentmetadata a:hover,
+.comment-meta.commentmetadata a:focus,
+.post-inner-content .cat-item a:hover,
+.post-inner-content .cat-item a:focus {
     color: #a161bf;
 }
-button, html input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover, .comment-form #submit:hover {
+
+button,
+html input[type=button]:hover,
+html input[type=button]:focus,
+input[type=reset]:hover,
+input[type=reset]:focus,
+input[type=submit]:hover,
+input[type=submit]:focus,
+.comment-form #submit:hover,
+.comment-form #submit:focus {
     background: #a161bf;
     color: #fff;
 }
@@ -988,7 +1058,10 @@ div.flex-caption {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-.post-navigation a:hover, .paging-navigation a:hover {
+.post-navigation a:hover,
+.post-navigation a:focus,
+.paging-navigation a:hover,
+.paging-navigation a:focus {
     text-decoration: none;
 }
 .paging-navigation {
@@ -1123,7 +1196,8 @@ div.flex-caption {
     color: #DADADA;
 }
 @media (min-width: 979px) {
-    ul.nav li.menu-item-has-children:hover> ul.dropdown-menu {
+	ul.nav li.menu-item-has-children:hover> ul.dropdown-menu,
+	ul.nav li.menu-item-has-children:focus-within> ul.dropdown-menu {
         display: block;
     }
 }
@@ -1164,6 +1238,9 @@ div.flex-caption {
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: transparent;
+}
+.navbar-default .navbar-toggle:focus span {
+	background-color: #a161bf;
 }
 .nav.navbar-nav {
     float: left;
@@ -1206,7 +1283,8 @@ div.flex-caption {
 .dropdown-menu .activello-dropdown {
     float: right;
 }
-.activello-mobile-menu .dropdown-menu> li> a:hover {
+.activello-mobile-menu .dropdown-menu> li> a:hover,
+.activello-mobile-menu .dropdown-menu> li> a:focus {
     color: #333;
     background-color: #fff;
 }
@@ -1218,10 +1296,12 @@ div.flex-caption {
 }
 
 /* Remove Hover for mobile menu */
-.navbar-default .navbar-nav.activello-mobile-menu> li> a:hover {
+.navbar-default .navbar-nav.activello-mobile-menu> li> a:hover,
+.navbar-default .navbar-nav.activello-mobile-menu> li> a:focus {
     color: #333;
 }
-ul.nav.activello-mobile-menu li.menu-item-has-children:hover> ul.dropdown-menu {
+ul.nav.activello-mobile-menu li.menu-item-has-children:hover> ul.dropdown-menu,
+ul.nav.activello-mobile-menu li.menu-item-has-children:focus-within> ul.dropdown-menu {
     display: none;
 }
 ul.nav.activello-mobile-menu li.menu-item-has-children > ul.dropdown-menu.active {
@@ -1247,7 +1327,8 @@ ul.nav.activello-mobile-menu li.menu-item-has-children > ul.dropdown-menu.active
     body .dropdown-menu>.active>a,
     body .dropdown-menu>.active>a:hover,
     body .dropdown-menu>.active>a:focus,
-    body .dropdown-menu> li> a:hover {
+	body .dropdown-menu> li> a:hover,
+	body .dropdown-menu> li> a:focus {
         background-color: transparent;
         color: #262626;
     }
@@ -1478,7 +1559,10 @@ p.logged-in-as {
     border-radius: 4px;
     display: block;
 }
-#image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover {
+#image-navigation .nav-previous a:hover,
+#image-navigation .nav-previous a:focus,
+#image-navigation .nav-next a:hover,
+#image-navigation .nav-next a:focus {
     background-color: #a161bf;
     color: #fff;
 }
@@ -1585,7 +1669,9 @@ p.logged-in-as {
     left: 0;
     width: 100%;
 }
-.gallery-item:hover .gallery-caption {
+.gallery-item:hover .gallery-caption,
+.gallery-item:focus-within .gallery-caption,
+{
     opacity: 1;
 }
 .gallery-columns-7 .gallery-caption, .gallery-columns-8 .gallery-caption, .gallery-columns-9 .gallery-caption {
@@ -1644,14 +1730,16 @@ p.logged-in-as {
 .site-info a {
     color: #777;
 }
-.site-info a:hover {
+.site-info a:hover,
+.site-info a:focus {
     color: #a161bf;
 }
 .site-info {
     color: #999;
     font-size: 12px;
 }
-.footer-nav.nav> li> a:hover {
+.footer-nav.nav> li> a:hover,
+.footer-nav.nav> li> a:focus {
     background-color: transparent;
 }
 .scroll-to-top {
@@ -1666,7 +1754,8 @@ p.logged-in-as {
     z-index: 999;
     font-size: 16px;
     text-align: center;
-    line-height: 35px;
+	line-height: 35px;
+	height: 35px;
     width: 35px;
     border-radius: 50%;
     -webkit-transition: background-color 0.3s linear;
@@ -1674,7 +1763,8 @@ p.logged-in-as {
     -o-transition: background-color 0.3s linear;
     transition: background-color 0.3s linear;
 }
-.scroll-to-top:hover {
+.scroll-to-top:hover,
+.scroll-to-top:focus {
     background: #a161bf;
     opacity: .8;
 }
@@ -1714,14 +1804,16 @@ p.logged-in-as {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-#social a:hover {
+#social a:hover,
+#social a:focus {
     color: #a161bf;
 }
 .header-search-icon {
     background: transparent;
     color: #696969;
 }
-.header-search-icon:hover {
+.header-search-icon:hover,
+.header-search-icon:focus {
     background: transparent;
     color: #a161bf;
 }

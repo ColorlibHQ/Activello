@@ -297,43 +297,20 @@ if ( ! function_exists( 'get_activello_theme_setting' ) ) {
 
 		echo '<style type="text/css">';
 		if ( get_theme_mod( 'accent_color' ) ) {
-			echo 'a:hover, a:focus,article.post .post-categories a:hover,
-			  .entry-title a:hover, .entry-meta a:hover, .entry-footer a:hover,
-			  .read-more a:hover, .social-icons a:hover,
-			  .flex-caption .post-categories a:hover, .flex-caption .read-more a:hover,
-			  .flex-caption h2:hover, .comment-meta.commentmetadata a:hover,
-			  .post-inner-content .cat-item a:hover,.navbar-default .navbar-nav > .active > a,
-			  .navbar-default .navbar-nav > .active > a:hover,
-			  .navbar-default .navbar-nav > .active > a:focus,
-			  .navbar-default .navbar-nav > li > a:hover,
-			  .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a,
-			  .navbar-default .navbar-nav > .open > a:hover, blockquote:before,
-			  .navbar-default .navbar-nav > .open > a:focus, .cat-title a,
-			  .single .entry-content a, .site-info a:hover {color:' . esc_html( get_theme_mod( 'accent_color' ) ) . '}';
+			echo 'a:hover, a:focus, article.post .post-categories a:hover, article.post .post-categories a:focus, .entry-title a:hover, .entry-title a:focus, .entry-meta a:hover, .entry-meta a:focus, .entry-footer a:hover, .entry-footer a:focus, .read-more a:hover, .read-more a:focus, .social-icons a:hover, .social-icons a:focus, .flex-caption .post-categories a:hover, .flex-caption .post-categories a:focus, .flex-caption .read-more a:hover, .flex-caption .read-more a:focus, .flex-caption h2:hover, .flex-caption h2:focus-within, .comment-meta.commentmetadata a:hover, .comment-meta.commentmetadata a:focus, .post-inner-content .cat-item a:hover, .post-inner-content .cat-item a:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, blockquote:before, .navbar-default .navbar-nav > .open > a:focus, .cat-title a, .single .entry-content a, .site-info a:hover, .site-info a:focus {color:' . esc_html( get_theme_mod( 'accent_color' ) ) . '}';
 
 			echo 'article.post .post-categories:after, .post-inner-content .cat-item:after, #secondary .widget-title:after, .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {background:' . esc_html( get_theme_mod( 'accent_color' ) ) . '}';
 
-			echo '.btn-default:hover, .label-default[href]:hover,
-			  .label-default[href]:focus, .btn-default:hover,
-			  .btn-default:focus, .btn-default:active,
-			  .btn-default.active, #image-navigation .nav-previous a:hover,
-			  #image-navigation .nav-next a:hover, .woocommerce #respond input#submit:hover,
-			  .woocommerce a.button:hover, .woocommerce button.button:hover,
-			  .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover,
-			  .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover,
-			  .woocommerce input.button.alt:hover, .input-group-btn:last-child>.btn:hover, .scroll-to-top:hover,
-			  button, html input[type=button]:hover, input[type=reset]:hover, .comment-list li .comment-body:after, .page-links a:hover span, .page-links span,
-			  input[type=submit]:hover, .comment-form #submit:hover, .tagcloud a:hover,
-			  .single .entry-content a:hover,  
-			  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-			  .dropdown-menu> li> a:hover, .dropdown-menu> li> a:focus,
-			  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus{background-color:' . esc_html( get_theme_mod( 'accent_color' ) ) . '; }';
+			echo '.label-default[href]:hover, .label-default[href]:focus, .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, #image-navigation .nav-previous a:hover, #image-navigation .nav-previous a:focus, #image-navigation .nav-next a:hover, #image-navigation .nav-next a:focus, .woocommerce #respond input#submit:hover, .woocommerce #respond input#submit:focus, .woocommerce a.button:hover, .woocommerce a.button:focus, .woocommerce button.button:hover, .woocommerce button.button:focus, .woocommerce input.button:hover, .woocommerce input.button:focus, .woocommerce #respond input#submit.alt:hover, .woocommerce #respond input#submit.alt:focus, .woocommerce a.button.alt:hover, .woocommerce a.button.alt:focus, .woocommerce button.button.alt:hover, .woocommerce button.button.alt:focus, .woocommerce input.button.alt:hover, .woocommerce input.button.alt:focus, .input-group-btn:last-child>.btn:hover, .input-group-btn:last-child>.btn:focus, .scroll-to-top:hover, .scroll-to-top:focus, button, html input[type=button]:hover, html input[type=button]:focus, input[type=reset]:hover, input[type=reset]:focus, .comment-list li .comment-body:after, .page-links a:hover span, .page-links a:focus span, .page-links span, input[type=submit]:hover, input[type=submit]:focus, .comment-form #submit:hover, .comment-form #submit:focus, .tagcloud a:hover, .tagcloud a:focus, .single .entry-content a:hover, .single .entry-content a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .dropdown-menu> li> a:hover, .dropdown-menu> li> a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {background-color:' . esc_html( get_theme_mod( 'accent_color' ) ) . '; }';
+
+			echo 'input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, textarea:focus { outline-color: ' . esc_html( get_theme_mod( 'accent_color' ) ) . '; }';
+
 		}
 		if ( get_theme_mod( 'social_color' ) ) {
 			echo '#social a, .header-search-icon { color:' . esc_html( get_theme_mod( 'social_color' ) ) . '}';
 		}
 		if ( get_theme_mod( 'social_hover_color' ) ) {
-			echo '#social a:hover, .header-search-icon:hover { color:' . esc_html( get_theme_mod( 'social_hover_color' ) ) . '}';
+			echo '#social a:hover, #social a:focus, .header-search-icon:hover, .header-search-icon:focus  { color:' . esc_html( get_theme_mod( 'social_hover_color' ) ) . '}';
 		}
 
 		if ( get_theme_mod( 'custom_css' ) ) {
