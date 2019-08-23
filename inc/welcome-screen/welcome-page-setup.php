@@ -60,10 +60,13 @@ require get_template_directory() . '/inc/welcome-screen/class-mt-notify-system.p
 if ( is_admin() ) {
 	global $activello_required_actions, $activello_recommended_plugins;
 	$activello_recommended_plugins = array(
-		'colorlib-login-customizer' => array(
+		'kali-forms' => array(
 			'recommended' => true,
 		),
-		'kiwi-social-share' => array(
+		'modula-best-grid-gallery' => array(
+			'recommended' => true,
+		),
+		'colorlib-login-customizer' => array(
 			'recommended' => true,
 		),
         'colorlib-404-customizer' => array(
@@ -102,14 +105,14 @@ if ( is_admin() ) {
 			'id'          => 'activello-req-ac-download-data',
 			'title'       => esc_html__( 'Download theme sample data', 'activello' ),
 			'description' => esc_html__( 'Head over to our website and download the sample content data.', 'activello' ),
-			'help'        => '<a target="_blank"  href="https://colorlibvault-divilabltd.netdna-ssl.com/activello-content.xml">' . __( 'Posts', 'activello' ) . '</a>, 
+			'help'        => '<a target="_blank"  href="https://colorlibvault-divilabltd.netdna-ssl.com/activello-content.xml">' . __( 'Posts', 'activello' ) . '</a>,
 							   <a target="_blank"  href="https://colorlibvault-divilabltd.netdna-ssl.com/activello-widgets.wie">' . __( 'Widgets', 'activello' ) . '</a>',
 			'check'       => MT_Notify_System::has_content(),
 		),
 		array(
 			'id'    => 'activello-req-ac-install-data',
 			'title' => esc_html__( 'Import Sample Data', 'activello' ),
-			'help'  => '<a class="button button-primary" target="_blank"  href="' . self_admin_url( 'admin.php?import=wordpress' ) . '">' . __( 'Import Posts', 'activello' ) . '</a> 
+			'help'  => '<a class="button button-primary" target="_blank"  href="' . self_admin_url( 'admin.php?import=wordpress' ) . '">' . __( 'Import Posts', 'activello' ) . '</a>
 							   <a class="button button-primary" target="_blank"  href="' . self_admin_url( 'tools.php?page=widget-importer-exporter' ) . '">' . __( 'Import Widgets', 'activello' ) . '</a>',
 			'check' => MT_Notify_System::has_import_plugins(),
 		),

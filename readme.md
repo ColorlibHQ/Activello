@@ -77,6 +77,7 @@ Theme documentation is available on http://colorlib.com/wp/support/activello
 
 = 1.4.0 =
 * Improved accesibility with keyboard navigation
+* Updated list of recommended plugins
 
 = 1.3.8 =
 * Removed subject tags, only kept 3
