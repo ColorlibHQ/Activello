@@ -60,21 +60,13 @@ require get_template_directory() . '/inc/welcome-screen/class-mt-notify-system.p
 if ( is_admin() ) {
 	global $activello_required_actions, $activello_recommended_plugins;
 	$activello_recommended_plugins = array(
-		'kali-forms' => array(
-			'recommended' => true,
-		),
-		'modula-best-grid-gallery' => array(
-			'recommended' => true,
-		),
-		'colorlib-login-customizer' => array(
-			'recommended' => true,
-		),
-        'colorlib-404-customizer' => array(
-            'recommended' => true,
-        ),
-        'colorlib-coming-soon-maintenance' => array(
-            'recommended' => true,
-        ),
+		'kali-forms'                       => array( 'recommended' => true ),
+		'modula-best-grid-gallery'         => array( 'recommended' => true ),
+		'fancybox-for-wordpress'           => array( 'recommended' => false ),
+		'simple-custom-post-order'         => array( 'recommended' => false ),
+		'colorlib-404-customizer'          => array( 'recommended' => false ),
+		'colorlib-coming-soon-maintenance' => array( 'recommended' => false ),
+		'colorlib-login-customizer'        => array( 'recommended' => false ),
 	);
 	/*
 	 * id - unique id; required
