@@ -52,10 +52,6 @@ class Epsilon_Framework {
 			$this,
 			'epsilon_framework_ajax_action',
 		) );
-		add_action( 'wp_ajax_nopriv_epsilon_framework_ajax_action', array(
-			$this,
-			'epsilon_framework_ajax_action',
-		) );
 
 	}
 
