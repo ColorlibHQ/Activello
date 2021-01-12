@@ -45,11 +45,21 @@ class Activello_Welcome {
 	}
 
 	public function activello_set_pages() {
+
 		if ( ! empty( $_GET ) ) {
 			/**
 			 * Check action
 			 */
 			if ( ! empty( $_GET['action'] ) && 'activello_set_frontpage' === $_GET['action'] ) {
+
+				if ( ! check_ajax_referer( 'epsilon_framework_ajax_action', 'security' ) ) {
+					return;
+				}
+
+				if ( ! current_user_can( 'manage_options' ) ) {
+				    return;
+				}
+
 				$about      = get_page_by_title( 'Homepage' );
 				update_option( 'page_on_front', $about->ID );
 				update_option( 'show_on_front', 'page' );
@@ -66,11 +76,21 @@ class Activello_Welcome {
 
 
 	public function activello_activate_plugin() {
+
 		if ( ! empty( $_GET ) ) {
 			/**
 			 * Check action
 			 */
 			if ( ! empty( $_GET['action'] ) && ! empty( $_GET['plugin'] ) && 'activate_plugin' === $_GET['action'] ) {
+
+				if ( ! check_ajax_referer( 'epsilon_framework_ajax_action', 'security' ) ) {
+					return;
+				}
+
+				if ( ! current_user_can( 'manage_options' ) ) {
+				    return;
+				}
+
 				$active_tab = $_GET['tab'];
 				$url        = self_admin_url( 'themes.php?page=activello-welcome&tab=' . $active_tab );
 				activate_plugin( $_GET['plugin'], $url );
@@ -79,11 +99,21 @@ class Activello_Welcome {
 	}
 
 	public function activello_deactivate_plugin() {
+
 		if ( ! empty( $_GET ) ) {
 			/**
 			 * Check action
 			 */
 			if ( ! empty( $_GET['action'] ) && ! empty( $_GET['plugin'] ) && 'deactivate_plugin' === $_GET['action'] ) {
+
+				if ( ! check_ajax_referer( 'epsilon_framework_ajax_action', 'security' ) ) {
+					return;
+				}
+
+				if ( ! current_user_can( 'manage_options' ) ) {
+				    return;
+				}
+
 				$active_tab = $_GET['tab'];
 				$url        = self_admin_url( 'themes.php?page=activello-welcome&tab=' . $active_tab );
 				$current    = get_option( 'active_plugins', array() );
