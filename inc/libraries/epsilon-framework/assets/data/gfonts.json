@@ -1,0 +1,330 @@
+{
+  "Poppins": {
+    "family": "Poppins",
+    "import": "Poppins:300,400,500,600,700&subset=latin-ext",
+    "variants": [
+      "300",
+      "400",
+      "500",
+      "700"
+    ],
+    "subsets": [
+      "latin-ext",
+      "latin"
+    ]
+  },
+  "Roboto": {
+    "family": "Roboto",
+    "import": "Roboto:100,300,400,500,700,900&subset=latin-ext",
+    "variants": [
+      "100",
+      "300",
+      "400",
+      "500",
+      "700",
+      "900"
+    ],
+    "subsets": [
+      "cyrillic",
+      "latin-ext",
+      "cyrillic-ext",
+      "greek-ext",
+      "greek",
+      "vietnamese",
+      "latin"
+    ]
+  },
+  "Open Sans": {
+    "family": "Open Sans",
+    "import": "Open+Sans:300,400,600,700,800&subset=latin-ext",
+    "variants": [
+      "300",
+      "400",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": [
+      "cyrillic",
+      "latin-ext",
+      "cyrillic-ext",
+      "greek-ext",
+      "greek",
+      "vietnamese",
+      "latin"
+    ]
+  },
+  "Lato": {
+    "family": "Lato",
+    "import": "Lato:100,300,400,700,900&subset=latin-ext",
+    "variants": [
+      "100",
+      "300",
+      "400",
+      "700",
+      "900"
+    ],
+    "subsets": [
+      "latin-ext",
+      "latin"
+    ]
+  },
+  "Slabo 27px": {
+    "family": "Slabo 27px",
+    "import": "Slabo+27px:400&subset=latin-ext",
+    "variants": [
+      "400"
+    ],
+    "subsets": [
+      "latin-ext",
+      "latin"
+    ]
+  },
+  "Oswald": {
+    "family": "Oswald",
+    "import": "Oswald:300,400,700&subset=latin-ext",
+    "variants": [
+      "300",
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "latin-ext",
+      "latin"
+    ]
+  },
+  "Roboto Condensed": {
+    "family": "Roboto Condensed",
+    "import": "Roboto+Condensed:300,400,700&subset=latin-ext",
+    "variants": [
+      "300",
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "cyrillic",
+      "latin-ext",
+      "cyrillic-ext",
+      "greek-ext",
+      "greek",
+      "vietnamese",
+      "latin"
+    ]
+  },
+  "Source Sans Pro": {
+    "family": "Source Sans Pro",
+    "import": "Source+Sans+Pro:200,300,400,600,700,900&subset=latin-ext",
+    "variants": [
+      "200",
+      "300",
+      "400",
+      "600",
+      "700",
+      "900"
+    ],
+    "subsets": [
+      "latin-ext",
+      "vietnamese",
+      "latin"
+    ]
+  },
+  "Montserrat": {
+    "family": "Montserrat",
+    "import": "Montserrat:400,700",
+    "variants": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "latin"
+    ]
+  },
+  "Raleway": {
+    "family": "Raleway",
+    "import": "Raleway:100,200,300,400,500,600,700,800,900&subset=latin-ext",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "latin-ext",
+      "latin"
+    ]
+  },
+  "PT Sans": {
+    "family": "PT Sans",
+    "import": "PT+Sans:400,700&subset=latin-ext",
+    "variants": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "cyrillic",
+      "latin-ext",
+      "cyrillic-ext",
+      "latin"
+    ]
+  },
+  "Roboto Slab": {
+    "family": "Roboto Slab",
+    "import": "Roboto+Slab:100,300,400,700&subset=latin-ext",
+    "variants": [
+      "100",
+      "300",
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "cyrillic",
+      "latin-ext",
+      "cyrillic-ext",
+      "greek-ext",
+      "greek",
+      "vietnamese",
+      "latin"
+    ]
+  },
+  "Open Sans Condensed": {
+    "family": "Open Sans Condensed",
+    "import": "Open+Sans+Condensed:300,700&subset=latin-ext",
+    "variants": [
+      "300",
+      "700"
+    ],
+    "subsets": [
+      "cyrillic",
+      "latin-ext",
+      "cyrillic-ext",
+      "greek-ext",
+      "greek",
+      "vietnamese",
+      "latin"
+    ]
+  },
+  "Droid Sans": {
+    "family": "Droid Sans",
+    "import": "Droid+Sans:400,700",
+    "variants": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "latin"
+    ]
+  },
+  "Merriweather": {
+    "family": "Merriweather",
+    "import": "Merriweather:300,400,700,900&subset=latin-ext",
+    "variants": [
+      "300",
+      "400",
+      "700",
+      "900"
+    ],
+    "subsets": [
+      "cyrillic",
+      "latin-ext",
+      "cyrillic-ext",
+      "latin"
+    ]
+  },
+  "Lora": {
+    "family": "Lora",
+    "import": "Lora:400,700&subset=latin-ext",
+    "variants": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "cyrillic",
+      "latin-ext",
+      "latin"
+    ]
+  },
+  "Ubuntu": {
+    "family": "Ubuntu",
+    "import": "Ubuntu:300,400,500,700&subset=latin-ext",
+    "variants": [
+      "300",
+      "400",
+      "500",
+      "700"
+    ],
+    "subsets": [
+      "cyrillic",
+      "latin-ext",
+      "cyrillic-ext",
+      "greek-ext",
+      "greek",
+      "latin"
+    ]
+  },
+  "Droid Serif": {
+    "family": "Droid Serif",
+    "import": "Droid+Serif:400,700",
+    "variants": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "latin"
+    ]
+  },
+  "Noto Sans": {
+    "family": "Noto Sans",
+    "import": "Noto+Sans:400,700&subset=latin-ext",
+    "variants": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "cyrillic",
+      "devanagari",
+      "latin-ext",
+      "cyrillic-ext",
+      "greek-ext",
+      "greek",
+      "vietnamese",
+      "latin"
+    ]
+  },
+  "Playfair Display": {
+    "family": "Playfair Display",
+    "import": "Playfair+Display:400,700,900&subset=latin-ext",
+    "variants": [
+      "400",
+      "700",
+      "900"
+    ],
+    "subsets": [
+      "cyrillic",
+      "latin-ext",
+      "latin"
+    ]
+  },
+  "Arimo": {
+    "family": "Arimo",
+    "import": "Arimo:400,700&subset=latin-ext'",
+    "variants": [
+      "400",
+      "700"
+    ],
+    "subsets": [
+      "cyrillic",
+      "latin-ext",
+      "cyrillic-ext",
+      "greek-ext",
+      "greek",
+      "vietnamese",
+      "hebrew",
+      "latin"
+    ]
+  }
+}

@@ -13,7 +13,7 @@ Easiest way to go about cloning a repository recursively is to use (Windows only
 
 * Theme Name: Activello
 * Theme URI: http://colorlib.com/wp/Activello/
-* Version: 1.4.0
+* Version: 1.4.1
 * Tested up to: WP 5.2
 
 ```
@@ -74,6 +74,12 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 Theme documentation is available on http://colorlib.com/wp/support/activello
 
 #### Changelog
+
+= 1.4.2 =
+* Sanitization fix
+
+= 1.4.1 =
+* Security Fix
 
 = 1.4.0 =
 * Improved accesibility with keyboard navigation
