@@ -93,21 +93,6 @@ if ( is_admin() ) {
 			'check'       => MT_Notify_System::has_import_plugin( 'widget-importer-exporter' ),
 			'plugin_slug' => 'widget-importer-exporter',
 		),
-		array(
-			'id'          => 'activello-req-ac-download-data',
-			'title'       => esc_html__( 'Download theme sample data', 'activello' ),
-			'description' => esc_html__( 'Head over to our website and download the sample content data.', 'activello' ),
-			'help'        => '<a target="_blank"  href="https://colorlibvault-divilabltd.netdna-ssl.com/activello-content.xml">' . __( 'Posts', 'activello' ) . '</a>,
-							   <a target="_blank"  href="https://colorlibvault-divilabltd.netdna-ssl.com/activello-widgets.wie">' . __( 'Widgets', 'activello' ) . '</a>',
-			'check'       => MT_Notify_System::has_content(),
-		),
-		array(
-			'id'    => 'activello-req-ac-install-data',
-			'title' => esc_html__( 'Import Sample Data', 'activello' ),
-			'help'  => '<a class="button button-primary" target="_blank"  href="' . self_admin_url( 'admin.php?import=wordpress' ) . '">' . __( 'Import Posts', 'activello' ) . '</a>
-							   <a class="button button-primary" target="_blank"  href="' . self_admin_url( 'tools.php?page=widget-importer-exporter' ) . '">' . __( 'Import Widgets', 'activello' ) . '</a>',
-			'check' => MT_Notify_System::has_import_plugins(),
-		),
 	);
 	require get_template_directory() . '/inc/welcome-screen/class-activello-welcome.php';
 }// End if().

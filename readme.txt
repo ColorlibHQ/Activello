@@ -75,6 +75,9 @@ Theme documentation is available on http://colorlib.com/wp/support/activello
 
 #### Changelog
 
+= 1.4.3 =
+* Compatibility with jQuery 3.0
+
 = 1.4.2 =
 * Sanitization fix
 
