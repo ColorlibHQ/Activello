@@ -99,7 +99,7 @@ class Epsilon_Framework {
 	 * Dependencies: Customizer Controls script (core)
 	 */
 	public function customizer_enqueue_scripts() {
-		wp_enqueue_script( 'epsilon-object', get_template_directory_uri() . $this->path . '/epsilon-framework/assets/js/epsilon.min.js', array(
+		wp_enqueue_script( 'epsilon-object', get_template_directory_uri() . $this->path . '/epsilon-framework/assets/js/epsilon.js', array(
 			'jquery',
 			'customize-controls',
 		) );
@@ -107,6 +107,7 @@ class Epsilon_Framework {
 			'siteurl' => get_option( 'siteurl' ),
 			'theme'   => get_template_directory_uri(),
 			'ajaxurl' => admin_url( 'admin-ajax.php' ),
+			'nonce'   => wp_create_nonce( 'epsilon_framework_ajax_action' ),
 		) );
 		wp_enqueue_style( 'epsilon-styles', get_template_directory_uri() . $this->path . '/epsilon-framework/assets/css/style.css' );
 
@@ -116,6 +117,29 @@ class Epsilon_Framework {
 	 * Ajax handler
 	 */
 	public function epsilon_framework_ajax_action() {
+
+		if ( ! check_ajax_referer( 'epsilon_framework_ajax_action', 'security' ) ) {
+			wp_die(
+				json_encode(
+					array(
+						'status' => false,
+						'error'  => 'Not allowed',
+					)
+				)
+			);
+		}
+
+		if ( ! current_user_can( 'manage_options' ) ) {
+		    wp_die(
+				json_encode(
+					array(
+						'status' => false,
+						'error'  => 'Not allowed',
+					)
+				)
+			);
+		}
+
 		if ( 'epsilon_framework_ajax_action' !== $_POST['action'] ) {
 			wp_die(
 				json_encode(
@@ -138,7 +162,7 @@ class Epsilon_Framework {
 			);
 		}
 
-		if ( ! class_exists( $_POST['args']['action'][0] ) ) {
+		if ( 'Epsilon_Framework' != $_POST['args']['action'][0] ) {
 			wp_die(
 				json_encode(
 					array(

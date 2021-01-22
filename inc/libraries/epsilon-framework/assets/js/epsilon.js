@@ -245,7 +245,7 @@ EpsilonFramework.recommendedActions = {
        */
       jQuery.ajax( {
         type: 'POST',
-        data: { action: 'epsilon_framework_ajax_action', args: args },
+        data: { action: 'epsilon_framework_ajax_action', args: args, 'security': WPUrls.nonce },
         dataType: 'json',
         url: WPUrls.ajaxurl,
         success: function( data ) {
@@ -349,7 +349,7 @@ EpsilonFramework.recommendedActions = {
 
       jQuery.ajax( {
         type: 'POST',
-        data: { action: 'epsilon_framework_ajax_action', args: args },
+        data: { action: 'epsilon_framework_ajax_action', args: args, 'security': WPUrls.nonce },
         dataType: 'json',
         url: WPUrls.ajaxurl,
         success: function( data ) {
