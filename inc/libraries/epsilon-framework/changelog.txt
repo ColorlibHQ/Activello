@@ -1,0 +1,18 @@
+v1.1.0
+	- Upgraded Typography controls
+	- Minified epsilon.js file
+	- (dev) Framework has been split into "components" for easier maintenance ( run grunt epsilon-concat or grunt watch to concantenate files/minify files )
+
+v1.0.3
+	- Fixed code sniffer errors
+	- Fixed a small issue with typography controls
+
+v1.0.2
+	- An error was thrown if no range slider option created
+
+v1.0.1
+	- Backward compatibility for the color coded categories
+	- Fixed an issue with the recommended actions counter
+
+v1.0.0
+	- Start changelog
