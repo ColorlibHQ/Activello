@@ -1274,7 +1274,7 @@ ul.nav.activello-mobile-menu li.menu-item-has-children > ul.dropdown-menu.active
     .site-navigation-inner .navbar-nav>li {
     	float: none;
     }
-    .navbar-collapse.collapse {
+    .navbar-collapse.collapse:not(.show) {
 	    display: none !important;
 	}
 	.navbar-collapse.collapse.in {
