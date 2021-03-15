@@ -74,6 +74,8 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 Theme documentation is available on http://colorlib.com/wp/support/activello
 
 #### Changelog
+= 1.4.4 = 
+* Improved Escaping
 
 = 1.4.3 =
 * Compatibility with jQuery 3.0
