@@ -88,7 +88,7 @@ endif; ?>
 				continue;
 			}
 
-			if ( Allegiant_Notify_System::has_plugin( $slug ) ) {
+			if ( MT_Notify_System::has_import_plugin( $slug ) ) {
 				continue;
 			}
 			if ( 0 == $nr_recommended_plugins ) {
