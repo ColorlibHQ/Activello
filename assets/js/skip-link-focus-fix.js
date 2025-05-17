@@ -26,7 +26,7 @@
 					element.tabIndex = -1;
 				}
 
-				element.focus();
+				element.trigger('focus');
 			}
 		}, false );
 	}

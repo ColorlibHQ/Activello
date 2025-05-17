@@ -9,7 +9,7 @@ jQuery(document).ready(function () {
 
 
     /* Dismiss required actions */
-    jQuery(".activello-required-action-button").click(function () {
+    jQuery(".activello-required-action-button").on('click', function () {
 
         var id = jQuery(this).attr('id'),
             action = jQuery(this).attr('data-action');
@@ -33,7 +33,7 @@ jQuery(document).ready(function () {
     });
     
     /* Dismiss recommended plugins */
-    jQuery(".activello-recommended-plugin-button").click(function () {
+    jQuery(".activello-recommended-plugin-button").on('click', function () {
 
         var id = jQuery(this).attr('id'),
             action = jQuery(this).attr('data-action');

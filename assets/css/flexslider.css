@@ -50,8 +50,10 @@ html[xmlns] .slides {display: block;}
 .flex-direction-nav a  { text-decoration:none; display: block; width: 50px; margin: -20px 0 0; position: absolute; top: 50%; z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; color: rgba(0,0,0,0.8); text-shadow: 1px 1px 0 rgba(255,255,255,0.3); -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; }
 .flex-direction-nav .flex-prev { left: 50px; }
 .flex-direction-nav .flex-next { right: 50px; text-align: right; }
-.flexslider:hover .flex-prev { opacity: 0.7; left: 0px; text-align: center; }
-.flexslider:hover .flex-next { opacity: 0.7; right: 0px; text-align: center; }
+.flexslider:hover .flex-prev,
+.flexslider:focus-within .flex-prev { opacity: 0.7; left: 0px; text-align: center; }
+.flexslider:hover .flex-next,
+.flexslider:focus-within .flex-next { opacity: 0.7; right: 0px; text-align: center; }
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
 .flex-direction-nav .flex-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
 .flex-direction-nav a:before  { font-family: FontAwesome; font-size: 40px; display: inline-block; content: '\f104'; }
@@ -102,7 +104,7 @@ html[xmlns] .slides {display: block;}
 	text-align: center;
 }
 .flex-caption .excerpt {
-	
+
 }
 .flex-caption h2 {
 	color: #ffffff;

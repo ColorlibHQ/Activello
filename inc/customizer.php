@@ -5,6 +5,8 @@
  * @package activello
  */
 
+require_once get_template_directory() . '/inc/libraries/epsilon-framework/controls/class-epsilon-control-toggle.php';
+
 /**
  * Add postMessage support for site title and description for the Theme Customizer.
  *

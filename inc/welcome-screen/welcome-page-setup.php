@@ -16,6 +16,16 @@ function activello_ws_customize_register( $wp_customize ) {
 		}
 	}
 
+	// Make sure the Epsilon Section classes are loaded
+	$section_path = get_template_directory() . '/inc/libraries/epsilon-framework/sections/';
+	if ( ! class_exists( 'Epsilon_Section_Recommended_Actions' ) && file_exists( $section_path . 'class-epsilon-section-recommended-actions.php' ) ) {
+		require_once $section_path . 'class-epsilon-section-recommended-actions.php';
+	}
+	
+	if ( ! class_exists( 'Epsilon_Section_Pro' ) && file_exists( $section_path . 'class-epsilon-section-pro.php' ) ) {
+		require_once $section_path . 'class-epsilon-section-pro.php';
+	}
+
 	$theme_slug = 'activello';
 
 	$wp_customize->add_section(
@@ -60,18 +70,15 @@ require get_template_directory() . '/inc/welcome-screen/class-mt-notify-system.p
 if ( is_admin() ) {
 	global $activello_required_actions, $activello_recommended_plugins;
 	$activello_recommended_plugins = array(
-		'colorlib-login-customizer' => array(
-			'recommended' => true,
-		),
-		'kiwi-social-share' => array(
-			'recommended' => true,
-		),
-        'colorlib-404-customizer' => array(
-            'recommended' => true,
-        ),
-        'colorlib-coming-soon-maintenance' => array(
-            'recommended' => true,
-        ),
+		'kali-forms'                       => array( 'recommended' => true ),
+		'modula-best-grid-gallery'         => array( 'recommended' => true ),
+		'fancybox-for-wordpress'           => array( 'recommended' => false ),
+		'simple-custom-post-order'         => array( 'recommended' => false ),
+		'colorlib-404-customizer'          => array( 'recommended' => false ),
+		'colorlib-coming-soon-maintenance' => array( 'recommended' => false ),
+		'colorlib-login-customizer'        => array( 'recommended' => false ),
+		'kb-support'                       => array( 'recommended' => false ),
+		'rsvp'                             => array( 'recommended' => false ),
 	);
 	/*
 	 * id - unique id; required
@@ -97,21 +104,6 @@ if ( is_admin() ) {
 			'description' => MT_Notify_System::widget_importer_exporter_description(),
 			'check'       => MT_Notify_System::has_import_plugin( 'widget-importer-exporter' ),
 			'plugin_slug' => 'widget-importer-exporter',
-		),
-		array(
-			'id'          => 'activello-req-ac-download-data',
-			'title'       => esc_html__( 'Download theme sample data', 'activello' ),
-			'description' => esc_html__( 'Head over to our website and download the sample content data.', 'activello' ),
-			'help'        => '<a target="_blank"  href="https://colorlibvault-divilabltd.netdna-ssl.com/activello-content.xml">' . __( 'Posts', 'activello' ) . '</a>, 
-							   <a target="_blank"  href="https://colorlibvault-divilabltd.netdna-ssl.com/activello-widgets.wie">' . __( 'Widgets', 'activello' ) . '</a>',
-			'check'       => MT_Notify_System::has_content(),
-		),
-		array(
-			'id'    => 'activello-req-ac-install-data',
-			'title' => esc_html__( 'Import Sample Data', 'activello' ),
-			'help'  => '<a class="button button-primary" target="_blank"  href="' . self_admin_url( 'admin.php?import=wordpress' ) . '">' . __( 'Import Posts', 'activello' ) . '</a> 
-							   <a class="button button-primary" target="_blank"  href="' . self_admin_url( 'tools.php?page=widget-importer-exporter' ) . '">' . __( 'Import Widgets', 'activello' ) . '</a>',
-			'check' => MT_Notify_System::has_import_plugins(),
 		),
 	);
 	require get_template_directory() . '/inc/welcome-screen/class-activello-welcome.php';
