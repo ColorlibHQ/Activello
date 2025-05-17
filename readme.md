@@ -12,18 +12,18 @@ Easiest way to go about cloning a repository recursively is to use (Windows only
 # About Theme
 
 * Theme Name: Activello
-* Theme URI: http://colorlib.com/wp/Activello/
-* Version: 1.3.8
-* Tested up to: WP 4.7.5
+* Theme URI: https://colorlib.com/wp/Activello/
+* Version: 1.4.9
+* Tested up to: WP 6.8
 
 ```
 * Author: Aigars Silkalns
-* Author URI: http://colorlib.com/
+* Author URI: https://colorlib.com/
 * License: GNU General Public License v3.0
-* License URI: http://www.gnu.org/licenses/gpl.html
+* License URI: https://www.gnu.org/licenses/gpl.html
 * Activello theme, Copyright 2017 colorlib.com
 * Activello WordPress theme is distributed under the terms of the GNU GPL
-* Activello is based on Underscores http://underscores.me/, (C) 2012-2017 Automattic, Inc.
+* Activello is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 ```
 
 ---
@@ -32,10 +32,10 @@ Easiest way to go about cloning a repository recursively is to use (Windows only
 Unless otherwise specified, all the theme files, scripts and images are licensed under GPLv2 license
 
 Activello theme uses:
-* FontAwesome (http://fontawesome.io) licensed under the SIL OFL 1.1 (http://scripts.sil.org/OFL)
+* FontAwesome (https://fontawesome.com/) licensed under the SIL OFL 1.1 (https://scripts.sil.org/OFL)
 * Bootstrap and GLYPHICONS Halflings (http://getbootstrap.com/) licensed under MIT license (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-* WP-Bootstrap-NavWalker licensed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
-* FlexSlider by WooThemes licensed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
+* WP-Bootstrap-NavWalker licensed under the GPLv2 license (https://www.gnu.org/licenses/gpl-2.0.html)
+* FlexSlider by WooThemes licensed under the GPLv2 license (https://www.gnu.org/licenses/gpl-2.0.html)
 * Modernizr (https://github.com/Modernizr/Modernizr) licensed under MIT license
 * Unless otherwise specified, all images are created by Colorlib
 
@@ -71,9 +71,55 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 
 ### Documentation
 
-Theme documentation is available on http://colorlib.com/wp/support/activello
+Theme documentation is available on https://colorlib.com/wp/support/activello
 
 #### Changelog
+= 1.4.9 =
+* Fixed Epsilon_Section_Recommended_Actions class loading in customizer
+* Added missing required header information in style.css
+* Fixed CSS syntax error in style.css
+* Updated theme version and compatibility information
+* Improved theme stability and performance
+
+= 1.4.8 =
+* Fixed translation loading issue by properly initializing translations after WordPress init
+* Moved welcome screen setup to load after init hook
+* Fixed Epsilon_Control_Toggle class loading in customizer
+* Improved theme compatibility with WordPress 6.8
+* Added support for block styles and wide blocks
+* Enhanced accessibility features
+* Updated theme tags to reflect new features
+
+= 1.4.7 =
+* Fixed customizer controls
+* Improved theme compatibility with WordPress 6.7
+* Enhanced security features
+* Updated theme dependencies
+
+= 1.4.6 =
+* Fixed responsive issues
+* Improved theme compatibility with WordPress 6.6
+* Enhanced performance
+* Updated theme dependencies
+
+= 1.4.5 = 
+* Improved Escaping
+
+= 1.4.4 = 
+* Improved Escaping
+
+= 1.4.3 =
+* Compatibility with jQuery 3.0
+
+= 1.4.2 =
+* Sanitization fix
+
+= 1.4.1 =
+* Security Fix
+
+= 1.4.0 =
+* Improved accesibility with keyboard navigation
+* Updated list of recommended plugins
 
 = 1.3.8 =
 * Removed subject tags, only kept 3
@@ -143,7 +189,7 @@ Theme documentation is available on http://colorlib.com/wp/support/activello
 * Updated libraries
 * Added missing untouched libraries and scripts
 * Added licensing information
-* Theme Documentation now available on http://colorlib.com/wp/support/activello
+* Theme Documentation now available on https://colorlib.com/wp/support/activello
 
 = 1.0.1 - 11.02.2016 =
 
