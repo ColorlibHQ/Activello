@@ -75,17 +75,20 @@ add_action( 'save_post', 'activello_save_custom_meta' );
 function activello_save_custom_meta( $post_id ) {
 	global $site_layout, $post;
 
-		// Verify the nonce before proceeding.
+	// Verify the nonce before proceeding.
 	if ( ! isset( $_POST['custom_meta_box_nonce'] ) || ! wp_verify_nonce( $_POST['custom_meta_box_nonce'], basename( __FILE__ ) ) ) {
 		return;
 	}
 
-		// Stop WP from clearing custom fields on autosave
+	// Stop WP from clearing custom fields on autosave
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
 		return;
 	}
 
-	if ( 'page' == $_POST['post_type'] ) {
+	// Validate user permissions
+	$post_type = isset( $_POST['post_type'] ) ? sanitize_text_field( $_POST['post_type'] ) : '';
+	
+	if ( 'page' === $post_type ) {
 		if ( ! current_user_can( 'edit_page', $post_id ) ) {
 			return $post_id;
 		}
@@ -93,8 +96,10 @@ function activello_save_custom_meta( $post_id ) {
 		return $post_id;
 	}
 
-	if ( $_POST['site_layout'] ) {
-		update_post_meta( $post_id, 'site_layout', esc_html( $_POST['site_layout'] ) );
+	// Sanitize and save the site layout value
+	if ( isset( $_POST['site_layout'] ) && ! empty( $_POST['site_layout'] ) ) {
+		$layout_value = sanitize_text_field( $_POST['site_layout'] );
+		update_post_meta( $post_id, 'site_layout', $layout_value );
 	} else {
 		delete_post_meta( $post_id, 'site_layout' );
 	}
