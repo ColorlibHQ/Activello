@@ -63,8 +63,8 @@ class Activello_Recent_Posts extends WP_Widget {
 						  <!-- content -->
 						  <div class="post-content">
 
-							  <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
-							  <span class="date">- <?php echo get_the_date( 'd M , Y' ); ?></span>
+							  <a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html( get_the_title() ); ?></a>
+							  <span class="date">- <?php echo esc_html( get_the_date( 'd M , Y' ) ); ?></span>
 
 						  </div><!-- end content -->
 						</div><!-- end post -->

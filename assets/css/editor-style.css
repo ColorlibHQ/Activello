@@ -1,0 +1,55 @@
+/*
+Editor styles for Activello.
+
+Keeps the block editor's canvas close to the front end: same body font, same
+content measure as $content_width, and the same link colour treatment.
+*/
+
+.editor-styles-wrapper {
+	font-family: 'Lora', serif;
+	font-size: 14px;
+	line-height: 2;
+	color: #696969;
+}
+
+.editor-styles-wrapper .wp-block {
+	max-width: 697px;
+}
+
+.editor-styles-wrapper .wp-block[data-align="wide"],
+.editor-styles-wrapper .wp-block[data-align="full"] {
+	max-width: none;
+}
+
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
+.editor-styles-wrapper h5,
+.editor-styles-wrapper h6 {
+	font-family: 'Montserrat', sans-serif;
+	color: #4c4c4c;
+	line-height: 1.4;
+}
+
+.editor-styles-wrapper a {
+	color: #a161bf;
+	text-decoration: none;
+}
+
+.editor-styles-wrapper blockquote {
+	border-left: 3px solid #a161bf;
+	padding-left: 20px;
+	font-style: italic;
+}
+
+.editor-styles-wrapper table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.editor-styles-wrapper table th,
+.editor-styles-wrapper table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+}

@@ -40,8 +40,8 @@
 
 						<div class="nav-search"><?php
 							add_filter( 'get_search_form', 'activello_header_search_filter',10,3 );
-							echo get_search_form();
-							remove_filter( 'get_search_form', 'activello_header_search_filter' );?>							
+							get_search_form();
+							remove_filter( 'get_search_form', 'activello_header_search_filter' );?>
 						</div>
 					</div>
 				</div>
@@ -114,4 +114,4 @@
 						}?>
 
 			<div class="row">
-				<div class="main-content-inner <?php echo activello_main_content_bootstrap_classes(); ?> <?php echo $layout_class; ?>">
+				<div class="main-content-inner <?php echo esc_attr( activello_main_content_bootstrap_classes() ); ?> <?php echo esc_attr( $layout_class ); ?>">

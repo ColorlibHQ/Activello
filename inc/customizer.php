@@ -278,7 +278,7 @@ function activello_sanitize_hexcolor( $color ) {
 	if ( $unhashed ) {
 		return '#' . $unhashed;
 	}
-	return $color;
+	return '';
 }
 
 /**

@@ -66,7 +66,7 @@
 					<?php
 						$tags = get_the_tags( get_the_ID() );
 					foreach ( $tags as $tag ) {
-						echo '<a href="' . get_tag_link( $tag->term_id ) . '">' . $tag->name . '</a> ';
+						echo '<a href="' . esc_url( get_tag_link( $tag->term_id ) ) . '">' . esc_html( $tag->name ) . '</a> ';
 					} ?>
 
 				</div>

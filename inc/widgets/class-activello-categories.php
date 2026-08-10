@@ -95,8 +95,8 @@ class Activello_Categories extends WP_Widget {
 
 	  <p><label>
 		<input  type="checkbox"
-				name="<?php echo $this->get_field_name( 'enable_count' ); ?>"
-				id="<?php $this->get_field_id( 'enable_count' );?>"  value="1" <?php if ( '' != $instance['enable_count'] ) { echo 'checked=checked ';} ?>
+				name="<?php echo esc_attr( $this->get_field_name( 'enable_count' ) ); ?>"
+				id="<?php echo esc_attr( $this->get_field_id( 'enable_count' ) );?>"  value="1" <?php checked( '' != $instance['enable_count'] ); ?>
 		 />
 			<?php esc_html_e( 'Enable Posts Count','activello' ) ?></label>
 	   </p>

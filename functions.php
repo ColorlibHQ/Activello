@@ -105,7 +105,22 @@ if ( ! function_exists( 'activello_setup' ) ) :
 			  'comment-form',
 			  'gallery',
 			  'caption',
+			  'style',
+			  'script',
+			  'navigation-widgets',
 		  ) );
+
+		  /*
+		   * Block editor support. The theme predates the block editor, so without
+		   * these WordPress falls back to visibly degraded defaults.
+		   */
+		  add_theme_support( 'wp-block-styles' );
+		  add_theme_support( 'align-wide' );
+		  add_theme_support( 'responsive-embeds' );
+		  add_theme_support( 'customize-selective-refresh-widgets' );
+
+		  // Match the editor's content width and typography to the theme's.
+		  add_editor_style( 'assets/css/editor-style.css' );
 
 		  // Enable Custom Logo
 		  add_theme_support( 'custom-logo', array(
@@ -286,6 +301,14 @@ require get_template_directory() . '/inc/metaboxes.php';
  */
 require get_template_directory() . '/inc/socialnav.php';
 
+/**
+ * Populate the option-list globals.
+ *
+ * Runs on init, not at parse time or on after_setup_theme: translating these
+ * labels any earlier triggers WordPress 6.7+'s _load_textdomain_just_in_time
+ * notice on every request. Everything that reads them (Customizer, metaboxes,
+ * templates) runs on init or later.
+ */
 function activello_setup_globals() {
 	global $site_layout, $header_show;
 	$site_layout = array(
@@ -301,7 +324,7 @@ function activello_setup_globals() {
 		'title-text' => __( 'Title + Tagline', 'activello' ),
 	);
 }
-add_action( 'after_setup_theme', 'activello_setup_globals' );
+add_action( 'init', 'activello_setup_globals' );
 
 if ( ! function_exists( 'activello_get_single_category' ) ) :
 	/* Get Single Post Category */
@@ -324,7 +347,7 @@ if ( ! function_exists( 'activello_get_single_category' ) ) :
 					'include' => $extra_categories,
 				);
 				$html = '<div class="activello-categories">';
-				$html .= '<ul class="single-category">' . wp_list_categories( 'echo=0&title_li=&show_count=0&include=' . $post_categories[0] ) . '<li class="show-more-categories">...<ul class="subcategories">' . wp_list_categories( $extra_categories_args ) . '</ul><li></ul>';
+				$html .= '<ul class="single-category">' . wp_list_categories( 'echo=0&title_li=&show_count=0&include=' . $post_categories[0] ) . '<li class="show-more-categories">...<ul class="subcategories">' . wp_list_categories( $extra_categories_args ) . '</ul></li></ul>';
 				$html .= '</div>';
 				return $html;
 			} else {

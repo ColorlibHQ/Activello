@@ -69,14 +69,14 @@ add_filter( 'the_password_form', 'activello_custom_password_form' );
 
 function activello_custom_password_form() {
 	global $post;
-	$label = 'pwbox-' . ( empty( $post->ID ) ? rand() : $post->ID );
-	$o = '<form class="protected-post-form" action="' . get_option( 'siteurl' ) . '/wp-login.php?action=postpass" method="post">
+	$label = 'pwbox-' . ( empty( $post->ID ) ? wp_rand() : $post->ID );
+	$o = '<form class="protected-post-form" action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
 			<div class="row">
 				<div class="col-lg-10">
 					<p>' . esc_html__( 'This post is password protected. To view it please enter your password below:' ,'activello' ) . '</p>
-					<label for="' . $label . '">' . esc_html__( 'Password:' ,'activello' ) . ' </label>
+					<label for="' . esc_attr( $label ) . '">' . esc_html__( 'Password:' ,'activello' ) . ' </label>
 					<div class="input-group">
-						<input class="form-control" value="' . get_search_query() . '" name="post_password" id="' . $label . '" type="password">
+						<input class="form-control" name="post_password" id="' . esc_attr( $label ) . '" type="password">
 						<span class="input-group-btn"><button type="submit" class="btn btn-default" name="submit" id="searchsubmit" value="' . esc_attr__( 'Submit','activello' ) . '">' . esc_html__( 'Submit' ,'activello' ) . '</button></span>
 					</div>
 				</div>
@@ -148,20 +148,20 @@ if ( ! function_exists( 'activello_featured_slider' ) ) :
 								'resize' => '1920,550',
 							);
 							$photon_url = jetpack_photon_url( $feat_image_url[0], $args );
-							echo '<img src="' . $photon_url . '">';
+							echo '<img src="' . esc_url( $photon_url ) . '">';
 						} else {
 							  echo get_the_post_thumbnail( get_the_ID(), 'activello-slider' );
 						}
 								echo '<div class="flex-caption">';
 							  echo get_the_category_list();
-						if ( get_the_title() != '' ) { echo '<a href="' . get_permalink() . '"><h2 class="entry-title">' . get_the_title() . '</h2></a>';
+						if ( get_the_title() != '' ) { echo '<a href="' . esc_url( get_permalink() ) . '"><h2 class="entry-title">' . esc_html( get_the_title() ) . '</h2></a>';
 						}
-								echo '<div class="read-more"><a href="' . get_permalink() . '">' . __( 'Read More', 'activello' ) . '</a></div>';
+								echo '<div class="read-more"><a href="' . esc_url( get_permalink() ) . '">' . esc_html__( 'Read More', 'activello' ) . '</a></div>';
 								echo '</div>';
 								echo '</li>';
 						endif;
 					endwhile;
-				wp_reset_query();
+				wp_reset_postdata();
 			endif;
 			echo '</ul>';
 			echo ' </div>';
@@ -206,11 +206,11 @@ function activello_caption( $output, $attr, $content ) {
 	// Set up the attributes for the caption <figure>
 	$attributes  = ( ! empty( $attr['id'] ) ? ' id="' . esc_attr( $attr['id'] ) . '"' : '' );
 	$attributes .= ' class="thumbnail wp-caption ' . esc_attr( $attr['align'] ) . '"';
-	$attributes .= ' style="width: ' . ( esc_attr( $attr['width'] ) + 10) . 'px"';
+	$attributes .= ' style="width: ' . ( (int) $attr['width'] + 10 ) . 'px"';
 
 	$output  = '<figure' . $attributes . '>';
 	$output .= do_shortcode( $content );
-	$output .= '<figcaption class="caption wp-caption-text">' . $attr['caption'] . '</figcaption>';
+	$output .= '<figcaption class="caption wp-caption-text">' . wp_kses_post( $attr['caption'] ) . '</figcaption>';
 	$output .= '</figure>';
 
 	return $output;
@@ -269,7 +269,7 @@ function activello_cb_comment( $comment, $args, $depth ) {
 				'max_depth' => $args['max_depth'],
 			);
 			comment_reply_link( array_merge( $args, $comments_reply_args ) ); ?>
-		<div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>">
+		<div class="comment-meta commentmetadata"><a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">
 			<?php
 			/* translators: 1: date, 2: time */
 			printf( __( '%1$s at %2$s', 'activello' ), get_comment_date(), get_comment_time() ); ?></a><?php edit_comment_link( __( 'Edit', 'activello' ), '  ', '' );
@@ -291,31 +291,52 @@ function activello_cb_comment( $comment, $args, $depth ) {
 }
 
 /**
+ * Validate a colour value at output time.
+ *
+ * Customizer sanitizers reject invalid input on save, but options stored by
+ * older theme versions may hold arbitrary text, so never trust a stored value
+ * when printing it into the inline <style> block.
+ *
+ * @param string $color Stored colour value.
+ * @return string A safe hex colour, or '' if the value is not one.
+ */
+function activello_css_color( $color ) {
+	$hex = sanitize_hex_color( $color );
+	return $hex ? $hex : '';
+}
+
+/**
  * Get custom CSS from Theme setting panel and output in header
  */
 if ( ! function_exists( 'get_activello_theme_setting' ) ) {
 	function get_activello_theme_setting() {
 
+		$accent_color       = activello_css_color( get_theme_mod( 'accent_color' ) );
+		$social_color       = activello_css_color( get_theme_mod( 'social_color' ) );
+		$social_hover_color = activello_css_color( get_theme_mod( 'social_hover_color' ) );
+
 		echo '<style type="text/css">';
-		if ( get_theme_mod( 'accent_color' ) ) {
-			echo 'a:hover, a:focus, article.post .post-categories a:hover, article.post .post-categories a:focus, .entry-title a:hover, .entry-title a:focus, .entry-meta a:hover, .entry-meta a:focus, .entry-footer a:hover, .entry-footer a:focus, .read-more a:hover, .read-more a:focus, .social-icons a:hover, .social-icons a:focus, .flex-caption .post-categories a:hover, .flex-caption .post-categories a:focus, .flex-caption .read-more a:hover, .flex-caption .read-more a:focus, .flex-caption h2:hover, .flex-caption h2:focus-within, .comment-meta.commentmetadata a:hover, .comment-meta.commentmetadata a:focus, .post-inner-content .cat-item a:hover, .post-inner-content .cat-item a:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, blockquote:before, .navbar-default .navbar-nav > .open > a:focus, .cat-title a, .single .entry-content a, .site-info a:hover, .site-info a:focus {color:' . esc_html( get_theme_mod( 'accent_color' ) ) . '}';
+		if ( $accent_color ) {
+			echo 'a:hover, a:focus, article.post .post-categories a:hover, article.post .post-categories a:focus, .entry-title a:hover, .entry-title a:focus, .entry-meta a:hover, .entry-meta a:focus, .entry-footer a:hover, .entry-footer a:focus, .read-more a:hover, .read-more a:focus, .social-icons a:hover, .social-icons a:focus, .flex-caption .post-categories a:hover, .flex-caption .post-categories a:focus, .flex-caption .read-more a:hover, .flex-caption .read-more a:focus, .flex-caption h2:hover, .flex-caption h2:focus-within, .comment-meta.commentmetadata a:hover, .comment-meta.commentmetadata a:focus, .post-inner-content .cat-item a:hover, .post-inner-content .cat-item a:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, blockquote:before, .navbar-default .navbar-nav > .open > a:focus, .cat-title a, .single .entry-content a, .site-info a:hover, .site-info a:focus {color:' . $accent_color . '}';
 
-			echo 'article.post .post-categories:after, .post-inner-content .cat-item:after, #secondary .widget-title:after, .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {background:' . esc_html( get_theme_mod( 'accent_color' ) ) . '}';
+			echo 'article.post .post-categories:after, .post-inner-content .cat-item:after, #secondary .widget-title:after, .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {background:' . $accent_color . '}';
 
-			echo '.label-default[href]:hover, .label-default[href]:focus, .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, #image-navigation .nav-previous a:hover, #image-navigation .nav-previous a:focus, #image-navigation .nav-next a:hover, #image-navigation .nav-next a:focus, .woocommerce #respond input#submit:hover, .woocommerce #respond input#submit:focus, .woocommerce a.button:hover, .woocommerce a.button:focus, .woocommerce button.button:hover, .woocommerce button.button:focus, .woocommerce input.button:hover, .woocommerce input.button:focus, .woocommerce #respond input#submit.alt:hover, .woocommerce #respond input#submit.alt:focus, .woocommerce a.button.alt:hover, .woocommerce a.button.alt:focus, .woocommerce button.button.alt:hover, .woocommerce button.button.alt:focus, .woocommerce input.button.alt:hover, .woocommerce input.button.alt:focus, .input-group-btn:last-child>.btn:hover, .input-group-btn:last-child>.btn:focus, .scroll-to-top:hover, .scroll-to-top:focus, button, html input[type=button]:hover, html input[type=button]:focus, input[type=reset]:hover, input[type=reset]:focus, .comment-list li .comment-body:after, .page-links a:hover span, .page-links a:focus span, .page-links span, input[type=submit]:hover, input[type=submit]:focus, .comment-form #submit:hover, .comment-form #submit:focus, .tagcloud a:hover, .tagcloud a:focus, .single .entry-content a:hover, .single .entry-content a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .dropdown-menu> li> a:hover, .dropdown-menu> li> a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {background-color:' . esc_html( get_theme_mod( 'accent_color' ) ) . '; }';
+			echo '.label-default[href]:hover, .label-default[href]:focus, .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, #image-navigation .nav-previous a:hover, #image-navigation .nav-previous a:focus, #image-navigation .nav-next a:hover, #image-navigation .nav-next a:focus, .woocommerce #respond input#submit:hover, .woocommerce #respond input#submit:focus, .woocommerce a.button:hover, .woocommerce a.button:focus, .woocommerce button.button:hover, .woocommerce button.button:focus, .woocommerce input.button:hover, .woocommerce input.button:focus, .woocommerce #respond input#submit.alt:hover, .woocommerce #respond input#submit.alt:focus, .woocommerce a.button.alt:hover, .woocommerce a.button.alt:focus, .woocommerce button.button.alt:hover, .woocommerce button.button.alt:focus, .woocommerce input.button.alt:hover, .woocommerce input.button.alt:focus, .input-group-btn:last-child>.btn:hover, .input-group-btn:last-child>.btn:focus, .scroll-to-top:hover, .scroll-to-top:focus, button, html input[type=button]:hover, html input[type=button]:focus, input[type=reset]:hover, input[type=reset]:focus, .comment-list li .comment-body:after, .page-links a:hover span, .page-links a:focus span, .page-links span, input[type=submit]:hover, input[type=submit]:focus, .comment-form #submit:hover, .comment-form #submit:focus, .tagcloud a:hover, .tagcloud a:focus, .single .entry-content a:hover, .single .entry-content a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .dropdown-menu> li> a:hover, .dropdown-menu> li> a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {background-color:' . $accent_color . '; }';
 
-			echo 'input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, textarea:focus { outline-color: ' . esc_html( get_theme_mod( 'accent_color' ) ) . '; }';
+			echo 'input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, textarea:focus { outline-color: ' . $accent_color . '; }';
 
 		}
-		if ( get_theme_mod( 'social_color' ) ) {
-			echo '#social a, .header-search-icon { color:' . esc_html( get_theme_mod( 'social_color' ) ) . '}';
+		if ( $social_color ) {
+			echo '#social a, .header-search-icon { color:' . $social_color . '}';
 		}
-		if ( get_theme_mod( 'social_hover_color' ) ) {
-			echo '#social a:hover, #social a:focus, .header-search-icon:hover, .header-search-icon:focus  { color:' . esc_html( get_theme_mod( 'social_hover_color' ) ) . '}';
+		if ( $social_hover_color ) {
+			echo '#social a:hover, #social a:focus, .header-search-icon:hover, .header-search-icon:focus  { color:' . $social_hover_color . '}';
 		}
 
 		if ( get_theme_mod( 'custom_css' ) ) {
-			echo html_entity_decode( esc_html( get_theme_mod( 'custom_css', 'no entry' ) ) );
+			// Legacy path: modern versions migrate this mod to core Custom CSS on
+			// setup. Strip tags so a stored value can never break out of <style>.
+			echo wp_strip_all_tags( get_theme_mod( 'custom_css' ) );
 		}
 
 		echo '</style>';
