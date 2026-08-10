@@ -119,6 +119,7 @@ if ( ! function_exists( 'activello_featured_slider' ) ) :
 
 			wp_enqueue_style( 'flexslider-css' );
 			wp_enqueue_script( 'flexslider-js' );
+			wp_enqueue_script( 'activello-flexslider' );
 
 			echo '<div class="flexslider">';
 			echo '<ul class="slides">';
@@ -338,19 +339,22 @@ add_filter( 'nav_menu_link_attributes', 'activello_add_top_level_menu_url', 99, 
  */
 function activello_make_top_level_menu_clickable() {
 	if ( ! wp_is_mobile() ) { ?>
-		<script type="text/javascript">
-			jQuery( document ).ready( function( $ ){
-				if ( $( window ).width() >= 767 ){
-					$( '.navbar-nav > li.menu-item > a' ).click( function(){
-						if( $( this ).attr('target') !== '_blank' ){
-							window.location = $( this ).attr( 'href' );
-						}else{
-							var win = window.open($( this ).attr( 'href' ), '_blank');
+		<script>
+			document.addEventListener( 'DOMContentLoaded', function () {
+				if ( window.innerWidth < 767 ) {
+					return;
+				}
+				document.querySelectorAll( '.navbar-nav > li.menu-item > a' ).forEach( function ( link ) {
+					link.addEventListener( 'click', function () {
+						if ( link.getAttribute( 'target' ) !== '_blank' ) {
+							window.location = link.getAttribute( 'href' );
+						} else {
+							var win = window.open( link.getAttribute( 'href' ), '_blank' );
 							win.focus();
 						}
-					});
-				}
-			});
+					} );
+				} );
+			} );
 		</script>
 	<?php }
 }

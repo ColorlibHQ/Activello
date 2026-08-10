@@ -6,6 +6,16 @@
  */
 
 /**
+ * Theme version, used to cache-bust every asset the theme enqueues.
+ *
+ * Read from style.css so it can never drift from the version WordPress reports.
+ */
+if ( ! defined( 'ACTIVELLO_VERSION' ) ) {
+	$activello_theme = wp_get_theme( get_template() );
+	define( 'ACTIVELLO_VERSION', $activello_theme->get( 'Version' ) ? $activello_theme->get( 'Version' ) : '1.4.9' );
+}
+
+/**
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {
@@ -176,39 +186,44 @@ add_filter( 'gallery_style', 'activello_remove_gallery_css' );
 if ( ! function_exists( 'activello_scripts' ) ) {
 	function activello_scripts() {
 
+		$template_uri = get_template_directory_uri();
+
+		// Whether the front-page slider is showing; used to gate its CSS and JS.
+		$slider_active = ( is_home() || is_front_page() ) && get_theme_mod( 'activello_featured_hide' ) == 1;
+
 		// Add Bootstrap default CSS
-		wp_enqueue_style( 'activello-bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css' );
+		wp_enqueue_style( 'activello-bootstrap', $template_uri . '/assets/css/bootstrap.min.css', array(), '3.4.1' );
 
 		// Add Font Awesome stylesheet
-		wp_enqueue_style( 'activello-icons', get_template_directory_uri() . '/assets/css/font-awesome.min.css' );
+		wp_enqueue_style( 'activello-icons', $template_uri . '/assets/css/font-awesome.min.css', array(), '4.6.3' );
 
 		// Add Google Fonts
-		wp_enqueue_style( 'activello-fonts', '//fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic|Montserrat:400,700|Maven+Pro:400,700' );
+		wp_enqueue_style( 'activello-fonts', 'https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic%7CMontserrat:400,700%7CMaven+Pro:400,700&display=swap', array(), null );
 
-		// Add slider CSS only if is front page ans slider is enabled
-		if ( ( is_home() || is_front_page() ) && get_theme_mod( 'activello_featured_hide' ) == 1 ) {
-			wp_enqueue_style( 'flexslider-css', get_template_directory_uri() . '/assets/css/flexslider.css' );
+		// Add slider CSS only if is front page and slider is enabled
+		if ( $slider_active ) {
+			wp_enqueue_style( 'flexslider-css', $template_uri . '/assets/css/flexslider.css', array(), ACTIVELLO_VERSION );
 		}
 
 		// Add main theme stylesheet
-		wp_enqueue_style( 'activello-style', get_stylesheet_uri() );
+		wp_enqueue_style( 'activello-style', get_stylesheet_uri(), array(), ACTIVELLO_VERSION );
 
-		// Add Modernizr for better HTML5 and CSS3 support
-		wp_enqueue_script( 'activello-modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr.min.js', array( 'jquery' ) );
+		/*
+		 * Bootstrap's JS needs jQuery, but it belongs in the footer: it binds its
+		 * data-api handlers on ready, so nothing is lost by not blocking the head.
+		 */
+		wp_enqueue_script( 'activello-bootstrapjs', $template_uri . '/assets/js/vendor/bootstrap.min.js', array( 'jquery' ), '3.4.1', true );
 
-		// Add Bootstrap default JS
-		wp_enqueue_script( 'activello-bootstrapjs', get_template_directory_uri() . '/assets/js/vendor/bootstrap.min.js', array( 'jquery' ) );
+		// Slider JS, registered here; activello_featured_slider() enqueues both
+		// handles only when it actually renders the slider.
+		wp_register_script( 'flexslider-js', $template_uri . '/assets/js/vendor/flexslider.min.js', array( 'jquery' ), '2.7.0', true );
+		wp_register_script( 'activello-flexslider', $template_uri . '/assets/js/flexslider-custom.js', array( 'jquery', 'flexslider-js' ), ACTIVELLO_VERSION, true );
 
-		// Add slider JS only if is front page ans slider is enabled
-		if ( ( is_home() || is_front_page() ) && get_theme_mod( 'activello_featured_hide' ) == 1 ) {
-			wp_register_script( 'flexslider-js', get_template_directory_uri() . '/assets/js/vendor/flexslider.min.js', array( 'jquery' ), '20140222', true );
-		}
-
-		// Main theme related functions
-		wp_enqueue_script( 'activello-functions', get_template_directory_uri() . '/assets/js/functions.min.js', array( 'jquery' ) );
+		// Main theme related functions -- plain JS, no jQuery dependency.
+		wp_enqueue_script( 'activello-functions', $template_uri . '/assets/js/functions.js', array(), ACTIVELLO_VERSION, true );
 
 		// This one is for accessibility
-		wp_enqueue_script( 'activello-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20140222', true );
+		wp_enqueue_script( 'activello-skip-link-focus-fix', $template_uri . '/assets/js/skip-link-focus-fix.js', array(), ACTIVELLO_VERSION, true );
 
 		// Threaded comments
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -217,6 +232,24 @@ if ( ! function_exists( 'activello_scripts' ) ) {
 	}
 }// End if().
 add_action( 'wp_enqueue_scripts', 'activello_scripts' );
+
+/**
+ * Add a preconnect hint for the Google Fonts file host.
+ *
+ * @param array  $hints         URLs to print for the relation type.
+ * @param string $relation_type The relation type the URLs are printed for.
+ * @return array
+ */
+function activello_resource_hints( $hints, $relation_type ) {
+	if ( 'preconnect' === $relation_type && wp_style_is( 'activello-fonts', 'enqueued' ) ) {
+		$hints[] = array(
+			'href' => 'https://fonts.gstatic.com',
+			'crossorigin',
+		);
+	}
+	return $hints;
+}
+add_filter( 'wp_resource_hints', 'activello_resource_hints', 10, 2 );
 
 /**
  * Custom template tags for this theme.
