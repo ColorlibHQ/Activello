@@ -249,6 +249,18 @@ if ( ! function_exists( 'activello_scripts' ) ) {
 add_action( 'wp_enqueue_scripts', 'activello_scripts' );
 
 /**
+ * Swap the no-js class for js on <html> as early as possible.
+ *
+ * Printed inline at wp_head priority 0 -- before the stylesheets print -- so it
+ * runs ahead of first paint and the no-JS styling never flashes. Hooked rather
+ * than hardcoded in header.php so child themes and plugins can remove it.
+ */
+function activello_no_js_class_swap() {
+	echo "<script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script>\n";
+}
+add_action( 'wp_head', 'activello_no_js_class_swap', 0 );
+
+/**
  * Add a preconnect hint for the Google Fonts file host.
  *
  * @param array  $hints         URLs to print for the relation type.

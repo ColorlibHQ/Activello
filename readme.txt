@@ -2,7 +2,7 @@
 
 * Theme Name: Activello
 * Theme URI: https://colorlib.com/wp/Activello/
-* Version: 1.6.0
+* Version: 1.6.1
 * Tested up to: WP 7.0
 
 ```
@@ -62,6 +62,10 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 Theme documentation is available on https://colorlib.com/wp/support/activello
 
 #### Changelog
+= 1.6.1 =
+* The no-js class swap is now printed from a wp_head hook (priority 0, still ahead of the stylesheets) instead of being hardcoded in header.php, so child themes and plugins can remove it
+* Footer credit links use https
+
 = 1.6.0 =
 * Removed the Epsilon framework: the Customizer toggles are now a small theme-owned control with identical appearance, and saved settings are untouched (Epsilon's upstream repository no longer exists, which also made fresh git clones of this theme unusable)
 * The repository no longer uses git submodules -- cloning or downloading from GitHub now just works
