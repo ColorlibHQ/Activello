@@ -13,8 +13,8 @@ Easiest way to go about cloning a repository recursively is to use (Windows only
 
 * Theme Name: Activello
 * Theme URI: https://colorlib.com/wp/Activello/
-* Version: 1.4.9
-* Tested up to: WP 6.8
+* Version: 1.5.0
+* Tested up to: WP 7.0
 
 ```
 * Author: Aigars Silkalns
@@ -74,6 +74,18 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 Theme documentation is available on https://colorlib.com/wp/support/activello
 
 #### Changelog
+= 1.5.0 =
+* Security: added nonce and capability checks to the welcome-screen AJAX handlers, which previously ran without either
+* Security: removed unused plugin activate/deactivate handlers that ran on admin_init, and moved the demo front-page setter onto a proper authenticated AJAX action
+* Fixed the Bootstrap version mix: the theme now ships genuine Bootstrap 3.4.1 CSS and JS (includes the CVE-2019-8331 fix) instead of 3.3.7 CSS with 4.x JS and a hand-patched mobile menu
+* Fixed the front-page slider failing to initialise when jQuery Migrate is disabled; updated FlexSlider from 2.6.3 to 2.7.0
+* Rewrote theme JavaScript in plain DOM APIs -- theme scripts no longer depend on jQuery, load in the footer, and honour prefers-reduced-motion
+* Removed Modernizr and the legacy IE conditional-comment markup
+* Escaped remaining output across templates, widgets and admin screens; colours are re-validated at output time
+* Fixed PHP 8.5 deprecations and the WordPress 6.7+ early-translation notice; verified with zero notices on WordPress 7.0 / PHP 8.5
+* Added block editor support: wp-block-styles, align-wide, responsive-embeds and an editor stylesheet matching the front end
+* All theme assets are now versioned from the theme version for reliable cache busting
+
 = 1.4.9 =
 * Fixed Epsilon_Section_Recommended_Actions class loading in customizer
 * Added missing required header information in style.css
