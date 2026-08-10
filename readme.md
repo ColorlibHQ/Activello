@@ -1,19 +1,8 @@
-[![Build Status](https://api.travis-ci.org/puikinsh/Activello.svg?branch=master)](https://travis-ci.org/puikinsh/Activello)
-
-# Repository clone/download :fire: :fire: :fire:
-
-This repository contains a git sub-module and as such, can not be completely downloaded using the web-interface of GitHub. This is a known limitation of GitHub's own tools. However, cloning this repository via CLI works absolutely fine and will pull all sub-modules as long as you use the proper commands.
-
-Here's a short tutorial on how to achieve this as well as a better explanation of what Git sub-modules are and how they're useful: https://gist.github.com/gitaarik/8735255
-
-Easiest way to go about cloning a repository recursively is to use (Windows only) TortoiseGIT: https://tortoisegit.org/.
-
-
 # About Theme
 
 * Theme Name: Activello
 * Theme URI: https://colorlib.com/wp/Activello/
-* Version: 1.5.0
+* Version: 1.6.0
 * Tested up to: WP 7.0
 
 ```
@@ -33,10 +22,9 @@ Unless otherwise specified, all the theme files, scripts and images are licensed
 
 Activello theme uses:
 * FontAwesome (https://fontawesome.com/) licensed under the SIL OFL 1.1 (https://scripts.sil.org/OFL)
-* Bootstrap and GLYPHICONS Halflings (http://getbootstrap.com/) licensed under MIT license (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+* Bootstrap 3.4.1 and GLYPHICONS Halflings (http://getbootstrap.com/) licensed under MIT license (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 * WP-Bootstrap-NavWalker licensed under the GPLv2 license (https://www.gnu.org/licenses/gpl-2.0.html)
-* FlexSlider by WooThemes licensed under the GPLv2 license (https://www.gnu.org/licenses/gpl-2.0.html)
-* Modernizr (https://github.com/Modernizr/Modernizr) licensed under MIT license
+* FlexSlider 2.7.0 by WooThemes licensed under the GPLv2 license (https://www.gnu.org/licenses/gpl-2.0.html)
 * Unless otherwise specified, all images are created by Colorlib
 
 ### Description
@@ -74,6 +62,16 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 Theme documentation is available on https://colorlib.com/wp/support/activello
 
 #### Changelog
+= 1.6.0 =
+* Removed the Epsilon framework: the Customizer toggles are now a small theme-owned control with identical appearance, and saved settings are untouched (Epsilon's upstream repository no longer exists, which also made fresh git clones of this theme unusable)
+* The repository no longer uses git submodules -- cloning or downloading from GitHub now just works
+* Rebuilt the About Activello screen on core admin markup; the Recommended Plugins tab now renders WordPress' own plugin cards with details modals
+* Removed the never-satisfiable "required actions" importer nag and its notification system
+* Regenerated the translation template (181 strings, zero extraction warnings) and refreshed all 26 bundled translations
+* Passed Theme Check: development files no longer ship with the theme, the 1.1 MB screenshot is now an optimized 318 KB JPG and the welcome logo shrank from 778 KB to 11 KB
+* Verified WooCommerce shop, product, cart, checkout and my-account templates on WordPress 7.0 / PHP 8.5
+* Removed the obsolete Grunt/Travis toolchain
+
 = 1.5.0 =
 * Security: added nonce and capability checks to the welcome-screen AJAX handlers, which previously ran without either
 * Security: removed unused plugin activate/deactivate handlers that ran on admin_init, and moved the demo front-page setter onto a proper authenticated AJAX action
