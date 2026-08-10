@@ -5,8 +5,6 @@
  * @package activello
  */
 
-require_once get_template_directory() . '/inc/libraries/epsilon-framework/controls/class-epsilon-control-toggle.php';
-
 /**
  * Add postMessage support for site title and description for the Theme Customizer.
  *
@@ -56,8 +54,8 @@ function activello_customizer( $wp_customize ) {
 	) );
 
 	// add checkbox control for excerpts/full posts toggle
-	$wp_customize->add_control( new Epsilon_Control_Toggle( $wp_customize, 'activello_excerpts', array(
-		'type'        => 'epsilon-toggle',
+	$wp_customize->add_control( new Activello_Customize_Toggle_Control( $wp_customize, 'activello_excerpts', array(
+		'type'        => 'activello-toggle',
 		'label'     => esc_html__( 'Show post excerpts?', 'activello' ),
 		'section'   => 'activello_content_section',
 		'priority'  => 10,
@@ -70,8 +68,8 @@ function activello_customizer( $wp_customize ) {
 	) );
 
 	// add checkbox control for excerpts/full posts toggle
-	$wp_customize->add_control( new Epsilon_Control_Toggle( $wp_customize, 'activello_categories', array(
-		'type'        => 'epsilon-toggle',
+	$wp_customize->add_control( new Activello_Customize_Toggle_Control( $wp_customize, 'activello_categories', array(
+		'type'        => 'activello-toggle',
 		'label'     => esc_html__( 'Show only one category in archives?', 'activello' ),
 		'section'   => 'activello_content_section',
 		'priority'  => 10,
@@ -82,8 +80,8 @@ function activello_customizer( $wp_customize ) {
 		'sanitize_callback' => 'activello_sanitize_checkbox',
 	) );
 
-	$wp_customize->add_control( new Epsilon_Control_Toggle( $wp_customize, 'activello_page_comments', array(
-		'type'        => 'epsilon-toggle',
+	$wp_customize->add_control( new Activello_Customize_Toggle_Control( $wp_customize, 'activello_page_comments', array(
+		'type'        => 'activello-toggle',
 		'label'     => esc_html__( 'Display Comments on Static Pages?', 'activello' ),
 		'section'   => 'activello_content_section',
 		'priority'  => 20,
@@ -126,8 +124,8 @@ function activello_customizer( $wp_customize ) {
 		'sanitize_callback' => 'activello_sanitize_checkbox',
 	) );
 
-	$wp_customize->add_control( new Epsilon_Control_Toggle( $wp_customize, 'activello_featured_hide', array(
-		'type'        => 'epsilon-toggle',
+	$wp_customize->add_control( new Activello_Customize_Toggle_Control( $wp_customize, 'activello_featured_hide', array(
+		'type'        => 'activello-toggle',
 		'label'     => esc_html__( 'Show Slider', 'activello' ),
 		'section'   => 'activello_featured_section',
 	)));
@@ -321,6 +319,14 @@ function activello_sanitize_number( $input ) {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function activello_customize_preview_js() {
-	wp_enqueue_script( 'activello_customizer', get_template_directory_uri() . '/assets/js/customizer.js', array( 'customize-preview' ), '20160217', true );
+	wp_enqueue_script( 'activello_customizer', get_template_directory_uri() . '/assets/js/customizer.js', array( 'customize-preview' ), ACTIVELLO_VERSION, true );
 }
 add_action( 'customize_preview_init', 'activello_customize_preview_js' );
+
+/**
+ * Styles for the theme's own Customizer controls (the on/off toggles).
+ */
+function activello_customize_controls_css() {
+	wp_enqueue_style( 'activello-customizer-controls', get_template_directory_uri() . '/assets/css/customizer.css', array(), ACTIVELLO_VERSION );
+}
+add_action( 'customize_controls_enqueue_scripts', 'activello_customize_controls_css' );

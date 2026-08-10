@@ -1,67 +1,10 @@
 <?php
-
-add_action( 'customize_register', 'activello_ws_customize_register' );
-
-function activello_ws_customize_register( $wp_customize ) {
-
-	// Recomended actions
-	global $activello_required_actions, $activello_recommended_plugins;
-
-	$customizer_recommended_plugins = array();
-	if ( is_array( $activello_recommended_plugins ) ) {
-		foreach ( $activello_recommended_plugins as $k => $s ) {
-			if ( $s['recommended'] ) {
-				$customizer_recommended_plugins[ $k ] = $s;
-			}
-		}
-	}
-
-	// Make sure the Epsilon Section classes are loaded
-	$section_path = get_template_directory() . '/inc/libraries/epsilon-framework/sections/';
-	if ( ! class_exists( 'Epsilon_Section_Recommended_Actions' ) && file_exists( $section_path . 'class-epsilon-section-recommended-actions.php' ) ) {
-		require_once $section_path . 'class-epsilon-section-recommended-actions.php';
-	}
-	
-	if ( ! class_exists( 'Epsilon_Section_Pro' ) && file_exists( $section_path . 'class-epsilon-section-pro.php' ) ) {
-		require_once $section_path . 'class-epsilon-section-pro.php';
-	}
-
-	$theme_slug = 'activello';
-
-	$wp_customize->add_section(
-		new Epsilon_Section_Recommended_Actions(
-			$wp_customize,
-			'epsilon_recomended_section',
-			array(
-				'title'                        => esc_html__( 'Recomended Actions', 'activello' ),
-				'social_text'                  => esc_html__( 'We are social', 'activello' ),
-				'plugin_text'                  => esc_html__( 'Recomended Plugins', 'activello' ),
-				'actions'                      => $activello_required_actions,
-				'plugins'                      => $customizer_recommended_plugins,
-				'theme_specific_option'        => $theme_slug . '_show_required_actions',
-				'theme_specific_plugin_option' => $theme_slug . '_show_recommended_plugins',
-				'facebook'                     => 'https://www.facebook.com/colorlib',
-				'twitter'                      => 'https://twitter.com/colorlib',
-				'wp_review'                    => true,
-				'priority'                     => 0,
-			)
-		)
-	);
-
-	$wp_customize->add_section(
-		new Epsilon_Section_Pro(
-			$wp_customize,
-			'epsilon-section-pro',
-			array(
-				'title'       => esc_html__( 'Activello', 'activello' ),
-				'button_text' => esc_html__( 'Documentation', 'activello' ),
-				'button_url'  => 'https://colorlib.com/wp/support/activello/',
-				'priority'    => 0,
-			)
-		)
-	);
-
-}
+/**
+ * Note: the Epsilon-powered "Recomended Actions" and "Pro" Customizer sections
+ * were removed along with the Epsilon framework in 1.6.0. The same content
+ * (recommended actions, recommended plugins, documentation links) lives on the
+ * About Activello screen under Appearance.
+ */
 
 // Load the system checks ( used for notifications )
 require get_template_directory() . '/inc/welcome-screen/class-mt-notify-system.php';

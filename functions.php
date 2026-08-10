@@ -389,15 +389,10 @@ if ( ! function_exists( 'activello_header_search_filter' ) ) {
 	}
 }
 
-// Include Epsilon Framework
-require_once 'inc/libraries/epsilon-framework/class-epsilon-autoloader.php';
-$args = array(
-	'controls' => array( 'toggle' ), // array of controls to load
-	'sections' => array( 'recommended-actions', 'pro' ), // array of sections to load
-	'path'     => get_template_directory() . '/inc/libraries/epsilon-framework/', // path to Epsilon Framework
-);
-
-new Epsilon_Framework( $args );
+/**
+ * Customizer toggle control (replaces the removed Epsilon framework).
+ */
+require get_template_directory() . '/inc/class-activello-customize-toggle-control.php';
 
 // Add welcome screen - moved to init hook
 function activello_welcome_screen_setup() {
