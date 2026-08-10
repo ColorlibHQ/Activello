@@ -6,13 +6,13 @@
 * Tested up to: WP 7.0
 
 ```
-* Author: Aigars Silkalns
+* Author: Colorlib
 * Author URI: https://colorlib.com/
-* License: GNU General Public License v3.0
-* License URI: https://www.gnu.org/licenses/gpl.html
-* Activello theme, Copyright 2017 colorlib.com
+* License: GNU General Public License v2 or later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
+* Activello theme, Copyright 2015-2026 Colorlib
 * Activello WordPress theme is distributed under the terms of the GNU GPL
-* Activello is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+* Activello is based on Underscores https://underscores.me/, (C) 2012-2026 Automattic, Inc.
 ```
 
 ---
@@ -71,6 +71,7 @@ Theme documentation is available on https://colorlib.com/wp/support/activello
 * Passed Theme Check: development files no longer ship with the theme, the 1.1 MB screenshot is now an optimized 318 KB JPG and the welcome logo shrank from 778 KB to 11 KB
 * Verified WooCommerce shop, product, cart, checkout and my-account templates on WordPress 7.0 / PHP 8.5
 * Removed the obsolete Grunt/Travis toolchain
+* Corrected the style.css theme headers for the WordPress.org directory: added the missing "Requires at least" header, removed tags the theme cannot back up (rtl-language-support without an rtl.css, footer-widgets with no footer widget areas, accessibility-ready), added the e-commerce tag, refreshed the description and aligned the licence statement (GPL v2 or later) across style.css and the readme
 
 = 1.5.0 =
 * Security: added nonce and capability checks to the welcome-screen AJAX handlers, which previously ran without either

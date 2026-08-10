@@ -3,17 +3,19 @@ Theme Name: Activello
 Theme URI: https://colorlib.com/wp/themes/activello/
 Author: Colorlib
 Author URI: https://colorlib.com
-Description: Activello is a creative and modern WordPress blog theme. It's perfect for personal blogs, magazines, newspapers, and other editorial projects. The theme is fully responsive and Retina ready. It has a clean and modern design with a focus on typography and usability.
+Description: Activello is a clean and minimal WordPress blog theme with a premium look and feel, well suited for food, fashion, travel, lifestyle and any other beautiful blog. It ships a full-width featured slider, a widgetized sidebar, four layout options you can set globally or per post, and Customizer options for colours, header and footer with live preview. The front end is fully responsive, built on Bootstrap, and the theme's own JavaScript runs without jQuery. Activello is WooCommerce ready, SEO friendly, translation ready and comes with over twenty bundled translations.
 Version: 1.6.0
+Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: activello
-Tags: blog, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Tags: blog, e-commerce, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-Activello is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Activello theme, Copyright 2015-2026 Colorlib
+Activello is based on Underscores http://underscores.me/, (C) 2012-2026 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
