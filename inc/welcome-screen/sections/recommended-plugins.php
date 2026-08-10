@@ -46,7 +46,7 @@ wp_enqueue_script( 'updates' );
 
 		?>
 		<div class="col plugin_box">
-			<img src="<?php echo esc_attr( $icon ) ?>" alt="plugin box image">
+			<img src="<?php echo esc_url( $icon ) ?>" alt="plugin box image">
 			<span class="version"><?php echo __( 'Version:', 'activello' ); ?><?php echo esc_html( $version ); ?></span>
 			<span class="separator">|</span> <?php echo wp_kses_post( $author ); ?>
 			<div class="action_bar <?php echo esc_attr( ( 'install' !== $active['needs'] && $active['status'] ) ? 'active' : '' ) ?>">

@@ -11,17 +11,20 @@ wp_enqueue_script( 'updates' );
 
 	<?php
 	global $activello_required_actions, $activello_recommended_plugins;
+	$nr_actions_required = 0;
+	$nr_action_dismissed = 0;
 	if ( ! empty( $activello_required_actions ) ) :
 		/* activello_show_required_actions is an array of true/false for each required action that was dismissed */
-		$nr_actions_required = 0;
-		$nr_action_dismissed = 0;
 		$activello_show_required_actions = get_option( 'activello_show_required_actions' );
+		if ( ! is_array( $activello_show_required_actions ) ) {
+			$activello_show_required_actions = array();
+		}
 		foreach ( $activello_required_actions as $activello_required_action_key => $activello_required_action_value ) :
 			$hidden = false;
-			if ( false === @$activello_show_required_actions[ $activello_required_action_value['id'] ] ) {
+			if ( isset( $activello_show_required_actions[ $activello_required_action_value['id'] ] ) && false === $activello_show_required_actions[ $activello_required_action_value['id'] ] ) {
 				$hidden = true;
 			}
-			if ( @$activello_required_action_value['check'] ) {
+			if ( ! empty( $activello_required_action_value['check'] ) ) {
 				continue;
 			}
 			$nr_actions_required ++;
@@ -38,12 +41,12 @@ wp_enqueue_script( 'updates' );
 					<span data-action="add" class="dashicons dashicons-hidden activello-required-action-button"
 						  id="<?php echo esc_attr( $activello_required_action_value['id'] ); ?>"></span>
 				<?php endif; ?>
-				<h3><?php if ( ! empty( $activello_required_action_value['title'] ) ) : echo $activello_required_action_value['title'];
+				<h3><?php if ( ! empty( $activello_required_action_value['title'] ) ) : echo esc_html( $activello_required_action_value['title'] );
 endif; ?></h3>
 				<p>
-					<?php if ( ! empty( $activello_required_action_value['description'] ) ) : echo $activello_required_action_value['description'];
+					<?php if ( ! empty( $activello_required_action_value['description'] ) ) : echo wp_kses_post( $activello_required_action_value['description'] );
 endif; ?>
-					<?php if ( ! empty( $activello_required_action_value['help'] ) ) : echo '<br/>' . $activello_required_action_value['help'];
+					<?php if ( ! empty( $activello_required_action_value['help'] ) ) : echo '<br/>' . wp_kses_post( $activello_required_action_value['help'] );
 endif; ?>
 				</p>
 				<?php
@@ -68,8 +71,8 @@ endif; ?>
 					?>
 					<p class="plugin-card-<?php echo esc_attr( $activello_required_action_value['plugin_slug'] ) ?> action_button <?php echo ( 'install' !== $active['needs'] && $active['status'] ) ? 'active' : '' ?>">
 						<a data-slug="<?php echo esc_attr( $activello_required_action_value['plugin_slug'] ) ?>"
-						   class="<?php echo $class; ?>"
-						   href="<?php echo esc_url( $url ) ?>"> <?php echo $label ?> </a>
+						   class="<?php echo esc_attr( $class ); ?>"
+						   href="<?php echo esc_url( $url ) ?>"> <?php echo esc_html( $label ) ?> </a>
 					</p>
 					<?php
 				};
@@ -109,6 +112,12 @@ endif; ?>
 			$active = $this->check_active( $slug );
 			$url    = $this->create_action_link( $active['needs'], $slug );
 			$info   = $this->call_plugin_api( $slug );
+
+			if ( is_wp_error( $info ) ) {
+				echo '</div>';
+				continue;
+			}
+
 			$label  = '';
 			$class = '';
 switch ( $active['needs'] ) {
@@ -127,14 +136,14 @@ switch ( $active['needs'] ) {
 }
 
 			?>
-			<h3><?php echo $label . ': ' . $info->name ?></h3>
+			<h3><?php echo esc_html( $label . ': ' . ( isset( $info->name ) ? $info->name : $slug ) ); ?></h3>
 			<p>
-				<?php echo $info->short_description ?>
+				<?php echo isset( $info->short_description ) ? esc_html( $info->short_description ) : ''; ?>
 			</p>
 			<p class="plugin-card-<?php echo esc_attr( $slug ) ?> action_button <?php echo ( 'install' != $active['needs'] && $active['status'] ) ? 'active' : '' ?>">
 				<a data-slug="<?php echo esc_attr( $slug ) ?>"
-				   class="<?php echo $class; ?>"
-				   href="<?php echo esc_url( $url ) ?>"> <?php echo $label ?> </a>
+				   class="<?php echo esc_attr( $class ); ?>"
+				   href="<?php echo esc_url( $url ) ?>"> <?php echo esc_html( $label ) ?> </a>
 			</p>
 			<?php
 

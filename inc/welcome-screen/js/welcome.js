@@ -15,11 +15,11 @@ jQuery(document).ready(function () {
             action = jQuery(this).attr('data-action');
         jQuery.ajax({
             type      : "GET",
-            data      : { action: 'activello_dismiss_required_action', id: id, todo: action },
+            data      : { action: 'activello_dismiss_required_action', id: id, todo: action, nonce: activelloWelcomeScreenObject.nonce },
             dataType  : "html",
             url       : activelloWelcomeScreenObject.ajaxurl,
             beforeSend: function (data, settings) {
-                jQuery('.activello-tab-pane#actions_required h1').append('<div id="temp_load" style="text-align:center"><img src="' + activelloWelcomeScreenObject.template_directory + '/inc/admin/welcome-screen/img/ajax-loader.gif" /></div>');
+                jQuery('.activello-tab-pane#actions_required h1').append('<div id="temp_load" style="text-align:center"><img src="' + activelloWelcomeScreenObject.template_directory + '/inc/welcome-screen/img/ajax-loader.gif" /></div>');
             },
             success   : function (data) {
                 location.reload();
@@ -39,11 +39,11 @@ jQuery(document).ready(function () {
             action = jQuery(this).attr('data-action');
         jQuery.ajax({
             type      : "GET",
-            data      : { action: 'activello_dismiss_recommended_plugins', id: id, todo: action },
+            data      : { action: 'activello_dismiss_recommended_plugins', id: id, todo: action, nonce: activelloWelcomeScreenObject.nonce },
             dataType  : "html",
             url       : activelloWelcomeScreenObject.ajaxurl,
             beforeSend: function (data, settings) {
-                jQuery('.activello-tab-pane#actions_required h1').append('<div id="temp_load" style="text-align:center"><img src="' + activelloWelcomeScreenObject.template_directory + '/inc/admin/welcome-screen/img/ajax-loader.gif" /></div>');
+                jQuery('.activello-tab-pane#actions_required h1').append('<div id="temp_load" style="text-align:center"><img src="' + activelloWelcomeScreenObject.template_directory + '/inc/welcome-screen/img/ajax-loader.gif" /></div>');
             },
             success   : function (data) {
                 location.reload();
