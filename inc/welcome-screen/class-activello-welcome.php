@@ -150,7 +150,10 @@ class Activello_Welcome {
 	public function activello_welcome_admin_notice() {
 		?>
 		<div class="updated notice is-dismissible">
-			<p><?php echo sprintf( esc_html__( 'Welcome! Thank you for choosing Activello! To fully take advantage of the best our theme can offer please make sure you visit our %1$swelcome page%2$s.', 'activello' ), '<a href="' . esc_url( admin_url( 'themes.php?page=activello-welcome' ) ) . '">', '</a>' ); ?></p>
+			<p><?php
+			/* translators: 1: opening link tag to the welcome page, 2: closing link tag */
+			echo sprintf( esc_html__( 'Welcome! Thank you for choosing Activello! To fully take advantage of the best our theme can offer please make sure you visit our %1$swelcome page%2$s.', 'activello' ), '<a href="' . esc_url( admin_url( 'themes.php?page=activello-welcome' ) ) . '">', '</a>' );
+			?></p>
 			<p><a href="<?php echo esc_url( admin_url( 'themes.php?page=activello-welcome' ) ); ?>" class="button"
 				  style="text-decoration: none;"><?php _e( 'Get started with Activello', 'activello' ); ?></a></p>
 		</div>

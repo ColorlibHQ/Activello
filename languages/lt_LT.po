@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Activello Theme\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-19 17:45+0100\n"
+"Report-Msgid-Bugs-To: https://colorlib.com/\n"
+"POT-Creation-Date: 2026-08-10T12:17:12+00:00\n"
 "PO-Revision-Date: 2017-02-19 17:45+0100\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
@@ -10,22 +10,51 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 &&(n"
-"%100<10||n%100 >= 20)? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 "
+"&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
-"esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-KeywordsList: "
+"_e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
 "X-Loco-Target-Locale: lt_LT\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
-#: ../404.php:15
+#. Theme Name of the theme
+#: style.css
+msgid "Activello"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://colorlib.com/wp/themes/activello/"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid ""
+"Activello is a creative and modern WordPress blog theme. It's perfect for "
+"personal blogs, magazines, newspapers, and other editorial projects. The "
+"theme is fully responsive and Retina ready. It has a clean and modern design "
+"with a focus on typography and usability."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Colorlib"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://colorlib.com"
+msgstr ""
+
+#: 404.php:15
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "Oi! Puslapis nerastas."
 
-#: ../404.php:19
+#: 404.php:19
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
@@ -33,994 +62,519 @@ msgstr ""
 "Panašu, kad čia nieko nėra. Galbūt jums padės paieškos galimybė arba viena "
 "iš žemiau esančių nuorodų?"
 
-#: ../404.php:25
+#: 404.php:25 inc/widgets/class-activello-recent-posts.php:15
+#: inc/widgets/class-activello-recent-posts.php:92
 msgid "Recent Posts"
 msgstr "Naujausi įrašai"
 
-#: ../404.php:31
+#: 404.php:31
 msgid "Most Used Categories"
 msgstr "Įrašų kategorijos"
 
-#: ../404.php:52
+#. translators: %1$s: smiley
+#: 404.php:52
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Pabandykite paieškoti mėnesių archyvuose. %1$s"
 
-#: ../404.php:53 ../archive.php:66 ../sidebar.php:31
+#: 404.php:53 archive.php:70 sidebar.php:29
 msgid "Archives"
 msgstr "Archyvai"
 
-#: ../404.php:58
+#: 404.php:58
 msgid "Tags"
 msgstr "Žymos"
 
-#: ../archive.php:27
+#. translators: %s: author name
+#: archive.php:28
 #, php-format
 msgid "Author: %s"
 msgstr "Autorius: %s"
 
-#: ../archive.php:30
+#. translators: %s: day
+#: archive.php:32
 #, php-format
 msgid "Day: %s"
 msgstr "Diena: %s"
 
-#: ../archive.php:33
+#. translators: %s: month
+#: archive.php:36
 #, php-format
 msgid "Month: %s"
 msgstr "Mėnuo: %s"
 
-#: ../archive.php:36
+#. translators: %s: month
+#: archive.php:36
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "Y F"
+
+#. translators: %s: year
+#: archive.php:40
 #, php-format
 msgid "Year: %s"
 msgstr "Metai: %s"
 
-#: ../archive.php:39
+#. translators: %s: year
+#: archive.php:40
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:43
 msgid "Asides"
 msgstr "Be pavadinimo"
 
-#: ../archive.php:42
+#: archive.php:46
 msgid "Galleries"
 msgstr "Galerijos"
 
-#: ../archive.php:45
+#: archive.php:49
 msgid "Images"
 msgstr "Paveikslėliai"
 
-#: ../archive.php:48
+#: archive.php:52
 msgid "Videos"
 msgstr "Video"
 
-#: ../archive.php:51
+#: archive.php:55
 msgid "Quotes"
 msgstr "Citatos"
 
-#: ../archive.php:54
+#: archive.php:58
 msgid "Links"
 msgstr "Nuorodos"
 
-#: ../archive.php:57
+#: archive.php:61
 msgid "Statuses"
 msgstr "Būsenos"
 
-#: ../archive.php:60
+#: archive.php:64
 msgid "Audios"
 msgstr "Audio"
 
-#: ../archive.php:63
+#: archive.php:67
 msgid "Chats"
 msgstr "Pokalbiai"
 
-#: ../comments.php:28
-#, php-format
+#. translators: %s: post title
+#: comments.php:31
+#, fuzzy, php-format
 msgctxt "comments title"
-msgid "1 Comment"
-msgid_plural "%1$s Comment"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr "%1$s komentaras<!--%2$s-->"
 
-#: ../comments.php:35 ../comments.php:54
+#. translators: 1: number of comments, 2: post title
+#: comments.php:35
+#, fuzzy, php-format
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s komentaras<!--%2$s-->"
+msgstr[1] "%1$s komentarai<!--%2$s-->"
+msgstr[2] "%1$s komentarų<!--%2$s-->"
+
+#: comments.php:51 comments.php:70
 msgid "Comment navigation"
 msgstr "Komentarų navigacija"
 
-#: ../comments.php:36 ../comments.php:55
+#: comments.php:52 comments.php:71
 msgid "&larr; Older Comments"
 msgstr "&larr; Senesni komentarai"
 
-#: ../comments.php:37 ../comments.php:56
+#: comments.php:53 comments.php:72
 msgid "Newer Comments &rarr;"
 msgstr "Naujesni komentarai &rarr;"
 
-#: ../comments.php:66
+#: comments.php:82
 msgid "Comments are closed."
 msgstr "Komentavimo galimybė išjungta."
 
-#: ../comments.php:77
+#: comments.php:93
 msgid "Name"
 msgstr ""
 
-#: ../comments.php:81
+#: comments.php:97
 msgid "Email"
 msgstr ""
 
-#: ../comments.php:85
+#: comments.php:101
 msgid "Website"
 msgstr ""
 
-#: ../comments.php:94
+#: comments.php:110
 msgid "Post Reply"
 msgstr ""
 
-#: ../content-grid.php:16 ../content-page.php:26 ../inc/extras.php:266
-msgid "Edit"
-msgstr "Redaguoti"
-
-#: ../content-grid.php:28 ../content.php:41 ../content.php:67
-#: ../inc/extras.php:151
-msgid "Read More"
-msgstr "Skaityti toliau"
-
-#: ../content-grid.php:37 ../content-page.php:21 ../content-single.php:43
-#: ../content.php:56 ../image.php:79
-msgid "Pages:"
-msgstr "Puslapiai:"
-
-#: ../content-none.php:13
-msgid "Nothing Found"
-msgstr "Nerasta"
-
-#: ../content-none.php:19
-#, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-"Pasirengę paskelbti pirmąjį įrašą? <a href=\"%1$s\">Pradėkite nuo čia</a>."
-
-#: ../content-none.php:23
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
-"Deja, nieko panašaus rasti nepavyko. Pabandykite įvesti kitokį paieškos "
-"raktažodį."
-
-#: ../content-none.php:28
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-"Panašu, kad nepavyko rasti jūsų ieškomo puslapio. Galbūt jums padės paieškos "
-"galimybė."
-
-#: ../content-single.php:21 ../content.php:22
-#, php-format
-msgid "Edit %s"
-msgstr ""
-
-#: ../content-single.php:55 ../content.php:73
-msgid "No comments yet"
-msgstr ""
-
-#: ../content-single.php:55
-msgid "Comment (1)"
-msgstr ""
-
-#: ../content-single.php:55
-msgid "Comments (%)"
-msgstr ""
-
-#: ../content.php:73
-msgid "1 Comment"
+#: comments.php:112
+#, fuzzy
+msgctxt "comment form placeholder"
+msgid "Comment"
 msgstr "Komentarų: 1"
 
-#: ../content.php:73
-msgid "% Comments"
-msgstr "Komentarų: %"
-
-#: ../functions.php:71
+#: functions.php:86
 msgid "Primary Menu"
 msgstr "Pagrindinis meniu"
 
-#: ../functions.php:114
+#: functions.php:164
 msgid "Sidebar"
 msgstr "Valdiklių sritis"
 
-#: ../functions.php:233
+#: functions.php:315
 msgid "Left Sidebar"
 msgstr "Valdiklių sritis kairėje"
 
-#: ../functions.php:233
+#: functions.php:316
 msgid "Right Sidebar"
 msgstr "Valdiklių sritis dešinėje"
 
-#: ../functions.php:233
+#: functions.php:317
 msgid "No Sidebar"
 msgstr ""
 
-#: ../functions.php:233
+#: functions.php:318
 msgid "Full Width"
 msgstr ""
 
-#: ../functions.php:235
+#: functions.php:321
 msgid "Logo Only"
 msgstr ""
 
-#: ../functions.php:236
+#: functions.php:322
 msgid "Logo + Tagline"
 msgstr ""
 
-#: ../functions.php:237
+#: functions.php:323
 msgid "Title Only"
 msgstr ""
 
-#: ../functions.php:238
+#: functions.php:324
 msgid "Title + Tagline"
 msgstr ""
 
-#: ../functions.php:275 ../searchform.php:14
+#: functions.php:387
+#, fuzzy
+msgctxt "search placeholder"
 msgid "Search"
-msgstr ""
+msgstr "Paieška"
 
-#: ../functions.php:275 ../searchform.php:14
+#: functions.php:387 searchform.php:14
 msgctxt "submit button"
 msgid "Search"
 msgstr "Paieška"
 
-#: ../header.php:40
+#: header.php:33
 msgid "Toggle navigation"
 msgstr ""
 
-#: ../image.php:22
+#: image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
 msgstr "<i class=\"fa fa-chevron-left\"></i> Ankstesnis"
 
-#: ../image.php:23
+#: image.php:23
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
 msgstr "Kitas <i class=\"fa fa-chevron-right\"></i>"
 
-#: ../inc/customizer.php:30
-msgid "Logo"
+#: image.php:80 template-parts/content-grid.php:41
+#: template-parts/content-page.php:26 template-parts/content-single.php:48
+#: template-parts/content.php:80
+msgid "Pages:"
+msgstr "Puslapiai:"
+
+#: inc/class-activello-nux-admin.php:62
+msgid "Thanks for installing Activello, you rock!"
 msgstr ""
 
-#: ../inc/customizer.php:44
+#: inc/class-activello-nux-admin.php:63
+msgid ""
+"Activello now support full width posts on homepage. If you have done this "
+"using custom CSS please go to Customizer -> Activello Options -> Layout "
+"Options -> Blog Posts Layout Options in order to have full width images."
+msgstr ""
+
+#: inc/class-activello-nux-admin.php:64
+msgid ""
+"Also in order to increase our theme speed we changed the images' sizes. In "
+"order to take advantage of this improvement you'll need to use Force "
+"Regenerate Thumbnails to regenerate all your image sizes."
+msgstr ""
+
+#: inc/class-activello-nux-admin.php:65
+msgid "Regenerate Thumbnails Now"
+msgstr ""
+
+#: inc/class-activello-nux-admin.php:65
+msgid "Activate Force Regenerate Thumbnails"
+msgstr ""
+
+#: inc/class-activello-nux-admin.php:65
+msgid "Install Force Regenerate Thumbnails"
+msgstr ""
+
+#: inc/class-activello-nux-admin.php:91
+msgid "Settings"
+msgstr ""
+
+#: inc/class-activello-nux-admin.php:102
+#: inc/welcome-screen/sections/actions-required.php:70
+#: inc/welcome-screen/sections/actions-required.php:133
+#: inc/welcome-screen/sections/recommended-plugins.php:53
+msgid "Activate"
+msgstr ""
+
+#: inc/class-activello-nux-admin.php:117
+msgid "Install now"
+msgstr ""
+
+#: inc/customizer.php:30
 msgid "Show"
 msgstr ""
 
-#: ../inc/customizer.php:53
+#: inc/customizer.php:38
 msgid "Activello Options"
 msgstr ""
 
-#: ../inc/customizer.php:54
+#: inc/customizer.php:39
 msgid "Panel to update activello theme options"
 msgstr ""
 
-#: ../inc/customizer.php:60
+#: inc/customizer.php:45
 #, fuzzy
 msgid "Content Options"
 msgstr "Išsaugoti nustatymus"
 
-#: ../inc/customizer.php:73
+#: inc/customizer.php:59
 msgid "Show post excerpts?"
 msgstr ""
 
-#: ../inc/customizer.php:85
+#: inc/customizer.php:73
+msgid "Show only one category in archives?"
+msgstr ""
+
+#: inc/customizer.php:85
 #, fuzzy
 msgid "Display Comments on Static Pages?"
 msgstr "Rodomas pagrindiniame puslapyje"
 
-#: ../inc/customizer.php:94
+#: inc/customizer.php:91
 msgid "Slider Options"
 msgstr ""
 
-#: ../inc/customizer.php:139
+#: inc/customizer.php:104
+msgid "Choose a category"
+msgstr ""
+
+#: inc/customizer.php:117
+#, fuzzy
+msgid "Limit posts"
+msgstr "Rodomų įrašų skaičius"
+
+#: inc/customizer.php:129
+msgid "Show Slider"
+msgstr ""
+
+#: inc/customizer.php:135
 msgid "Layout options"
 msgstr ""
 
-#: ../inc/customizer.php:150
+#: inc/customizer.php:146
 msgid "Website Layout Options"
 msgstr "Svetainės išdėstymas"
 
-#: ../inc/customizer.php:153
+#: inc/customizer.php:149
 msgid "Choose between different layout options to be used as default"
 msgstr ""
 
-#: ../inc/customizer.php:162
+#: inc/customizer.php:158
+#, fuzzy
+msgid "Blog Posts Layout Options"
+msgstr "Svetainės išdėstymas"
+
+#: inc/customizer.php:161
+msgid "Choose how you want your posts to look on the Blog Page"
+msgstr ""
+
+#: inc/customizer.php:163
+msgid "Two full width posts then half width posts"
+msgstr ""
+
+#: inc/customizer.php:164
+msgid "Full width posts"
+msgstr ""
+
+#: inc/customizer.php:173
 msgid "Accent Color"
 msgstr ""
 
-#: ../inc/customizer.php:163 ../inc/customizer.php:173
-#: ../inc/customizer.php:183
+#: inc/customizer.php:174 inc/customizer.php:184 inc/customizer.php:194
 msgid "Default used if no color is selected"
 msgstr "Numatytasis nustatymas jei nėra pasirinkta spalva"
 
-#: ../inc/customizer.php:172
+#: inc/customizer.php:183
 msgid "Social icon color"
 msgstr "Socialinių ikonų spalva"
 
-#: ../inc/customizer.php:182
+#: inc/customizer.php:193
 msgid "Social Icon:hover Color"
 msgstr ""
 
-#: ../inc/customizer.php:189
+#: inc/customizer.php:200
 msgid "Footer"
 msgstr "Poraštė"
 
-#: ../inc/customizer.php:207
+#: inc/customizer.php:212
+#, fuzzy
+msgid "Copyright Text"
+msgstr "Autorinių teisių tekstas poraštėje"
+
+#: inc/customizer.php:218
 msgid "Other"
 msgstr "Kita"
 
-#: ../inc/customizer.php:225
-msgid "Support and Documentation"
-msgstr "Pagalba ir dokumentacija"
-
-#: ../inc/customizer.php:368
-msgid "Activello Documentation"
-msgstr ""
-
-#: ../inc/customizer.php:369
-msgid ""
-"The best way to contact us with <b>support questions</b> and <b>bug reports</"
-"b> is via"
-msgstr ""
-"Geriausias būdas susisiekti su mumis <b>pagalbos klausimais</b> ir "
-"<b>pranešti apie klaidas</b> yra čia"
-
-#: ../inc/customizer.php:369
-msgid "Colorlib support forum"
-msgstr "Colorlib pagalbos forumai"
-
-#: ../inc/customizer.php:370
-msgid "If you like this theme, I'd appreciate any of the following:"
-msgstr "Jei jums patinka ši tema, pasirinkite vieną iš būdų ją įvertinti:"
-
-#: ../inc/customizer.php:372
-msgid "Rate this Theme"
-msgstr "Įvertinkite temą"
-
-#: ../inc/customizer.php:373
-msgid "Like on Facebook"
-msgstr "Patinka Facebook"
-
-#: ../inc/customizer.php:374
-msgid "Follow on Twitter"
-msgstr "Sekite Twitter"
-
-#: ../inc/extras.php:54
+#: inc/extras.php:59
 msgid "Untitled"
 msgstr ""
 
-#: ../inc/extras.php:71
+#: inc/extras.php:76
 msgid ""
 "This post is password protected. To view it please enter your password below:"
 msgstr ""
 
-#: ../inc/extras.php:72
+#: inc/extras.php:77
 msgid "Password:"
 msgstr "Slaptažodis:"
 
-#: ../inc/extras.php:75
+#: inc/extras.php:80
 msgid "Submit"
 msgstr "Pateikti"
 
-#: ../inc/extras.php:172
+#: inc/extras.php:159 template-parts/content-grid.php:32
+#: template-parts/content.php:65 template-parts/content.php:91
+msgid "Read More"
+msgstr "Skaityti toliau"
+
+#. translators: 1: link to Colorlib, 2: link to WordPress
+#: inc/extras.php:178
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "%1$s tema sukurta %2$s sistemai"
 
-#: ../inc/extras.php:260
+#. translators: %s: comment author link
+#: inc/extras.php:267
 #, php-format
 msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
 msgstr ""
 
-#: ../inc/extras.php:266
+#. translators: 1: date, 2: time
+#: inc/extras.php:279
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: ../inc/extras.php:273
+#. translators: 1: date, 2: time
+#: inc/extras.php:279 template-parts/content-grid.php:16
+#: template-parts/content-page.php:31
+msgid "Edit"
+msgstr "Redaguoti"
+
+#: inc/extras.php:285
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: ../inc/metaboxes.php:16
+#: inc/metaboxes.php:15
 msgid ""
 "Select layout for this specific Page only ( Note: This setting only reflects "
 "if page Template is set as Default Template and Blog Type Templates.)"
 msgstr ""
 
-#: ../inc/metaboxes.php:21
+#: inc/metaboxes.php:20
 msgid "Select layout for this specific Post only"
 msgstr ""
 
-#: ../inc/metaboxes.php:28
+#: inc/metaboxes.php:27
 msgid "Select layout for this specific Product only"
 msgstr ""
 
-#: ../inc/metaboxes.php:58
+#: inc/metaboxes.php:56
 msgid "Default"
 msgstr ""
 
-#: ../inc/navwalker.php:196
-msgid "Add a menu"
-msgstr ""
+#: inc/socialnav.php:13
+#, fuzzy
+msgctxt "nav menu location"
+msgid "Social Menu"
+msgstr "Socialiniai"
 
-#: ../inc/template-tags.php:23
+#: inc/template-tags.php:23
 msgid "Posts navigation"
 msgstr "Įrašų navigacija"
 
-#: ../inc/template-tags.php:27
+#: inc/template-tags.php:27
 msgid "Older posts"
 msgstr ""
 
-#: ../inc/template-tags.php:31
+#: inc/template-tags.php:31
 msgid "Newer posts"
 msgstr ""
 
-#: ../inc/template-tags.php:56
+#: inc/template-tags.php:56
 msgid "Post navigation"
 msgstr "Įrašo navigacija"
 
-#: ../inc/template-tags.php:86
+#: inc/template-tags.php:59
+msgctxt "Previous post link"
+msgid "<i class=\"fa fa-chevron-left\"></i> %title"
+msgstr "<i class=\"fa fa-chevron-left\"></i> %title"
+
+#: inc/template-tags.php:60
+msgctxt "Next post link"
+msgid "%title <i class=\"fa fa-chevron-right\"></i>"
+msgstr "%title <i class=\"fa fa-chevron-right\"></i>"
+
+#: inc/template-tags.php:86
 msgid "Posted on"
 msgstr ""
 
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:327
-#: ../inc/tgmpa/tgm-plugin-activation.php:79
-msgid "Install Required Plugins"
+#: inc/template-tags.php:86
+msgid "by"
 msgstr ""
 
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:328
-#: ../inc/tgmpa/tgm-plugin-activation.php:80
-msgid "Install Plugins"
+#: inc/welcome-screen/class-activello-welcome.php:82
+#: inc/welcome-screen/class-activello-welcome.php:197
+#: inc/welcome-screen/class-activello-welcome.php:241
+msgid "You are not allowed to do that."
 msgstr ""
 
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:330
-#: ../inc/tgmpa/tgm-plugin-activation.php:81
-#, php-format
-msgid "Installing Plugin: %s"
+#: inc/welcome-screen/class-activello-welcome.php:91
+msgid "No page titled \"Homepage\" was found."
 msgstr ""
 
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:332
-#, php-format
-msgid "Updating Plugin: %s"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:333
-#: ../inc/tgmpa/tgm-plugin-activation.php:82
-msgid "Something went wrong with the plugin API."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:385
-#: ../inc/tgmpa/tgm-plugin-activation.php:93
-msgid "Return to Required Plugins Installer"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:386
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:827
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2533
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3580
-msgid "Return to the Dashboard"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:387
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3159
-#: ../inc/tgmpa/tgm-plugin-activation.php:94
-msgid "Plugin activated successfully."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:388
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2952
-msgid "The following plugin was activated successfully:"
-msgid_plural "The following plugins were activated successfully:"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:390
-#, php-format
-msgid "No action taken. Plugin %1$s was already active."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:392
-#, php-format
-msgid ""
-"Plugin not activated. A higher version of %s is needed for this theme. "
-"Please update the plugin."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:394
-#, php-format
-msgid "All plugins installed and activated successfully. %1$s"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:395
-msgid "Dismiss this notice"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:396
-msgid ""
-"There are one or more required or recommended plugins to install, update or "
-"activate."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:397
-msgid "Please contact the administrator of this site for help."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:522
-msgid "This plugin needs to be updated to be compatible with your theme."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:523
-msgid "Update Required"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:934
-msgid ""
-"The remote plugin package does not contain a folder with the desired slug "
-"and renaming did not work."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:934
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:937
-msgid ""
-"Please contact the plugin provider and ask them to package their plugin "
-"according to the WordPress guidelines."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:937
-msgid ""
-"The remote plugin package consists of more than one file, but the files are "
-"not packaged in a folder."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:1982
-#, php-format
-msgid "TGMPA v%s"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2273
-msgid "Required"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2276
-msgid "Recommended"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2292
-msgid "WordPress Repository"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2295
-msgid "External Source"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2298
-msgid "Pre-Packaged"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2315
-msgid "Not Installed"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2319
-msgid "Installed But Not Activated"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2321
-msgid "Active"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2327
-msgid "Required Update not Available"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2330
-msgid "Requires Update"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2333
-msgid "Update recommended"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2388
-#, php-format
-msgctxt "plugins"
-msgid "All <span class=\"count\">(%s)</span>"
-msgid_plural "All <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2392
-#, php-format
-msgid "To Install <span class=\"count\">(%s)</span>"
-msgid_plural "To Install <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2396
-#, php-format
-msgid "Update Available <span class=\"count\">(%s)</span>"
-msgid_plural "Update Available <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2400
-#, php-format
-msgid "To Activate <span class=\"count\">(%s)</span>"
-msgid_plural "To Activate <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2490
-msgid "Installed version:"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2498
-msgid "Minimum required version:"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2510
-msgid "Available version:"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2533
-msgid "No plugins to install, update or activate."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2547
-msgid "Plugin"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2548
-msgid "Source"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2549
-msgid "Type"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2553
-msgid "Version"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2554
-msgid "Status"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2603
-#, php-format
-msgid "Install %2$s"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2608
-#, php-format
-msgid "Update %2$s"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2614
-#, php-format
-msgid "Activate %2$s"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2684
-msgid "Upgrade message from the plugin author:"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2717
-#: ../inc/welcome-screen/custom-recommend-action-section.php:108
-#: ../inc/welcome-screen/sections/actions-required.php:41
-#: ../inc/welcome-screen/sections/recommended-plugins.php:24
-msgid "Install"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2723
-msgid "Update"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2726
-#: ../inc/welcome-screen/custom-recommend-action-section.php:112
-#: ../inc/welcome-screen/sections/actions-required.php:45
-#: ../inc/welcome-screen/sections/recommended-plugins.php:28
-msgid "Activate"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2757
-msgid "No plugins were selected to be installed. No action taken."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2759
-msgid "No plugins were selected to be updated. No action taken."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2800
-msgid "No plugins are available to be installed at this time."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2802
-msgid "No plugins are available to be updated at this time."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2908
-msgid "No plugins were selected to be activated. No action taken."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2934
-msgid "No plugins are available to be activated at this time."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3158
-msgid "Plugin activation failed."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3498
-#, php-format
-msgid "Updating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3501
-#, php-format
-msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3503
-#, php-format
-msgid "The installation of %1$s failed."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3507
-msgid ""
-"The installation and activation process is starting. This process may take a "
-"while on some hosts, so please be patient."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
-#, php-format
-msgid "%1$s installed and activated successfully."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3517
-msgid "Show Details"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3517
-msgid "Hide Details"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3510
-msgid "All installations and activations have been completed."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3512
-#, php-format
-msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3515
-msgid ""
-"The installation process is starting. This process may take a while on some "
-"hosts, so please be patient."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3517
-#, php-format
-msgid "%1$s installed successfully."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3518
-msgid "All installations have been completed."
-msgstr ""
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3520
-#, php-format
-msgid "Installing Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#: ../inc/tgmpa/tgm-plugin-activation.php:95
-#, php-format
-msgid "All plugins installed and activated successfully. %s"
-msgstr ""
-
-#: ../inc/welcome-screen/custom-recommend-action-section.php:116
-#: ../inc/welcome-screen/sections/actions-required.php:49
-#: ../inc/welcome-screen/sections/recommended-plugins.php:32
-msgid "Deactivate"
-msgstr ""
-
-#: ../inc/welcome-screen/notify-system-checks.php:154
-#: ../inc/welcome-screen/notify-system-checks.php:162
-msgid "Install: Widget Importer Exporter Plugin"
-msgstr ""
-
-#: ../inc/welcome-screen/notify-system-checks.php:159
-msgid "Activate: Widget Importer Exporter Plugin"
-msgstr ""
-
-#: ../inc/welcome-screen/notify-system-checks.php:168
-#: ../inc/welcome-screen/notify-system-checks.php:176
-msgid "Install: WordPress Importer"
-msgstr ""
-
-#: ../inc/welcome-screen/notify-system-checks.php:173
-msgid "Activate: WordPress Importer"
-msgstr ""
-
-#: ../inc/welcome-screen/notify-system-checks.php:185
-#: ../inc/welcome-screen/notify-system-checks.php:193
-msgid "Please install the WordPress Importer to create the demo content."
-msgstr ""
-
-#: ../inc/welcome-screen/notify-system-checks.php:190
-msgid "Please activate the WordPress Importer to create the demo content."
-msgstr ""
-
-#: ../inc/welcome-screen/notify-system-checks.php:199
-#: ../inc/welcome-screen/notify-system-checks.php:207
-msgid "Please install the WordPress widget importer to create the demo content"
-msgstr ""
-
-#: ../inc/welcome-screen/notify-system-checks.php:204
-msgid ""
-"Please activate the WordPress Widget Importer to create the demo content."
-msgstr ""
-
-#: ../inc/welcome-screen/sections/actions-required.php:80
-#: ../inc/welcome-screen/welcome-screen.php:149
-msgid "Hooray! There are no required actions for you right now."
-msgstr ""
-
-#: ../inc/welcome-screen/sections/getting-started.php:11
-msgid "Step 1 - Implement recommended actions"
-msgstr ""
-
-#: ../inc/welcome-screen/sections/getting-started.php:12
-msgid ""
-"We've compiled a list of steps for you, to take make sure the experience "
-"you'll have using one of our products is very easy to follow."
-msgstr ""
-
-#: ../inc/welcome-screen/sections/getting-started.php:15
-msgid "No recommended actions left to perform"
-msgstr ""
-
-#: ../inc/welcome-screen/sections/getting-started.php:18
-msgid "Check recommended actions"
-msgstr ""
-
-#: ../inc/welcome-screen/sections/getting-started.php:24
-msgid "Step 2 - Check our documentation"
-msgstr ""
-
-#: ../inc/welcome-screen/sections/getting-started.php:25
-msgid ""
-"Even if you're a long-time WordPress user, we still believe you should give "
-"our documentation a very quick Read."
-msgstr ""
-
-#: ../inc/welcome-screen/sections/getting-started.php:28
-msgid "Full documentation"
-msgstr ""
-
-#: ../inc/welcome-screen/sections/getting-started.php:33
-msgid "Step 3 - Customize everything"
-msgstr ""
-
-#: ../inc/welcome-screen/sections/getting-started.php:34
-msgid ""
-"Using the WordPress Customizer you can easily customize every aspect of the "
-"theme."
-msgstr ""
-
-#: ../inc/welcome-screen/sections/getting-started.php:36
-msgid "Go to Customizer"
-msgstr ""
-
-#: ../inc/welcome-screen/sections/recommended-plugins.php:39
-msgid "Version:"
-msgstr ""
-
-#: ../inc/welcome-screen/sections/support.php:5
-#: ../inc/welcome-screen/sections/support.php:10
-msgid "Contact Support"
-msgstr ""
-
-#: ../inc/welcome-screen/sections/support.php:7
-msgid ""
-"We offer excellent support through our advanced ticketing system. Make sure "
-"to register your purchase before contacting support!"
-msgstr ""
-
-#: ../inc/welcome-screen/sections/support.php:15
-msgid "Documentation"
-msgstr ""
-
-#: ../inc/welcome-screen/sections/support.php:17
-msgid ""
-"This is the place to go to reference different aspects of the theme. Our "
-"online documentation is an incredible resource for learning the ins and outs "
-"of using Activello."
-msgstr ""
-
-#: ../inc/welcome-screen/sections/support.php:20
-msgid "See our full documentation"
-msgstr ""
-
-#: ../inc/welcome-screen/sections/support.php:25
-#: ../inc/welcome-screen/welcome-screen.php:385
-msgid "Changelog"
-msgstr ""
-
-#: ../inc/welcome-screen/sections/support.php:27
-msgid ""
-"Want to get the gist on the latest theme changes? Just consult our changelog "
-"below to get a taste of the recent fixes and features implemented."
-msgstr ""
-
-#: ../inc/welcome-screen/sections/support.php:30
-msgid "See changelog"
-msgstr ""
-
-#: ../inc/welcome-screen/welcome-page-setup.php:16
-msgid "Recomended Actions"
-msgstr ""
-
-#: ../inc/welcome-screen/welcome-page-setup.php:17
-msgid "We're social"
-msgstr ""
-
-#: ../inc/welcome-screen/welcome-page-setup.php:75
-msgid "Download theme sample data"
-msgstr ""
-
-#: ../inc/welcome-screen/welcome-page-setup.php:76
-msgid "Head over to our website and download the sample content data."
-msgstr ""
-
-#: ../inc/welcome-screen/welcome-page-setup.php:77
-msgid "Posts"
-msgstr ""
-
-#: ../inc/welcome-screen/welcome-page-setup.php:78
-msgid "Widgets"
-msgstr ""
-
-#: ../inc/welcome-screen/welcome-page-setup.php:83
-msgid "Import Sample Data"
-msgstr ""
-
-#: ../inc/welcome-screen/welcome-page-setup.php:84
-msgid "Import Posts"
-msgstr ""
-
-#: ../inc/welcome-screen/welcome-page-setup.php:85
-msgid "Import Widgets"
-msgstr ""
-
-#: ../inc/welcome-screen/welcome-screen.php:128
+#. translators: 1: opening link tag to the welcome page, 2: closing link tag
+#: inc/welcome-screen/class-activello-welcome.php:155
 #, php-format
 msgid ""
 "Welcome! Thank you for choosing Activello! To fully take advantage of the "
-"best our theme can offer please make sure you visit our %swelcome page%s."
+"best our theme can offer please make sure you visit our %1$swelcome page%2$s."
 msgstr ""
 
-#: ../inc/welcome-screen/welcome-screen.php:130
+#: inc/welcome-screen/class-activello-welcome.php:158
 msgid "Get started with Activello"
 msgstr ""
 
-#: ../inc/welcome-screen/welcome-screen.php:168
-msgid "View Theme Info"
+#: inc/welcome-screen/class-activello-welcome.php:182
+#: inc/welcome-screen/sections/actions-required.php:160
+msgid "Hooray! There are no required actions for you right now."
 msgstr ""
 
-#: ../inc/welcome-screen/welcome-screen.php:366
+#: inc/welcome-screen/class-activello-welcome.php:416
+msgid "You are not allowed to access this page."
+msgstr ""
+
+#: inc/welcome-screen/class-activello-welcome.php:430
 msgid "Welcome to Activello! - Version "
 msgstr ""
 
-#: ../inc/welcome-screen/welcome-screen.php:369
+#: inc/welcome-screen/class-activello-welcome.php:433
 msgid ""
 "Activello is now installed and ready to use! Get ready to build something "
 "beautiful. We hope you enjoy it! We want to make sure you have the best "
@@ -1029,104 +583,313 @@ msgid ""
 "much as we enjoy creating great products."
 msgstr ""
 
-#: ../inc/welcome-screen/welcome-screen.php:376
+#: inc/welcome-screen/class-activello-welcome.php:440
 msgid "Getting Started"
 msgstr ""
 
-#: ../inc/welcome-screen/welcome-screen.php:378
-msgid "Recommended Actions"
-msgstr ""
-
-#: ../inc/welcome-screen/welcome-screen.php:381
+#: inc/welcome-screen/class-activello-welcome.php:442
 msgid "Recommended Plugins"
 msgstr ""
 
-#: ../inc/welcome-screen/welcome-screen.php:383
+#: inc/welcome-screen/class-activello-welcome.php:444
 msgid "Support"
 msgstr ""
 
-#: ../inc/widgets/widget-categories.php:11
+#: inc/welcome-screen/sections/actions-required.php:66
+#: inc/welcome-screen/sections/actions-required.php:129
+msgid "Install"
+msgstr ""
+
+#: inc/welcome-screen/sections/actions-required.php:74
+#: inc/welcome-screen/sections/actions-required.php:137
+#: inc/welcome-screen/sections/recommended-plugins.php:57
+msgid "Deactivate"
+msgstr ""
+
+#: inc/welcome-screen/sections/actions-required.php:101
+msgid ""
+"Hooray! There are no required actions for you right now. But you can make "
+"your theme more powerful with next actions: "
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:13
+msgid "Step 1 - Implement recommended actions"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:14
+msgid ""
+"We've compiled a list of steps for you, to take make sure the experience "
+"you'll have using one of our products is very easy to follow."
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:17
+msgid "No recommended actions left to perform"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:20
+msgid "Check recommended actions"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:26
+msgid "Step 2 - Check our documentation"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:27
+msgid ""
+"Even if you're a long-time WordPress user, we still believe you should give "
+"our documentation a very quick Read."
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:30
+msgid "Full documentation"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:35
+msgid "Step 3 - Customize everything"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:36
+msgid ""
+"Using the WordPress Customizer you can easily customize every aspect of the "
+"theme."
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:38
+msgid "Go to Customizer"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:23
+msgid "Recommended plugins list"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:49
+msgid "Install Now"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:87
+msgid "Active"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:96
+#, fuzzy
+msgid "More Details"
+msgstr "Atkurti numatytuosius"
+
+#. translators: %s: plugin author name
+#: inc/welcome-screen/sections/recommended-plugins.php:106
+#, php-format
+msgid "By %s"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:113
+msgid "Version:"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:118
+msgid "Installed and active"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:120
+msgid "Installed, not active"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:122
+msgid "Not installed"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:5
+#: inc/welcome-screen/sections/support.php:10
+msgid "Contact Support"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:7
+msgid ""
+"We offer excellent support through our advanced ticketing system. Make sure "
+"to register your purchase before contacting support!"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:15
+msgid "Documentation"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:17
+msgid ""
+"This is the place to go to reference different aspects of the theme. Our "
+"online documentation is an incredible resource for learning the ins and outs "
+"of using Activello."
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:20
+msgid "See our full documentation"
+msgstr ""
+
+#: inc/widgets/class-activello-categories.php:9
 msgid "Activello widget to display categories"
 msgstr ""
 
-#: ../inc/widgets/widget-categories.php:12
+#: inc/widgets/class-activello-categories.php:11
 msgid "Activello Categories"
 msgstr ""
 
-#: ../inc/widgets/widget-categories.php:17
-#: ../inc/widgets/widget-categories.php:73
+#: inc/widgets/class-activello-categories.php:15
+#: inc/widgets/class-activello-categories.php:70
 msgid "Categories"
 msgstr "Kategorijos"
 
-#: ../inc/widgets/widget-categories.php:78 ../inc/widgets/widget-social.php:49
+#: inc/widgets/class-activello-categories.php:80
+#: inc/widgets/class-activello-social-widget.php:52
 msgid "Title "
 msgstr "Pavadinimas"
 
-#: ../inc/widgets/widget-categories.php:86
+#: inc/widgets/class-activello-categories.php:88
 msgid "Limit Categories "
 msgstr "Rodomų kategorijų skaičius"
 
-#: ../inc/widgets/widget-categories.php:99
+#: inc/widgets/class-activello-categories.php:101
 msgid "Enable Posts Count"
 msgstr "Rodyti įrašų skaičių"
 
-#: ../inc/widgets/widget-recent-posts.php:11
+#: inc/widgets/class-activello-recent-posts.php:9
 msgid "Activello recent posts widget with thumbnails"
 msgstr ""
 
-#: ../inc/widgets/widget-recent-posts.php:12
+#: inc/widgets/class-activello-recent-posts.php:11
 msgid "Activello Recent Posts Widget"
 msgstr ""
 
-#: ../inc/widgets/widget-recent-posts.php:17
-#: ../inc/widgets/widget-recent-posts.php:91
-msgid "recent Posts"
-msgstr ""
-
-#: ../inc/widgets/widget-recent-posts.php:96
+#: inc/widgets/class-activello-recent-posts.php:100
 msgid "Title"
 msgstr "Pavadinimas"
 
-#: ../inc/widgets/widget-recent-posts.php:104
+#: inc/widgets/class-activello-recent-posts.php:108
 msgid "Limit Posts Number"
 msgstr "Rodomų įrašų skaičius"
 
-#: ../inc/widgets/widget-social.php:11
+#: inc/widgets/class-activello-social-widget.php:9
 msgid "Activello theme widget to display social media icons"
 msgstr ""
 
-#: ../inc/widgets/widget-social.php:12
+#: inc/widgets/class-activello-social-widget.php:11
 msgid "Activello Social Widget"
 msgstr ""
 
-#: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
+#: inc/widgets/class-activello-social-widget.php:15
+#: inc/widgets/class-activello-social-widget.php:48
 msgid "Follow us"
 msgstr "Sekite mus"
 
-#: ../search.php:16
+#. Template Name of the theme
+msgid "Full-width(no sidebar)"
+msgstr ""
+
+#. translators: %s: search query
+#: search.php:18
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Paieškos rezultatai: %s"
 
-#: ../searchform.php:11
+#: searchform.php:11
 #, fuzzy
 msgid "Search for:"
 msgstr "Ieškoti:"
 
-#: ../searchform.php:12
+#: searchform.php:12
 #, fuzzy
 msgctxt "placeholder"
 msgid "Search&hellip;"
 msgstr "Paieška &hellip;"
 
-#: ../searchform.php:12
+#: searchform.php:12
 msgctxt "label"
 msgid "Search for:"
 msgstr "Ieškoti:"
 
-#: ../sidebar.php:38
+#: searchform.php:14
+msgid "Search"
+msgstr ""
+
+#: sidebar.php:40
 msgid "Meta"
 msgstr "Metainformacija"
+
+#: template-parts/content-none.php:13
+msgid "Nothing Found"
+msgstr "Nerasta"
+
+#. translators: %1$s: URL of the new-post screen
+#: template-parts/content-none.php:26
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Pasirengę paskelbti pirmąjį įrašą? <a href=\"%1$s\">Pradėkite nuo čia</a>."
+
+#: template-parts/content-none.php:32
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Deja, nieko panašaus rasti nepavyko. Pabandykite įvesti kitokį paieškos "
+"raktažodį."
+
+#: template-parts/content-none.php:37
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Panašu, kad nepavyko rasti jūsų ieškomo puslapio. Galbūt jums padės paieškos "
+"galimybė."
+
+#. translators: %s: Name of current post
+#: template-parts/content-single.php:21 template-parts/content.php:41
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: template-parts/content-single.php:60 template-parts/content.php:97
+msgid "No comments yet"
+msgstr ""
+
+#: template-parts/content-single.php:60
+msgid "Comment (1)"
+msgstr ""
+
+#: template-parts/content-single.php:60
+msgid "Comments (%)"
+msgstr ""
+
+#: template-parts/content.php:97
+msgid "1 Comment"
+msgstr "Komentarų: 1"
+
+#: template-parts/content.php:97
+msgid "% Comments"
+msgstr "Komentarų: %"
+
+#~ msgid "Support and Documentation"
+#~ msgstr "Pagalba ir dokumentacija"
+
+#~ msgid ""
+#~ "The best way to contact us with <b>support questions</b> and <b>bug "
+#~ "reports</b> is via"
+#~ msgstr ""
+#~ "Geriausias būdas susisiekti su mumis <b>pagalbos klausimais</b> ir "
+#~ "<b>pranešti apie klaidas</b> yra čia"
+
+#~ msgid "Colorlib support forum"
+#~ msgstr "Colorlib pagalbos forumai"
+
+#~ msgid "If you like this theme, I'd appreciate any of the following:"
+#~ msgstr "Jei jums patinka ši tema, pasirinkite vieną iš būdų ją įvertinti:"
+
+#~ msgid "Rate this Theme"
+#~ msgstr "Įvertinkite temą"
+
+#~ msgid "Like on Facebook"
+#~ msgstr "Patinka Facebook"
+
+#~ msgid "Follow on Twitter"
+#~ msgstr "Sekite Twitter"
 
 #~ msgid "Leave a comment"
 #~ msgstr "Komentarų: 0"
@@ -1145,14 +908,6 @@ msgstr "Metainformacija"
 
 #~ msgid "Footer Links"
 #~ msgstr "Poraštės nuorodos"
-
-#, fuzzy
-#~ msgctxt "comments title"
-#~ msgid "One thought on &ldquo;%2$s&rdquo;"
-#~ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-#~ msgstr[0] "%1$s komentaras<!--%2$s-->"
-#~ msgstr[1] "%1$s komentarai<!--%2$s-->"
-#~ msgstr[2] "%1$s komentarų<!--%2$s-->"
 
 #~ msgid ", "
 #~ msgstr ","
@@ -1475,9 +1230,6 @@ msgstr "Metainformacija"
 #~ msgid "Footer information"
 #~ msgstr "Poraštės informacija"
 
-#~ msgid "Copyright text in footer"
-#~ msgstr "Autorinių teisių tekstas poraštėje"
-
 #, fuzzy
 #~ msgid "Footer Social Icons"
 #~ msgstr "Poraštės socialinių ikonų spalva"
@@ -1485,9 +1237,6 @@ msgstr "Metainformacija"
 #, fuzzy
 #~ msgid "Show/Hide social icons in footer"
 #~ msgstr "Poraštės socialinių ikonų spalva"
-
-#~ msgid "Social"
-#~ msgstr "Socialiniai"
 
 #~ msgid "Footer social icon color"
 #~ msgstr "Poraštės socialinių ikonų spalva"
@@ -1543,27 +1292,8 @@ msgstr "Metainformacija"
 #~ msgid "GitHub"
 #~ msgstr "GitHub"
 
-#~ msgctxt "monthly archives date format"
-#~ msgid "F Y"
-#~ msgstr "Y F"
-
-#~ msgctxt "yearly archives date format"
-#~ msgid "Y"
-#~ msgstr "Y"
-
 #~ msgid "Save Options"
 #~ msgstr "Išsaugoti nustatymus"
-
-#~ msgid "Restore Defaults"
-#~ msgstr "Atkurti numatytuosius"
-
-#~ msgctxt "Previous post link"
-#~ msgid "<i class=\"fa fa-chevron-left\"></i> %title"
-#~ msgstr "<i class=\"fa fa-chevron-left\"></i> %title"
-
-#~ msgctxt "Next post link"
-#~ msgid "%title <i class=\"fa fa-chevron-right\"></i>"
-#~ msgstr "%title <i class=\"fa fa-chevron-right\"></i>"
 
 #, fuzzy
 #~ msgctxt "placeholder"

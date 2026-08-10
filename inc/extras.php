@@ -174,6 +174,7 @@ endif;
  */
 function activello_footer_info() {
 	global $activello_footer_info;
+	/* translators: 1: link to Colorlib, 2: link to WordPress */
 	printf( esc_html__( 'Theme by %1$s Powered by %2$s', 'activello' ) , '<a href="http://colorlib.com/" target="_blank">Colorlib</a>', '<a href="http://wordpress.org/" target="_blank">WordPress</a>' );
 }
 
@@ -261,7 +262,10 @@ function activello_cb_comment( $comment, $args, $depth ) {
 		<?php if ( 0 != $args['avatar_size'] ) {
 			echo get_avatar( $comment, $args['avatar_size'] );
 } ?>
-		<?php printf( __( '<cite class="fn">%s</cite> <span class="says">says:</span>', 'activello' ), get_comment_author_link() ); ?>
+		<?php
+		/* translators: %s: comment author link */
+		printf( __( '<cite class="fn">%s</cite> <span class="says">says:</span>', 'activello' ), get_comment_author_link() );
+		?>
 		<?php
 			$comments_reply_args = array(
 				'add_below' => $add_below,
