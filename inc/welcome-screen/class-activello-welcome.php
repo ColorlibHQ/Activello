@@ -409,12 +409,16 @@ class Activello_Welcome {
 	 * @since 1.8.2.4
 	 */
 	public function activello_welcome_screen() {
-		require_once( ABSPATH . 'wp-load.php' );
-		require_once( ABSPATH . 'wp-admin/admin.php' );
-		require_once( ABSPATH . 'wp-admin/admin-header.php' );
+		if ( ! current_user_can( 'edit_theme_options' ) ) {
+			wp_die( esc_html__( 'You are not allowed to access this page.', 'activello' ) );
+		}
 
-		$active_tab   = isset( $_GET['tab'] ) ? sanitize_text_field( $_GET['tab'] ) : 'getting_started';
-		$action_count = $this->count_actions();
+		$allowed    = array( 'getting_started', 'recommended_actions', 'recommended_plugins', 'support' );
+		$active_tab = isset( $_GET['tab'] ) ? sanitize_key( wp_unslash( $_GET['tab'] ) ) : 'getting_started';
+
+		if ( ! in_array( $active_tab, $allowed, true ) ) {
+			$active_tab = 'getting_started';
+		}
 
 		?>
 
@@ -431,9 +435,6 @@ class Activello_Welcome {
 			<h2 class="nav-tab-wrapper wp-clearfix">
 				<a href="<?php echo esc_url( admin_url( 'themes.php?page=activello-welcome&tab=getting_started' ) ); ?>"
 				   class="nav-tab <?php echo 'getting_started' == $active_tab ? 'nav-tab-active' : ''; ?>"><?php echo esc_html__( 'Getting Started', 'activello' ); ?></a>
-				<a href="<?php echo esc_url( admin_url( 'themes.php?page=activello-welcome&tab=recommended_actions' ) ); ?>"
-				   class="nav-tab <?php echo 'recommended_actions' == $active_tab ? 'nav-tab-active' : ''; ?> "><?php echo esc_html__( 'Recommended Actions', 'activello' ); ?>
-					<?php echo $action_count > 0 ? '<span class="badge-action-count">' . esc_html( $action_count ) . '</span>' : '' ?></a>
 				<a href="<?php echo esc_url( admin_url( 'themes.php?page=activello-welcome&tab=recommended_plugins' ) ); ?>"
 				   class="nav-tab <?php echo 'recommended_plugins' == $active_tab ? 'nav-tab-active' : ''; ?> "><?php echo esc_html__( 'Recommended Plugins', 'activello' ); ?></a>
 				<a href="<?php echo esc_url( admin_url( 'themes.php?page=activello-welcome&tab=support' ) ); ?>"
@@ -441,21 +442,36 @@ class Activello_Welcome {
 			</h2>
 
 			<?php
+			/*
+			 * The plugin tabs render core's plugin-card markup, which core styles
+			 * for a plain .wrap page. about.css restyles p, h3 and img for
+			 * everything inside .about-wrap and loads after list-tables.css, so
+			 * nesting the cards here inflates their type and blows the card
+			 * heights out. Close .about-wrap after the tab nav and let those tabs
+			 * render in the context core designed the component for.
+			 */
+			$activello_plugin_tabs = array( 'recommended_plugins', 'recommended_actions' );
+			$activello_bare_wrap   = in_array( $active_tab, $activello_plugin_tabs, true );
+
+			if ( $activello_bare_wrap ) {
+				echo '</div><div class="wrap activello-welcome-plugins">';
+			}
+
 			switch ( $active_tab ) {
 				case 'getting_started':
-					require_once get_template_directory() . '/inc/welcome-screen/sections/getting-started.php';
+					get_template_part( 'inc/welcome-screen/sections/getting-started' );
 					break;
 				case 'recommended_actions':
-					require_once get_template_directory() . '/inc/welcome-screen/sections/actions-required.php';
+					get_template_part( 'inc/welcome-screen/sections/actions-required' );
 					break;
 				case 'recommended_plugins':
-					require_once get_template_directory() . '/inc/welcome-screen/sections/recommended-plugins.php';
+					get_template_part( 'inc/welcome-screen/sections/recommended-plugins' );
 					break;
 				case 'support':
-					require_once get_template_directory() . '/inc/welcome-screen/sections/support.php';
+					get_template_part( 'inc/welcome-screen/sections/support' );
 					break;
 				default:
-					require_once get_template_directory() . '/inc/welcome-screen/sections/getting-started.php';
+					get_template_part( 'inc/welcome-screen/sections/getting-started' );
 					break;
 			}
 			?>
@@ -466,5 +482,3 @@ class Activello_Welcome {
 		<?php
 	}
 }
-
-new Activello_Welcome();

@@ -1,10 +1,16 @@
 <?php
 /**
  * Actions required
+ *
+ * The required-actions list ships empty since 1.6.0, so normally this tab only
+ * renders the recommended-plugin fallback boxes. It is reachable by URL, not
+ * from the tab navigation.
  */
 wp_enqueue_style( 'plugin-install' );
 wp_enqueue_script( 'plugin-install' );
 wp_enqueue_script( 'updates' );
+
+$activello_welcome = new Activello_Welcome();
 ?>
 
 <div class="feature-section action-required demo-import-boxed" id="plugin-filter">
@@ -51,8 +57,8 @@ endif; ?>
 				</p>
 				<?php
 				if ( ! empty( $activello_required_action_value['plugin_slug'] ) ) {
-					$active = $this->check_active( $activello_required_action_value['plugin_slug'] );
-					$url    = $this->create_action_link( $active['needs'], $activello_required_action_value['plugin_slug'] );
+					$active = $activello_welcome->check_active( $activello_required_action_value['plugin_slug'] );
+					$url    = $activello_welcome->create_action_link( $active['needs'], $activello_required_action_value['plugin_slug'] );
 					$label  = '';
 					switch ( $active['needs'] ) {
 						case 'install':
@@ -91,11 +97,8 @@ endif; ?>
 				continue;
 			}
 
-			if ( MT_Notify_System::has_import_plugin( $slug ) ) {
-				continue;
-			}
 			if ( 0 == $nr_recommended_plugins ) {
-				echo '<h3 class="hooray">' . __( 'Hooray! There are no required actions for you right now. But you can make your theme more powerful with next actions: ', 'activello' ) . '</h3>';
+				echo '<h3 class="hooray">' . esc_html__( 'Hooray! There are no required actions for you right now. But you can make your theme more powerful with next actions: ', 'activello' ) . '</h3>';
 			}
 
 			$nr_recommended_plugins ++;
@@ -109,9 +112,9 @@ endif; ?>
 					  id="<?php echo esc_attr( $slug ); ?>"></span>
 			<?php endif;
 
-			$active = $this->check_active( $slug );
-			$url    = $this->create_action_link( $active['needs'], $slug );
-			$info   = $this->call_plugin_api( $slug );
+			$active = $activello_welcome->check_active( $slug );
+			$url    = $activello_welcome->create_action_link( $active['needs'], $slug );
+			$info   = $activello_welcome->call_plugin_api( $slug );
 
 			if ( is_wp_error( $info ) ) {
 				echo '</div>';
@@ -154,7 +157,7 @@ switch ( $active['needs'] ) {
 	endif;
 
 	if ( 0 == $nr_recommended_plugins && 0 == $nr_actions_required ) {
-		echo '<span class="hooray">' . __( 'Hooray! There are no required actions for you right now.', 'activello' ) . '</span>';
+		echo '<span class="hooray">' . esc_html__( 'Hooray! There are no required actions for you right now.', 'activello' ) . '</span>';
 	}
 
 	?>

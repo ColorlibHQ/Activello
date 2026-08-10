@@ -1,61 +1,131 @@
 <?php
 /**
  * Recommended Plugins
+ *
+ * Uses core's own plugin-card markup (the same structure wp-admin renders on
+ * Plugins > Add New) so the layout, grid, buttons and responsive behaviour all
+ * come from core's plugin-install stylesheet. The theme adds no CSS of its own
+ * for this tab.
  */
-global $activello_required_actions, $activello_recommended_plugins;
+
+global $activello_recommended_plugins;
+
 wp_enqueue_style( 'plugin-install' );
 wp_enqueue_script( 'plugin-install' );
 wp_enqueue_script( 'updates' );
+add_thickbox();
+
+$activello_welcome = new Activello_Welcome();
+
 ?>
 
-<div class="feature-section recommended-plugins three-col demo-import-boxed" id="plugin-filter">
-	<?php foreach ( $activello_recommended_plugins as $plugin => $prop ) { ?>
+<div class="wp-list-table widefat plugin-install">
+	<h2 class="screen-reader-text"><?php esc_html_e( 'Recommended plugins list', 'activello' ); ?></h2>
+
+	<div id="the-list">
 		<?php
-		$info = $this->call_plugin_api( $plugin );
-		
-		// Skip if info is a WP_Error object
-		if ( is_wp_error( $info ) ) {
-			continue;
-		}
-		
-		// Safely access properties with fallbacks
-		$icons = isset( $info->icons ) && is_array( $info->icons ) ? $info->icons : array();
-		$icon = $this->check_for_icon( $icons );
-		$active = $this->check_active( $plugin );
-		$url = $this->create_action_link( $active['needs'], $plugin );
-		$name = isset( $info->name ) ? $info->name : $plugin;
-		$version = isset( $info->version ) ? $info->version : '';
-		$author = isset( $info->author ) ? $info->author : '';
+		foreach ( $activello_recommended_plugins as $plugin => $prop ) {
 
-		$label = '';
+			$info = $activello_welcome->call_plugin_api( $plugin );
 
-		switch ( $active['needs'] ) {
-			case 'install':
-				$class = 'install-now button';
-				$label = __( 'Install', 'activello' );
-				break;
-			case 'activate':
-				$class = 'activate-now button button-primary';
-				$label = __( 'Activate', 'activello' );
-				break;
-			case 'deactivate':
-				$class = 'deactivate-now button';
-				$label = __( 'Deactivate', 'activello' );
-				break;
-		}
+			/*
+			 * plugins_api() returns WP_Error when wordpress.org cannot be reached.
+			 * Previously the properties below were read straight off it, so an
+			 * offline site rendered a broken tab.
+			 */
+			if ( is_wp_error( $info ) || empty( $info->name ) ) {
+				continue;
+			}
 
-		?>
-		<div class="col plugin_box">
-			<img src="<?php echo esc_url( $icon ) ?>" alt="plugin box image">
-			<span class="version"><?php echo __( 'Version:', 'activello' ); ?><?php echo esc_html( $version ); ?></span>
-			<span class="separator">|</span> <?php echo wp_kses_post( $author ); ?>
-			<div class="action_bar <?php echo esc_attr( ( 'install' !== $active['needs'] && $active['status'] ) ? 'active' : '' ) ?>">
-				<span class="plugin_name"><?php echo esc_html( ( 'install' !== $active['needs'] && $active['status'] ) ? 'Active: ' : '' ) . esc_html( $name ); ?></span>
+			$icon   = $activello_welcome->check_for_icon( isset( $info->icons ) && is_array( $info->icons ) ? $info->icons : array() );
+			$active = $activello_welcome->check_active( $plugin );
+			$url    = $activello_welcome->create_action_link( $active['needs'], $plugin );
+
+			$is_active = ( 'install' !== $active['needs'] && $active['status'] );
+
+			switch ( $active['needs'] ) {
+				case 'install':
+					$class = 'install-now button';
+					$label = __( 'Install Now', 'activello' );
+					break;
+				case 'activate':
+					$class = 'activate-now button button-primary';
+					$label = __( 'Activate', 'activello' );
+					break;
+				default:
+					$class = 'button';
+					$label = __( 'Deactivate', 'activello' );
+					break;
+			}
+
+			$details_url = add_query_arg(
+				array(
+					'tab'       => 'plugin-information',
+					'plugin'    => $plugin,
+					'TB_iframe' => 'true',
+					'width'     => 600,
+					'height'    => 550,
+				),
+				self_admin_url( 'plugin-install.php' )
+			);
+			?>
+			<div class="plugin-card plugin-card-<?php echo esc_attr( sanitize_html_class( $plugin ) ); ?>">
+				<div class="plugin-card-top">
+					<div class="name column-name">
+						<h3>
+							<a href="<?php echo esc_url( $details_url ); ?>" class="thickbox open-plugin-details-modal">
+								<?php echo esc_html( $info->name ); ?>
+								<img src="<?php echo esc_url( $icon ); ?>" class="plugin-icon" alt="" />
+							</a>
+						</h3>
+					</div>
+
+					<div class="action-links">
+						<ul class="plugin-action-buttons">
+							<li>
+								<?php if ( $is_active ) : ?>
+									<button type="button" class="button button-disabled" disabled="disabled"><?php esc_html_e( 'Active', 'activello' ); ?></button>
+								<?php else : ?>
+									<a data-slug="<?php echo esc_attr( $plugin ); ?>"
+										class="<?php echo esc_attr( $class ); ?>"
+										href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?></a>
+								<?php endif; ?>
+							</li>
+							<li>
+								<a href="<?php echo esc_url( $details_url ); ?>" class="thickbox open-plugin-details-modal">
+									<?php esc_html_e( 'More Details', 'activello' ); ?>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="desc column-description">
+						<p><?php echo isset( $info->short_description ) ? wp_kses_post( $info->short_description ) : ''; ?></p>
+						<p class="authors"><cite><?php
+							/* translators: %s: plugin author name */
+							printf( esc_html__( 'By %s', 'activello' ), isset( $info->author ) ? wp_kses_post( $info->author ) : '' );
+						?></cite></p>
+					</div>
+				</div>
+
+				<div class="plugin-card-bottom">
+					<div class="column-updated">
+						<strong><?php esc_html_e( 'Version:', 'activello' ); ?></strong>
+						<?php echo isset( $info->version ) ? esc_html( $info->version ) : ''; ?>
+					</div>
+					<div class="column-compatibility">
+						<?php if ( $is_active ) : ?>
+							<span class="compatibility-compatible"><?php esc_html_e( 'Installed and active', 'activello' ); ?></span>
+						<?php elseif ( 'activate' === $active['needs'] ) : ?>
+							<span class="compatibility-untested"><?php esc_html_e( 'Installed, not active', 'activello' ); ?></span>
+						<?php else : ?>
+							<span class="compatibility-untested"><?php esc_html_e( 'Not installed', 'activello' ); ?></span>
+						<?php endif; ?>
+					</div>
+				</div>
 			</div>
-			<span class="plugin-card-<?php echo esc_attr( $plugin ) ?> action_button <?php echo esc_attr( ( 'install' !== $active['needs'] && $active['status'] ) ? 'active' : '' ) ?>">
-				<a data-slug="<?php echo esc_attr( $plugin ) ?>" class="<?php echo esc_attr( $class ); ?>" href="<?php echo esc_url( $url ) ?>"> <?php echo esc_html( $label ) ?> </a>
-			</span>
-		</div>
-	<?php }// End foreach().
-	?>
+			<?php
+		}// End foreach().
+		?>
+	</div>
 </div>

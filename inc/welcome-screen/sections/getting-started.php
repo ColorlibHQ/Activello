@@ -2,8 +2,10 @@
 /**
  * Getting started template
  */
-$customizer_url = admin_url() . 'customize.php';
-$count = $this->count_actions();
+
+$activello_welcome = new Activello_Welcome();
+$count             = $activello_welcome->count_actions();
+$customizer_url    = admin_url( 'customize.php' );
 ?>
 
 <div class="feature-section three-col has-3-columns is-fullwidth">
@@ -12,7 +14,7 @@ $count = $this->count_actions();
 		<p><?php esc_html_e( 'We\'ve compiled a list of steps for you, to take make sure the experience you\'ll have using one of our products is very easy to follow.', 'activello' ); ?></p>
 		<?php if ( 0 == $count ) { ?>
 			<p><span class="dashicons dashicons-yes"></span>
-				<a href="<?php echo esc_url( admin_url( 'themes.php?page=activello-welcome&tab=recommended_actions' ) ); ?>"><?php esc_html_e( 'No recommended actions left to perform', 'activello' ); ?></a>
+				<?php esc_html_e( 'No recommended actions left to perform', 'activello' ); ?>
 			</p>
 		<?php } else { ?>
 			<p><span class="dashicons dashicons-no-alt"></span> <a href="<?php echo esc_url( admin_url( 'themes.php?page=activello-welcome&tab=recommended_actions' ) ); ?>"><?php esc_html_e( 'Check recommended actions', 'activello' ); ?></a>
