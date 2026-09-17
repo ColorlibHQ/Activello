@@ -2,7 +2,7 @@
 
 * Theme Name: Activello
 * Theme URI: https://colorlib.com/wp/Activello/
-* Version: 1.6.1
+* Version: 1.6.2
 * Tested up to: WP 7.0
 
 ```
@@ -62,6 +62,10 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 Theme documentation is available on https://colorlib.com/wp/support/activello
 
 #### Changelog
+= 1.6.2 =
+* Removed KB Support from the recommended plugins. WordPress.org closed it on 2025-04-03 over a security issue
+* Corrected the capitalisation of WordPress in the French and Romanian translation files
+
 = 1.6.1 =
 * The no-js class swap is now printed from a wp_head hook (priority 0, still ahead of the stylesheets) instead of being hardcoded in header.php, so child themes and plugins can remove it
 * Footer credit links use https
