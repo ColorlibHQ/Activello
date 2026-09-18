@@ -419,3 +419,14 @@ if ( ! function_exists( 'wp_body_open' ) ) {
         do_action( 'wp_body_open' );
     }
 }
+
+
+/**
+ * Editor and markup support this theme predates.
+ */
+if ( ! function_exists( 'activello_modern_supports' ) ) {
+	function activello_modern_supports() {
+		add_theme_support( 'editor-styles' );
+	}
+	add_action( 'after_setup_theme', 'activello_modern_supports', 20 );
+}
