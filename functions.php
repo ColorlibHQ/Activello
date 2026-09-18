@@ -213,7 +213,7 @@ if ( ! function_exists( 'activello_scripts' ) ) {
 		wp_enqueue_style( 'activello-icons', $template_uri . '/assets/css/font-awesome.min.css', array(), '4.6.3' );
 
 		// Add Google Fonts
-		wp_enqueue_style( 'activello-fonts', 'https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic%7CMontserrat:400,700%7CMaven+Pro:400,700&display=swap', array(), null );
+		wp_enqueue_style( 'activello-fonts', get_template_directory_uri() . '/assets/css/google-fonts.css', array(), null );
 
 		// Add slider CSS only if is front page and slider is enabled
 		if ( $slider_active ) {
@@ -259,24 +259,6 @@ function activello_no_js_class_swap() {
 	echo "<script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script>\n";
 }
 add_action( 'wp_head', 'activello_no_js_class_swap', 0 );
-
-/**
- * Add a preconnect hint for the Google Fonts file host.
- *
- * @param array  $hints         URLs to print for the relation type.
- * @param string $relation_type The relation type the URLs are printed for.
- * @return array
- */
-function activello_resource_hints( $hints, $relation_type ) {
-	if ( 'preconnect' === $relation_type && wp_style_is( 'activello-fonts', 'enqueued' ) ) {
-		$hints[] = array(
-			'href' => 'https://fonts.gstatic.com',
-			'crossorigin',
-		);
-	}
-	return $hints;
-}
-add_filter( 'wp_resource_hints', 'activello_resource_hints', 10, 2 );
 
 /**
  * Custom template tags for this theme.
