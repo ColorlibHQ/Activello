@@ -56,8 +56,8 @@ if ( ! function_exists( 'activello_post_nav' ) ) :
 		<h1 class="screen-reader-text"><?php esc_html_e( 'Post navigation', 'activello' ); ?></h1>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<i class="fa fa-chevron-left"></i> %title', 'Previous post link', 'activello' ) );
-				next_post_link( '<div class="nav-next">%link</div>',     _x( '%title <i class="fa fa-chevron-right"></i>', 'Next post link',     'activello' ) );
+				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<i class="fa-solid fa-chevron-left"></i> %title', 'Previous post link', 'activello' ) );
+				next_post_link( '<div class="nav-next">%link</div>',     _x( '%title <i class="fa-solid fa-chevron-right"></i>', 'Next post link',     'activello' ) );
 			?>
 			</div><!-- .nav-links -->
 			</nav><!-- .navigation -->

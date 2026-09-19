@@ -207,17 +207,17 @@ if ( ! function_exists( 'activello_scripts' ) ) {
 		$slider_active = ( is_home() || is_front_page() ) && get_theme_mod( 'activello_featured_hide' ) == 1;
 
 		// Add Bootstrap default CSS
-		wp_enqueue_style( 'activello-bootstrap', $template_uri . '/assets/css/bootstrap.min.css', array(), '3.4.1' );
+		wp_enqueue_style( 'activello-bootstrap', $template_uri . '/assets/css/bootstrap.min.css', array(), '5.3.8-4' );
 
 		// Add Font Awesome stylesheet
-		wp_enqueue_style( 'activello-icons', $template_uri . '/assets/css/font-awesome.min.css', array(), '4.6.3' );
+		wp_enqueue_style( 'activello-icons', $template_uri . '/assets/css/font-awesome.min.css', array(), '7.3.1-1' );
 
 		// Add Google Fonts
 		wp_enqueue_style( 'activello-fonts', get_template_directory_uri() . '/assets/css/google-fonts.css', array(), null );
 
 		// Add slider CSS only if is front page and slider is enabled
 		if ( $slider_active ) {
-			wp_enqueue_style( 'flexslider-css', $template_uri . '/assets/css/flexslider.css', array(), ACTIVELLO_VERSION );
+			wp_enqueue_style( 'activello-flexslider-css', $template_uri . '/assets/css/flexslider.css', array(), ACTIVELLO_VERSION );
 		}
 
 		// Add main theme stylesheet
@@ -227,12 +227,12 @@ if ( ! function_exists( 'activello_scripts' ) ) {
 		 * Bootstrap's JS needs jQuery, but it belongs in the footer: it binds its
 		 * data-api handlers on ready, so nothing is lost by not blocking the head.
 		 */
-		wp_enqueue_script( 'activello-bootstrapjs', $template_uri . '/assets/js/vendor/bootstrap.min.js', array( 'jquery' ), '3.4.1', true );
+		wp_enqueue_script( 'activello-bootstrapjs', $template_uri . '/assets/js/vendor/bootstrap.min.js', array( 'jquery' ), '5.3.8-4', true );
 
 		// Slider JS, registered here; activello_featured_slider() enqueues both
 		// handles only when it actually renders the slider.
-		wp_register_script( 'flexslider-js', $template_uri . '/assets/js/vendor/flexslider.min.js', array( 'jquery' ), '2.7.0', true );
-		wp_register_script( 'activello-flexslider', $template_uri . '/assets/js/flexslider-custom.js', array( 'jquery', 'flexslider-js' ), ACTIVELLO_VERSION, true );
+		wp_register_script( 'activello-flexslider-js', $template_uri . '/assets/js/vendor/flexslider.min.js', array( 'jquery' ), '2.7.0', true );
+		wp_register_script( 'activello-flexslider', $template_uri . '/assets/js/flexslider-custom.js', array( 'jquery', 'activello-flexslider-js' ), ACTIVELLO_VERSION, true );
 
 		// Main theme related functions -- plain JS, no jQuery dependency.
 		wp_enqueue_script( 'activello-functions', $template_uri . '/assets/js/functions.js', array(), ACTIVELLO_VERSION, true );
@@ -378,7 +378,7 @@ add_action( 'after_setup_theme', 'activello_woo_setup' );
  */
 if ( ! function_exists( 'activello_header_search_filter' ) ) {
 	function activello_header_search_filter( $form ) {
-		$form = '<form action="' . esc_url( home_url( '/' ) ) . '" method="get"><input type="text" name="s" value="' . get_search_query() . '" placeholder="' . esc_attr_x( 'Search', 'search placeholder', 'activello' ) . '"><button type="submit" class="header-search-icon" name="submit" id="searchsubmit" value="' . esc_attr_x( 'Search', 'submit button', 'activello' ) . '"><i class="fa fa-search"></i></button></form>';
+		$form = '<form action="' . esc_url( home_url( '/' ) ) . '" method="get"><input type="text" name="s" value="' . get_search_query() . '" placeholder="' . esc_attr_x( 'Search', 'search placeholder', 'activello' ) . '"><button type="submit" class="header-search-icon" name="submit" id="searchsubmit" value="' . esc_attr_x( 'Search', 'submit button', 'activello' ) . '"><i class="fa-solid fa-search"></i></button></form>';
 		return $form;
 	}
 }

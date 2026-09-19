@@ -28,6 +28,6 @@
 		) );
 		?>
 	</div><!-- .entry-content -->
-	<?php edit_post_link( esc_html__( 'Edit', 'activello' ), '<footer class="entry-footer"><i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span></footer>' ); ?>
+	<?php edit_post_link( esc_html__( 'Edit', 'activello' ), '<footer class="entry-footer"><i class="fa-regular fa-pen-to-square"></i><span class="edit-link">', '</span></footer>' ); ?>
 </article><!-- #post-## -->
 </div>

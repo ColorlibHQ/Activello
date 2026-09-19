@@ -84,7 +84,7 @@ class Activello_Wp_Bootstrap_Navwalker extends Walker_Nav_Menu {
 			if ( 0 === $args->has_children && $depth ) {
 				$atts['href']                   = ! empty( $item->url ) ? $item->url : '';
 				;
-				// $atts['data-toggle']        = 'dropdown';
+				// $atts['data-bs-toggle']        = 'dropdown';
 				$atts['class']                        = 'dropdown-toggle';
 			} else {
 				$atts['href'] = ! empty( $item->url ) ? $item->url : '';

@@ -23,7 +23,7 @@
 					</div>
 				</div>
 			</div><!-- .site-info -->
-			<button class="scroll-to-top"><i class="fa fa-angle-up"></i></button><!-- .scroll-to-top -->
+			<button class="scroll-to-top"><i class="fa-solid fa-angle-up"></i></button><!-- .scroll-to-top -->
 		</footer><!-- #colophon -->
 	</div>
 </div><!-- #page -->

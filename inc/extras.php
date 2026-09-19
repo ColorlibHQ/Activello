@@ -117,8 +117,8 @@ if ( ! function_exists( 'activello_featured_slider' ) ) :
 	function activello_featured_slider() {
 		if ( ( is_home() || is_front_page() ) && get_theme_mod( 'activello_featured_hide' ) == 1 ) {
 
-			wp_enqueue_style( 'flexslider-css' );
-			wp_enqueue_script( 'flexslider-js' );
+			wp_enqueue_style( 'activello-flexslider-css' );
+			wp_enqueue_script( 'activello-flexslider-js' );
 			wp_enqueue_script( 'activello-flexslider' );
 
 			echo '<div class="flexslider">';
