@@ -207,7 +207,7 @@ if ( ! function_exists( 'activello_scripts' ) ) {
 		$slider_active = ( is_home() || is_front_page() ) && get_theme_mod( 'activello_featured_hide' ) == 1;
 
 		// Add Bootstrap default CSS
-		wp_enqueue_style( 'activello-bootstrap', $template_uri . '/assets/css/bootstrap.min.css', array(), '5.3.8-4' );
+		wp_enqueue_style( 'activello-bootstrap', $template_uri . '/assets/css/bootstrap.min.css', array(), '3.4.1-1' );
 
 		// Add Font Awesome stylesheet
 		wp_enqueue_style( 'activello-icons', $template_uri . '/assets/css/font-awesome.min.css', array(), '7.3.1-1' );
@@ -227,7 +227,7 @@ if ( ! function_exists( 'activello_scripts' ) ) {
 		 * Bootstrap's JS needs jQuery, but it belongs in the footer: it binds its
 		 * data-api handlers on ready, so nothing is lost by not blocking the head.
 		 */
-		wp_enqueue_script( 'activello-bootstrapjs', $template_uri . '/assets/js/vendor/bootstrap.min.js', array( 'jquery' ), '5.3.8-4', true );
+		wp_enqueue_script( 'activello-bootstrapjs', $template_uri . '/assets/js/vendor/bootstrap.min.js', array( 'jquery' ), '3.4.1-1', true );
 
 		// Slider JS, registered here; activello_featured_slider() enqueues both
 		// handles only when it actually renders the slider.

@@ -28,8 +28,8 @@
 				<div class="row">
 					<div class="site-navigation-inner col-sm-12">
 						<div class="navbar-header">
-							<button type="button" class="btn navbar-toggle" data-bs-toggle="collapse" data-bs-target=".navbar-ex1-collapse">
-								<span class="visually-hidden"><?php _e( 'Toggle navigation', 'activello' ); ?></span>
+							<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only"><?php _e( 'Toggle navigation', 'activello' ); ?></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
